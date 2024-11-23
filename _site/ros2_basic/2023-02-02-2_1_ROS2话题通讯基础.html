@@ -1,0 +1,1115 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head><meta charset="UTF-8">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>2 ROS2话题通讯 - 话题通讯基础 · Blogs</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="description" content="Build Jekyll site with the GitBook style.
+"><meta name="generator" content="Jekyll (using style of GitBook 3.2.3)"><meta name="author" content="pldz9"><link rel="stylesheet" href="/assets/gitbook/style.css">
+<link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+<link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
+<link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-fontsettings/website.css">
+<link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-search-pro/search.css">
+<link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-splitter/splitter.css">
+
+<link rel="stylesheet" href="/assets/gitbook/rouge/thankful_eyes.css">
+
+<link rel="stylesheet" href="/assets/gitbook/custom.css">
+<link rel="stylesheet" href="/assets/gitbook/custom-local.css">
+
+<meta name="HandheldFriendly" content="true"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/gitbook/images/apple-touch-icon-precomposed-152.png">
+<link rel="shortcut icon" href="/assets/gitbook/images/favicon.ico" type="image/x-icon">
+
+
+
+
+            <link rel="prev" href="/ros2_basic/2023-02-01-1_1_Ubuntu%E9%85%8D%E7%BD%AE%E4%B8%8EROS2%E5%BF%AB%E9%80%9F%E4%BD%93%E9%AA%8C.html" />
+        
+
+        
+            <link rel="next" href="/ros2_basic/2023-02-03-2_2_ROS2%E8%AF%9D%E9%A2%98%E9%80%9A%E8%AE%AF%E6%8F%90%E5%8D%87.html" />
+        
+    </head>
+    <body>
+        <div class="book"><div class="book-summary">
+    <script type="text/javascript">
+        // Fixes the page links scroll problem on both desktop and mobile browsers
+        function pageScrollToTop(element) {
+            // both mobile and non-mobile
+            $('div.body-inner').animate({scrollTop: 0});
+            $(element).parent().find('li>ul>li').removeClass('active');
+            return true;
+        }
+
+    </script>
+
+    <nav role="navigation" style="height: 100%;">
+        <!-- Search Input -->
+        <div id="book-search-input" role="search">
+            <input type="text" placeholder="Type to search" />
+        </div>
+        <div id="book-search-input-link" role="search">
+            <a href="/assets/search.html">Click to Search</a>
+        </div>
+
+        <div class="book-base-title" data-path="">
+            <a href="/" onclick="pageScrollToTop(this)">
+                爬楼的猪 Blogs
+            </a>
+        </div>
+
+        <!-- Book Summary Navigation -->
+        <ul class="summary" id="book-summary-core" data-scroll-top="0">
+            <!-- Loop through collections and posts by category -->
+            
+            
+            <li class="chapter category-header" id="category-header-ROS2_CAR">
+                <a href="javascript:void(0)">
+                    ROS2_CAR
+                </a>
+                <ul class="category-list" id="category-list-ROS2_CAR">
+                    
+                    
+                    <li class="chapter "
+                        data-path="/ros2_car/2023-01-03-ABOUT.html">
+                        <a href="/ros2_car/2023-01-03-ABOUT.html" onclick="pageScrollToTop(this)">
+                            ABOUT
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/ros2_car/2023-06-01-1_1_docker%E5%91%BD%E4%BB%A4%E7%86%9F%E6%82%89.html">
+                        <a href="/ros2_car/2023-06-01-1_1_docker%E5%91%BD%E4%BB%A4%E7%86%9F%E6%82%89.html" onclick="pageScrollToTop(this)">
+                            1 Docker 搭建 ROS2 嵌入式运行环境
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/ros2_car/2023-06-02-2_1_%E9%80%9A%E8%BF%87Turtlebot3%E6%A1%88%E4%BE%8B%E4%BA%86%E8%A7%A3NAVI2.html">
+                        <a href="/ros2_car/2023-06-02-2_1_%E9%80%9A%E8%BF%87Turtlebot3%E6%A1%88%E4%BE%8B%E4%BA%86%E8%A7%A3NAVI2.html" onclick="pageScrollToTop(this)">
+                            2 通过 Turtlebot3 案例了解 NAVI2
+                        </a>
+                    </li>
+                    
+                </ul>
+            </li>
+            
+            <li class="chapter category-header" id="category-header-ROS2_MICRO">
+                <a href="javascript:void(0)">
+                    ROS2_MICRO
+                </a>
+                <ul class="category-list" id="category-list-ROS2_MICRO">
+                    
+                    
+                    <li class="chapter "
+                        data-path="/ros2_micro/2023-01-02-ABOUT.html">
+                        <a href="/ros2_micro/2023-01-02-ABOUT.html" onclick="pageScrollToTop(this)">
+                            ABOUT
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/ros2_micro/2023-04-01-1_1_ROS2_Arduino.html">
+                        <a href="/ros2_micro/2023-04-01-1_1_ROS2_Arduino.html" onclick="pageScrollToTop(this)">
+                            1 ROS2 和 Arduino 通讯
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/ros2_micro/2023-04-02-2_1_Arduino%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95.html">
+                        <a href="/ros2_micro/2023-04-02-2_1_Arduino%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95.html" onclick="pageScrollToTop(this)">
+                            2 Arduino 的基本语法
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/ros2_micro/2023-04-03-3_1_ROS2_Arduino_demo.html">
+                        <a href="/ros2_micro/2023-04-03-3_1_ROS2_Arduino_demo.html" onclick="pageScrollToTop(this)">
+                            3 ROS2 和 arduino 通讯
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/ros2_micro/2023-04-04-4_1_MicroROS%E5%88%9D%E6%AD%A5%E4%BD%93%E9%AA%8C.html">
+                        <a href="/ros2_micro/2023-04-04-4_1_MicroROS%E5%88%9D%E6%AD%A5%E4%BD%93%E9%AA%8C.html" onclick="pageScrollToTop(this)">
+                            4 MircoROS 初步体验
+                        </a>
+                    </li>
+                    
+                </ul>
+            </li>
+            
+            <li class="chapter category-header" id="category-header-ROS2_BASIC">
+                <a href="javascript:void(0)">
+                    ROS2_BASIC
+                </a>
+                <ul class="category-list" id="category-list-ROS2_BASIC">
+                    
+                    
+                    <li class="chapter "
+                        data-path="/ros2_basic/2023-01-01-ABOUT.html">
+                        <a href="/ros2_basic/2023-01-01-ABOUT.html" onclick="pageScrollToTop(this)">
+                            ABOUT
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/ros2_basic/2023-02-01-1_1_Ubuntu%E9%85%8D%E7%BD%AE%E4%B8%8EROS2%E5%BF%AB%E9%80%9F%E4%BD%93%E9%AA%8C.html">
+                        <a href="/ros2_basic/2023-02-01-1_1_Ubuntu%E9%85%8D%E7%BD%AE%E4%B8%8EROS2%E5%BF%AB%E9%80%9F%E4%BD%93%E9%AA%8C.html" onclick="pageScrollToTop(this)">
+                            1 Ubuntu配置与ROS2快速体验
+                        </a>
+                    </li>
+                    
+                    <li class="chapter active"
+                        data-path="/ros2_basic/2023-02-02-2_1_ROS2%E8%AF%9D%E9%A2%98%E9%80%9A%E8%AE%AF%E5%9F%BA%E7%A1%80.html">
+                        <a href="/ros2_basic/2023-02-02-2_1_ROS2%E8%AF%9D%E9%A2%98%E9%80%9A%E8%AE%AF%E5%9F%BA%E7%A1%80.html" onclick="pageScrollToTop(this)">
+                            2 ROS2话题通讯 - 话题通讯基础
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/ros2_basic/2023-02-03-2_2_ROS2%E8%AF%9D%E9%A2%98%E9%80%9A%E8%AE%AF%E6%8F%90%E5%8D%87.html">
+                        <a href="/ros2_basic/2023-02-03-2_2_ROS2%E8%AF%9D%E9%A2%98%E9%80%9A%E8%AE%AF%E6%8F%90%E5%8D%87.html" onclick="pageScrollToTop(this)">
+                            2 ROS2话题通讯 - 话题通讯进阶
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/ros2_basic/2023-02-04-3_1_ROS2%E6%9C%8D%E5%8A%A1%E9%80%9A%E8%AE%AF.html">
+                        <a href="/ros2_basic/2023-02-04-3_1_ROS2%E6%9C%8D%E5%8A%A1%E9%80%9A%E8%AE%AF.html" onclick="pageScrollToTop(this)">
+                            3 ROS2服务通讯基础
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/ros2_basic/2023-02-05-4_1_ROS2%E5%8F%82%E6%95%B0%E6%9C%8D%E5%8A%A1%E5%99%A8.html">
+                        <a href="/ros2_basic/2023-02-05-4_1_ROS2%E5%8F%82%E6%95%B0%E6%9C%8D%E5%8A%A1%E5%99%A8.html" onclick="pageScrollToTop(this)">
+                            4 ROS2节点参数基础
+                        </a>
+                    </li>
+                    
+                </ul>
+            </li>
+            
+            <li class="chapter category-header" id="category-header-Others">
+                <a href="javascript:void(0)">
+                    Others
+                </a>
+                <ul class="category-list" id="category-list-Others">
+                    
+                    
+                    <li class="chapter "
+                        data-path="/others/2022-01-01-ABOUT.html">
+                        <a href="/others/2022-01-01-ABOUT.html" onclick="pageScrollToTop(this)">
+                            ABOUT
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/others/2022-01-02-VSCode%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE.html">
+                        <a href="/others/2022-01-02-VSCode%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE.html" onclick="pageScrollToTop(this)">
+                            VSCode相关配置
+                        </a>
+                    </li>
+                    
+                </ul>
+            </li>
+            
+        </ul>
+
+
+        <!-- Page Content and TOC -->
+        <div class="page-content-category">
+            <div class="page-content-title">Navigation of <span>2 ROS2话题通讯 - 话题通讯基础</span></div>
+            <ul class="page-content">
+                
+                <ul><li><a href="#21-ros2话题通讯介绍" onclick="mobilePageScrollToAnchor(this)" >2.1 ROS2话题通讯介绍</a></li><li><a href="#22-ros2常用的消息类型介绍" onclick="mobilePageScrollToAnchor(this)" >2.2 ROS2常用的消息类型介绍</a><ul><li><a href="#221-std_msgs消息类型" onclick="mobilePageScrollToAnchor(this)" >2.2.1 std_msgs消息类型</a><ul><li><a href="#222-geometry_msgs消息类型" onclick="mobilePageScrollToAnchor(this)" >2.2.2 geometry_msgs消息类型</a></li></ul></li></ul></li><li><a href="#23-使用cc创建基础消息类型的话题通讯" onclick="mobilePageScrollToAnchor(this)" >2.3 使用C/C++创建基础消息类型的话题通讯</a><ul><li><a href="#231-创建cc发布话题信息的功能包并配置vscode环境" onclick="mobilePageScrollToAnchor(this)" >2.3.1 创建C/C++发布话题信息的功能包并配置VSCode环境</a></li><li><a href="#232-编写ros2发布话题节点cpp文件" onclick="mobilePageScrollToAnchor(this)" >2.3.2 编写ROS2发布话题节点CPP文件</a></li><li><a href="#233-配置cc发布话题功能包并编译" onclick="mobilePageScrollToAnchor(this)" >2.3.3 配置C/C++发布话题功能包并编译</a></li><li><a href="#234-创建cc订阅话题的功能包" onclick="mobilePageScrollToAnchor(this)" >2.3.4 创建C/C++订阅话题的功能包</a></li><li><a href="#235-编写ros2订阅话题节点cpp文件" onclick="mobilePageScrollToAnchor(this)" >2.3.5 编写ROS2订阅话题节点CPP文件</a></li><li><a href="#236-配置cc订阅话题功能包并编译" onclick="mobilePageScrollToAnchor(this)" >2.3.6 配置C/C++订阅话题功能包并编译</a></li></ul></li><li><a href="#24-使用python创建基础消息类型的话题通讯" onclick="mobilePageScrollToAnchor(this)" >2.4 使用Python创建基础消息类型的话题通讯</a><ul><li><a href="#241-创建python发布话题功能包并编写节点文件" onclick="mobilePageScrollToAnchor(this)" >2.4.1 创建Python发布话题功能包并编写节点文件</a></li><li><a href="#242-配置python项目并运行" onclick="mobilePageScrollToAnchor(this)" >2.4.2 配置Python项目并运行</a></li><li><a href="#243-创建python订阅话题功能包并编写节点" onclick="mobilePageScrollToAnchor(this)" >2.4.3 创建Python订阅话题功能包并编写节点</a></li><li><a href="#244-编译运行节点" onclick="mobilePageScrollToAnchor(this)" >2.4.4 编译运行节点</a></li></ul></li></ul>
+
+                
+            </ul>
+        </div> 
+    </nav>
+</div><div class="book-body">
+                <div class="book-header" role="navigation">
+                    <!-- Title -->
+                    <h1>
+                      2 ROS2话题通讯 - 话题通讯基础
+                    </h1>
+                </div>
+
+                <div class="body-inner"><div class="page-wrapper" tabindex="-1" role="main">
+    
+
+    <div class="page-inner">
+        <div id="book-search-results">
+            <div class="search-noresults">
+                <section class="normal markdown-section">
+                    
+                        <h1 id="/ros2_basic/2_1_ROS2话题通讯基础">2 ROS2话题通讯 - 话题通讯基础</h1>
+                    
+
+                    <h1 id="21-ros2话题通讯介绍">2.1 ROS2话题通讯介绍</h1>
+
+<p>话题通信是一种单向通信模型，一方发布数据，一方订阅数据，适用于连续不间断的通讯场景，如小车SLAM导航过程中的位姿信息等等。话题是一个通讯的管道，ROS2的话题发布方和接收方无论是C/C++还是Python都可以发布/订阅相同的话题实现通讯，一个话题的发布方，可以有多个订阅方，如下图所示：</p>
+
+<p><img src="/assets/pics/ROS2_BASIC/2_Topic-MultiplePublisherandMultipleSubscriber.gif" alt="Topic-MultiplePublisherandMultipleSubscriber" /></p>
+
+<blockquote>
+  <p>Tips：节点（Node）的概念</p>
+
+  <p>ROS的通信对象的构建都依赖于节点（回想之前快速体验的 <code class="language-plaintext highlighter-rouge">rclcpp::Node</code> 或者是 <code class="language-plaintext highlighter-rouge">from rclpy.node import Node</code> 都是为了创建一个节点所导入的父类），一般情况下一个节点都对应某一个功能模块（例如一个节点负责持续发布SLAM位姿数据等），一个C/C++ 或者Python的文件代码，可以包括多个节点。</p>
+</blockquote>
+
+<h1 id="22-ros2常用的消息类型介绍">2.2 ROS2常用的消息类型介绍</h1>
+
+<h2 id="221-std_msgs消息类型">2.2.1 std_msgs消息类型</h2>
+
+<blockquote>
+  <p>参考内容</p>
+
+  <p><a href="http://docs.ros.org/en/api/std_msgs/html/index-msg.html">官方文档 std_msgs Msg/Srv Documentation</a></p>
+
+  <p><a href="https://blog.csdn.net/qq_30193419/article/details/111867500">详解常用的ROS内置消息类型</a></p>
+
+  <p><a href="https://blog.csdn.net/sunkman/article/details/117038329">ROS中geometry_msgs消息类型、nav_msg消息</a></p>
+</blockquote>
+
+<p><code class="language-plaintext highlighter-rouge">std_msgs</code> 属于ROS的标准数据类型库，主要包括的消息类型有：</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>ROS type</th>
+      <th>C++ type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>bool</td>
+      <td>bool</td>
+    </tr>
+    <tr>
+      <td>byte</td>
+      <td>uint8_t</td>
+    </tr>
+    <tr>
+      <td>char</td>
+      <td>char</td>
+    </tr>
+    <tr>
+      <td>float32</td>
+      <td>float</td>
+    </tr>
+    <tr>
+      <td>float64</td>
+      <td>double</td>
+    </tr>
+    <tr>
+      <td>int8</td>
+      <td>int8_t</td>
+    </tr>
+    <tr>
+      <td>uint8</td>
+      <td>uint8_t</td>
+    </tr>
+    <tr>
+      <td>int16</td>
+      <td>int16</td>
+    </tr>
+    <tr>
+      <td>uint16</td>
+      <td>uint16</td>
+    </tr>
+    <tr>
+      <td>int32</td>
+      <td>int32</td>
+    </tr>
+    <tr>
+      <td>uint32</td>
+      <td>uint32</td>
+    </tr>
+    <tr>
+      <td>int64</td>
+      <td>int64</td>
+    </tr>
+    <tr>
+      <td>uint64</td>
+      <td>uint64_t</td>
+    </tr>
+    <tr>
+      <td>string</td>
+      <td>std::string</td>
+    </tr>
+    <tr>
+      <td>static array</td>
+      <td>std::array&lt;T, N&gt;</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>数组和有条件的字符串的映射</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>ROS type</th>
+      <th>C++ type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>unbounded dynamic array</td>
+      <td>std::vector</td>
+    </tr>
+    <tr>
+      <td>bounded dynamic array</td>
+      <td>custom_class&lt;T, N&gt;</td>
+    </tr>
+    <tr>
+      <td>bounded string</td>
+      <td>std::string</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="222-geometry_msgs消息类型">2.2.2 geometry_msgs消息类型</h3>
+
+<blockquote>
+  <p>参考内容</p>
+
+  <p><a href="http://docs.ros.org/en/api/geometry_msgs/html/index-msg.html">官方文档 geometry_msgs Msg/Srv Documentation</a></p>
+
+  <p><a href="https://blog.csdn.net/weixin_44978295/article/details/123773373">ROS中geometry_msgs常用消息类型</a></p>
+
+  <p><a href="https://docs.ros.org/en/humble/p/">ROS2 humble的接口官方API</a></p>
+</blockquote>
+
+<p><code class="language-plaintext highlighter-rouge">geometry_msgs</code>：常见的几何信息（如点、向量和姿势）提供ROS消息，其中包括的内容有，具体的话题参数，例如在使用乌龟节点控制乌龟运动的<code class="language-plaintext highlighter-rouge">cmd_vel</code>话题就是采用<code class="language-plaintext highlighter-rouge">geometry_msgs/Twist</code>编写的，具体的用法，可以去查阅官网。</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Accel
+AccelStamped
+AccelWithCovariance
+AccelWithCovarianceStamped
+Inertia
+InertiaStamped
+Point
+Point32
+PointStamped
+Polygon
+PolygonStamped
+Pose
+Pose2D
+PoseArray
+PoseStamped
+PoseWithCovariance
+PoseWithCovarianceStamped
+Quaternion
+QuaternionStamped
+Transform
+TransformStamped
+Twist
+TwistStamped
+TwistWithCovariance
+TwistWithCovarianceStamped
+Vector3
+Vector3Stamped
+Wrench
+WrenchStamped
+</code></pre></div></div>
+
+<h1 id="23-使用cc创建基础消息类型的话题通讯">2.3 使用C/C++创建基础消息类型的话题通讯</h1>
+
+<blockquote>
+  <p>参考内容：</p>
+
+  <p><a href="https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Writing-A-Simple-Cpp-Publisher-And-Subscriber.html">Writing a simple publisher and subscriber (C++)</a></p>
+
+  <p><a href="https://www.bilibili.com/video/BV1wY4y1T7iC">2.2.2_话题通信_原生消息(C++)_01发布方01源码分析</a></p>
+</blockquote>
+
+<h2 id="231-创建cc发布话题信息的功能包并配置vscode环境">2.3.1 创建C/C++发布话题信息的功能包并配置VSCode环境</h2>
+
+<blockquote>
+  <p>创建发布者功能包时，不添加任何依赖项，回顾之前的项目配置</p>
+</blockquote>
+
+<ol>
+  <li>创建ROS2 C/C++功能包，其中包名为 <code class="language-plaintext highlighter-rouge">cppBaseMsgPub</code> :<code class="language-plaintext highlighter-rouge">ros2 pkg create cppBaseMsgPub --build-type ament_cmake</code></li>
+</ol>
+
+<blockquote>
+  <p>Tips：这里补充还是推荐才有下划线割开的功能包命名方法而不是大小写混合，否则会出错
+<img src="/assets/pics/ROS2_BASIC/2_right_package_name.png" alt="命名的问题" /></p>
+</blockquote>
+
+<blockquote>
+  <p>如果尝试命名节点和依赖项，可以直接采用这种方式，节点名为 <code class="language-plaintext highlighter-rouge">cppBaseMsgPubNode</code> ，依赖 <code class="language-plaintext highlighter-rouge">rclcpp</code> 和 <code class="language-plaintext highlighter-rouge">std_msgs</code>：<code class="language-plaintext highlighter-rouge">ros2 pkg create cppBaseMsgPub --build-type ament_cmake --node-name cppBaseMsgPubNode --dependencies rclcpp std_msgs</code></p>
+</blockquote>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pldz@pldz-pc:~/share/ROS2_DEMO/2_Chapter/code<span class="nv">$ </span>ros2 pkg create cppBaseMsgPub <span class="nt">--build-type</span> ament_cmake
+going to create a new package
+... 手动省略
+creating ./cppBaseMsgPub/CMakeLists.txt
+
+<span class="o">[</span>WARNING]: Unknown license <span class="s1">'TODO: License declaration'</span><span class="nb">.</span>  This has been <span class="nb">set </span><span class="k">in </span>the package.xml, but no LICENSE file has been created.
+It is recommended to use one of the ament license identitifers:
+... 手动省略
+MIT-0
+</code></pre></div></div>
+
+<ol>
+  <li>在工作空间（这个是vscode的概念）下创建<code class="language-plaintext highlighter-rouge">.vsocde</code>文件夹和<code class="language-plaintext highlighter-rouge">settings.json</code>文件，配置VSCode的<code class="language-plaintext highlighter-rouge">settings.json</code>文件，添加路径</li>
+</ol>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"C_Cpp.default.includePath"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"/opt/ros/humble/include/**"</span><span class="p">],</span><span class="w">
+    </span><span class="nl">"python.analysis.extraPaths"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"/opt/ros/humble/local/lib/python3.10/dist-packages/"</span><span class="p">],</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p>此时的文件结构如下：可以看到，如果单纯的指定了包名但是没有指定节点名，不会在<code class="language-plaintext highlighter-rouge">src</code>目录下创建<code class="language-plaintext highlighter-rouge">.cpp</code>文件</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pldz@pldz-pc:~/share/ROS2_DEMO/2_Chapter/code<span class="nv">$ </span>tree <span class="nt">-a</span>
+.<span class="o">(</span>注释：这个就是工作空间<span class="o">)</span>
+├── cppBaseMsgPub
+│   ├── CMakeLists.txt
+│   ├── include
+│   │   └── cppBaseMsgPub
+│   ├── package.xml
+│   └── src
+└── .vscode
+    └── settings.json
+
+5 directories, 3 files
+</code></pre></div></div>
+
+<p>完成之后配置VSCode环境</p>
+
+<h2 id="232-编写ros2发布话题节点cpp文件">2.3.2 编写ROS2发布话题节点CPP文件</h2>
+
+<ol>
+  <li>编写发布者代码：根据官网提供的案例，在包的<code class="language-plaintext highlighter-rouge">src</code>目录下，创建<code class="language-plaintext highlighter-rouge">cppBaseMsgPubNode.cpp</code>文件，对<code class="language-plaintext highlighter-rouge">cppBaseMsgPubNode.cpp</code>进行发布者内容编写：总的来说，主要包括创建构造发布节点，计数属性，然后绑定发布函数到定时器上</li>
+</ol>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">"rclcpp/rclcpp.hpp"</span><span class="cp">
+#include</span> <span class="cpf">"std_msgs/msg/string.hpp"</span><span class="cp">
+</span>
+<span class="c1">// C++14中的时间库</span>
+<span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="o">::</span><span class="n">chrono_literals</span><span class="p">;</span>
+
+<span class="k">class</span> <span class="nc">CppBaseMsgPub</span><span class="o">:</span> <span class="k">public</span> <span class="n">rclcpp</span><span class="o">::</span><span class="n">Node</span>
+<span class="p">{</span>
+  <span class="nl">public:</span>
+      <span class="cm">/* 1. ROS2节点的构造函数，其中包括一个node对象（初始化时候没有给出节点的名称），
+      * 和属性count_(默认初始化为0) */</span>
+      <span class="n">CppBaseMsgPub</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">nodeName</span><span class="p">)</span><span class="o">:</span><span class="n">Node</span><span class="p">(</span><span class="n">nodeName</span><span class="p">),</span> <span class="n">count_</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+      <span class="p">{</span>
+        <span class="c1">// 2. 创建发布者,参数分别为话题名称myTopicName，和发布队列的长队为10</span>
+        <span class="n">publisher_</span> <span class="o">=</span> <span class="k">this</span><span class="o">-&gt;</span><span class="n">create_publisher</span><span class="o">&lt;</span><span class="n">std_msgs</span><span class="o">::</span><span class="n">msg</span><span class="o">::</span><span class="n">String</span><span class="o">&gt;</span><span class="p">(</span><span class="s">"myTopicName"</span><span class="p">,</span> <span class="mi">10</span><span class="p">);</span>
+        <span class="c1">// 3. 创建定时器，设置发布的频率，并绑定定时执行的事件，这里给到的是CppBaseMsgPub类的函数</span>
+        <span class="n">timer_</span> <span class="o">=</span> <span class="k">this</span><span class="o">-&gt;</span><span class="n">create_wall_timer</span><span class="p">(</span><span class="mx">500ms</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">bind</span><span class="p">(</span><span class="o">&amp;</span><span class="n">CppBaseMsgPub</span><span class="o">::</span><span class="n">timer_callback</span><span class="p">,</span> <span class="k">this</span><span class="p">));</span>
+      <span class="p">}</span>
+
+  <span class="k">private</span><span class="o">:</span>
+     <span class="c1">// 4. 定义回调函数</span>
+    <span class="kt">void</span> <span class="nf">timer_callback</span><span class="p">()</span>
+    <span class="p">{</span>
+      <span class="k">auto</span> <span class="n">message</span> <span class="o">=</span> <span class="n">std_msgs</span><span class="o">::</span><span class="n">msg</span><span class="o">::</span><span class="n">String</span><span class="p">();</span>
+      <span class="n">message</span><span class="p">.</span><span class="n">data</span> <span class="o">=</span> <span class="s">"Hello, world! "</span> <span class="o">+</span> <span class="n">std</span><span class="o">::</span><span class="n">to_string</span><span class="p">(</span><span class="n">count_</span><span class="o">++</span><span class="p">);</span>
+      <span class="n">RCLCPP_INFO</span><span class="p">(</span><span class="k">this</span><span class="o">-&gt;</span><span class="n">get_logger</span><span class="p">(),</span> <span class="s">"Cpp Publish: '%s'"</span><span class="p">,</span> <span class="n">message</span><span class="p">.</span><span class="n">data</span><span class="p">.</span><span class="n">c_str</span><span class="p">());</span>
+      <span class="n">publisher_</span><span class="o">-&gt;</span><span class="n">publish</span><span class="p">(</span><span class="n">message</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="c1">// 5. 计时器、发布者和计数器字段的声明</span>
+    <span class="n">rclcpp</span><span class="o">::</span><span class="n">TimerBase</span><span class="o">::</span><span class="n">SharedPtr</span> <span class="n">timer_</span><span class="p">;</span>
+    <span class="n">rclcpp</span><span class="o">::</span><span class="n">Publisher</span><span class="o">&lt;</span><span class="n">std_msgs</span><span class="o">::</span><span class="n">msg</span><span class="o">::</span><span class="n">String</span><span class="o">&gt;::</span><span class="n">SharedPtr</span> <span class="n">publisher_</span><span class="p">;</span>
+    <span class="kt">size_t</span> <span class="n">count_</span><span class="p">;</span>
+
+<span class="p">};</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="o">*</span> <span class="n">argv</span><span class="p">[])</span>
+<span class="p">{</span>
+  <span class="n">rclcpp</span><span class="o">::</span><span class="n">init</span><span class="p">(</span><span class="n">argc</span><span class="p">,</span> <span class="n">argv</span><span class="p">);</span>
+  <span class="c1">// 创建节点，给出构造的节点名为cppBaseMsgPubNode</span>
+  <span class="n">rclcpp</span><span class="o">::</span><span class="n">spin</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">make_shared</span><span class="o">&lt;</span><span class="n">CppBaseMsgPub</span><span class="o">&gt;</span><span class="p">(</span><span class="s">"cppBaseMsgPubNode"</span><span class="p">));</span>
+  <span class="n">rclcpp</span><span class="o">::</span><span class="n">shutdown</span><span class="p">();</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="233-配置cc发布话题功能包并编译">2.3.3 配置C/C++发布话题功能包并编译</h2>
+
+<ol>
+  <li>配置<code class="language-plaintext highlighter-rouge">package.xml</code>：<code class="language-plaintext highlighter-rouge">package.xml</code>主要对C/C++的功能包依赖项和发布信息进行配置，由于在节点<code class="language-plaintext highlighter-rouge">cppBaseMsgPubNode.cpp</code>中主要用到了<code class="language-plaintext highlighter-rouge">rclcpp</code>和<code class="language-plaintext highlighter-rouge">std_msgs</code>两个依赖，因此<code class="language-plaintext highlighter-rouge">package.xml</code>的配置主要如下：</li>
+</ol>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0"?&gt;</span>
+<span class="cp">&lt;?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?&gt;</span>
+<span class="nt">&lt;package</span> <span class="na">format=</span><span class="s">"3"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;name&gt;</span>cppBaseMsgPub<span class="nt">&lt;/name&gt;</span>
+  <span class="nt">&lt;version&gt;</span>0.0.0<span class="nt">&lt;/version&gt;</span>
+  <span class="nt">&lt;description&gt;</span>TODO: Package description<span class="nt">&lt;/description&gt;</span>
+  <span class="nt">&lt;maintainer</span> <span class="na">email=</span><span class="s">"pldz@R7000.com"</span><span class="nt">&gt;</span>pldz<span class="nt">&lt;/maintainer&gt;</span>
+  <span class="nt">&lt;license&gt;</span>TODO: License declaration<span class="nt">&lt;/license&gt;</span>
+
+  <span class="nt">&lt;buildtool_depend&gt;</span>ament_cmake<span class="nt">&lt;/buildtool_depend&gt;</span>
+
+  <span class="nt">&lt;test_depend&gt;</span>ament_lint_auto<span class="nt">&lt;/test_depend&gt;</span>
+  <span class="nt">&lt;test_depend&gt;</span>ament_lint_common<span class="nt">&lt;/test_depend&gt;</span>
+
+  <span class="c">&lt;!-- 添加依赖项 --&gt;</span>
+  <span class="nt">&lt;depend&gt;</span>rclcpp<span class="nt">&lt;/depend&gt;</span>
+  <span class="nt">&lt;depend&gt;</span>std_msgs<span class="nt">&lt;/depend&gt;</span>
+
+  <span class="nt">&lt;export&gt;</span>
+    <span class="nt">&lt;build_type&gt;</span>ament_cmake<span class="nt">&lt;/build_type&gt;</span>
+  <span class="nt">&lt;/export&gt;</span>
+<span class="nt">&lt;/package&gt;</span>
+</code></pre></div></div>
+
+<ol>
+  <li>配置<code class="language-plaintext highlighter-rouge">CmakeLists.txt</code>：主要包括的内容有五部分，并且需要按照顺序进行配置好</li>
+</ol>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">find_package</span><span class="p">()</span>                  <span class="c1">// 1. 列出依赖项，通俗的说是项目编译所需要的全部依赖项名称，节点和项目是两个概念，一个项目可以有多个节点</span>
+<span class="n">add_executable</span><span class="p">()</span>                <span class="c1">// 2. 可执行文件的路径，通俗来说是编译节点的main函数入口</span>
+<span class="n">target_include_directories</span><span class="p">()</span>    <span class="c1">// 3. 编译节点所需要的include的位置</span>
+<span class="n">ament_target_dependencies</span><span class="p">()</span>     <span class="c1">// 4. 编译节点所需要的依赖项，这一步的目的是连接编译该节点所需要的依赖项</span>
+<span class="n">install</span><span class="p">()</span>                       <span class="c1">// 5. 通俗来说，是将编译好的节点给拷贝到ROS功能包的目录，使得能够通过指令ros2 run &lt;包名&gt; &lt;节点名&gt;的配置，默认这一步的目的就是将build文件夹的内容拷贝到install的lib文件夹下</span>
+<span class="n">ament_package</span><span class="p">()</span>                 <span class="c1">// 6. 生成ament工具的环境，缺少这一步，无法在install文件夹下生成setup.bash文件等等</span>
+</code></pre></div></div>
+
+<p>因此该项目的<code class="language-plaintext highlighter-rouge">CmakeLists.txt</code>如下所示：</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cmake_minimum_required<span class="o">(</span>VERSION 3.8<span class="o">)</span>
+project<span class="o">(</span>cppBaseMsgPub<span class="o">)</span>
+
+<span class="k">if</span><span class="o">(</span>CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES <span class="s2">"Clang"</span><span class="o">)</span>
+  add_compile_options<span class="o">(</span><span class="nt">-Wall</span> <span class="nt">-Wextra</span> <span class="nt">-Wpedantic</span><span class="o">)</span>
+endif<span class="o">()</span>
+
+<span class="c"># find dependencies</span>
+find_package<span class="o">(</span>ament_cmake REQUIRED<span class="o">)</span>
+
+<span class="c"># uncomment the following section in order to fill in</span>
+<span class="c"># further dependencies manually.</span>
+<span class="c"># find_package(&lt;dependency&gt; REQUIRED)</span>
+
+<span class="c"># 1. 添加依赖项列表</span>
+find_package<span class="o">(</span>rclcpp REQUIRED<span class="o">)</span>
+find_package<span class="o">(</span>std_msgs REQUIRED<span class="o">)</span>
+
+<span class="c"># 2. 生成节点的主函数入口和节点名称</span>
+add_executable<span class="o">(</span>cppBaseMsgPubNode src/cppBaseMsgPubNode.cpp<span class="o">)</span>
+
+
+<span class="c"># 3. Include路径配置，这里其实没有用上，可以不用配置</span>
+target_include_directories<span class="o">(</span>cppBaseMsgPubNode PUBLIC
+  <span class="nv">$&lt;</span>BUILD_INTERFACE:<span class="k">${</span><span class="nv">CMAKE_CURRENT_SOURCE_DIR</span><span class="k">}</span>/include&gt;
+  <span class="nv">$&lt;</span>INSTALL_INTERFACE:include&gt;<span class="o">)</span>
+
+<span class="c"># 4. ament工具的编译所需要的依赖</span>
+ament_target_dependencies<span class="o">(</span>
+  cppBaseMsgPubNode
+  <span class="s2">"rclcpp"</span>
+  <span class="s2">"std_msgs"</span>
+<span class="o">)</span>
+
+<span class="c"># 5. 安装规则</span>
+<span class="nb">install</span><span class="o">(</span>TARGETS cppBaseMsgPubNode
+  DESTINATION lib/<span class="k">${</span><span class="nv">PROJECT_NAME</span><span class="k">}</span><span class="o">)</span>
+
+<span class="k">if</span><span class="o">(</span>BUILD_TESTING<span class="o">)</span>
+  find_package<span class="o">(</span>ament_lint_auto REQUIRED<span class="o">)</span>
+  <span class="c"># the following line skips the linter which checks for copyrights</span>
+  <span class="c"># comment the line when a copyright and license is added to all source files</span>
+  <span class="nb">set</span><span class="o">(</span>ament_cmake_copyright_FOUND TRUE<span class="o">)</span>
+  <span class="c"># the following line skips cpplint (only works in a git repo)</span>
+  <span class="c"># comment the line when this package is in a git repo and when</span>
+  <span class="c"># a copyright and license is added to all source files</span>
+  <span class="nb">set</span><span class="o">(</span>ament_cmake_cpplint_FOUND TRUE<span class="o">)</span>
+  ament_lint_auto_find_test_dependencies<span class="o">()</span>
+endif<span class="o">()</span>
+
+<span class="c"># 6. 配置ament环境，生成功能包</span>
+ament_package<span class="o">()</span>
+
+</code></pre></div></div>
+
+<ol>
+  <li>编译功能包：<code class="language-plaintext highlighter-rouge">colcon build</code>：</li>
+</ol>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pldz@pldz-pc:~/share/ROS2_DEMO/2_Chapter/code<span class="nv">$ </span>colcon build
+WARNING: Package name <span class="s2">"cppBaseMsgPub"</span> does not follow the naming conventions. It should start with a lower <span class="k">case</span> letter and only contain lower <span class="k">case</span> letters, digits, underscores, and dashes.
+Starting <span class="o">&gt;&gt;&gt;</span> cppBaseMsgPub
+... 手动省略
+Summary: 1 package finished <span class="o">[</span>4.44s]
+  1 package had stderr output: cppBaseMsgPub
+</code></pre></div></div>
+<ol>
+  <li>运行节点：激活功能包环境<code class="language-plaintext highlighter-rouge">source ./install/setup.bash</code>，然后运行<code class="language-plaintext highlighter-rouge">ros2 run cppBaseMsgPub cppBaseMsgPubNode </code></li>
+</ol>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pldz@pldz-pc:~/share/ROS2_DEMO/2_Chapter/code<span class="nv">$ </span><span class="nb">source</span> ./install/setup.bash 
+pldz@pldz-pc:~/share/ROS2_DEMO/2_Chapter/code<span class="nv">$ </span>ros2 run cppBaseMsgPub cppBaseMsgPubNode 
+<span class="o">[</span>INFO] <span class="o">[</span>1683015931.213646661] <span class="o">[</span>cppBaseMsgPubNode]: Cpp Publish: <span class="s1">'Hello, world! 0'</span>
+<span class="o">[</span>INFO] <span class="o">[</span>1683015931.713349843] <span class="o">[</span>cppBaseMsgPubNode]: Cpp Publish: <span class="s1">'Hello, world! 1'</span>
+<span class="o">[</span>INFO] <span class="o">[</span>1683015932.213429705] <span class="o">[</span>cppBaseMsgPubNode]: Cpp Publish: <span class="s1">'Hello, world! 2'</span>
+^C[INFO] <span class="o">[</span>1683015932.588202160] <span class="o">[</span>rclcpp]: signal_handler<span class="o">(</span><span class="nv">signum</span><span class="o">=</span>2<span class="o">)</span>
+pldz@pldz-pc:~/share/ROS2_DEMO/2_Chapter/code<span class="nv">$ </span>
+</code></pre></div></div>
+
+<h2 id="234-创建cc订阅话题的功能包">2.3.4 创建C/C++订阅话题的功能包</h2>
+
+<ol>
+  <li>由于上面操作过一遍从功能包开始的配置节点依赖项，这里直接提前在创建功能包的时候直接指定依赖项，省去后续的配置，取名订阅话题的功能包为<code class="language-plaintext highlighter-rouge">cppBaseMsgSub</code>，节点名称为<code class="language-plaintext highlighter-rouge">cppBaseMsgSubNode</code>，如<code class="language-plaintext highlighter-rouge">ros2 pkg create cppBaseMsgSub --build-type ament_cmake --node-name cppBaseMsgSubNode --dependencies rclcpp std_msgs</code></li>
+</ol>
+
+<blockquote>
+  <p>Tips：这里补充还是推荐才有下划线割开的功能包命名方法而不是大小写混合，否则会出错
+<img src="/assets/pics/ROS2_BASIC/2_right_package_name.png" alt="命名的问题" /></p>
+</blockquote>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pldz@pldz-pc:~/share/ROS2_DEMO/2_Chapter/code<span class="nv">$ </span>ros2 pkg create cppBaseMsgSub <span class="nt">--build-type</span> ament_cmake <span class="nt">--node-name</span> cppBaseMsgSubNode <span class="nt">--dependencies</span> rclcpp std_msgs
+going to create a new package
+package name: cppBaseMsgSub
+... 手动省略
+MIT
+MIT-0
+</code></pre></div></div>
+
+<ol>
+  <li>2.3.1节在工作空间下配置过vscode的<code class="language-plaintext highlighter-rouge">settings.json</code>这里就不再配置vscode了</li>
+</ol>
+
+<h2 id="235-编写ros2订阅话题节点cpp文件">2.3.5 编写ROS2订阅话题节点CPP文件</h2>
+
+<ol>
+  <li>直接在<code class="language-plaintext highlighter-rouge">cppBaseMsgSubNode.cpp</code>文件进行编辑，创建订阅节点，订阅话题<code class="language-plaintext highlighter-rouge">myTopicName</code>与之前的发布话题类型和名称一致即可：</li>
+</ol>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">"rclcpp/rclcpp.hpp"</span><span class="cp">
+#include</span> <span class="cpf">"std_msgs/msg/string.hpp"</span><span class="cp">
+</span>
+<span class="c1">// 占位符，结合std::bind函数的绑定使用</span>
+<span class="k">using</span> <span class="n">std</span><span class="o">::</span><span class="n">placeholders</span><span class="o">::</span><span class="n">_1</span><span class="p">;</span>
+
+<span class="k">class</span> <span class="nc">CppBaseMsgSub</span><span class="o">:</span> <span class="k">public</span> <span class="n">rclcpp</span><span class="o">::</span><span class="n">Node</span>
+<span class="p">{</span>
+  <span class="nl">public:</span>
+    <span class="cm">/* 1. ROS2节点的构造函数 */</span>
+    <span class="n">CppBaseMsgSub</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">nodeName</span><span class="p">)</span><span class="o">:</span><span class="n">Node</span><span class="p">(</span><span class="n">nodeName</span><span class="p">)</span>
+    <span class="p">{</span>
+      <span class="c1">// 2.声明订阅话题类型，并绑定回调函数</span>
+      <span class="n">subscription_</span> <span class="o">=</span> <span class="k">this</span><span class="o">-&gt;</span><span class="n">create_subscription</span><span class="o">&lt;</span><span class="n">std_msgs</span><span class="o">::</span><span class="n">msg</span><span class="o">::</span><span class="n">String</span><span class="o">&gt;</span><span class="p">(</span>
+      <span class="s">"myTopicName"</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">bind</span><span class="p">(</span><span class="o">&amp;</span><span class="n">CppBaseMsgSub</span><span class="o">::</span><span class="n">topic_callback</span><span class="p">,</span> <span class="k">this</span><span class="p">,</span> <span class="n">_1</span><span class="p">));</span>
+    <span class="p">}</span>
+
+  <span class="k">private</span><span class="o">:</span>
+    <span class="c1">// 3. 定义订阅到消息的回调函数</span>
+    <span class="kt">void</span> <span class="nf">topic_callback</span><span class="p">(</span><span class="k">const</span> <span class="n">std_msgs</span><span class="o">::</span><span class="n">msg</span><span class="o">::</span><span class="n">String</span> <span class="o">&amp;</span> <span class="n">msg</span><span class="p">)</span> <span class="k">const</span>
+    <span class="p">{</span>
+      <span class="n">RCLCPP_INFO</span><span class="p">(</span><span class="k">this</span><span class="o">-&gt;</span><span class="n">get_logger</span><span class="p">(),</span> <span class="s">"I heard: '%s'"</span><span class="p">,</span> <span class="n">msg</span><span class="p">.</span><span class="n">data</span><span class="p">.</span><span class="n">c_str</span><span class="p">());</span>
+    <span class="p">}</span>
+
+    <span class="c1">// 4. 计时器、发布者和计数器字段的声明</span>
+    <span class="n">rclcpp</span><span class="o">::</span><span class="n">Subscription</span><span class="o">&lt;</span><span class="n">std_msgs</span><span class="o">::</span><span class="n">msg</span><span class="o">::</span><span class="n">String</span><span class="o">&gt;::</span><span class="n">SharedPtr</span> <span class="n">subscription_</span><span class="p">;</span>
+<span class="p">};</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="o">*</span> <span class="n">argv</span><span class="p">[])</span>
+<span class="p">{</span>
+  <span class="n">rclcpp</span><span class="o">::</span><span class="n">init</span><span class="p">(</span><span class="n">argc</span><span class="p">,</span> <span class="n">argv</span><span class="p">);</span>
+  <span class="c1">// 初始化订阅节点</span>
+  <span class="n">rclcpp</span><span class="o">::</span><span class="n">spin</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">make_shared</span><span class="o">&lt;</span><span class="n">CppBaseMsgSub</span><span class="o">&gt;</span><span class="p">(</span><span class="s">"cppBaseMsgSubNode"</span><span class="p">));</span>
+  <span class="n">rclcpp</span><span class="o">::</span><span class="n">shutdown</span><span class="p">();</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+
+</code></pre></div></div>
+
+<h2 id="236-配置cc订阅话题功能包并编译">2.3.6 配置C/C++订阅话题功能包并编译</h2>
+
+<ol>
+  <li>由于是直接在创建包的时候指定了依赖项，可以直接编译<code class="language-plaintext highlighter-rouge">colcon build</code>，运行查看效果：</li>
+</ol>
+
+<p><img src="/assets/pics/ROS2_BASIC/2_basic_build_result.png" alt="C/C++订阅和发布基础消息" /></p>
+
+<h1 id="24-使用python创建基础消息类型的话题通讯">2.4 使用Python创建基础消息类型的话题通讯</h1>
+
+<h2 id="241-创建python发布话题功能包并编写节点文件">2.4.1 创建Python发布话题功能包并编写节点文件</h2>
+
+<ol>
+  <li>创建Python发布者功能包，其中功能包名称为<code class="language-plaintext highlighter-rouge">pythonBaseMsgPub</code>，不指定节点名和依赖项，后续手动配置<code class="language-plaintext highlighter-rouge">packages.xml</code>和<code class="language-plaintext highlighter-rouge">setup.py</code>：<code class="language-plaintext highlighter-rouge">ros2 pkg create pythonBaseMsgPub --build-type ament_python</code>，目前文件结构如下所示：</li>
+</ol>
+
+<p><img src="/assets/pics/ROS2_BASIC/2_create_basic_python_package.png" alt="创建Python功能包" /></p>
+
+<blockquote>
+  <p>Tips：这里补充还是推荐才有下划线割开的功能包命名方法而不是大小写混合，否则会出错
+<img src="/assets/pics/ROS2_BASIC/2_right_package_name.png" alt="命名的问题" /></p>
+</blockquote>
+
+<ol>
+  <li>在<code class="language-plaintext highlighter-rouge">pythonBaseMsgPub/pythonBaseMsgPub</code>文件夹下创建<code class="language-plaintext highlighter-rouge">pythonBaseMsgPubNode.py</code>文件，内容如下所示</li>
+</ol>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">rclpy</span>
+<span class="kn">from</span> <span class="n">rclpy.node</span> <span class="kn">import</span> <span class="n">Node</span>
+
+<span class="kn">from</span> <span class="n">std_msgs.msg</span> <span class="kn">import</span> <span class="n">String</span>
+
+
+<span class="k">class</span> <span class="nc">PythonBaseMsgPub</span><span class="p">(</span><span class="n">Node</span><span class="p">):</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">nodeName</span><span class="p">):</span>
+        <span class="c1"># 1. 初始化父类构造函数，其中节点名需要创建时候指定,计数属性count_从0开始
+</span>        <span class="nf">super</span><span class="p">().</span><span class="nf">__init__</span><span class="p">(</span><span class="n">nodeName</span><span class="p">)</span>
+        <span class="n">self</span><span class="p">.</span><span class="n">count_</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="c1"># 2. 声明发布者，发布消息类型为String，话题名为myTopicName,队列大小为10
+</span>        <span class="n">self</span><span class="p">.</span><span class="n">publisher_</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="nf">create_publisher</span><span class="p">(</span><span class="n">String</span><span class="p">,</span> <span class="sh">'</span><span class="s">myTopicName</span><span class="sh">'</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+        <span class="c1"># 3. 创建定时器，其中更新频率为0.5秒，并绑定回调函数
+</span>        <span class="n">self</span><span class="p">.</span><span class="n">timer</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="nf">create_timer</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">self</span><span class="p">.</span><span class="n">timer_callback</span><span class="p">)</span>
+        
+    <span class="c1"># 4. 定义回调函数
+</span>    <span class="k">def</span> <span class="nf">timer_callback</span><span class="p">(</span><span class="n">self</span><span class="p">):</span>
+        <span class="n">msg</span> <span class="o">=</span> <span class="nc">String</span><span class="p">()</span>
+        <span class="n">msg</span><span class="p">.</span><span class="n">data</span> <span class="o">=</span> <span class="sh">'</span><span class="s">Hello World: %d</span><span class="sh">'</span> <span class="o">%</span> <span class="n">self</span><span class="p">.</span><span class="n">count_</span>
+        <span class="n">self</span><span class="p">.</span><span class="n">publisher_</span><span class="p">.</span><span class="nf">publish</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
+        <span class="n">self</span><span class="p">.</span><span class="nf">get_logger</span><span class="p">().</span><span class="nf">info</span><span class="p">(</span><span class="sh">'</span><span class="s">Publishing: </span><span class="sh">"</span><span class="s">%s</span><span class="sh">"'</span> <span class="o">%</span> <span class="n">msg</span><span class="p">.</span><span class="n">data</span><span class="p">)</span>
+        <span class="n">self</span><span class="p">.</span><span class="n">count_</span> <span class="o">+=</span> <span class="mi">1</span>
+
+
+<span class="k">def</span> <span class="nf">main</span><span class="p">(</span><span class="n">args</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+    <span class="n">rclpy</span><span class="p">.</span><span class="nf">init</span><span class="p">(</span><span class="n">args</span><span class="o">=</span><span class="n">args</span><span class="p">)</span>
+    <span class="n">pythonBaseMsgPubNode</span> <span class="o">=</span> <span class="nc">PythonBaseMsgPub</span><span class="p">(</span><span class="sh">"</span><span class="s">pythonBaseMsgPubNode</span><span class="sh">"</span><span class="p">)</span>
+    <span class="n">rclpy</span><span class="p">.</span><span class="nf">spin</span><span class="p">(</span><span class="n">pythonBaseMsgPubNode</span><span class="p">)</span>
+    <span class="c1"># 销毁节点
+</span>    <span class="n">pythonBaseMsgPubNode</span><span class="p">.</span><span class="nf">destroy_node</span><span class="p">()</span>
+    <span class="n">rclpy</span><span class="p">.</span><span class="nf">shutdown</span><span class="p">()</span>
+
+
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="sh">'</span><span class="s">__main__</span><span class="sh">'</span><span class="p">:</span>
+    <span class="nf">main</span><span class="p">()</span>
+</code></pre></div></div>
+
+<h2 id="242-配置python项目并运行">2.4.2 配置Python项目并运行</h2>
+
+<ol>
+  <li>配置Python项目的<code class="language-plaintext highlighter-rouge">packages.xml</code>：主要是添加可执行的依赖项<code class="language-plaintext highlighter-rouge">rclpy</code>和<code class="language-plaintext highlighter-rouge">std_msgs</code></li>
+</ol>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0"?&gt;</span>
+<span class="cp">&lt;?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?&gt;</span>
+<span class="nt">&lt;package</span> <span class="na">format=</span><span class="s">"3"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;name&gt;</span>pythonBaseMsgPub<span class="nt">&lt;/name&gt;</span>
+  <span class="nt">&lt;version&gt;</span>0.0.0<span class="nt">&lt;/version&gt;</span>
+  <span class="nt">&lt;description&gt;</span>TODO: Package description<span class="nt">&lt;/description&gt;</span>
+  <span class="nt">&lt;maintainer</span> <span class="na">email=</span><span class="s">"pldz@R7000.com"</span><span class="nt">&gt;</span>pldz<span class="nt">&lt;/maintainer&gt;</span>
+  <span class="nt">&lt;license&gt;</span>TODO: License declaration<span class="nt">&lt;/license&gt;</span>
+
+  <span class="c">&lt;!-- 与C/C++不同的是,Python文件是一个可执行的脚本,因此依赖项的关键字为exec_depend --&gt;</span>
+  <span class="nt">&lt;exec_depend&gt;</span>rclpy<span class="nt">&lt;/exec_depend&gt;</span>
+  <span class="nt">&lt;exec_depend&gt;</span>std_msgs<span class="nt">&lt;/exec_depend&gt;</span>
+
+  <span class="nt">&lt;test_depend&gt;</span>ament_copyright<span class="nt">&lt;/test_depend&gt;</span>
+  <span class="nt">&lt;test_depend&gt;</span>ament_flake8<span class="nt">&lt;/test_depend&gt;</span>
+  <span class="nt">&lt;test_depend&gt;</span>ament_pep257<span class="nt">&lt;/test_depend&gt;</span>
+  <span class="nt">&lt;test_depend&gt;</span>python3-pytest<span class="nt">&lt;/test_depend&gt;</span>
+
+  <span class="nt">&lt;export&gt;</span>
+    <span class="nt">&lt;build_type&gt;</span>ament_python<span class="nt">&lt;/build_type&gt;</span>
+  <span class="nt">&lt;/export&gt;</span>
+<span class="nt">&lt;/package&gt;</span>
+
+</code></pre></div></div>
+
+<ol>
+  <li>配置<code class="language-plaintext highlighter-rouge">setup.py</code>文件指定节点的<code class="language-plaintext highlighter-rouge">main</code>函数入口：</li>
+</ol>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="n">setuptools</span> <span class="kn">import</span> <span class="n">setup</span>
+
+<span class="n">package_name</span> <span class="o">=</span> <span class="sh">'</span><span class="s">pythonBaseMsgPub</span><span class="sh">'</span>
+
+<span class="nf">setup</span><span class="p">(</span>
+    <span class="n">name</span><span class="o">=</span><span class="n">package_name</span><span class="p">,</span>
+    <span class="n">version</span><span class="o">=</span><span class="sh">'</span><span class="s">0.0.0</span><span class="sh">'</span><span class="p">,</span>
+    <span class="n">packages</span><span class="o">=</span><span class="p">[</span><span class="n">package_name</span><span class="p">],</span>
+    <span class="n">data_files</span><span class="o">=</span><span class="p">[</span>
+        <span class="p">(</span><span class="sh">'</span><span class="s">share/ament_index/resource_index/packages</span><span class="sh">'</span><span class="p">,</span>
+            <span class="p">[</span><span class="sh">'</span><span class="s">resource/</span><span class="sh">'</span> <span class="o">+</span> <span class="n">package_name</span><span class="p">]),</span>
+        <span class="p">(</span><span class="sh">'</span><span class="s">share/</span><span class="sh">'</span> <span class="o">+</span> <span class="n">package_name</span><span class="p">,</span> <span class="p">[</span><span class="sh">'</span><span class="s">package.xml</span><span class="sh">'</span><span class="p">]),</span>
+    <span class="p">],</span>
+    <span class="n">install_requires</span><span class="o">=</span><span class="p">[</span><span class="sh">'</span><span class="s">setuptools</span><span class="sh">'</span><span class="p">],</span>
+    <span class="n">zip_safe</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span>
+    <span class="n">maintainer</span><span class="o">=</span><span class="sh">'</span><span class="s">pldz</span><span class="sh">'</span><span class="p">,</span>
+    <span class="n">maintainer_email</span><span class="o">=</span><span class="sh">'</span><span class="s">pldz@R7000.com</span><span class="sh">'</span><span class="p">,</span>
+    <span class="n">description</span><span class="o">=</span><span class="sh">'</span><span class="s">TODO: Package description</span><span class="sh">'</span><span class="p">,</span>
+    <span class="n">license</span><span class="o">=</span><span class="sh">'</span><span class="s">TODO: License declaration</span><span class="sh">'</span><span class="p">,</span>
+    <span class="n">tests_require</span><span class="o">=</span><span class="p">[</span><span class="sh">'</span><span class="s">pytest</span><span class="sh">'</span><span class="p">],</span>
+    <span class="c1"># 指定编译节点的main函数入口
+</span>    <span class="n">entry_points</span><span class="o">=</span><span class="p">{</span>
+        <span class="sh">'</span><span class="s">console_scripts</span><span class="sh">'</span><span class="p">:</span> <span class="p">[</span>
+            <span class="sh">'</span><span class="s">pythonBaseMsgPubNode = pythonBaseMsgPub.pythonBaseMsgPubNode:main</span><span class="sh">'</span><span class="p">,</span>
+        <span class="p">],</span>
+    <span class="p">},</span>
+<span class="p">)</span>
+
+</code></pre></div></div>
+
+<ol>
+  <li>编译：<code class="language-plaintext highlighter-rouge">colcon build</code></li>
+</ol>
+
+<h2 id="243-创建python订阅话题功能包并编写节点">2.4.3 创建Python订阅话题功能包并编写节点</h2>
+
+<ol>
+  <li>创建功能包<code class="language-plaintext highlighter-rouge">pythonBaseMsgSub</code>，并直接给出节点名<code class="language-plaintext highlighter-rouge">pythonBaseMsgSubNode</code>和依赖项<code class="language-plaintext highlighter-rouge">rclpy</code>和<code class="language-plaintext highlighter-rouge">std_msgs</code>，如下所示：<code class="language-plaintext highlighter-rouge">ros2 pkg create pythonBaseMsgSub --build-type ament_python --node-name pythonBaseMsgSubNode --dependencies rclpy std_msgs</code></li>
+</ol>
+
+<blockquote>
+  <p>Tips：这里补充还是推荐才有下划线割开的功能包命名方法而不是大小写混合，否则会出错
+<img src="/assets/pics/ROS2_BASIC/2_right_package_name.png" alt="命名的问题" /></p>
+</blockquote>
+
+<ol>
+  <li>编写订阅者节点：</li>
+</ol>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">rclpy</span>
+<span class="kn">from</span> <span class="n">rclpy.node</span> <span class="kn">import</span> <span class="n">Node</span>
+
+<span class="kn">from</span> <span class="n">std_msgs.msg</span> <span class="kn">import</span> <span class="n">String</span>
+
+
+<span class="k">class</span> <span class="nc">PythonBaseMsgSub</span><span class="p">(</span><span class="n">Node</span><span class="p">):</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">nodeName</span><span class="p">):</span>
+        <span class="c1"># 1. 构造函数，初始化node节点
+</span>        <span class="nf">super</span><span class="p">().</span><span class="nf">__init__</span><span class="p">(</span><span class="n">nodeName</span><span class="p">)</span>
+        <span class="c1"># 2. 声明订阅者，订阅话题`myTopicNmae`,并绑定回调函数
+</span>        <span class="n">self</span><span class="p">.</span><span class="n">subscription</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="nf">create_subscription</span><span class="p">(</span><span class="n">String</span><span class="p">,</span><span class="sh">'</span><span class="s">myTopicName</span><span class="sh">'</span><span class="p">,</span><span class="n">self</span><span class="p">.</span><span class="n">listener_callback</span><span class="p">,</span><span class="mi">10</span><span class="p">)</span>
+
+    <span class="c1"># 3. 定义回调函数
+</span>    <span class="k">def</span> <span class="nf">listener_callback</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">msg</span><span class="p">):</span>
+        <span class="n">self</span><span class="p">.</span><span class="nf">get_logger</span><span class="p">().</span><span class="nf">info</span><span class="p">(</span><span class="sh">'</span><span class="s">I heard: </span><span class="sh">"</span><span class="s">%s</span><span class="sh">"'</span> <span class="o">%</span> <span class="n">msg</span><span class="p">.</span><span class="n">data</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">main</span><span class="p">(</span><span class="n">args</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+    <span class="n">rclpy</span><span class="p">.</span><span class="nf">init</span><span class="p">(</span><span class="n">args</span><span class="o">=</span><span class="n">args</span><span class="p">)</span>
+    <span class="n">pythonBaseMsgSubNode</span> <span class="o">=</span> <span class="nc">PythonBaseMsgSub</span><span class="p">(</span><span class="sh">"</span><span class="s">pythonBaseMsgSubNode</span><span class="sh">"</span><span class="p">)</span>
+    <span class="n">rclpy</span><span class="p">.</span><span class="nf">spin</span><span class="p">(</span><span class="n">pythonBaseMsgSubNode</span><span class="p">)</span>
+    <span class="n">pythonBaseMsgSubNode</span><span class="p">.</span><span class="nf">destroy_node</span><span class="p">()</span>
+    <span class="n">rclpy</span><span class="p">.</span><span class="nf">shutdown</span><span class="p">()</span>
+
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="sh">'</span><span class="s">__main__</span><span class="sh">'</span><span class="p">:</span>
+    <span class="nf">main</span><span class="p">()</span>
+</code></pre></div></div>
+
+<h2 id="244-编译运行节点">2.4.4 编译运行节点</h2>
+
+<ol>
+  <li>
+    <p>由于指定了依赖项和节点名，不需要多余的进行<code class="language-plaintext highlighter-rouge">packages.xml</code>和<code class="language-plaintext highlighter-rouge">setup.py</code>的配置</p>
+  </li>
+  <li>
+    <p>编译<code class="language-plaintext highlighter-rouge">colcon build</code>，联合C/C++的一起运行，可以看到话题通讯是多对多的</p>
+  </li>
+</ol>
+
+<p><img src="/assets/pics/ROS2_BASIC/2_basic_multi_communication_result.png" alt="话题通讯多对多" /></p>
+</section>
+            </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div></div>
+    </div>
+</div>
+
+<!-- introduce mathjax support -->
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [ ['$', '$'], ['\\(', '\\)'] ]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script
+  type="text/javascript" id="MathJax-script" async
+  src="/assets/js/tex-chtml.js">
+</script>
+
+
+<!-- introduce per-page mermaid support -->
+
+
+<!-- introduce mathjax support -->
+<script>
+    function fixes_chrome_anchors() {
+        let chrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+        if (window.location.hash && chrome) {
+            setTimeout(function () {
+                var hash = window.location.hash;
+                window.location.hash = "";
+                window.location.hash = hash;
+            }, 300);
+        }
+    }
+
+    if (document.readyState === "loading") {
+        // Loading hasn't finished yet
+        document.addEventListener("DOMContentLoaded", fixes_chrome_anchors);
+    } else {
+        // `DOMContentLoaded` has already fired
+        fixes_chrome_anchors();
+    }
+</script>
+
+
+                        <a href="/ros2_basic/2023-02-01-1_1_Ubuntu%E9%85%8D%E7%BD%AE%E4%B8%8EROS2%E5%BF%AB%E9%80%9F%E4%BD%93%E9%AA%8C.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 1 Ubuntu配置与ROS2快速体验">
+                            <i class="fa fa-angle-left"></i>
+                        </a>
+                    
+
+                    
+                        <a href="/ros2_basic/2023-02-03-2_2_ROS2%E8%AF%9D%E9%A2%98%E9%80%9A%E8%AE%AF%E6%8F%90%E5%8D%87.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 2 ROS2话题通讯 - 话题通讯进阶">
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                    
+                </div>
+            </div>
+
+            <script>
+            var gitbook = gitbook || [];
+            gitbook.push(function() {
+                gitbook.page.hasChanged({
+    "page": {
+        "title": "Introduction",
+        "level": "1.1",
+        "depth": 1,
+        
+        "next": {
+            "title": "2 ROS2话题通讯 - 话题通讯进阶",
+            "level": "1.2",
+            "depth": 1,
+            "path": "_posts/ROS2_BASIC/2023-02-03-2_2_ROS2话题通讯提升.md",
+            "ref": "_posts/ROS2_BASIC/2023-02-03-2_2_ROS2话题通讯提升.md",
+            "articles": []
+        },
+        
+        "dir": "ltr"
+    },    "config": {
+        "plugins": ["fontsettings", "highlight", "livereload", "lunr", "search", "sharing", "theme-default", "livereload"],
+        "styles": {
+            "ebook": "styles/ebook.css",
+            "epub": "styles/epub.css",
+            "mobi": "styles/mobi.css",
+            "pdf": "styles/pdf.css",
+            "print": "styles/print.css",
+            "website": "styles/website.css"
+        },
+        "pluginsConfig": {
+            "expandable-chapter-small2": {
+                "articlesExpand": true,
+            },
+            "fontsettings": {
+                "family": "sans",
+                "size": 2,
+                "theme": "white"
+            },
+            "highlight": {},
+            "livereload": {},
+            "lunr": {
+                "ignoreSpecialCharacters": false,
+                "maxIndexSize": 1000000
+            },
+            "search": {},            "sharing": {},
+"theme-default": {
+                "showLevel": false,
+                "styles": {
+                    "ebook": "styles/ebook.css",
+                    "epub": "styles/epub.css",
+                    "mobi": "styles/mobi.css",
+                    "pdf": "styles/pdf.css",
+                    "print": "styles/print.css",
+                    "website": "styles/website.css"
+                }
+            },
+        },
+        "theme": "default",
+        "author": "Tao He",
+        "pdf": {
+            "pageNumbers": true,
+            "fontSize": 12,
+            "fontFamily": "Arial",
+            "paperSize": "a4",
+            "chapterMark": "pagebreak",
+            "pageBreaksBefore": "/",
+            "margin": {
+                "right": 62,
+                "left": 62,
+                "top": 56,
+                "bottom": 56
+            }
+        },
+        "structure": {
+            "langs": "LANGS.md",
+            "readme": "README.md",
+        },
+        "variables": {},
+        "title": "Blogs",
+        "language": "en",
+        "gitbook": "*"
+    },
+    "file": {
+        "path": "_posts/ROS2_BASIC/2023-02-02-2_1_ROS2话题通讯基础.md",
+        "mtime": "2023-02-02 00:00:00 +0800",
+        "type": "markdown"
+    },
+    "gitbook": {
+        "version": "3.2.3",
+        "time": "2024-11-23 17:20:01 +0800"
+    },
+    "basePath": "",
+    "book": {
+        "language": ""
+    }
+});
+            });
+            </script>
+        </div><script src="/assets/gitbook/gitbook.js"></script>
+<script src="/assets/gitbook/theme.js"></script>
+
+<script src="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-search-pro/search.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-sharing/buttons.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-splitter/splitter.js"></script>
+
+<!--
+<script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+<script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+<script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+<script src="../gitbook/gitbook-plugin-search/search.js"></script>
+-->
+
+<script src="/assets/gitbook/custom.js"></script>
+<script src="/assets/gitbook/custom-local.js"></script>
+
+</body>
+</html>

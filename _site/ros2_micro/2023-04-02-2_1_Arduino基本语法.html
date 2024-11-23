@@ -1,0 +1,970 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head><meta charset="UTF-8">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>2 Arduino 的基本语法 · Blogs</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="description" content="Build Jekyll site with the GitBook style.
+"><meta name="generator" content="Jekyll (using style of GitBook 3.2.3)"><meta name="author" content="pldz9"><link rel="stylesheet" href="/assets/gitbook/style.css">
+<link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+<link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
+<link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-fontsettings/website.css">
+<link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-search-pro/search.css">
+<link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-splitter/splitter.css">
+
+<link rel="stylesheet" href="/assets/gitbook/rouge/thankful_eyes.css">
+
+<link rel="stylesheet" href="/assets/gitbook/custom.css">
+<link rel="stylesheet" href="/assets/gitbook/custom-local.css">
+
+<meta name="HandheldFriendly" content="true"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/gitbook/images/apple-touch-icon-precomposed-152.png">
+<link rel="shortcut icon" href="/assets/gitbook/images/favicon.ico" type="image/x-icon">
+
+
+
+
+            <link rel="prev" href="/ros2_micro/2023-04-01-1_1_ROS2_Arduino.html" />
+        
+
+        
+            <link rel="next" href="/ros2_micro/2023-04-03-3_1_ROS2_Arduino_demo.html" />
+        
+    </head>
+    <body>
+        <div class="book"><div class="book-summary">
+    <script type="text/javascript">
+        // Fixes the page links scroll problem on both desktop and mobile browsers
+        function pageScrollToTop(element) {
+            // both mobile and non-mobile
+            $('div.body-inner').animate({scrollTop: 0});
+            $(element).parent().find('li>ul>li').removeClass('active');
+            return true;
+        }
+
+    </script>
+
+    <nav role="navigation" style="height: 100%;">
+        <!-- Search Input -->
+        <div id="book-search-input" role="search">
+            <input type="text" placeholder="Type to search" />
+        </div>
+        <div id="book-search-input-link" role="search">
+            <a href="/assets/search.html">Click to Search</a>
+        </div>
+
+        <div class="book-base-title" data-path="">
+            <a href="/" onclick="pageScrollToTop(this)">
+                爬楼的猪 Blogs
+            </a>
+        </div>
+
+        <!-- Book Summary Navigation -->
+        <ul class="summary" id="book-summary-core" data-scroll-top="0">
+            <!-- Loop through collections and posts by category -->
+            
+            
+            <li class="chapter category-header" id="category-header-ROS2_CAR">
+                <a href="javascript:void(0)">
+                    ROS2_CAR
+                </a>
+                <ul class="category-list" id="category-list-ROS2_CAR">
+                    
+                    
+                    <li class="chapter "
+                        data-path="/ros2_car/2023-01-03-ABOUT.html">
+                        <a href="/ros2_car/2023-01-03-ABOUT.html" onclick="pageScrollToTop(this)">
+                            ABOUT
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/ros2_car/2023-06-01-1_1_docker%E5%91%BD%E4%BB%A4%E7%86%9F%E6%82%89.html">
+                        <a href="/ros2_car/2023-06-01-1_1_docker%E5%91%BD%E4%BB%A4%E7%86%9F%E6%82%89.html" onclick="pageScrollToTop(this)">
+                            1 Docker 搭建 ROS2 嵌入式运行环境
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/ros2_car/2023-06-02-2_1_%E9%80%9A%E8%BF%87Turtlebot3%E6%A1%88%E4%BE%8B%E4%BA%86%E8%A7%A3NAVI2.html">
+                        <a href="/ros2_car/2023-06-02-2_1_%E9%80%9A%E8%BF%87Turtlebot3%E6%A1%88%E4%BE%8B%E4%BA%86%E8%A7%A3NAVI2.html" onclick="pageScrollToTop(this)">
+                            2 通过 Turtlebot3 案例了解 NAVI2
+                        </a>
+                    </li>
+                    
+                </ul>
+            </li>
+            
+            <li class="chapter category-header" id="category-header-ROS2_MICRO">
+                <a href="javascript:void(0)">
+                    ROS2_MICRO
+                </a>
+                <ul class="category-list" id="category-list-ROS2_MICRO">
+                    
+                    
+                    <li class="chapter "
+                        data-path="/ros2_micro/2023-01-02-ABOUT.html">
+                        <a href="/ros2_micro/2023-01-02-ABOUT.html" onclick="pageScrollToTop(this)">
+                            ABOUT
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/ros2_micro/2023-04-01-1_1_ROS2_Arduino.html">
+                        <a href="/ros2_micro/2023-04-01-1_1_ROS2_Arduino.html" onclick="pageScrollToTop(this)">
+                            1 ROS2 和 Arduino 通讯
+                        </a>
+                    </li>
+                    
+                    <li class="chapter active"
+                        data-path="/ros2_micro/2023-04-02-2_1_Arduino%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95.html">
+                        <a href="/ros2_micro/2023-04-02-2_1_Arduino%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95.html" onclick="pageScrollToTop(this)">
+                            2 Arduino 的基本语法
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/ros2_micro/2023-04-03-3_1_ROS2_Arduino_demo.html">
+                        <a href="/ros2_micro/2023-04-03-3_1_ROS2_Arduino_demo.html" onclick="pageScrollToTop(this)">
+                            3 ROS2 和 arduino 通讯
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/ros2_micro/2023-04-04-4_1_MicroROS%E5%88%9D%E6%AD%A5%E4%BD%93%E9%AA%8C.html">
+                        <a href="/ros2_micro/2023-04-04-4_1_MicroROS%E5%88%9D%E6%AD%A5%E4%BD%93%E9%AA%8C.html" onclick="pageScrollToTop(this)">
+                            4 MircoROS 初步体验
+                        </a>
+                    </li>
+                    
+                </ul>
+            </li>
+            
+            <li class="chapter category-header" id="category-header-ROS2_BASIC">
+                <a href="javascript:void(0)">
+                    ROS2_BASIC
+                </a>
+                <ul class="category-list" id="category-list-ROS2_BASIC">
+                    
+                    
+                    <li class="chapter "
+                        data-path="/ros2_basic/2023-01-01-ABOUT.html">
+                        <a href="/ros2_basic/2023-01-01-ABOUT.html" onclick="pageScrollToTop(this)">
+                            ABOUT
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/ros2_basic/2023-02-01-1_1_Ubuntu%E9%85%8D%E7%BD%AE%E4%B8%8EROS2%E5%BF%AB%E9%80%9F%E4%BD%93%E9%AA%8C.html">
+                        <a href="/ros2_basic/2023-02-01-1_1_Ubuntu%E9%85%8D%E7%BD%AE%E4%B8%8EROS2%E5%BF%AB%E9%80%9F%E4%BD%93%E9%AA%8C.html" onclick="pageScrollToTop(this)">
+                            1 Ubuntu配置与ROS2快速体验
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/ros2_basic/2023-02-02-2_1_ROS2%E8%AF%9D%E9%A2%98%E9%80%9A%E8%AE%AF%E5%9F%BA%E7%A1%80.html">
+                        <a href="/ros2_basic/2023-02-02-2_1_ROS2%E8%AF%9D%E9%A2%98%E9%80%9A%E8%AE%AF%E5%9F%BA%E7%A1%80.html" onclick="pageScrollToTop(this)">
+                            2 ROS2话题通讯 - 话题通讯基础
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/ros2_basic/2023-02-03-2_2_ROS2%E8%AF%9D%E9%A2%98%E9%80%9A%E8%AE%AF%E6%8F%90%E5%8D%87.html">
+                        <a href="/ros2_basic/2023-02-03-2_2_ROS2%E8%AF%9D%E9%A2%98%E9%80%9A%E8%AE%AF%E6%8F%90%E5%8D%87.html" onclick="pageScrollToTop(this)">
+                            2 ROS2话题通讯 - 话题通讯进阶
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/ros2_basic/2023-02-04-3_1_ROS2%E6%9C%8D%E5%8A%A1%E9%80%9A%E8%AE%AF.html">
+                        <a href="/ros2_basic/2023-02-04-3_1_ROS2%E6%9C%8D%E5%8A%A1%E9%80%9A%E8%AE%AF.html" onclick="pageScrollToTop(this)">
+                            3 ROS2服务通讯基础
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/ros2_basic/2023-02-05-4_1_ROS2%E5%8F%82%E6%95%B0%E6%9C%8D%E5%8A%A1%E5%99%A8.html">
+                        <a href="/ros2_basic/2023-02-05-4_1_ROS2%E5%8F%82%E6%95%B0%E6%9C%8D%E5%8A%A1%E5%99%A8.html" onclick="pageScrollToTop(this)">
+                            4 ROS2节点参数基础
+                        </a>
+                    </li>
+                    
+                </ul>
+            </li>
+            
+            <li class="chapter category-header" id="category-header-Others">
+                <a href="javascript:void(0)">
+                    Others
+                </a>
+                <ul class="category-list" id="category-list-Others">
+                    
+                    
+                    <li class="chapter "
+                        data-path="/others/2022-01-01-ABOUT.html">
+                        <a href="/others/2022-01-01-ABOUT.html" onclick="pageScrollToTop(this)">
+                            ABOUT
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/others/2022-01-02-VSCode%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE.html">
+                        <a href="/others/2022-01-02-VSCode%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE.html" onclick="pageScrollToTop(this)">
+                            VSCode相关配置
+                        </a>
+                    </li>
+                    
+                </ul>
+            </li>
+            
+        </ul>
+
+
+        <!-- Page Content and TOC -->
+        <div class="page-content-category">
+            <div class="page-content-title">Navigation of <span>2 Arduino 的基本语法</span></div>
+            <ul class="page-content">
+                
+                <ul><li><a href="#21" onclick="mobilePageScrollToAnchor(this)" >2.1</a></li><li><a href="#22-arduino-用-irremote-库使用红外模块" onclick="mobilePageScrollToAnchor(this)" >2.2 Arduino 用 IRremote 库使用红外模块</a><ul><li><a href="#221-结果" onclick="mobilePageScrollToAnchor(this)" >2.2.1 结果</a></li><li><a href="#222-接线" onclick="mobilePageScrollToAnchor(this)" >2.2.2 接线</a></li><li><a href="#223-实现代码" onclick="mobilePageScrollToAnchor(this)" >2.2.3 实现代码</a></li></ul></li><li><a href="#23-arduino-使用-hc-sr04-超声波模块" onclick="mobilePageScrollToAnchor(this)" >2.3 Arduino 使用 HC-SR04 超声波模块</a><ul><li><a href="#231-结果" onclick="mobilePageScrollToAnchor(this)" >2.3.1 结果</a></li><li><a href="#232-接线" onclick="mobilePageScrollToAnchor(this)" >2.3.2 接线</a></li><li><a href="#233-代码实现" onclick="mobilePageScrollToAnchor(this)" >2.3.3 代码实现</a></li></ul></li><li><a href="#24-arduino-同时运行多个功能代码" onclick="mobilePageScrollToAnchor(this)" >2.4 Arduino 同时运行多个功能代码</a><ul><li><a href="#241-结果" onclick="mobilePageScrollToAnchor(this)" >2.4.1 结果</a></li><li><a href="#242-文件结构" onclick="mobilePageScrollToAnchor(this)" >2.4.2 文件结构</a></li><li><a href="#242-cpphpp-代码实现" onclick="mobilePageScrollToAnchor(this)" >2.4.2 .cpp/.hpp 代码实现</a></li><li><a href="#243-arduino_demoino-代码实现" onclick="mobilePageScrollToAnchor(this)" >2.4.3 Arduino_Demo.ino 代码实现</a></li></ul></li><li><a href="#25-利用-python-的-pyserial-库读取串口信息" onclick="mobilePageScrollToAnchor(this)" >2.5 利用 python 的 pyserial 库读取串口信息</a><ul><li><a href="#251-结果" onclick="mobilePageScrollToAnchor(this)" >2.5.1 结果</a></li><li><a href="#252-代码实现" onclick="mobilePageScrollToAnchor(this)" >2.5.2 代码实现</a></li></ul></li></ul>
+
+                
+            </ul>
+        </div> 
+    </nav>
+</div><div class="book-body">
+                <div class="book-header" role="navigation">
+                    <!-- Title -->
+                    <h1>
+                      2 Arduino 的基本语法
+                    </h1>
+                </div>
+
+                <div class="body-inner"><div class="page-wrapper" tabindex="-1" role="main">
+    
+
+    <div class="page-inner">
+        <div id="book-search-results">
+            <div class="search-noresults">
+                <section class="normal markdown-section">
+                    
+                        <h1 id="/ros2_micro/2_1_Arduino基本语法">2 Arduino 的基本语法</h1>
+                    
+
+                    <h1 id="21">2.1</h1>
+
+<p>暂无</p>
+
+<h1 id="22-arduino-用-irremote-库使用红外模块">2.2 Arduino 用 IRremote 库使用红外模块</h1>
+
+<h2 id="221-结果">2.2.1 结果</h2>
+
+<p>话不多说 直接上结果，打开窗口 就能看见获得的红外信号</p>
+
+<p><img src="/assets/pics/ROS2_MICRO/2_IRemote_result.gif" alt="IRemote_result" /></p>
+
+<h2 id="222-接线">2.2.2 接线</h2>
+
+<p>这个没啥好说的 就一个信号线</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Pin</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>VCC</td>
+      <td>Powers the sensor (5V)</td>
+    </tr>
+    <tr>
+      <td>Data</td>
+      <td>Pin 11</td>
+    </tr>
+    <tr>
+      <td>GND</td>
+      <td>Common GND</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><img src="/assets/pics/ROS2_MICRO/2_IRremote_wiring.png" alt="IRremote_wiring" /></p>
+
+<h2 id="223-实现代码">2.2.3 实现代码</h2>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">"IRremote.h"</span><span class="cp">
+</span>
+<span class="kt">int</span> <span class="n">IR_RECEIVE_PIN</span> <span class="o">=</span> <span class="mi">11</span><span class="p">;</span>            <span class="c1">// 红外传输的数据引脚</span>
+<span class="kt">long</span> <span class="n">lastReceivedValue</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>         <span class="c1">// 存储上一次接收到的红外信号值</span>
+<span class="kt">unsigned</span> <span class="kt">long</span> <span class="n">lastTimeReceived</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="c1">// 存储上一次接收到红外信号的时间</span>
+<span class="kt">int</span> <span class="n">debounceDelay</span> <span class="o">=</span> <span class="mi">50</span><span class="p">;</span>             <span class="c1">// 可调延迟参数</span>
+
+<span class="n">IRrecv</span> <span class="nf">irrecv</span><span class="p">(</span><span class="n">IR_RECEIVE_PIN</span><span class="p">);</span> <span class="c1">// 红外模块初始化</span>
+<span class="n">decode_results</span> <span class="n">results</span><span class="p">;</span>        <span class="c1">// 用于存放红外模块返回的数据</span>
+
+<span class="kt">void</span> <span class="nf">setup</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="n">pinMode</span><span class="p">(</span><span class="n">LED_BUILTIN</span><span class="p">,</span> <span class="n">OUTPUT</span><span class="p">);</span> <span class="c1">// 显示指示灯</span>
+    <span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">57600</span><span class="p">);</span>          <span class="c1">// 设置Arduino通信的波特率</span>
+    <span class="n">irrecv</span><span class="p">.</span><span class="n">enableIRIn</span><span class="p">();</span>
+    <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">"Enabling IRin"</span><span class="p">);</span> <span class="c1">// 串口打印消息</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="nf">loop</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">irrecv</span><span class="p">.</span><span class="n">decode</span><span class="p">(</span><span class="o">&amp;</span><span class="n">results</span><span class="p">))</span>
+    <span class="p">{</span>
+        <span class="c1">// 检查是否接收到无效信号或是否间隔了一段时间（防止信号抖动）</span>
+        <span class="k">if</span> <span class="p">((</span><span class="n">results</span><span class="p">.</span><span class="n">value</span> <span class="o">!=</span> <span class="mh">0xFFFFFFFF</span> <span class="o">&amp;&amp;</span> <span class="n">results</span><span class="p">.</span><span class="n">value</span> <span class="o">!=</span> <span class="mh">0x00000000</span><span class="p">)</span> <span class="o">&amp;&amp;</span>
+            <span class="p">(</span><span class="n">results</span><span class="p">.</span><span class="n">value</span> <span class="o">!=</span> <span class="n">lastReceivedValue</span> <span class="o">||</span> <span class="n">millis</span><span class="p">()</span> <span class="o">-</span> <span class="n">lastTimeReceived</span> <span class="o">&gt;</span> <span class="n">debounceDelay</span><span class="p">))</span>
+        <span class="p">{</span>
+            <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="n">results</span><span class="p">.</span><span class="n">value</span><span class="p">);</span>      <span class="c1">// 打印十进制数据</span>
+            <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="n">results</span><span class="p">.</span><span class="n">value</span><span class="p">,</span> <span class="n">HEX</span><span class="p">);</span> <span class="c1">// 打印十六进制数据</span>
+            <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">"======================"</span><span class="p">);</span>
+
+            <span class="c1">// 更新上一次接收到的信号值和时间</span>
+            <span class="n">lastReceivedValue</span> <span class="o">=</span> <span class="n">results</span><span class="p">.</span><span class="n">value</span><span class="p">;</span>
+            <span class="n">lastTimeReceived</span> <span class="o">=</span> <span class="n">millis</span><span class="p">();</span>
+        <span class="p">}</span>
+        <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">results</span><span class="p">.</span><span class="n">value</span> <span class="o">==</span> <span class="mh">0xFFFFFFFF</span> <span class="o">||</span> <span class="n">results</span><span class="p">.</span><span class="n">value</span> <span class="o">==</span> <span class="mh">0x00000000</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="c1">// 打印上次的值</span>
+            <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="n">lastReceivedValue</span><span class="p">,</span> <span class="n">HEX</span><span class="p">);</span>
+            <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">"======================"</span><span class="p">);</span>
+        <span class="p">}</span>
+        <span class="n">irrecv</span><span class="p">.</span><span class="n">resume</span><span class="p">();</span> <span class="c1">// 接收下一个值</span>
+    <span class="p">}</span>
+    <span class="n">delay</span><span class="p">(</span><span class="n">debounceDelay</span><span class="p">);</span> <span class="c1">// 延迟时间设为可调参数</span>
+<span class="p">}</span>
+
+</code></pre></div></div>
+
+<ul>
+  <li>后续根据按键接收到的信号值 做 switch 判断按了哪个按键即可</li>
+</ul>
+
+<h1 id="23-arduino-使用-hc-sr04-超声波模块">2.3 Arduino 使用 HC-SR04 超声波模块</h1>
+
+<h2 id="231-结果">2.3.1 结果</h2>
+
+<p>话不多说 直接上结果，打开窗口 就能看见获得的距离消息</p>
+
+<h2 id="232-接线">2.3.2 接线</h2>
+
+<blockquote>
+  <p>参考内容: <a href="https://randomnerdtutorials.com/complete-guide-for-ultrasonic-sensor-hc-sr04/">Complete Guide for Ultrasonic Sensor HC-SR04 with Arduino</a></p>
+</blockquote>
+
+<blockquote>
+  <p><strong>冷知识</strong><br />
+Power Supply :+5V DC<br />
+Quiescent Current : &lt;2mA<br />
+Working Current: 15mA<br />
+Effectual Angle: &lt;15°<br />
+Ranging Distance : 2cm – 400 cm/1″ – 13ft<br />
+Resolution : 0.3 cm<br />
+Measuring Angle: 30 degree<br />
+Trigger Input Pulse width: 10uS TTL pulse<br />
+Echo Output Signal: TTL pulse proportional to the distance range<br />
+Dimension: 45mm x 20mm x 15mm</p>
+</blockquote>
+
+<table>
+  <thead>
+    <tr>
+      <th>Pin</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>VCC</td>
+      <td>Powers the sensor (5V)</td>
+    </tr>
+    <tr>
+      <td>Trig</td>
+      <td>Trigger Input Pin 11</td>
+    </tr>
+    <tr>
+      <td>Echo</td>
+      <td>Echo Output Pin 12</td>
+    </tr>
+    <tr>
+      <td>GND</td>
+      <td>Common GND</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><img src="/assets/pics/ROS2_MICRO/2_HCSR04_wiring.png" alt="HCSR04_wiring" /></p>
+
+<h2 id="233-代码实现">2.3.3 代码实现</h2>
+
+<p>可运行的最小 ino 代码</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">const</span> <span class="kt">int</span> <span class="n">trigPin</span> <span class="o">=</span> <span class="mi">9</span><span class="p">;</span>   <span class="c1">// 定义触发引脚为9</span>
+<span class="k">const</span> <span class="kt">int</span> <span class="n">echoPin</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>  <span class="c1">// 定义回声引脚为10</span>
+
+<span class="kt">float</span> <span class="n">duration</span><span class="p">,</span> <span class="n">distance</span><span class="p">;</span> <span class="c1">// 定义两个浮点变量：duration用于存储超声波的往返时间，distance用于存储计算得到的距离</span>
+
+<span class="kt">void</span> <span class="nf">setup</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="n">pinMode</span><span class="p">(</span><span class="n">trigPin</span><span class="p">,</span> <span class="n">OUTPUT</span><span class="p">);</span> <span class="c1">// 将触发引脚设置为输出模式</span>
+    <span class="n">pinMode</span><span class="p">(</span><span class="n">echoPin</span><span class="p">,</span> <span class="n">INPUT</span><span class="p">);</span>  <span class="c1">// 将回声引脚设置为输入模式</span>
+    <span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">57600</span><span class="p">);</span>      <span class="c1">// 初始化串口通信，波特率设置为57600</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="nf">loop</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="c1">// 发送一个超声波脉冲</span>
+    <span class="n">digitalWrite</span><span class="p">(</span><span class="n">trigPin</span><span class="p">,</span> <span class="n">LOW</span><span class="p">);</span>  <span class="c1">// 确保触发引脚初始为低电平</span>
+    <span class="n">delayMicroseconds</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>        <span class="c1">// 等待2微秒</span>
+    <span class="n">digitalWrite</span><span class="p">(</span><span class="n">trigPin</span><span class="p">,</span> <span class="n">HIGH</span><span class="p">);</span> <span class="c1">// 将触发引脚拉高，发送超声波脉冲</span>
+    <span class="n">delayMicroseconds</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span>       <span class="c1">// 保持高电平10微秒，以产生一个超声波脉冲</span>
+    <span class="n">digitalWrite</span><span class="p">(</span><span class="n">trigPin</span><span class="p">,</span> <span class="n">LOW</span><span class="p">);</span>  <span class="c1">// 将触发引脚拉低，结束脉冲</span>
+
+    <span class="c1">// 读取回声引脚的信号</span>
+    <span class="n">duration</span> <span class="o">=</span> <span class="n">pulseIn</span><span class="p">(</span><span class="n">echoPin</span><span class="p">,</span> <span class="n">HIGH</span><span class="p">);</span> <span class="c1">// 读取回声引脚高电平持续的时间（微秒）</span>
+
+    <span class="c1">// 计算距离</span>
+    <span class="n">distance</span> <span class="o">=</span> <span class="p">(</span><span class="n">duration</span> <span class="o">*</span> <span class="mi">0</span><span class="p">.</span><span class="mo">0343</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span><span class="p">;</span> <span class="c1">// 将时间转换为距离，单位为厘米</span>
+                                        <span class="c1">// 超声波在空气中的速度约为343米/秒（0.0343厘米/微秒）</span>
+                                        <span class="c1">// 因为时间是往返时间，所以除以2得到单程距离</span>
+
+    <span class="c1">// 输出距离到串口监视器</span>
+    <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">"Distance: "</span><span class="p">);</span>
+    <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="n">distance</span><span class="p">);</span>
+
+    <span class="n">delay</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span> <span class="c1">// 延时100毫秒，等待下一次测量</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h1 id="24-arduino-同时运行多个功能代码">2.4 Arduino 同时运行多个功能代码</h1>
+
+<h2 id="241-结果">2.4.1 结果</h2>
+
+<p>同时运行红外和距离传感器功能，而且不会阻塞一方</p>
+
+<p><img src="/assets/pics/ROS2_MICRO/2_multi_arduino_func_demo.gif" alt="multi_arduino_func_demo" /></p>
+
+<h2 id="242-文件结构">2.4.2 文件结构</h2>
+
+<p>文件夹结构是打开项目的最关键的内容</p>
+
+<p>创建一个名为 Arduino_Demo 的文件夹，并在该文件夹中包含一个名为 Arduino_Demo.ino 的文件, 这种命名方式有助于保持项目的一致性和可识别性，便于后续管理和开发, 也是 Arduino IDE 识别项目的关键</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">.</span>
+<span class="sb">`</span><span class="nt">--</span> Arduino_Demo
+    |-- Arduino_Demo.ino    // 烧录代码的入口
+    |-- HCSHandler.cpp      // 声波传感器实现代码
+    |-- HCSHandler.hpp      // 声波传感器的头文件
+    |-- HCSR04_Demo.txt     // 上面文件夹的ino文件的备份，可以删除 不重要
+    |-- IRHandler.cpp       // 红外传感器的实现
+    |-- IRHandler.hpp       // 红外传感器的头文件
+    |-- IRremote_Demo.txt   // 上面文件夹的ino文件的备份，可以删除 不重要
+    <span class="sb">`</span><span class="nt">--</span> ReadSerialData.py   // 利用python读取串口信息的demo文件，可以不要
+
+1 directory, 8 files
+
+</code></pre></div></div>
+
+<h2 id="242-cpphpp-代码实现">2.4.2 .cpp/.hpp 代码实现</h2>
+
+<p>这些代码其实在上面内容都是有的 只是做了一些实际上有用的消息的包装，不过多介绍了，很简单</p>
+
+<ol>
+  <li><code class="language-plaintext highlighter-rouge">HCSHandler.hpp</code></li>
+</ol>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#ifndef HCSHANDLER_H
+#define HCSHANDLER_H
+</span>
+<span class="cp">#ifdef __cplusplus
+</span><span class="k">extern</span> <span class="s">"C"</span>
+<span class="p">{</span>
+<span class="cp">#endif
+</span>
+    <span class="kt">void</span> <span class="n">HSCHandler_init</span><span class="p">(</span><span class="kt">int</span> <span class="n">trigPin</span><span class="p">,</span> <span class="kt">int</span> <span class="n">echoPin</span><span class="p">);</span> <span class="c1">// 初始化函数，设置引脚和模式</span>
+    <span class="kt">void</span> <span class="n">HSCHandler_getDistance</span><span class="p">();</span>                 <span class="c1">// 获取距离函数，返回测量的距离</span>
+
+<span class="cp">#ifdef __cplusplus
+</span><span class="p">}</span>
+<span class="cp">#endif
+</span>
+<span class="cp">#endif
+</span>
+</code></pre></div></div>
+
+<ol>
+  <li><code class="language-plaintext highlighter-rouge">HCSHandler.cpp</code></li>
+</ol>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">"HCSHandler.hpp"</span><span class="cp">
+#include</span> <span class="cpf">"Arduino.h"</span><span class="cp">
+</span>
+<span class="k">static</span> <span class="kt">int</span> <span class="n">trigPin</span><span class="p">;</span>    <span class="c1">// 触发引脚</span>
+<span class="k">static</span> <span class="kt">int</span> <span class="n">echoPin</span><span class="p">;</span>    <span class="c1">// 回声引脚</span>
+<span class="k">static</span> <span class="kt">float</span> <span class="n">duration</span><span class="p">;</span> <span class="c1">// 超声波往返时间</span>
+<span class="k">static</span> <span class="kt">float</span> <span class="n">distance</span><span class="p">;</span> <span class="c1">// 计算得到的距离</span>
+
+<span class="c1">// 初始化函数，设置引脚和模式</span>
+<span class="kt">void</span> <span class="nf">HSCHandler_init</span><span class="p">(</span><span class="kt">int</span> <span class="n">tPin</span><span class="p">,</span> <span class="kt">int</span> <span class="n">ePin</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="n">trigPin</span> <span class="o">=</span> <span class="n">tPin</span><span class="p">;</span>
+    <span class="n">echoPin</span> <span class="o">=</span> <span class="n">ePin</span><span class="p">;</span>
+    <span class="n">pinMode</span><span class="p">(</span><span class="n">trigPin</span><span class="p">,</span> <span class="n">OUTPUT</span><span class="p">);</span>
+    <span class="n">pinMode</span><span class="p">(</span><span class="n">echoPin</span><span class="p">,</span> <span class="n">INPUT</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="c1">// 获取距离函数，返回测量的距离</span>
+<span class="kt">void</span> <span class="nf">HSCHandler_getDistance</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="kt">int</span> <span class="n">estopFlag</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>  <span class="c1">// 0表示无距离危险</span>
+    <span class="c1">// 发送一个超声波脉冲</span>
+    <span class="n">digitalWrite</span><span class="p">(</span><span class="n">trigPin</span><span class="p">,</span> <span class="n">LOW</span><span class="p">);</span>
+    <span class="n">delayMicroseconds</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+    <span class="n">digitalWrite</span><span class="p">(</span><span class="n">trigPin</span><span class="p">,</span> <span class="n">HIGH</span><span class="p">);</span>
+    <span class="n">delayMicroseconds</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span>
+    <span class="n">digitalWrite</span><span class="p">(</span><span class="n">trigPin</span><span class="p">,</span> <span class="n">LOW</span><span class="p">);</span>
+
+    <span class="c1">// 读取回声引脚高电平持续的时间（微秒）</span>
+    <span class="n">duration</span> <span class="o">=</span> <span class="n">pulseIn</span><span class="p">(</span><span class="n">echoPin</span><span class="p">,</span> <span class="n">HIGH</span><span class="p">);</span>
+    <span class="c1">// 将时间转换为距离，单位为厘米</span>
+    <span class="c1">// 超声波在空气中的速度约为343米/秒（0.0343厘米/微秒）</span>
+    <span class="c1">// 因为时间是往返时间，所以除以2得到单程距离</span>
+    <span class="n">distance</span> <span class="o">=</span> <span class="p">(</span><span class="n">duration</span> <span class="o">*</span> <span class="mi">0</span><span class="p">.</span><span class="mo">0343</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span><span class="p">;</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">distance</span> <span class="o">&lt;</span> <span class="mi">20</span><span class="p">)</span>
+    <span class="p">{</span>
+      <span class="n">estopFlag</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="p">}</span>
+     <span class="c1">// 输出距离到串口监视器</span>
+    <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">"ESTOP="</span><span class="p">);</span>
+    <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="n">estopFlag</span><span class="p">);</span>
+    <span class="n">delay</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span> <span class="c1">// 延时100毫秒，等待下一次测量</span>
+<span class="p">}</span>
+
+</code></pre></div></div>
+
+<ol>
+  <li><code class="language-plaintext highlighter-rouge">IRHandler.hpp</code></li>
+</ol>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#ifndef IRHANDLER_H
+#define IRHANDLER_H
+</span>
+<span class="cp">#ifdef __cplusplus
+</span><span class="k">extern</span> <span class="s">"C"</span>
+<span class="p">{</span>
+<span class="cp">#endif
+</span>
+    <span class="kt">void</span> <span class="n">setupIR</span><span class="p">(</span><span class="kt">int</span> <span class="n">pin</span><span class="p">);</span>                <span class="c1">// 初始化</span>
+    <span class="kt">void</span> <span class="n">handleIR</span><span class="p">();</span>                      <span class="c1">// 处理信号</span>
+    <span class="kt">int</span> <span class="n">mapNum</span><span class="p">(</span><span class="kt">unsigned</span> <span class="kt">long</span> <span class="kt">int</span> <span class="n">decode</span><span class="p">);</span> <span class="c1">// 匹配按键</span>
+
+<span class="cp">#ifdef __cplusplus
+</span><span class="p">}</span>
+<span class="cp">#endif
+</span>
+<span class="cp">#endif
+</span>
+</code></pre></div></div>
+
+<ol>
+  <li><code class="language-plaintext highlighter-rouge">IRHandler.cpp</code></li>
+</ol>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">"IRHandler.hpp"</span><span class="cp">
+#include</span> <span class="cpf">"IRremote.h"</span><span class="cp">
+</span>
+<span class="k">static</span> <span class="kt">int</span> <span class="n">IR_RECEIVE_PIN</span> <span class="o">=</span> <span class="mi">11</span><span class="p">;</span>            <span class="c1">// 红外传输的数据引脚</span>
+<span class="k">static</span> <span class="kt">long</span> <span class="n">lastReceivedValue</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>         <span class="c1">// 存储上一次接收到的红外信号值</span>
+<span class="k">static</span> <span class="kt">unsigned</span> <span class="kt">long</span> <span class="n">lastTimeReceived</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="c1">// 存储上一次接收到红外信号的时间</span>
+<span class="k">static</span> <span class="kt">int</span> <span class="n">debounceDelay</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>            <span class="c1">// 可调延迟参数</span>
+
+<span class="n">IRrecv</span> <span class="nf">irrecv</span><span class="p">(</span><span class="n">IR_RECEIVE_PIN</span><span class="p">);</span> <span class="c1">// 红外模块初始化</span>
+<span class="n">decode_results</span> <span class="n">results</span><span class="p">;</span>        <span class="c1">// 用于存放红外模块返回的数据</span>
+
+<span class="kt">void</span> <span class="nf">setupIR</span><span class="p">(</span><span class="kt">int</span> <span class="n">pin</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="n">IR_RECEIVE_PIN</span> <span class="o">=</span> <span class="n">pin</span><span class="p">;</span>
+    <span class="n">pinMode</span><span class="p">(</span><span class="n">LED_BUILTIN</span><span class="p">,</span> <span class="n">OUTPUT</span><span class="p">);</span> <span class="c1">// 显示指示灯</span>
+    <span class="n">irrecv</span><span class="p">.</span><span class="n">enableIRIn</span><span class="p">();</span>
+    <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">"Enabling IRin"</span><span class="p">);</span> <span class="c1">// 串口打印消息</span>
+<span class="p">}</span>
+
+<span class="kt">int</span> <span class="nf">mapNum</span><span class="p">(</span><span class="kt">unsigned</span> <span class="kt">long</span> <span class="kt">int</span> <span class="n">decode</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="kt">int</span> <span class="n">num</span> <span class="o">=</span> <span class="mi">99</span><span class="p">;</span> <span class="c1">// 99 表示无效内容</span>
+    <span class="k">switch</span> <span class="p">(</span><span class="n">decode</span><span class="p">)</span>
+    <span class="p">{</span>
+    <span class="k">case</span> <span class="mh">0xFFA25D</span><span class="p">:</span>
+        <span class="n">num</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+        <span class="k">break</span><span class="p">;</span>
+    <span class="k">case</span> <span class="mh">0xFF629D</span><span class="p">:</span>
+        <span class="n">num</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
+        <span class="k">break</span><span class="p">;</span>
+    <span class="k">case</span> <span class="mh">0xFFE21D</span><span class="p">:</span>
+        <span class="n">num</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
+        <span class="k">break</span><span class="p">;</span>
+    <span class="k">case</span> <span class="mh">0xFF22DD</span><span class="p">:</span>
+        <span class="n">num</span> <span class="o">=</span> <span class="mi">4</span><span class="p">;</span>
+        <span class="k">break</span><span class="p">;</span>
+    <span class="k">case</span> <span class="mh">0xFF02FD</span><span class="p">:</span>
+        <span class="n">num</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
+        <span class="k">break</span><span class="p">;</span>
+    <span class="k">case</span> <span class="mh">0xFFC23D</span><span class="p">:</span>
+        <span class="n">num</span> <span class="o">=</span> <span class="mi">6</span><span class="p">;</span>
+        <span class="k">break</span><span class="p">;</span>
+    <span class="k">case</span> <span class="mh">0xFFE01F</span><span class="p">:</span>
+        <span class="n">num</span> <span class="o">=</span> <span class="mi">7</span><span class="p">;</span>
+        <span class="k">break</span><span class="p">;</span>
+    <span class="k">case</span> <span class="mh">0xFFA857</span><span class="p">:</span>
+        <span class="n">num</span> <span class="o">=</span> <span class="mi">8</span><span class="p">;</span>
+        <span class="k">break</span><span class="p">;</span>
+    <span class="k">case</span> <span class="mh">0xFF906F</span><span class="p">:</span>
+        <span class="n">num</span> <span class="o">=</span> <span class="mi">9</span><span class="p">;</span>
+        <span class="k">break</span><span class="p">;</span>
+    <span class="k">case</span> <span class="mh">0xFF6897</span><span class="p">:</span>
+        <span class="n">num</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+        <span class="k">break</span><span class="p">;</span>
+    <span class="k">case</span> <span class="mh">0xFF9867</span><span class="p">:</span>
+        <span class="n">num</span> <span class="o">=</span> <span class="mi">11</span><span class="p">;</span>
+        <span class="k">break</span><span class="p">;</span>
+    <span class="k">case</span> <span class="mh">0xFFB04F</span><span class="p">:</span>
+        <span class="n">num</span> <span class="o">=</span> <span class="mi">12</span><span class="p">;</span>
+        <span class="k">break</span><span class="p">;</span>
+    <span class="k">case</span> <span class="mh">0xFF18E7</span><span class="p">:</span>
+        <span class="n">num</span> <span class="o">=</span> <span class="mi">13</span><span class="p">;</span>
+        <span class="k">break</span><span class="p">;</span>
+    <span class="k">case</span> <span class="mh">0xFF10EF</span><span class="p">:</span>
+        <span class="n">num</span> <span class="o">=</span> <span class="mi">14</span><span class="p">;</span>
+        <span class="k">break</span><span class="p">;</span>
+    <span class="k">case</span> <span class="mh">0xFF38C7</span><span class="p">:</span>
+        <span class="n">num</span> <span class="o">=</span> <span class="mi">15</span><span class="p">;</span>
+        <span class="k">break</span><span class="p">;</span>
+    <span class="k">case</span> <span class="mh">0xFF5AA5</span><span class="p">:</span>
+        <span class="n">num</span> <span class="o">=</span> <span class="mi">16</span><span class="p">;</span>
+        <span class="k">break</span><span class="p">;</span>
+    <span class="k">case</span> <span class="mh">0xFF4AB5</span><span class="p">:</span>
+        <span class="n">num</span> <span class="o">=</span> <span class="mi">17</span><span class="p">;</span>
+        <span class="k">break</span><span class="p">;</span>
+    <span class="nl">default:</span>
+        <span class="n">num</span> <span class="o">=</span> <span class="mi">99</span><span class="p">;</span>
+        <span class="k">break</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="n">num</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="nf">handleIR</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="kt">int</span> <span class="n">moveNum</span> <span class="o">=</span> <span class="mi">99</span><span class="p">;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">irrecv</span><span class="p">.</span><span class="n">decode</span><span class="p">(</span><span class="o">&amp;</span><span class="n">results</span><span class="p">))</span>
+    <span class="p">{</span>
+        <span class="c1">// 检查是否接收到无效信号或是否间隔了一段时间（防止信号抖动）</span>
+        <span class="k">if</span> <span class="p">((</span><span class="n">results</span><span class="p">.</span><span class="n">value</span> <span class="o">!=</span> <span class="mh">0xFFFFFFFF</span> <span class="o">&amp;&amp;</span> <span class="n">results</span><span class="p">.</span><span class="n">value</span> <span class="o">!=</span> <span class="mh">0x00000000</span><span class="p">)</span> <span class="o">&amp;&amp;</span>
+            <span class="p">(</span><span class="n">results</span><span class="p">.</span><span class="n">value</span> <span class="o">!=</span> <span class="n">lastReceivedValue</span> <span class="o">||</span> <span class="n">millis</span><span class="p">()</span> <span class="o">-</span> <span class="n">lastTimeReceived</span> <span class="o">&gt;</span> <span class="n">debounceDelay</span><span class="p">))</span>
+        <span class="p">{</span>
+            <span class="n">moveNum</span> <span class="o">=</span> <span class="n">mapNum</span><span class="p">(</span><span class="n">results</span><span class="p">.</span><span class="n">value</span><span class="p">);</span>
+            <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">"MOVE="</span><span class="p">);</span>
+            <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="n">moveNum</span><span class="p">);</span>
+
+            <span class="c1">// 更新上一次接收到的信号值和时间</span>
+            <span class="n">lastReceivedValue</span> <span class="o">=</span> <span class="n">results</span><span class="p">.</span><span class="n">value</span><span class="p">;</span>
+            <span class="n">lastTimeReceived</span> <span class="o">=</span> <span class="n">millis</span><span class="p">();</span>
+        <span class="p">}</span>
+        <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">results</span><span class="p">.</span><span class="n">value</span> <span class="o">==</span> <span class="mh">0xFFFFFFFF</span> <span class="o">||</span> <span class="n">results</span><span class="p">.</span><span class="n">value</span> <span class="o">==</span> <span class="mh">0x00000000</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="c1">// 打印上次的值</span>
+            <span class="n">moveNum</span> <span class="o">=</span> <span class="n">mapNum</span><span class="p">(</span><span class="n">lastReceivedValue</span><span class="p">);</span>
+            <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">"MOVE="</span><span class="p">);</span>
+            <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="n">moveNum</span><span class="p">);</span>
+        <span class="p">}</span>
+        <span class="n">irrecv</span><span class="p">.</span><span class="n">resume</span><span class="p">();</span> <span class="c1">// 接收下一个值</span>
+    <span class="p">}</span>
+    <span class="n">delay</span><span class="p">(</span><span class="n">debounceDelay</span><span class="p">);</span> <span class="c1">// 延迟时间设为可调参数</span>
+<span class="p">}</span>
+
+</code></pre></div></div>
+
+<h2 id="243-arduino_demoino-代码实现">2.4.3 Arduino_Demo.ino 代码实现</h2>
+
+<p>直接看代码，从代码角度来分析为什么这样写</p>
+
+<ul>
+  <li>关键点在于 用<code class="language-plaintext highlighter-rouge">cpp/hpp</code>管理具体的实现，结构好看</li>
+  <li>引入各个功能到 <code class="language-plaintext highlighter-rouge">loop</code> 里 即可实现全部的功能</li>
+  <li>使用 <code class="language-plaintext highlighter-rouge">millis()</code> 进行非阻塞时间管理</li>
+  <li>定时检查并获取声波传感器距离：<code class="language-plaintext highlighter-rouge">HSCHandler_getDistance()</code></li>
+  <li>定时处理红外传感器信号：<code class="language-plaintext highlighter-rouge">handleIR()</code></li>
+</ul>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">"HCSHandler.hpp"</span><span class="cp">
+#include</span> <span class="cpf">"IRHandler.hpp"</span><span class="cp">
+</span>
+<span class="k">const</span> <span class="kt">int</span> <span class="n">trigPin</span> <span class="o">=</span> <span class="mi">9</span><span class="p">;</span>   <span class="c1">// 定义声波传感器触发引脚为9</span>
+<span class="k">const</span> <span class="kt">int</span> <span class="n">echoPin</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>  <span class="c1">// 定义声波传感器回声引脚为10</span>
+<span class="k">const</span> <span class="kt">int</span> <span class="n">irremotePin</span> <span class="o">=</span> <span class="mi">11</span><span class="p">;</span> <span class="c1">// 定义红外的信号引脚为11</span>
+
+<span class="c1">// 模仿多线程,也就是划分时间做某个函数的事情</span>
+<span class="kt">unsigned</span> <span class="kt">long</span> <span class="n">lastDistanceCheck</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>  <span class="c1">// 存储上一次接收到声波传感器的时间</span>
+<span class="kt">unsigned</span> <span class="kt">long</span> <span class="n">lastIRCheck</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>  <span class="c1">// 存储上一次接收到红外信号的时间</span>
+
+<span class="k">const</span> <span class="kt">unsigned</span> <span class="kt">long</span> <span class="n">distanceInterval</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span> <span class="c1">// 检查距离的时间间隔</span>
+<span class="k">const</span> <span class="kt">unsigned</span> <span class="kt">long</span> <span class="n">irInterval</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span> <span class="c1">// 检查红外信号的时间间隔</span>
+
+<span class="kt">void</span> <span class="nf">setup</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">57600</span><span class="p">);</span> <span class="c1">// 初始化串口通信，波特率设置为57600</span>
+    <span class="n">HSCHandler_init</span><span class="p">(</span><span class="n">trigPin</span><span class="p">,</span> <span class="n">echoPin</span><span class="p">);</span> <span class="c1">// 初始化声波传感器</span>
+    <span class="n">setupIR</span><span class="p">(</span><span class="n">irremotePin</span><span class="p">);</span> <span class="c1">// 初始化红外传感器</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="nf">loop</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kt">unsigned</span> <span class="kt">long</span> <span class="n">currentMillis</span> <span class="o">=</span> <span class="n">millis</span><span class="p">();</span>
+    <span class="c1">// 非阻塞地处理超声波测距</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">currentMillis</span> <span class="o">-</span> <span class="n">lastDistanceCheck</span> <span class="o">&gt;=</span> <span class="n">distanceInterval</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">lastDistanceCheck</span> <span class="o">=</span> <span class="n">currentMillis</span><span class="p">;</span>
+        <span class="n">HSCHandler_getDistance</span><span class="p">();</span> <span class="c1">// 获取声波传感器距离</span>
+    <span class="p">}</span>
+
+    <span class="c1">// 非阻塞地处理红外传感器</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">currentMillis</span> <span class="o">-</span> <span class="n">lastIRCheck</span> <span class="o">&gt;=</span> <span class="n">irInterval</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">lastIRCheck</span> <span class="o">=</span> <span class="n">currentMillis</span><span class="p">;</span>
+        <span class="n">handleIR</span><span class="p">();</span> <span class="c1">// 处理红外传感器</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+</code></pre></div></div>
+
+<h1 id="25-利用-python-的-pyserial-库读取串口信息">2.5 利用 python 的 pyserial 库读取串口信息</h1>
+
+<h2 id="251-结果">2.5.1 结果</h2>
+
+<p><img src="/assets/pics/ROS2_MICRO/2_python_read_serial.gif" alt="python_read_serial.gif" /></p>
+
+<h2 id="252-代码实现">2.5.2 代码实现</h2>
+
+<p>直接上代码吧，这个太简单了, 需要安装 pyserial 库 <code class="language-plaintext highlighter-rouge">pip3 install pyserial</code></p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="c1"># sudo pip3 install pyserial
+</span>
+<span class="kn">import</span> <span class="n">serial</span>
+
+<span class="k">def</span> <span class="nf">read_from_serial</span><span class="p">(</span><span class="n">port</span><span class="p">,</span> <span class="n">baudrate</span><span class="p">):</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="c1"># 打开串口
+</span>        <span class="n">ser</span> <span class="o">=</span> <span class="n">serial</span><span class="p">.</span><span class="nc">Serial</span><span class="p">(</span><span class="n">port</span><span class="p">,</span> <span class="n">baudrate</span><span class="p">,</span> <span class="n">timeout</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+        <span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">"</span><span class="s">Connected to </span><span class="si">{</span><span class="n">port</span><span class="si">}</span><span class="s"> at </span><span class="si">{</span><span class="n">baudrate</span><span class="si">}</span><span class="s"> baud.</span><span class="sh">"</span><span class="p">)</span>
+
+        <span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+            <span class="c1"># 读取一行数据
+</span>            <span class="n">line</span> <span class="o">=</span> <span class="n">ser</span><span class="p">.</span><span class="nf">readline</span><span class="p">().</span><span class="nf">decode</span><span class="p">(</span><span class="sh">'</span><span class="s">utf-8</span><span class="sh">'</span><span class="p">).</span><span class="nf">strip</span><span class="p">()</span>
+            <span class="k">if</span> <span class="n">line</span><span class="p">:</span>
+                <span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">"</span><span class="s">Received: </span><span class="si">{</span><span class="n">line</span><span class="si">}</span><span class="sh">"</span><span class="p">)</span>
+
+    <span class="k">except</span> <span class="n">serial</span><span class="p">.</span><span class="n">SerialException</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">"</span><span class="s">Error: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="sh">"</span><span class="p">)</span>
+    <span class="k">except</span> <span class="nb">KeyboardInterrupt</span><span class="p">:</span>
+        <span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">Exiting...</span><span class="sh">"</span><span class="p">)</span>
+    <span class="k">finally</span><span class="p">:</span>
+        <span class="c1"># 关闭串口
+</span>        <span class="k">if</span> <span class="n">ser</span><span class="p">.</span><span class="n">is_open</span><span class="p">:</span>
+            <span class="n">ser</span><span class="p">.</span><span class="nf">close</span><span class="p">()</span>
+            <span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">Serial port closed.</span><span class="sh">"</span><span class="p">)</span>
+
+<span class="c1"># 调用函数读取COM18端口的消息，波特率为57600
+</span><span class="nf">read_from_serial</span><span class="p">(</span><span class="sh">'</span><span class="s">COM18</span><span class="sh">'</span><span class="p">,</span> <span class="mi">57600</span><span class="p">)</span>
+
+</code></pre></div></div>
+</section>
+            </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div></div>
+    </div>
+</div>
+
+<!-- introduce mathjax support -->
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [ ['$', '$'], ['\\(', '\\)'] ]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script
+  type="text/javascript" id="MathJax-script" async
+  src="/assets/js/tex-chtml.js">
+</script>
+
+
+<!-- introduce per-page mermaid support -->
+
+
+<!-- introduce mathjax support -->
+<script>
+    function fixes_chrome_anchors() {
+        let chrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+        if (window.location.hash && chrome) {
+            setTimeout(function () {
+                var hash = window.location.hash;
+                window.location.hash = "";
+                window.location.hash = hash;
+            }, 300);
+        }
+    }
+
+    if (document.readyState === "loading") {
+        // Loading hasn't finished yet
+        document.addEventListener("DOMContentLoaded", fixes_chrome_anchors);
+    } else {
+        // `DOMContentLoaded` has already fired
+        fixes_chrome_anchors();
+    }
+</script>
+
+
+                        <a href="/ros2_micro/2023-04-01-1_1_ROS2_Arduino.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 1 ROS2 和 Arduino 通讯">
+                            <i class="fa fa-angle-left"></i>
+                        </a>
+                    
+
+                    
+                        <a href="/ros2_micro/2023-04-03-3_1_ROS2_Arduino_demo.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 3 ROS2 和 arduino 通讯">
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                    
+                </div>
+            </div>
+
+            <script>
+            var gitbook = gitbook || [];
+            gitbook.push(function() {
+                gitbook.page.hasChanged({
+    "page": {
+        "title": "Introduction",
+        "level": "1.1",
+        "depth": 1,
+        
+        "next": {
+            "title": "3 ROS2 和 arduino 通讯",
+            "level": "1.2",
+            "depth": 1,
+            "path": "_posts/ROS2_MICRO/2023-04-03-3_1_ROS2_Arduino_demo.md",
+            "ref": "_posts/ROS2_MICRO/2023-04-03-3_1_ROS2_Arduino_demo.md",
+            "articles": []
+        },
+        
+        "dir": "ltr"
+    },    "config": {
+        "plugins": ["fontsettings", "highlight", "livereload", "lunr", "search", "sharing", "theme-default", "livereload"],
+        "styles": {
+            "ebook": "styles/ebook.css",
+            "epub": "styles/epub.css",
+            "mobi": "styles/mobi.css",
+            "pdf": "styles/pdf.css",
+            "print": "styles/print.css",
+            "website": "styles/website.css"
+        },
+        "pluginsConfig": {
+            "expandable-chapter-small2": {
+                "articlesExpand": true,
+            },
+            "fontsettings": {
+                "family": "sans",
+                "size": 2,
+                "theme": "white"
+            },
+            "highlight": {},
+            "livereload": {},
+            "lunr": {
+                "ignoreSpecialCharacters": false,
+                "maxIndexSize": 1000000
+            },
+            "search": {},            "sharing": {},
+"theme-default": {
+                "showLevel": false,
+                "styles": {
+                    "ebook": "styles/ebook.css",
+                    "epub": "styles/epub.css",
+                    "mobi": "styles/mobi.css",
+                    "pdf": "styles/pdf.css",
+                    "print": "styles/print.css",
+                    "website": "styles/website.css"
+                }
+            },
+        },
+        "theme": "default",
+        "author": "Tao He",
+        "pdf": {
+            "pageNumbers": true,
+            "fontSize": 12,
+            "fontFamily": "Arial",
+            "paperSize": "a4",
+            "chapterMark": "pagebreak",
+            "pageBreaksBefore": "/",
+            "margin": {
+                "right": 62,
+                "left": 62,
+                "top": 56,
+                "bottom": 56
+            }
+        },
+        "structure": {
+            "langs": "LANGS.md",
+            "readme": "README.md",
+        },
+        "variables": {},
+        "title": "Blogs",
+        "language": "en",
+        "gitbook": "*"
+    },
+    "file": {
+        "path": "_posts/ROS2_MICRO/2023-04-02-2_1_Arduino基本语法.md",
+        "mtime": "2023-04-02 00:00:00 +0800",
+        "type": "markdown"
+    },
+    "gitbook": {
+        "version": "3.2.3",
+        "time": "2024-11-23 17:20:01 +0800"
+    },
+    "basePath": "",
+    "book": {
+        "language": ""
+    }
+});
+            });
+            </script>
+        </div><script src="/assets/gitbook/gitbook.js"></script>
+<script src="/assets/gitbook/theme.js"></script>
+
+<script src="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-search-pro/search.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-sharing/buttons.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-splitter/splitter.js"></script>
+
+<!--
+<script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+<script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+<script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+<script src="../gitbook/gitbook-plugin-search/search.js"></script>
+-->
+
+<script src="/assets/gitbook/custom.js"></script>
+<script src="/assets/gitbook/custom-local.js"></script>
+
+</body>
+</html>

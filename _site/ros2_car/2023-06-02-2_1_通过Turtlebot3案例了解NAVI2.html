@@ -1,0 +1,712 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head><meta charset="UTF-8">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>2 通过 Turtlebot3 案例了解 NAVI2 · Blogs</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="description" content="Build Jekyll site with the GitBook style.
+"><meta name="generator" content="Jekyll (using style of GitBook 3.2.3)"><meta name="author" content="pldz9"><link rel="stylesheet" href="/assets/gitbook/style.css">
+<link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+<link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
+<link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-fontsettings/website.css">
+<link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-search-pro/search.css">
+<link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-splitter/splitter.css">
+
+<link rel="stylesheet" href="/assets/gitbook/rouge/thankful_eyes.css">
+
+<link rel="stylesheet" href="/assets/gitbook/custom.css">
+<link rel="stylesheet" href="/assets/gitbook/custom-local.css">
+
+<meta name="HandheldFriendly" content="true"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/gitbook/images/apple-touch-icon-precomposed-152.png">
+<link rel="shortcut icon" href="/assets/gitbook/images/favicon.ico" type="image/x-icon">
+
+
+
+
+            <link rel="prev" href="/ros2_car/2023-06-01-1_1_docker%E5%91%BD%E4%BB%A4%E7%86%9F%E6%82%89.html" />
+        
+
+        
+    </head>
+    <body>
+        <div class="book"><div class="book-summary">
+    <script type="text/javascript">
+        // Fixes the page links scroll problem on both desktop and mobile browsers
+        function pageScrollToTop(element) {
+            // both mobile and non-mobile
+            $('div.body-inner').animate({scrollTop: 0});
+            $(element).parent().find('li>ul>li').removeClass('active');
+            return true;
+        }
+
+    </script>
+
+    <nav role="navigation" style="height: 100%;">
+        <!-- Search Input -->
+        <div id="book-search-input" role="search">
+            <input type="text" placeholder="Type to search" />
+        </div>
+        <div id="book-search-input-link" role="search">
+            <a href="/assets/search.html">Click to Search</a>
+        </div>
+
+        <div class="book-base-title" data-path="">
+            <a href="/" onclick="pageScrollToTop(this)">
+                爬楼的猪 Blogs
+            </a>
+        </div>
+
+        <!-- Book Summary Navigation -->
+        <ul class="summary" id="book-summary-core" data-scroll-top="0">
+            <!-- Loop through collections and posts by category -->
+            
+            
+            <li class="chapter category-header" id="category-header-ROS2_CAR">
+                <a href="javascript:void(0)">
+                    ROS2_CAR
+                </a>
+                <ul class="category-list" id="category-list-ROS2_CAR">
+                    
+                    
+                    <li class="chapter "
+                        data-path="/ros2_car/2023-01-03-ABOUT.html">
+                        <a href="/ros2_car/2023-01-03-ABOUT.html" onclick="pageScrollToTop(this)">
+                            ABOUT
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/ros2_car/2023-06-01-1_1_docker%E5%91%BD%E4%BB%A4%E7%86%9F%E6%82%89.html">
+                        <a href="/ros2_car/2023-06-01-1_1_docker%E5%91%BD%E4%BB%A4%E7%86%9F%E6%82%89.html" onclick="pageScrollToTop(this)">
+                            1 Docker 搭建 ROS2 嵌入式运行环境
+                        </a>
+                    </li>
+                    
+                    <li class="chapter active"
+                        data-path="/ros2_car/2023-06-02-2_1_%E9%80%9A%E8%BF%87Turtlebot3%E6%A1%88%E4%BE%8B%E4%BA%86%E8%A7%A3NAVI2.html">
+                        <a href="/ros2_car/2023-06-02-2_1_%E9%80%9A%E8%BF%87Turtlebot3%E6%A1%88%E4%BE%8B%E4%BA%86%E8%A7%A3NAVI2.html" onclick="pageScrollToTop(this)">
+                            2 通过 Turtlebot3 案例了解 NAVI2
+                        </a>
+                    </li>
+                    
+                </ul>
+            </li>
+            
+            <li class="chapter category-header" id="category-header-ROS2_MICRO">
+                <a href="javascript:void(0)">
+                    ROS2_MICRO
+                </a>
+                <ul class="category-list" id="category-list-ROS2_MICRO">
+                    
+                    
+                    <li class="chapter "
+                        data-path="/ros2_micro/2023-01-02-ABOUT.html">
+                        <a href="/ros2_micro/2023-01-02-ABOUT.html" onclick="pageScrollToTop(this)">
+                            ABOUT
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/ros2_micro/2023-04-01-1_1_ROS2_Arduino.html">
+                        <a href="/ros2_micro/2023-04-01-1_1_ROS2_Arduino.html" onclick="pageScrollToTop(this)">
+                            1 ROS2 和 Arduino 通讯
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/ros2_micro/2023-04-02-2_1_Arduino%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95.html">
+                        <a href="/ros2_micro/2023-04-02-2_1_Arduino%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95.html" onclick="pageScrollToTop(this)">
+                            2 Arduino 的基本语法
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/ros2_micro/2023-04-03-3_1_ROS2_Arduino_demo.html">
+                        <a href="/ros2_micro/2023-04-03-3_1_ROS2_Arduino_demo.html" onclick="pageScrollToTop(this)">
+                            3 ROS2 和 arduino 通讯
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/ros2_micro/2023-04-04-4_1_MicroROS%E5%88%9D%E6%AD%A5%E4%BD%93%E9%AA%8C.html">
+                        <a href="/ros2_micro/2023-04-04-4_1_MicroROS%E5%88%9D%E6%AD%A5%E4%BD%93%E9%AA%8C.html" onclick="pageScrollToTop(this)">
+                            4 MircoROS 初步体验
+                        </a>
+                    </li>
+                    
+                </ul>
+            </li>
+            
+            <li class="chapter category-header" id="category-header-ROS2_BASIC">
+                <a href="javascript:void(0)">
+                    ROS2_BASIC
+                </a>
+                <ul class="category-list" id="category-list-ROS2_BASIC">
+                    
+                    
+                    <li class="chapter "
+                        data-path="/ros2_basic/2023-01-01-ABOUT.html">
+                        <a href="/ros2_basic/2023-01-01-ABOUT.html" onclick="pageScrollToTop(this)">
+                            ABOUT
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/ros2_basic/2023-02-01-1_1_Ubuntu%E9%85%8D%E7%BD%AE%E4%B8%8EROS2%E5%BF%AB%E9%80%9F%E4%BD%93%E9%AA%8C.html">
+                        <a href="/ros2_basic/2023-02-01-1_1_Ubuntu%E9%85%8D%E7%BD%AE%E4%B8%8EROS2%E5%BF%AB%E9%80%9F%E4%BD%93%E9%AA%8C.html" onclick="pageScrollToTop(this)">
+                            1 Ubuntu配置与ROS2快速体验
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/ros2_basic/2023-02-02-2_1_ROS2%E8%AF%9D%E9%A2%98%E9%80%9A%E8%AE%AF%E5%9F%BA%E7%A1%80.html">
+                        <a href="/ros2_basic/2023-02-02-2_1_ROS2%E8%AF%9D%E9%A2%98%E9%80%9A%E8%AE%AF%E5%9F%BA%E7%A1%80.html" onclick="pageScrollToTop(this)">
+                            2 ROS2话题通讯 - 话题通讯基础
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/ros2_basic/2023-02-03-2_2_ROS2%E8%AF%9D%E9%A2%98%E9%80%9A%E8%AE%AF%E6%8F%90%E5%8D%87.html">
+                        <a href="/ros2_basic/2023-02-03-2_2_ROS2%E8%AF%9D%E9%A2%98%E9%80%9A%E8%AE%AF%E6%8F%90%E5%8D%87.html" onclick="pageScrollToTop(this)">
+                            2 ROS2话题通讯 - 话题通讯进阶
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/ros2_basic/2023-02-04-3_1_ROS2%E6%9C%8D%E5%8A%A1%E9%80%9A%E8%AE%AF.html">
+                        <a href="/ros2_basic/2023-02-04-3_1_ROS2%E6%9C%8D%E5%8A%A1%E9%80%9A%E8%AE%AF.html" onclick="pageScrollToTop(this)">
+                            3 ROS2服务通讯基础
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/ros2_basic/2023-02-05-4_1_ROS2%E5%8F%82%E6%95%B0%E6%9C%8D%E5%8A%A1%E5%99%A8.html">
+                        <a href="/ros2_basic/2023-02-05-4_1_ROS2%E5%8F%82%E6%95%B0%E6%9C%8D%E5%8A%A1%E5%99%A8.html" onclick="pageScrollToTop(this)">
+                            4 ROS2节点参数基础
+                        </a>
+                    </li>
+                    
+                </ul>
+            </li>
+            
+            <li class="chapter category-header" id="category-header-Others">
+                <a href="javascript:void(0)">
+                    Others
+                </a>
+                <ul class="category-list" id="category-list-Others">
+                    
+                    
+                    <li class="chapter "
+                        data-path="/others/2022-01-01-ABOUT.html">
+                        <a href="/others/2022-01-01-ABOUT.html" onclick="pageScrollToTop(this)">
+                            ABOUT
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/others/2022-01-02-VSCode%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE.html">
+                        <a href="/others/2022-01-02-VSCode%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE.html" onclick="pageScrollToTop(this)">
+                            VSCode相关配置
+                        </a>
+                    </li>
+                    
+                </ul>
+            </li>
+            
+        </ul>
+
+
+        <!-- Page Content and TOC -->
+        <div class="page-content-category">
+            <div class="page-content-title">Navigation of <span>2 通过 Turtlebot3 案例了解 NAVI2</span></div>
+            <ul class="page-content">
+                
+                <ul><li><a href="#11-ubuntu2004-安装-ros2foxy" onclick="mobilePageScrollToAnchor(this)" >1.1 Ubuntu20.04 安装 ROS2(Foxy)</a></li><li><a href="#12-运行-ros2-navi-例子" onclick="mobilePageScrollToAnchor(this)" >1.2 运行 ROS2 NAVI 例子</a><ul><li><a href="#121-安装仿真的依赖项和软件" onclick="mobilePageScrollToAnchor(this)" >1.2.1 安装仿真的依赖项和软件</a></li><li><a href="#122-建立导航的地图mapping" onclick="mobilePageScrollToAnchor(this)" >1.2.2 建立导航的地图(Mapping)</a></li><li><a href="#123-使用地图文件进行导航" onclick="mobilePageScrollToAnchor(this)" >1.2.3 使用地图文件进行导航</a></li><li><a href="#124-可能出现的问题汇总持续更新" onclick="mobilePageScrollToAnchor(this)" >1.2.4 可能出现的问题汇总（持续更新）</a></li><li><a href="#1241-ros2-gazebospawn-service-failed-exiting" onclick="mobilePageScrollToAnchor(this)" >1.2.4.1 ROS2 gazebo：Spawn service failed. Exiting.</a></li><li><a href="#1242-map_saver-failed-to-spin-map-subscription" onclick="mobilePageScrollToAnchor(this)" >1.2.4.2 [map_saver]: Failed to spin map subscription</a></li></ul></li></ul>
+
+                
+            </ul>
+        </div> 
+    </nav>
+</div><div class="book-body">
+                <div class="book-header" role="navigation">
+                    <!-- Title -->
+                    <h1>
+                      2 通过 Turtlebot3 案例了解 NAVI2
+                    </h1>
+                </div>
+
+                <div class="body-inner"><div class="page-wrapper" tabindex="-1" role="main">
+    
+
+    <div class="page-inner">
+        <div id="book-search-results">
+            <div class="search-noresults">
+                <section class="normal markdown-section">
+                    
+                        <h1 id="/ros2_car/2_1_通过Turtlebot3案例了解NAVI2">2 通过 Turtlebot3 案例了解 NAVI2</h1>
+                    
+
+                    <h1 id="11-ubuntu2004-安装-ros2foxy">1.1 Ubuntu20.04 安装 ROS2(Foxy)</h1>
+
+<blockquote>
+  <p>参考内容：</p>
+
+  <p><a href="https://docs.ros.org/en/foxy/Installation/Ubuntu-Install-Debians.html">官网给出的教程</a></p>
+</blockquote>
+
+<ol>
+  <li>换源，输入<code class="language-plaintext highlighter-rouge">sudo gedit /etc/apt/sources.list</code>这里选择的是中科大的源，如果你是在 Ubuntu 内部选择的软件源，笔者遇到过安装 ROS2 时候提示没有 depends 的情况，于是这里手动换源，将文件源更改如下：</li>
+</ol>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>deb https://mirrors.ustc.edu.cn/ubuntu/ focal main restricted universe multiverse
+deb-src https://mirrors.ustc.edu.cn/ubuntu/ focal main restricted universe multiverse
+deb https://mirrors.ustc.edu.cn/ubuntu/ focal-updates main restricted universe multiverse
+deb-src https://mirrors.ustc.edu.cn/ubuntu/ focal-updates main restricted universe multiverse
+deb https://mirrors.ustc.edu.cn/ubuntu/ focal-backports main restricted universe multiverse
+deb-src https://mirrors.ustc.edu.cn/ubuntu/ focal-backports main restricted universe multiverse
+deb https://mirrors.ustc.edu.cn/ubuntu/ focal-security main restricted universe multiverse
+deb-src https://mirrors.ustc.edu.cn/ubuntu/ focal-security main restricted universe multiverse
+deb https://mirrors.ustc.edu.cn/ubuntu/ focal-proposed main restricted universe multiverse
+deb-src https://mirrors.ustc.edu.cn/ubuntu/ focal-proposed main restricted universe multiverse
+</code></pre></div></div>
+
+<ol>
+  <li>
+    <p>更新源和软件：<code class="language-plaintext highlighter-rouge">sudo apt-get update &amp;&amp; sudo apt-get upgrade</code></p>
+  </li>
+  <li>
+    <p>配置语言，需要支撑<code class="language-plaintext highlighter-rouge">UTF-8</code>：</p>
+  </li>
+</ol>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pldz@pldz-pc:~<span class="nv">$ </span>locale
+<span class="nv">LANG</span><span class="o">=</span>en_US.UTF-8
+<span class="nv">LANGUAGE</span><span class="o">=</span>
+<span class="nv">LC_CTYPE</span><span class="o">=</span><span class="s2">"en_US.UTF-8"</span>
+<span class="nv">LC_NUMERIC</span><span class="o">=</span>zh_CN.UTF-8
+<span class="nv">LC_TIME</span><span class="o">=</span>zh_CN.UTF-8
+<span class="nv">LC_COLLATE</span><span class="o">=</span><span class="s2">"en_US.UTF-8"</span>
+<span class="nv">LC_MONETARY</span><span class="o">=</span>zh_CN.UTF-8
+<span class="nv">LC_MESSAGES</span><span class="o">=</span><span class="s2">"en_US.UTF-8"</span>
+<span class="nv">LC_PAPER</span><span class="o">=</span>zh_CN.UTF-8
+<span class="nv">LC_NAME</span><span class="o">=</span>zh_CN.UTF-8
+<span class="nv">LC_ADDRESS</span><span class="o">=</span>zh_CN.UTF-8
+<span class="nv">LC_TELEPHONE</span><span class="o">=</span>zh_CN.UTF-8
+<span class="nv">LC_MEASUREMENT</span><span class="o">=</span>zh_CN.UTF-8
+<span class="nv">LC_IDENTIFICATION</span><span class="o">=</span>zh_CN.UTF-8
+<span class="nv">LC_ALL</span><span class="o">=</span>
+pldz@pldz-pc:~<span class="err">$</span>
+</code></pre></div></div>
+
+<ol>
+  <li>获取 GPG 秘钥：<code class="language-plaintext highlighter-rouge">sudo apt update &amp;&amp; sudo apt install curl -y</code>然后<code class="language-plaintext highlighter-rouge">sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o /usr/share/keyrings/ros-archive-keyring.gpg</code>，此时如果提示无法访问到网站，则添加 host：</li>
+</ol>
+
+<ul>
+  <li>
+    <ol>
+      <li>访问 <code class="language-plaintext highlighter-rouge">https://tool.lu/ip/</code> 并输入域名 <code class="language-plaintext highlighter-rouge">raw.githubusercontent.com</code>，查询 ip 地址，这里查询到的是 <code class="language-plaintext highlighter-rouge">185.199.108.133</code></li>
+    </ol>
+  </li>
+</ul>
+
+<p><img src="/assets/pics/ROS2_CAR/2_get_ip_address.png" alt="IP地址查询" /></p>
+
+<ul>
+  <li>
+    <ol>
+      <li>修改 <code class="language-plaintext highlighter-rouge">sudo gedit /etc/hosts</code>文件,并手动添加 DNS 解析：</li>
+    </ol>
+  </li>
+</ul>
+
+<p><img src="/assets/pics/ROS2_CAR/2_add_ip_into_linux_host.png" alt="手动添加IP" /></p>
+
+<ol>
+  <li>
+    <p>添加 ROS2 的仓库：<code class="language-plaintext highlighter-rouge">echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(. /etc/os-release &amp;&amp; echo $UBUNTU_CODENAME) main" | sudo tee /etc/apt/sources.list.d/ros2.list &gt; /dev/null</code></p>
+  </li>
+  <li>
+    <p>更新源和软件：<code class="language-plaintext highlighter-rouge">sudo apt-get update &amp;&amp; sudo apt-get upgrade</code></p>
+  </li>
+  <li>
+    <p>下载 ROS2 Foxy：<code class="language-plaintext highlighter-rouge">sudo apt install ros-foxy-desktop python3-argcomplete</code></p>
+  </li>
+  <li>
+    <p>下载完成后下载 ROS2 开发工具：<code class="language-plaintext highlighter-rouge">sudo apt install ros-dev-tools</code></p>
+  </li>
+  <li>
+    <p>将 ROS2 添加到环境变量：<code class="language-plaintext highlighter-rouge">sudo echo "source /opt/ros/foxy/setup.bash" &gt;&gt; ~/.bashrc</code></p>
+  </li>
+  <li>
+    <p>激活环境变量验证安装：<code class="language-plaintext highlighter-rouge">source ~/.bashrc</code>，然后输入<code class="language-plaintext highlighter-rouge">ros2 run turtlesim turtlesim_node</code>如果能够看到小乌龟则代表成功</p>
+  </li>
+</ol>
+
+<p><img src="/assets/pics/ROS2_CAR/2_ros2_turtlesim_demo.png" alt="ROS2 小乌龟例子" /></p>
+
+<h1 id="12-运行-ros2-navi-例子">1.2 运行 ROS2 NAVI 例子</h1>
+
+<h2 id="121-安装仿真的依赖项和软件">1.2.1 安装仿真的依赖项和软件</h2>
+
+<blockquote>
+  <p>参考内容</p>
+
+  <p><a href="https://fishros.org.cn/forum/topic/303/ros2-%E5%9F%BA%E7%A1%80-navigation2%E5%AF%BC%E8%88%AA%E7%B3%BB%E7%BB%9F">[ROS2 基础] Navigation2 导航系统</a></p>
+
+  <p><a href="https://zhuanlan.zhihu.com/p/526385552">《动手学 ROS2》10.10 通过 Nav2API 进行导航</a></p>
+
+  <p><a href="https://www.ncnynl.com/archives/202110/4702.html">ROS2 与 Navigation2 入门教程-构建和安装 Nav2</a></p>
+</blockquote>
+
+<ol>
+  <li>下载功能包：需要的功能包包括<code class="language-plaintext highlighter-rouge">turtlebot3</code>的模型和<code class="language-plaintext highlighter-rouge">cartographer</code>,以及<code class="language-plaintext highlighter-rouge">rviz2</code>和<code class="language-plaintext highlighter-rouge">gazebo</code>环境，其中的<code class="language-plaintext highlighter-rouge">gazebo</code>主要用于模拟真实的物理环境，<code class="language-plaintext highlighter-rouge">rviz2</code>是<code class="language-plaintext highlighter-rouge">ROS2</code>通讯的可视化工具</li>
+</ol>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt <span class="nb">install </span>ros-foxy-turtlebot3<span class="k">*</span>
+<span class="nb">sudo </span>apt <span class="nb">install </span>ros-foxy-cartographer
+
+<span class="c"># 如果没有gazebo和rviz2的需要再次安装这两个软件</span>
+<span class="nb">sudo </span>apt <span class="nb">install </span>ros-foxy-rviz2
+<span class="nb">sudo </span>apt <span class="nb">install </span>ros-foxy-gazebo<span class="k">*</span>
+</code></pre></div></div>
+
+<ol>
+  <li>
+    <p>在运行仿真环境的时候，有时候会卡住在 gazebo 打开的界面，gazebo 初始化打开时候是会连接网络下载模型库,否则可能会出现<strong>打开了环境，但是机器人一直在缩小的情况</strong></p>
+  </li>
+  <li>
+    <p>到 gazebo 的 github 官方网页: <a href="https://github.com/osrf/gazebo_models">osrf/gazebo_models</a>，下载全部模型为 zip 文件</p>
+  </li>
+</ol>
+
+<p><img src="/assets/pics/ROS2_CAR/2_gazebo_models_repo.png" alt="gazebo模型仓库" /></p>
+
+<ol>
+  <li>解压 zip 文件夹并重命名为<code class="language-plaintext highlighter-rouge">models</code>，然后拷贝到<code class="language-plaintext highlighter-rouge">~/.gazebo</code>的目录下</li>
+</ol>
+
+<p><img src="/assets/pics/ROS2_CAR/2_put_gazebo_models.png" alt="移动gazebo模型" /></p>
+
+<h2 id="122-建立导航的地图mapping">1.2.2 建立导航的地图(Mapping)</h2>
+
+<ol>
+  <li>启动导航的物理仿真环境：创建一个启动 gazebo 物理仿真环境的脚本，比方说这里的<code class="language-plaintext highlighter-rouge">naviWorld.sh</code>（赋予可执行权限）</li>
+</ol>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># naviWorld.sh</span>
+<span class="nb">export </span><span class="nv">TURTLEBOT3_MODEL</span><span class="o">=</span>burger
+ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
+</code></pre></div></div>
+
+<p><img src="/assets/pics/ROS2_CAR/2_run_gazebo.png" alt="启动trutlebot3的gazebo物理环境" /></p>
+
+<p>第一次启动，可能会出现一直在等待的状态，并且提示<code class="language-plaintext highlighter-rouge">Spawn service failed. Exiting.</code>， 错误的解决办法可以参考 1.3.1 的内容，杀死 gazebo 再次启动即可</p>
+
+<ol>
+  <li>启动建图指令：创建一个<code class="language-plaintext highlighter-rouge">RVIZ2</code>环境用于显示小车的状态，并建立起导航的地图，例如这里的<code class="language-plaintext highlighter-rouge">mapping.sh</code>（赋予可执行权限）：</li>
+</ol>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># mapping.sh</span>
+<span class="nb">export </span><span class="nv">TURTLEBOT3_MODEL</span><span class="o">=</span>burger
+ros2 launch turtlebot3_cartographer cartographer.launch.py use_sim_time:<span class="o">=</span>True
+</code></pre></div></div>
+
+<p>启动成功之后，会出现 rviz2 的界面：</p>
+
+<p><img src="/assets/pics/ROS2_CAR/2_gazebo_rviz2_map.png" alt="建图的rviz2画面" /></p>
+
+<ol>
+  <li>控制机器人移动生成地图文件，输入命令：<code class="language-plaintext highlighter-rouge">ros2 run turtlebot3_teleop teleop_keyboard</code>启动键盘控制小车运动的节点，在此之前可以指定小车的类型：<code class="language-plaintext highlighter-rouge">export TURTLEBOT3_MODEL=burger</code>，例如下面的 telep.sh</li>
+</ol>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># telep.sh</span>
+<span class="nb">export </span><span class="nv">TURTLEBOT3_MODEL</span><span class="o">=</span>burger
+ros2 run turtlebot3_teleop teleop_keyboard
+</code></pre></div></div>
+
+<p><img src="/assets/pics/ROS2_CAR/2_generate_map.png" alt="控制机器人运动生成大概的地图文件" /></p>
+
+<ol>
+  <li>完成建图，生成导航的地图文件和信息，通过<code class="language-plaintext highlighter-rouge">teleop_keyboard</code>打开的终端控制机器人移动，等待图片大部分被扫描成功后，输入命令行调用<code class="language-plaintext highlighter-rouge">map_server</code>存储地图，其中的地图名称为 test，之后会生成以该名字命名的<code class="language-plaintext highlighter-rouge">.pgm</code>/<code class="language-plaintext highlighter-rouge">yaml</code>等文件：<code class="language-plaintext highlighter-rouge">ros2 run nav2_map_server map_saver_cli -f testMap</code></li>
+</ol>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pldz@pldz-pc:/mnt/hgfs/VMware/ROS2_NAVI/1_Chapter/code<span class="nv">$ </span>ros2 run nav2_map_server map_saver_cli <span class="nt">-f</span> testMap
+<span class="o">[</span>INFO] <span class="o">[</span>1684547384.636100069] <span class="o">[</span>map_saver]:
+	map_saver lifecycle node launched.
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html <span class="k">for </span>more information.
+<span class="o">[</span>INFO] <span class="o">[</span>1684547384.636296866] <span class="o">[</span>map_saver]: Creating
+<span class="o">[</span>INFO] <span class="o">[</span>1684547384.636480318] <span class="o">[</span>map_saver]: Configuring
+<span class="o">[</span>INFO] <span class="o">[</span>1684547384.638094058] <span class="o">[</span>map_saver]: Saving map from <span class="s1">'map'</span> topic to <span class="s1">'testMap'</span> file
+<span class="o">[</span>WARN] <span class="o">[</span>1684547384.638189556] <span class="o">[</span>map_saver]: Free threshold unspecified. Setting it to default value: 0.250000
+<span class="o">[</span>WARN] <span class="o">[</span>1684547384.638247635] <span class="o">[</span>map_saver]: Occupied threshold unspecified. Setting it to default value: 0.650000
+<span class="o">[</span>WARN] <span class="o">[</span>map_io]: Image format unspecified. Setting it to: pgm
+<span class="o">[</span>INFO] <span class="o">[</span>map_io]: Received a 125 X 119 map @ 0.05 m/pix
+<span class="o">[</span>INFO] <span class="o">[</span>map_io]: Writing map occupancy data to testMap.pgm
+<span class="o">[</span>INFO] <span class="o">[</span>map_io]: Writing map metadata to testMap.yaml
+<span class="o">[</span>INFO] <span class="o">[</span>map_io]: Map saved
+<span class="o">[</span>INFO] <span class="o">[</span>1684547384.984216612] <span class="o">[</span>map_saver]: Map saved successfully
+<span class="o">[</span>INFO] <span class="o">[</span>1684547384.985701952] <span class="o">[</span>map_saver]: Destroying
+pldz@pldz-pc:/mnt/hgfs/VMware/ROS2_NAVI/1_Chapter/code<span class="nv">$ </span><span class="nb">ls
+</span>mapping.sh  naviWorld.sh  simNavi2.sh  telep.sh  testMap.pgm  testMap.yaml
+</code></pre></div></div>
+
+<h2 id="123-使用地图文件进行导航">1.2.3 使用地图文件进行导航</h2>
+
+<ol>
+  <li>当有了地图文件之后，就可以根据地图文件，进行小车的导航仿真，这里启动<code class="language-plaintext highlighter-rouge">turtlebot3</code>的物理仿真环境，也就是建图时候的<code class="language-plaintext highlighter-rouge">gazebo</code>，实际上也就是之前的<code class="language-plaintext highlighter-rouge">naviWorld.sh</code>：</li>
+</ol>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">export </span><span class="nv">TURTLEBOT3_MODEL</span><span class="o">=</span>burger
+ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
+</code></pre></div></div>
+
+<ol>
+  <li>有了物理仿真环境之后，再加载地图进行导航的仿真，<strong>其中的<code class="language-plaintext highlighter-rouge">map:</code>后面的参数为之前的<code class="language-plaintext highlighter-rouge">map_server</code>生成的地图文件位置</strong>，创建导航的脚本<code class="language-plaintext highlighter-rouge">simNavi2.sh</code>，此时会提示<code class="language-plaintext highlighter-rouge">Frame map does not exit.</code>是因为没有给出起始的位置建立<code class="language-plaintext highlighter-rouge">odom</code>和<code class="language-plaintext highlighter-rouge">map</code>直接的计算:</li>
+</ol>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">export </span><span class="nv">TURTLEBOT3_MODEL</span><span class="o">=</span>burger
+ros2 launch turtlebot3_navigation2 navigation2.launch.py use_sim_time:<span class="o">=</span><span class="nb">true </span>map:<span class="o">=</span>testMap.yaml
+</code></pre></div></div>
+
+<p><img src="/assets/pics/ROS2_CAR/2_run_navi.png" alt="启动RVIZ导航" /></p>
+
+<ol>
+  <li>给出起始点：在<code class="language-plaintext highlighter-rouge">rviz2</code>工具上拖动<code class="language-plaintext highlighter-rouge">2D Pose Estimate</code>，给出小车位置，完成坐标的变换：</li>
+</ol>
+
+<p><img src="/assets/pics/ROS2_CAR/2_navi_demo.gif" alt="RVIZ2启动导航仿真" /></p>
+
+<h2 id="124-可能出现的问题汇总持续更新">1.2.4 可能出现的问题汇总（持续更新）</h2>
+
+<h2 id="1241-ros2-gazebospawn-service-failed-exiting">1.2.4.1 ROS2 gazebo：Spawn service failed. Exiting.</h2>
+
+<ul>
+  <li>错误的提示如下：</li>
+</ul>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">[</span>spawn_entity.py-4] <span class="o">[</span>INFO] <span class="o">[</span>1684419460.753634677] <span class="o">[</span>spawn_entity]: Loading entity XML from file /opt/ros/foxy/share/turtlebot3_gazebo/models/turtlebot3_burger/model.sdf
+<span class="o">[</span>spawn_entity.py-4] <span class="o">[</span>INFO] <span class="o">[</span>1684419460.755174212] <span class="o">[</span>spawn_entity]: Waiting <span class="k">for </span>service /spawn_entity, <span class="nb">timeout</span> <span class="o">=</span> 30
+<span class="o">[</span>spawn_entity.py-4] <span class="o">[</span>INFO] <span class="o">[</span>1684419460.755469679] <span class="o">[</span>spawn_entity]: Waiting <span class="k">for </span>service /spawn_entity
+<span class="o">[</span>spawn_entity.py-4] <span class="o">[</span>ERROR] <span class="o">[</span>1684419490.844590431] <span class="o">[</span>spawn_entity]: Service %s/spawn_entity unavailable. Was Gazebo started with GazeboRosFactory?
+<span class="o">[</span>spawn_entity.py-4] <span class="o">[</span>ERROR] <span class="o">[</span>1684419490.844908061] <span class="o">[</span>spawn_entity]: Spawn service failed. Exiting.
+<span class="o">[</span>ERROR] <span class="o">[</span>spawn_entity.py-4]: process has died <span class="o">[</span>pid 8128, <span class="nb">exit </span>code 1, cmd <span class="s1">'/opt/ros/foxy/lib/gazebo_ros/spawn_entity.py -entity burger -file /opt/ros/foxy/share/turtlebot3_gazebo/models/turtlebot3_burger/model.sdf -x -2.0 -y -0.5 -z 0.01 --ros-args'</span><span class="o">]</span><span class="nb">.</span>
+</code></pre></div></div>
+
+<ul>
+  <li>尝试解决办法：</li>
+</ul>
+
+<ol>
+  <li>
+    <p>杀死全部的<code class="language-plaintext highlighter-rouge">gazebo server</code>在命令行输入：<code class="language-plaintext highlighter-rouge">lsof -i</code>查看是否还有在运行的<code class="language-plaintext highlighter-rouge">gzserver</code>，记录程序的 PID 号，对输入<code class="language-plaintext highlighter-rouge">kill -9 &lt;pid号&gt;</code>杀死程序</p>
+  </li>
+  <li>
+    <p>再次输入脚本指令打开<code class="language-plaintext highlighter-rouge">gazebo</code></p>
+  </li>
+</ol>
+
+<h2 id="1242-map_saver-failed-to-spin-map-subscription">1.2.4.2 [map_saver]: Failed to spin map subscription</h2>
+
+<ul>
+  <li>错误的提示如下：</li>
+</ul>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pldz@pldz-pc:/mnt/hgfs/VMware/ROS2_NAVI/1_Chapter/code<span class="nv">$ </span>rerver map_saver_cli <span class="nt">-os2</span> run nav2_map_server map_saver_cli <span class="nt">-f</span> testMap
+<span class="o">[</span>INFO] <span class="o">[</span>1684547337.249208762] <span class="o">[</span>map_saver]:
+	map_saver lifecycle node launched.
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html <span class="k">for </span>more information.
+<span class="o">[</span>INFO] <span class="o">[</span>1684547337.249693695] <span class="o">[</span>map_saver]: Creating
+<span class="o">[</span>INFO] <span class="o">[</span>1684547337.250079483] <span class="o">[</span>map_saver]: Configuring
+<span class="o">[</span>INFO] <span class="o">[</span>1684547337.256994454] <span class="o">[</span>map_saver]: Saving map from <span class="s1">'map'</span> topic to <span class="s1">'testMap'</span> file
+<span class="o">[</span>WARN] <span class="o">[</span>1684547337.257098278] <span class="o">[</span>map_saver]: Free threshold unspecified. Setting it to default value: 0.250000
+<span class="o">[</span>WARN] <span class="o">[</span>1684547337.257179799] <span class="o">[</span>map_saver]: Occupied threshold unspecified. Setting it to default value: 0.650000
+<span class="o">[</span>ERROR] <span class="o">[</span>1684547339.261336746] <span class="o">[</span>map_saver]: Failed to spin map subscription
+<span class="o">[</span>INFO] <span class="o">[</span>1684547339.262984556] <span class="o">[</span>map_saver]: Destroying
+</code></pre></div></div>
+
+<ul>
+  <li>尝试解决办法，造成的原因是因为<code class="language-plaintext highlighter-rouge">map_server</code>没有办法找到<code class="language-plaintext highlighter-rouge">/map</code>的话题来订阅，可能是之前你在打开<code class="language-plaintext highlighter-rouge">RVIZ2</code>或者其他内容时，没有启动完全，尝试退出终端，再次启动，其中之后输入<code class="language-plaintext highlighter-rouge">ros2 topic list | grep map</code>查看是否有<code class="language-plaintext highlighter-rouge">/map</code>的话题，有则可以再次输入保存地图文件的命令。</li>
+</ul>
+</section>
+            </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div></div>
+    </div>
+</div>
+
+<!-- introduce mathjax support -->
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [ ['$', '$'], ['\\(', '\\)'] ]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script
+  type="text/javascript" id="MathJax-script" async
+  src="/assets/js/tex-chtml.js">
+</script>
+
+
+<!-- introduce per-page mermaid support -->
+
+
+<!-- introduce mathjax support -->
+<script>
+    function fixes_chrome_anchors() {
+        let chrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+        if (window.location.hash && chrome) {
+            setTimeout(function () {
+                var hash = window.location.hash;
+                window.location.hash = "";
+                window.location.hash = hash;
+            }, 300);
+        }
+    }
+
+    if (document.readyState === "loading") {
+        // Loading hasn't finished yet
+        document.addEventListener("DOMContentLoaded", fixes_chrome_anchors);
+    } else {
+        // `DOMContentLoaded` has already fired
+        fixes_chrome_anchors();
+    }
+</script>
+
+
+                        <a href="/ros2_car/2023-06-01-1_1_docker%E5%91%BD%E4%BB%A4%E7%86%9F%E6%82%89.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 1 Docker 搭建 ROS2 嵌入式运行环境">
+                            <i class="fa fa-angle-left"></i>
+                        </a>
+                    
+
+                    
+                </div>
+            </div>
+
+            <script>
+            var gitbook = gitbook || [];
+            gitbook.push(function() {
+                gitbook.page.hasChanged({
+    "page": {
+        "title": "Introduction",
+        "level": "1.1",
+        "depth": 1,
+        
+        "dir": "ltr"
+    },    "config": {
+        "plugins": ["fontsettings", "highlight", "livereload", "lunr", "search", "sharing", "theme-default", "livereload"],
+        "styles": {
+            "ebook": "styles/ebook.css",
+            "epub": "styles/epub.css",
+            "mobi": "styles/mobi.css",
+            "pdf": "styles/pdf.css",
+            "print": "styles/print.css",
+            "website": "styles/website.css"
+        },
+        "pluginsConfig": {
+            "expandable-chapter-small2": {
+                "articlesExpand": true,
+            },
+            "fontsettings": {
+                "family": "sans",
+                "size": 2,
+                "theme": "white"
+            },
+            "highlight": {},
+            "livereload": {},
+            "lunr": {
+                "ignoreSpecialCharacters": false,
+                "maxIndexSize": 1000000
+            },
+            "search": {},            "sharing": {},
+"theme-default": {
+                "showLevel": false,
+                "styles": {
+                    "ebook": "styles/ebook.css",
+                    "epub": "styles/epub.css",
+                    "mobi": "styles/mobi.css",
+                    "pdf": "styles/pdf.css",
+                    "print": "styles/print.css",
+                    "website": "styles/website.css"
+                }
+            },
+        },
+        "theme": "default",
+        "author": "Tao He",
+        "pdf": {
+            "pageNumbers": true,
+            "fontSize": 12,
+            "fontFamily": "Arial",
+            "paperSize": "a4",
+            "chapterMark": "pagebreak",
+            "pageBreaksBefore": "/",
+            "margin": {
+                "right": 62,
+                "left": 62,
+                "top": 56,
+                "bottom": 56
+            }
+        },
+        "structure": {
+            "langs": "LANGS.md",
+            "readme": "README.md",
+        },
+        "variables": {},
+        "title": "Blogs",
+        "language": "en",
+        "gitbook": "*"
+    },
+    "file": {
+        "path": "_posts/ROS2_CAR/2023-06-02-2_1_通过Turtlebot3案例了解NAVI2.md",
+        "mtime": "2023-06-02 00:00:00 +0800",
+        "type": "markdown"
+    },
+    "gitbook": {
+        "version": "3.2.3",
+        "time": "2024-11-23 17:20:01 +0800"
+    },
+    "basePath": "",
+    "book": {
+        "language": ""
+    }
+});
+            });
+            </script>
+        </div><script src="/assets/gitbook/gitbook.js"></script>
+<script src="/assets/gitbook/theme.js"></script>
+
+<script src="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-search-pro/search.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-sharing/buttons.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-splitter/splitter.js"></script>
+
+<!--
+<script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+<script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+<script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+<script src="../gitbook/gitbook-plugin-search/search.js"></script>
+-->
+
+<script src="/assets/gitbook/custom.js"></script>
+<script src="/assets/gitbook/custom-local.js"></script>
+
+</body>
+</html>

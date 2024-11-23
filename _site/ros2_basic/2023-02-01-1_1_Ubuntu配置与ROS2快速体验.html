@@ -1,0 +1,1321 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head><meta charset="UTF-8">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>1 Ubuntu配置与ROS2快速体验 · Blogs</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="description" content="Build Jekyll site with the GitBook style.
+"><meta name="generator" content="Jekyll (using style of GitBook 3.2.3)"><meta name="author" content="pldz9"><link rel="stylesheet" href="/assets/gitbook/style.css">
+<link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+<link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
+<link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-fontsettings/website.css">
+<link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-search-pro/search.css">
+<link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-splitter/splitter.css">
+
+<link rel="stylesheet" href="/assets/gitbook/rouge/thankful_eyes.css">
+
+<link rel="stylesheet" href="/assets/gitbook/custom.css">
+<link rel="stylesheet" href="/assets/gitbook/custom-local.css">
+
+<meta name="HandheldFriendly" content="true"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/gitbook/images/apple-touch-icon-precomposed-152.png">
+<link rel="shortcut icon" href="/assets/gitbook/images/favicon.ico" type="image/x-icon">
+
+
+
+
+            <link rel="prev" href="/ros2_car/2023-01-03-ABOUT.html" />
+        
+
+        
+            <link rel="next" href="/ros2_basic/2023-02-02-2_1_ROS2%E8%AF%9D%E9%A2%98%E9%80%9A%E8%AE%AF%E5%9F%BA%E7%A1%80.html" />
+        
+    </head>
+    <body>
+        <div class="book"><div class="book-summary">
+    <script type="text/javascript">
+        // Fixes the page links scroll problem on both desktop and mobile browsers
+        function pageScrollToTop(element) {
+            // both mobile and non-mobile
+            $('div.body-inner').animate({scrollTop: 0});
+            $(element).parent().find('li>ul>li').removeClass('active');
+            return true;
+        }
+
+    </script>
+
+    <nav role="navigation" style="height: 100%;">
+        <!-- Search Input -->
+        <div id="book-search-input" role="search">
+            <input type="text" placeholder="Type to search" />
+        </div>
+        <div id="book-search-input-link" role="search">
+            <a href="/assets/search.html">Click to Search</a>
+        </div>
+
+        <div class="book-base-title" data-path="">
+            <a href="/" onclick="pageScrollToTop(this)">
+                爬楼的猪 Blogs
+            </a>
+        </div>
+
+        <!-- Book Summary Navigation -->
+        <ul class="summary" id="book-summary-core" data-scroll-top="0">
+            <!-- Loop through collections and posts by category -->
+            
+            
+            <li class="chapter category-header" id="category-header-ROS2_CAR">
+                <a href="javascript:void(0)">
+                    ROS2_CAR
+                </a>
+                <ul class="category-list" id="category-list-ROS2_CAR">
+                    
+                    
+                    <li class="chapter "
+                        data-path="/ros2_car/2023-01-03-ABOUT.html">
+                        <a href="/ros2_car/2023-01-03-ABOUT.html" onclick="pageScrollToTop(this)">
+                            ABOUT
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/ros2_car/2023-06-01-1_1_docker%E5%91%BD%E4%BB%A4%E7%86%9F%E6%82%89.html">
+                        <a href="/ros2_car/2023-06-01-1_1_docker%E5%91%BD%E4%BB%A4%E7%86%9F%E6%82%89.html" onclick="pageScrollToTop(this)">
+                            1 Docker 搭建 ROS2 嵌入式运行环境
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/ros2_car/2023-06-02-2_1_%E9%80%9A%E8%BF%87Turtlebot3%E6%A1%88%E4%BE%8B%E4%BA%86%E8%A7%A3NAVI2.html">
+                        <a href="/ros2_car/2023-06-02-2_1_%E9%80%9A%E8%BF%87Turtlebot3%E6%A1%88%E4%BE%8B%E4%BA%86%E8%A7%A3NAVI2.html" onclick="pageScrollToTop(this)">
+                            2 通过 Turtlebot3 案例了解 NAVI2
+                        </a>
+                    </li>
+                    
+                </ul>
+            </li>
+            
+            <li class="chapter category-header" id="category-header-ROS2_MICRO">
+                <a href="javascript:void(0)">
+                    ROS2_MICRO
+                </a>
+                <ul class="category-list" id="category-list-ROS2_MICRO">
+                    
+                    
+                    <li class="chapter "
+                        data-path="/ros2_micro/2023-01-02-ABOUT.html">
+                        <a href="/ros2_micro/2023-01-02-ABOUT.html" onclick="pageScrollToTop(this)">
+                            ABOUT
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/ros2_micro/2023-04-01-1_1_ROS2_Arduino.html">
+                        <a href="/ros2_micro/2023-04-01-1_1_ROS2_Arduino.html" onclick="pageScrollToTop(this)">
+                            1 ROS2 和 Arduino 通讯
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/ros2_micro/2023-04-02-2_1_Arduino%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95.html">
+                        <a href="/ros2_micro/2023-04-02-2_1_Arduino%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95.html" onclick="pageScrollToTop(this)">
+                            2 Arduino 的基本语法
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/ros2_micro/2023-04-03-3_1_ROS2_Arduino_demo.html">
+                        <a href="/ros2_micro/2023-04-03-3_1_ROS2_Arduino_demo.html" onclick="pageScrollToTop(this)">
+                            3 ROS2 和 arduino 通讯
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/ros2_micro/2023-04-04-4_1_MicroROS%E5%88%9D%E6%AD%A5%E4%BD%93%E9%AA%8C.html">
+                        <a href="/ros2_micro/2023-04-04-4_1_MicroROS%E5%88%9D%E6%AD%A5%E4%BD%93%E9%AA%8C.html" onclick="pageScrollToTop(this)">
+                            4 MircoROS 初步体验
+                        </a>
+                    </li>
+                    
+                </ul>
+            </li>
+            
+            <li class="chapter category-header" id="category-header-ROS2_BASIC">
+                <a href="javascript:void(0)">
+                    ROS2_BASIC
+                </a>
+                <ul class="category-list" id="category-list-ROS2_BASIC">
+                    
+                    
+                    <li class="chapter "
+                        data-path="/ros2_basic/2023-01-01-ABOUT.html">
+                        <a href="/ros2_basic/2023-01-01-ABOUT.html" onclick="pageScrollToTop(this)">
+                            ABOUT
+                        </a>
+                    </li>
+                    
+                    <li class="chapter active"
+                        data-path="/ros2_basic/2023-02-01-1_1_Ubuntu%E9%85%8D%E7%BD%AE%E4%B8%8EROS2%E5%BF%AB%E9%80%9F%E4%BD%93%E9%AA%8C.html">
+                        <a href="/ros2_basic/2023-02-01-1_1_Ubuntu%E9%85%8D%E7%BD%AE%E4%B8%8EROS2%E5%BF%AB%E9%80%9F%E4%BD%93%E9%AA%8C.html" onclick="pageScrollToTop(this)">
+                            1 Ubuntu配置与ROS2快速体验
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/ros2_basic/2023-02-02-2_1_ROS2%E8%AF%9D%E9%A2%98%E9%80%9A%E8%AE%AF%E5%9F%BA%E7%A1%80.html">
+                        <a href="/ros2_basic/2023-02-02-2_1_ROS2%E8%AF%9D%E9%A2%98%E9%80%9A%E8%AE%AF%E5%9F%BA%E7%A1%80.html" onclick="pageScrollToTop(this)">
+                            2 ROS2话题通讯 - 话题通讯基础
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/ros2_basic/2023-02-03-2_2_ROS2%E8%AF%9D%E9%A2%98%E9%80%9A%E8%AE%AF%E6%8F%90%E5%8D%87.html">
+                        <a href="/ros2_basic/2023-02-03-2_2_ROS2%E8%AF%9D%E9%A2%98%E9%80%9A%E8%AE%AF%E6%8F%90%E5%8D%87.html" onclick="pageScrollToTop(this)">
+                            2 ROS2话题通讯 - 话题通讯进阶
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/ros2_basic/2023-02-04-3_1_ROS2%E6%9C%8D%E5%8A%A1%E9%80%9A%E8%AE%AF.html">
+                        <a href="/ros2_basic/2023-02-04-3_1_ROS2%E6%9C%8D%E5%8A%A1%E9%80%9A%E8%AE%AF.html" onclick="pageScrollToTop(this)">
+                            3 ROS2服务通讯基础
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/ros2_basic/2023-02-05-4_1_ROS2%E5%8F%82%E6%95%B0%E6%9C%8D%E5%8A%A1%E5%99%A8.html">
+                        <a href="/ros2_basic/2023-02-05-4_1_ROS2%E5%8F%82%E6%95%B0%E6%9C%8D%E5%8A%A1%E5%99%A8.html" onclick="pageScrollToTop(this)">
+                            4 ROS2节点参数基础
+                        </a>
+                    </li>
+                    
+                </ul>
+            </li>
+            
+            <li class="chapter category-header" id="category-header-Others">
+                <a href="javascript:void(0)">
+                    Others
+                </a>
+                <ul class="category-list" id="category-list-Others">
+                    
+                    
+                    <li class="chapter "
+                        data-path="/others/2022-01-01-ABOUT.html">
+                        <a href="/others/2022-01-01-ABOUT.html" onclick="pageScrollToTop(this)">
+                            ABOUT
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/others/2022-01-02-VSCode%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE.html">
+                        <a href="/others/2022-01-02-VSCode%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE.html" onclick="pageScrollToTop(this)">
+                            VSCode相关配置
+                        </a>
+                    </li>
+                    
+                </ul>
+            </li>
+            
+        </ul>
+
+
+        <!-- Page Content and TOC -->
+        <div class="page-content-category">
+            <div class="page-content-title">Navigation of <span>1 Ubuntu配置与ROS2快速体验</span></div>
+            <ul class="page-content">
+                
+                <ul><li><a href="#11-ubuntu配置与ros2安装" onclick="mobilePageScrollToAnchor(this)" >1.1 Ubuntu配置与ROS2安装</a><ul><li><a href="#111-ubuntu2204安装" onclick="mobilePageScrollToAnchor(this)" >1.1.1 Ubuntu22.04安装</a></li><li><a href="#112-下载安装ros2" onclick="mobilePageScrollToAnchor(this)" >1.1.2 下载安装ROS2</a></li><li><a href="#113-配置ros2环境并测试" onclick="mobilePageScrollToAnchor(this)" >1.1.3 配置ROS2环境并测试</a></li></ul></li><li><a href="#12-使用vscode搭建ros2开发环境" onclick="mobilePageScrollToAnchor(this)" >1.2 使用VSCode搭建ROS2开发环境</a><ul><li><a href="#121-安装并配置vscode" onclick="mobilePageScrollToAnchor(this)" >1.2.1 安装并配置VSCode</a></li><li><a href="#122-创建ros2工程的方法" onclick="mobilePageScrollToAnchor(this)" >1.2.2 创建ROS2工程的方法</a></li><li><a href="#123-使用vscode创建ros2的cc项目" onclick="mobilePageScrollToAnchor(this)" >1.2.3 使用VSCode创建ROS2的C/C++项目</a></li><li><a href="#124-使用vscode创建ros2的python项目" onclick="mobilePageScrollToAnchor(this)" >1.2.4 使用VSCode创建ROS2的Python项目</a></li></ul></li><li><a href="#13-ros2的基本体系" onclick="mobilePageScrollToAnchor(this)" >1.3 ROS2的基本体系</a><ul><li><a href="#131-ros2架构" onclick="mobilePageScrollToAnchor(this)" >1.3.1 ROS2架构</a></li><li><a href="#132-ros2和ros1的区别" onclick="mobilePageScrollToAnchor(this)" >1.3.2 ROS2和ROS1的区别</a></li><li><a href="#133-ros2应用方向" onclick="mobilePageScrollToAnchor(this)" >1.3.3 ROS2应用方向</a></li></ul></li><li><a href="#14-总结和参考内容" onclick="mobilePageScrollToAnchor(this)" >1.4 总结和参考内容</a><ul><li><a href="#141-总结" onclick="mobilePageScrollToAnchor(this)" >1.4.1 总结</a></li><li><a href="#142-参考内容" onclick="mobilePageScrollToAnchor(this)" >1.4.2 参考内容</a></li></ul></li></ul>
+
+                
+            </ul>
+        </div> 
+    </nav>
+</div><div class="book-body">
+                <div class="book-header" role="navigation">
+                    <!-- Title -->
+                    <h1>
+                      1 Ubuntu配置与ROS2快速体验
+                    </h1>
+                </div>
+
+                <div class="body-inner"><div class="page-wrapper" tabindex="-1" role="main">
+    
+
+    <div class="page-inner">
+        <div id="book-search-results">
+            <div class="search-noresults">
+                <section class="normal markdown-section">
+                    
+                        <h1 id="/ros2_basic/1_1_Ubuntu配置与ROS2快速体验">1 Ubuntu配置与ROS2快速体验</h1>
+                    
+
+                    <h1 id="11-ubuntu配置与ros2安装">1.1 Ubuntu配置与ROS2安装</h1>
+
+<h2 id="111-ubuntu2204安装">1.1.1 Ubuntu22.04安装</h2>
+
+<ol>
+  <li>下载Ubuntu22.04：本文选择 <a href="https://mirrors.ustc.edu.cn/">中科大镜像网</a> ，选择Ubuntu22.04镜像下载，后续放入VMware进行 <strong>断网安装</strong></li>
+</ol>
+
+<p><img src="/assets/pics/ROS2_BASIC/1_download_ubuntu_mirror.png" alt="下载镜像" /></p>
+
+<blockquote>
+  <p>VMware15链接： 
+链接：https://pan.baidu.com/s/1BbaGtDhjVXCWeS2vuk3bRw
+提取码：7lzk 复制这段内容后打开百度网盘手机App，操作更方便哦</p>
+</blockquote>
+
+<ol>
+  <li>Ubuntu22.04 换源：将桌面版本的Ubuntu的软件更新设置来源为国内的镜像，或者直接输入命令<code class="language-plaintext highlighter-rouge">sudo gedit /etc/apt/sources.list</code>将内容改为如下所示：</li>
+</ol>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>deb https://mirrors.ustc.edu.cn/ubuntu/ jammy main restricted universe multiverse
+deb-src https://mirrors.ustc.edu.cn/ubuntu/ jammy main restricted universe multiverse
+deb https://mirrors.ustc.edu.cn/ubuntu/ jammy-updates main restricted universe multiverse
+deb-src https://mirrors.ustc.edu.cn/ubuntu/ jammy-updates main restricted universe multiverse
+deb https://mirrors.ustc.edu.cn/ubuntu/ jammy-backports main restricted universe multiverse
+deb-src https://mirrors.ustc.edu.cn/ubuntu/ jammy-backports main restricted universe multiverse
+deb https://mirrors.ustc.edu.cn/ubuntu/ jammy-security main restricted universe multiverse
+deb-src https://mirrors.ustc.edu.cn/ubuntu/ jammy-security main restricted universe multiverse
+deb https://mirrors.ustc.edu.cn/ubuntu/ jammy-proposed main restricted universe multiverse
+deb-src https://mirrors.ustc.edu.cn/ubuntu/ jammy-proposed main restricted universe multiverse
+</code></pre></div></div>
+
+<p><img src="/assets/pics/ROS2_BASIC/1_change_apt_source.png" alt="Ubuntu换源" /></p>
+
+<h2 id="112-下载安装ros2">1.1.2 下载安装ROS2</h2>
+
+<ol>
+  <li>输入命令<code class="language-plaintext highlighter-rouge">sudo apt-get update -y</code>对软件源进行更新，输入<code class="language-plaintext highlighter-rouge">sudo apt-get upgrade -y</code>对软件进行更新：</li>
+</ol>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt-get update <span class="nt">-y</span> <span class="o">&amp;&amp;</span> <span class="nb">sudo </span>apt-get upgrade <span class="nt">-y</span>
+</code></pre></div></div>
+
+<ol>
+  <li>获取ROS2的秘钥，并ROS2的存储库添加到源列表：</li>
+</ol>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt <span class="nb">install </span>curl gnupg lsb-release <span class="o">&amp;&amp;</span> <span class="nb">sudo </span>curl <span class="nt">-sSL</span> https://raw.githubusercontent.com/ros/rosdistro/master/ros.key <span class="nt">-o</span> /usr/share/keyrings/ros-archive-keyring.gpg
+
+<span class="nb">echo</span> <span class="s2">"deb [arch=</span><span class="si">$(</span>dpkg <span class="nt">--print-architecture</span><span class="si">)</span><span class="s2"> signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu </span><span class="si">$(</span><span class="nb">source</span> /etc/os-release <span class="o">&amp;&amp;</span> <span class="nb">echo</span> <span class="nv">$UBUNTU_CODENAME</span><span class="si">)</span><span class="s2"> main"</span> | <span class="nb">sudo tee</span> /etc/apt/sources.list.d/ros2.list <span class="o">&gt;</span> /dev/null
+</code></pre></div></div>
+
+<ol>
+  <li>如果出现关于 <code class="language-plaintext highlighter-rouge">raw.githubusercontent.com</code> 连接失败的处理</li>
+</ol>
+
+<ul>
+  <li>
+    <ol>
+      <li>访问 <code class="language-plaintext highlighter-rouge">https://tool.lu/ip/</code> 并输入域名 <code class="language-plaintext highlighter-rouge">raw.githubusercontent.com</code>，查询 ip 地址，这里查询到的是 <code class="language-plaintext highlighter-rouge">185.199.108.133</code></li>
+    </ol>
+  </li>
+</ul>
+
+<p><img src="/assets/pics/ROS2_BASIC/1_request_ip_address.png" alt="IP地址查询" /></p>
+
+<ul>
+  <li>
+    <ol>
+      <li>修改 <code class="language-plaintext highlighter-rouge">sudo gedit /etc/hosts</code>文件,并手动添加DNS解析：</li>
+    </ol>
+  </li>
+</ul>
+
+<p><img src="/assets/pics/ROS2_BASIC/1_modify_dns_information.png" alt="手动添加IP" /></p>
+
+<ol>
+  <li>下载ROS2-humble：更新软件到最新版本，然后下载ROS2-humble：</li>
+</ol>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt-get update <span class="nt">-y</span> <span class="o">&amp;&amp;</span> <span class="nb">sudo </span>apt-get upgrade <span class="nt">-y</span>
+
+<span class="nb">sudo </span>apt <span class="nb">install </span>ros-humble-desktop
+</code></pre></div></div>
+
+<ol>
+  <li>安装colcon构建工具： 不同于之前ROS1的catkin工具，ROS2用colcon进行包的构建：<code class="language-plaintext highlighter-rouge">sudo apt install python3-colcon-common-extensions</code></li>
+</ol>
+
+<h2 id="113-配置ros2环境并测试">1.1.3 配置ROS2环境并测试</h2>
+
+<ol>
+  <li>
+    <p>配置ROS2环境： 默认ROS2-humble安装在<code class="language-plaintext highlighter-rouge">/opt/ros/humble/</code>下，将ROS2的环境添加到用户环境文件<code class="language-plaintext highlighter-rouge">~/.bashrc</code>中，输入<code class="language-plaintext highlighter-rouge">echo "source /opt/ros/humble/setup.bash" &gt;&gt; ~/.bashrc</code></p>
+  </li>
+  <li>
+    <p>测试ROS2：<code class="language-plaintext highlighter-rouge">ros2 run turtlesim turtlesim_node</code>和<code class="language-plaintext highlighter-rouge">ros2 run turtlesim turtle_teleop_key</code>运行小乌龟</p>
+  </li>
+</ol>
+
+<p><img src="/assets/pics/ROS2_BASIC/1_download_ubuntu_mirror.png" alt="小乌龟测试程序" /></p>
+
+<h1 id="12-使用vscode搭建ros2开发环境">1.2 使用VSCode搭建ROS2开发环境</h1>
+
+<h2 id="121-安装并配置vscode">1.2.1 安装并配置VSCode</h2>
+
+<ol>
+  <li>
+    <p>安装VSCode: <a href="https://code.visualstudio.com/Download">VSCode下载地址</a>，持续下一步即可安装完成。</p>
+  </li>
+  <li>
+    <p>下载完成后安装VSCode插件：插件主要包括 <code class="language-plaintext highlighter-rouge">C/C++</code> 和 <code class="language-plaintext highlighter-rouge">Python</code> 以及 <code class="language-plaintext highlighter-rouge">CMake</code> 的插件，如下图所示：</p>
+  </li>
+</ol>
+
+<p><img src="/assets/pics/ROS2_BASIC/1_download_vscode_ros2_plugin.png" alt="VSCode插件" /></p>
+
+<h2 id="122-创建ros2工程的方法">1.2.2 创建ROS2工程的方法</h2>
+
+<ol>
+  <li>ROS2 create命令：通过 <code class="language-plaintext highlighter-rouge">ros2 pkg create --help</code> 熟悉创建ROS2项目的方法</li>
+</ol>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pldz@pldz-pc:~/share/ROS2_DEMO/1_Chapter<span class="nv">$ </span>ros2 pkg create <span class="nt">--help</span>
+usage: ros2 pkg create <span class="o">[</span><span class="nt">-h</span><span class="o">]</span> <span class="o">[</span><span class="nt">--package-format</span> <span class="o">{</span>2,3<span class="o">}]</span> <span class="o">[</span><span class="nt">--description</span> DESCRIPTION] <span class="o">[</span><span class="nt">--license</span> LICENSE]
+                       <span class="o">[</span><span class="nt">--destination-directory</span> DESTINATION_DIRECTORY] <span class="o">[</span><span class="nt">--build-type</span> <span class="o">{</span>cmake,ament_cmake,ament_python<span class="o">}]</span>
+                       <span class="o">[</span><span class="nt">--dependencies</span> DEPENDENCIES <span class="o">[</span>DEPENDENCIES ...]] <span class="o">[</span><span class="nt">--maintainer-email</span> MAINTAINER_EMAIL]
+                       <span class="o">[</span><span class="nt">--maintainer-name</span> MAINTAINER_NAME] <span class="o">[</span><span class="nt">--node-name</span> NODE_NAME] <span class="o">[</span><span class="nt">--library-name</span> LIBRARY_NAME]
+                       package_name
+
+Create a new ROS 2 package
+
+positional arguments:
+  package_name          The package name
+
+options:
+  <span class="nt">-h</span>, <span class="nt">--help</span>            show this <span class="nb">help </span>message and <span class="nb">exit</span>
+  <span class="nt">--package-format</span> <span class="o">{</span>2,3<span class="o">}</span>, <span class="nt">--package_format</span> <span class="o">{</span>2,3<span class="o">}</span>
+                        The package.xml format.
+  <span class="nt">--description</span> DESCRIPTION
+                        The description given <span class="k">in </span>the package.xml
+  <span class="nt">--license</span> LICENSE     The license attached to this package<span class="p">;</span> this can be an arbitrary string, but a LICENSE file will only
+                        be generated <span class="k">if </span>it is one of the supported licenses <span class="o">(</span>pass <span class="s1">'?'</span> to get a list<span class="o">)</span>
+  <span class="nt">--destination-directory</span> DESTINATION_DIRECTORY
+                        Directory where to create the package directory
+  <span class="nt">--build-type</span> <span class="o">{</span>cmake,ament_cmake,ament_python<span class="o">}</span>
+                        The build <span class="nb">type </span>to process the package with
+  <span class="nt">--dependencies</span> DEPENDENCIES <span class="o">[</span>DEPENDENCIES ...]
+                        list of dependencies
+  <span class="nt">--maintainer-email</span> MAINTAINER_EMAIL
+                        email address of the maintainer of this package
+  <span class="nt">--maintainer-name</span> MAINTAINER_NAME
+                        name of the maintainer of this package
+  <span class="nt">--node-name</span> NODE_NAME
+                        name of the empty executable
+  <span class="nt">--library-name</span> LIBRARY_NAME
+                        name of the empty library
+</code></pre></div></div>
+
+<p>下面对上诉的命令进行简单的介绍：</p>
+
+<blockquote>
+  <ul>
+    <li>
+      <p>提示当中的<code class="language-plaintext highlighter-rouge">[]</code>的内容表示命令关键字，<code class="language-plaintext highlighter-rouge">{}</code>的内容表示可以携带的参数示例，例如创建 <code class="language-plaintext highlighter-rouge">--build-type</code> 后面就可以接着 <code class="language-plaintext highlighter-rouge">ament_cmake</code> 参数</p>
+    </li>
+    <li>
+      <p><code class="language-plaintext highlighter-rouge">[--destination-directory DESTINATION_DIRECTORY]</code> ：ROS2的项目的位置，即在哪里创建你的ROS2项目</p>
+    </li>
+    <li>
+      <p><code class="language-plaintext highlighter-rouge">[--build-type {cmake,ament_cmake,ament_python}]</code> ：ROS2编译项目的方式，有<code class="language-plaintext highlighter-rouge">cmake</code> <code class="language-plaintext highlighter-rouge">ament_camke</code>和<code class="language-plaintext highlighter-rouge">ament_python</code>三种可选，<code class="language-plaintext highlighter-rouge">ament_cmake</code>是基于cmake的一个cmake升级工具， 了解更多的ROS2 ament工具：<a href="(https://blog.csdn.net/gongdiwudu/article/details/126192244)">(https://blog.csdn.net/gongdiwudu/article/details/126192244)</a></p>
+    </li>
+    <li>
+      <p><code class="language-plaintext highlighter-rouge">[--dependencies]</code> ：ROS2项目的依赖项，这部分内容后面可以手动增加，其中常见的<code class="language-plaintext highlighter-rouge">rclpy 是 python</code>的节点依赖项，<code class="language-plaintext highlighter-rouge">rclcpp是C/C++节点的依赖项</code>，（<code class="language-plaintext highlighter-rouge">rcl</code>表示<code class="language-plaintext highlighter-rouge">ros2 client</code>）</p>
+    </li>
+    <li>
+      <p><code class="language-plaintext highlighter-rouge">[--node-name]</code> ：预先设置的ROS2节点名字</p>
+    </li>
+  </ul>
+</blockquote>
+
+<ol>
+  <li>因此可以使用命令：<code class="language-plaintext highlighter-rouge">ros2 pkg create &lt;你的项目名字&gt; --build-type &lt;选择cmake/ament_camke/ament_python三者之一作为项目的编译工具&gt; --node-name &lt;节点名称，这一项可以不写，后续手动配置&gt; --dependencies &lt;依赖项名字，例如在ROS1中常用的rclpy rclcpp std_msgs sensor_msgs等&gt;</code>，如：</li>
+</ol>
+
+<blockquote>
+  <p>Tips：这里补充还是推荐才有下划线割开的功能包命名方法而不是大小写混合，否则会出错</p>
+
+  <p><img src="/assets/pics/ROS2_BASIC/1_node_name_build_warning.png" alt="命名的问题" /></p>
+</blockquote>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ros2 pkg create demo <span class="nt">--build-type</span> ament_cmake <span class="nt">--node-name</span> demo_node <span class="nt">--dependencies</span> rclcpp
+</code></pre></div></div>
+
+<h2 id="123-使用vscode创建ros2的cc项目">1.2.3 使用VSCode创建ROS2的C/C++项目</h2>
+
+<ol>
+  <li>创建ROS2 C++工程：<code class="language-plaintext highlighter-rouge">ros2 pkg create vscodeCppDemo --build-type ament_cmake --node-name vscodeCppDemoNode --dependencies rclcpp std_msgs</code></li>
+</ol>
+
+<blockquote>
+  <p>Tips：这里补充还是推荐才有下划线割开的功能包命名方法而不是大小写混合，否则会出错</p>
+
+  <p><img src="/assets/pics/ROS2_BASIC/1_node_name_build_warning.png" alt="命名的问题" /></p>
+</blockquote>
+
+<ol>
+  <li>查看工程目录结构：<code class="language-plaintext highlighter-rouge">tree . </code>，可以发现在<code class="language-plaintext highlighter-rouge">src</code>目录下 <strong>存在了节点名称的cpp文件</strong> ，即ROS2项目已经构建了配置好节点内容的工程</li>
+</ol>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pldz@pldz-pc:~/share/ROS2_DEMO/1_Chapter/code<span class="nv">$ </span>ros2 pkg create vscodeCppDemo <span class="nt">--build-type</span> ament_cmake <span class="nt">--node-name</span> vscodeCppDemoNode <span class="nt">--dependencies</span> rclcpp std_msgs
+going to create a new package
+package name: vscodeCppDemo
+destination directory: /mnt/hgfs/VMware/ROS2_DEMO/1_Chapter/code
+package format: 3
+version: 0.0.0
+description: TODO: Package description
+maintainer: <span class="o">[</span><span class="s1">'pldz &lt;pldz@R7000.com&gt;'</span><span class="o">]</span>
+licenses: <span class="o">[</span><span class="s1">'TODO: License declaration'</span><span class="o">]</span>
+build <span class="nb">type</span>: ament_cmake
+dependencies: <span class="o">[</span><span class="s1">'rclcpp'</span>, <span class="s1">'std_msgs'</span><span class="o">]</span>
+node_name: vscodeCppDemoNode
+creating folder ./vscodeCppDemo
+creating ./vscodeCppDemo/package.xml
+creating <span class="nb">source </span>and include folder
+creating folder ./vscodeCppDemo/src
+creating folder ./vscodeCppDemo/include/vscodeCppDemo
+creating ./vscodeCppDemo/CMakeLists.txt
+creating ./vscodeCppDemo/src/vscodeCppDemoNode.cpp
+
+<span class="o">[</span>WARNING]: Unknown license <span class="s1">'TODO: License declaration'</span><span class="nb">.</span>  This has been <span class="nb">set </span><span class="k">in </span>the package.xml, but no LICENSE file has been created.
+It is recommended to use one of the ament license identitifers:
+Apache-2.0
+BSL-1.0
+BSD-2.0
+BSD-2-Clause
+BSD-3-Clause
+GPL-3.0-only
+LGPL-3.0-only
+MIT
+MIT-0
+
+pldz@pldz-pc:~/share/ROS2_DEMO/1_Chapter/code<span class="nv">$ </span>tree <span class="nb">.</span>
+<span class="nb">.</span>
+└── vscodeCppDemo
+    ├── CMakeLists.txt
+    ├── include
+    │   └── vscodeCppDemo
+    ├── package.xml
+    └── src
+        └── vscodeCppDemoNode.cpp
+
+4 directories, 3 files
+</code></pre></div></div>
+
+<ol>
+  <li>在<code class="language-plaintext highlighter-rouge">&lt;ROS2工程目录下&gt;/src/&lt;节点cpp&gt;.cpp</code>进行节点编程，ROS2是C++14的编程风格：</li>
+</ol>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">"rclcpp/rclcpp.hpp"</span><span class="cp">
+</span>
+<span class="c1">// 继承ROS2的客户端节点</span>
+<span class="k">class</span> <span class="nc">VSCodeCppDemo</span><span class="o">:</span> <span class="k">public</span> <span class="n">rclcpp</span><span class="o">::</span><span class="n">Node</span><span class="p">{</span>
+<span class="nl">public:</span>
+    <span class="c1">// ROS2节点的构造函数</span>
+    <span class="n">VSCodeCppDemo</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">nodeName</span><span class="p">)</span><span class="o">:</span><span class="n">Node</span><span class="p">(</span><span class="n">nodeName</span><span class="p">){</span>
+        <span class="n">RCLCPP_INFO</span><span class="p">(</span><span class="k">this</span><span class="o">-&gt;</span><span class="n">get_logger</span><span class="p">(),</span><span class="s">"hello world!"</span><span class="p">);</span>
+    <span class="p">}</span>
+
+<span class="p">};</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="o">*</span><span class="n">argv</span><span class="p">[])</span>
+<span class="p">{</span>
+    <span class="n">rclcpp</span><span class="o">::</span><span class="n">init</span><span class="p">(</span><span class="n">argc</span><span class="p">,</span><span class="n">argv</span><span class="p">);</span>
+    <span class="c1">// 生成自定义的ROS2客户端对象, node是一个对象指针</span>
+    <span class="k">auto</span> <span class="n">node</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">make_shared</span><span class="o">&lt;</span><span class="n">VSCodeCppDemo</span><span class="o">&gt;</span><span class="p">(</span><span class="s">"vscodeCppDemoNode"</span><span class="p">);</span>
+    <span class="n">rclcpp</span><span class="o">::</span><span class="n">shutdown</span><span class="p">();</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<ol>
+  <li>针对VSCode的<code class="language-plaintext highlighter-rouge">settings.json</code>进行配置：在项目下面新建 <code class="language-plaintext highlighter-rouge">.vscode</code> 文件夹，然后在在该文件夹下新建 <code class="language-plaintext highlighter-rouge">settings.json</code> , 添加下列内容：</li>
+</ol>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+    </span><span class="err">//</span><span class="w"> </span><span class="err">Settings.json的配置，主要在于添加/opt/ros/humble文件夹下的ros</span><span class="mi">2</span><span class="err">的include路径</span><span class="w">
+    
+    </span><span class="err">//</span><span class="w"> </span><span class="err">pldz@pldz-pc:~/share/ROS</span><span class="mi">2</span><span class="err">_DEMO/</span><span class="mi">1</span><span class="err">_Chapter/code/.vscode$</span><span class="w"> </span><span class="err">tree</span><span class="w"> </span><span class="err">.</span><span class="w">
+    </span><span class="err">//</span><span class="w"> </span><span class="err">.</span><span class="w">
+    </span><span class="err">//</span><span class="w"> </span><span class="err">└──</span><span class="w"> </span><span class="err">settings.json</span><span class="w">
+    </span><span class="err">//</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="err">directories</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="err">file</span><span class="w">
+
+    </span><span class="nl">"files.associations"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"cstdio"</span><span class="p">:</span><span class="w"> </span><span class="s2">"cpp"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nl">"C_Cpp.default.includePath"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"/opt/ros/humble/include/**"</span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p><img src="/assets/pics/ROS2_BASIC/1_config_vscode_settings.gif" alt="VSCode Settings配置" /></p>
+
+<ol>
+  <li>配置ROS2项目的 <code class="language-plaintext highlighter-rouge">package.xml</code> 文件：<code class="language-plaintext highlighter-rouge">package.xml</code> 文件是ROS2项目的功能包管理文件，下面添加了一点注释：</li>
+</ol>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0"?&gt;</span>
+<span class="cp">&lt;?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?&gt;</span>
+<span class="nt">&lt;package</span> <span class="na">format=</span><span class="s">"3"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;name&gt;</span>vscodeCppDemo<span class="nt">&lt;/name&gt;</span>
+  <span class="nt">&lt;version&gt;</span>0.0.0<span class="nt">&lt;/version&gt;</span>
+  <span class="nt">&lt;description&gt;</span>TODO: Package description<span class="nt">&lt;/description&gt;</span>
+  <span class="c">&lt;!-- 包的作者信息,主要来自Git的配置 --&gt;</span>
+  <span class="nt">&lt;maintainer</span> <span class="na">email=</span><span class="s">"pldz@R7000.com"</span><span class="nt">&gt;</span>pldz<span class="nt">&lt;/maintainer&gt;</span>
+  <span class="nt">&lt;license&gt;</span>TODO: License declaration<span class="nt">&lt;/license&gt;</span>
+
+  <span class="c">&lt;!-- 编译工程的工具 --&gt;</span>
+  <span class="nt">&lt;buildtool_depend&gt;</span>ament_cmake<span class="nt">&lt;/buildtool_depend&gt;</span>
+
+  <span class="c">&lt;!-- 编译需要的依赖项,可以手动添加 --&gt;</span>
+  <span class="nt">&lt;depend&gt;</span>rclcpp<span class="nt">&lt;/depend&gt;</span>
+  <span class="nt">&lt;depend&gt;</span>std_msgs<span class="nt">&lt;/depend&gt;</span>
+
+  <span class="nt">&lt;test_depend&gt;</span>ament_lint_auto<span class="nt">&lt;/test_depend&gt;</span>
+  <span class="nt">&lt;test_depend&gt;</span>ament_lint_common<span class="nt">&lt;/test_depend&gt;</span>
+
+  <span class="nt">&lt;export&gt;</span>
+    <span class="nt">&lt;build_type&gt;</span>ament_cmake<span class="nt">&lt;/build_type&gt;</span>
+  <span class="nt">&lt;/export&gt;</span>
+<span class="nt">&lt;/package&gt;</span>
+</code></pre></div></div>
+
+<ol>
+  <li>配置 <code class="language-plaintext highlighter-rouge">CMakeLists.txt</code> 文件：<code class="language-plaintext highlighter-rouge">CMakeLists.txt</code> 是ROS2项目的编译配置文件，ROS2项目采用ament_cmake工具，需要配置的包括以下6部分内容：</li>
+</ol>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">find_package</span><span class="p">()</span>                  <span class="c1">// 1. 列出依赖项，通俗的说是项目编译所需要的全部依赖项名称，节点和项目是两个概念，一个项目可以有多个节点</span>
+<span class="n">add_executable</span><span class="p">()</span>                <span class="c1">// 2. 可执行文件的路径，通俗来说是编译节点的main函数入口</span>
+<span class="n">target_include_directories</span><span class="p">()</span>    <span class="c1">// 3. 编译节点所需要的include的位置</span>
+<span class="n">ament_target_dependencies</span><span class="p">()</span>     <span class="c1">// 4. 编译节点所需要的依赖项，这一步的目的是连接编译该节点所需要的依赖项</span>
+<span class="n">install</span><span class="p">()</span>                       <span class="c1">// 5. 通俗来说，是将编译好的节点给拷贝到ROS功能包的目录，使得能够通过指令ros2 run &lt;包名&gt; &lt;节点名&gt;的配置，默认这一步的目的就是将build文件夹的内容拷贝到install的lib文件夹下</span>
+<span class="n">ament_package</span><span class="p">()</span>                 <span class="c1">// 6. 生成ament工具的环境，缺少这一步，无法在install文件夹下生成setup.bash文件等等</span>
+</code></pre></div></div>
+
+<p>下面添加了一点注释：</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">cmake_minimum_required</span><span class="p">(</span><span class="n">VERSION</span> <span class="mf">3.8</span><span class="p">)</span>
+<span class="n">project</span><span class="p">(</span><span class="n">vscodeCppDemo</span><span class="p">)</span>
+
+<span class="k">if</span><span class="p">(</span><span class="n">CMAKE_COMPILER_IS_GNUCXX</span> <span class="n">OR</span> <span class="n">CMAKE_CXX_COMPILER_ID</span> <span class="n">MATCHES</span> <span class="s">"Clang"</span><span class="p">)</span>
+  <span class="n">add_compile_options</span><span class="p">(</span><span class="o">-</span><span class="n">Wall</span> <span class="o">-</span><span class="n">Wextra</span> <span class="o">-</span><span class="n">Wpedantic</span><span class="p">)</span>
+<span class="n">endif</span><span class="p">()</span>
+
+<span class="cp"># 1. find dependencies, 这里可以引入外部依赖包
+</span><span class="n">find_package</span><span class="p">(</span><span class="n">ament_cmake</span> <span class="n">REQUIRED</span><span class="p">)</span>
+<span class="n">find_package</span><span class="p">(</span><span class="n">rclcpp</span> <span class="n">REQUIRED</span><span class="p">)</span>
+<span class="n">find_package</span><span class="p">(</span><span class="n">std_msgs</span> <span class="n">REQUIRED</span><span class="p">)</span>
+
+<span class="cp"># 2. 节点(也叫可执行文件)的映射
+</span><span class="n">add_executable</span><span class="p">(</span><span class="n">vscodeCppDemoNode</span> <span class="n">src</span><span class="o">/</span><span class="n">vscodeCppDemoNode</span><span class="p">.</span><span class="n">cpp</span><span class="p">)</span>
+
+<span class="cp"># 3. Include文件的位置
+</span><span class="n">target_include_directories</span><span class="p">(</span><span class="n">vscodeCppDemoNode</span> <span class="n">PUBLIC</span>
+  <span class="err">$</span><span class="o">&lt;</span><span class="n">BUILD_INTERFACE</span><span class="o">:</span><span class="err">$</span><span class="p">{</span><span class="n">CMAKE_CURRENT_SOURCE_DIR</span><span class="p">}</span><span class="o">/</span><span class="n">include</span><span class="o">&gt;</span>
+  <span class="err">$</span><span class="o">&lt;</span><span class="n">INSTALL_INTERFACE</span><span class="o">:</span><span class="n">include</span><span class="o">&gt;</span><span class="p">)</span>
+
+<span class="cp"># 4. 目标依赖库
+</span><span class="n">target_compile_features</span><span class="p">(</span><span class="n">vscodeCppDemoNode</span> <span class="n">PUBLIC</span> <span class="n">c_std_99</span> <span class="n">cxx_std_17</span><span class="p">)</span>  <span class="err">#</span> <span class="n">Require</span> <span class="n">C99</span> <span class="n">and</span> <span class="n">C</span><span class="o">++</span><span class="mi">17</span>
+<span class="n">ament_target_dependencies</span><span class="p">(</span>
+  <span class="n">vscodeCppDemoNode</span>
+  <span class="s">"rclcpp"</span>
+  <span class="s">"std_msgs"</span>
+<span class="p">)</span>
+
+<span class="cp"># 5. 安装规则
+</span><span class="n">install</span><span class="p">(</span><span class="n">TARGETS</span> <span class="n">vscodeCppDemoNode</span>
+  <span class="n">DESTINATION</span> <span class="n">lib</span><span class="o">/</span><span class="err">$</span><span class="p">{</span><span class="n">PROJECT_NAME</span><span class="p">})</span>
+
+<span class="k">if</span><span class="p">(</span><span class="n">BUILD_TESTING</span><span class="p">)</span>
+  <span class="n">find_package</span><span class="p">(</span><span class="n">ament_lint_auto</span> <span class="n">REQUIRED</span><span class="p">)</span>
+  <span class="cp"># the following line skips the linter which checks for copyrights
+</span>  <span class="cp"># comment the line when a copyright and license is added to all source files
+</span>  <span class="n">set</span><span class="p">(</span><span class="n">ament_cmake_copyright_FOUND</span> <span class="n">TRUE</span><span class="p">)</span>
+  <span class="cp"># the following line skips cpplint (only works in a git repo)
+</span>  <span class="cp"># comment the line when this package is in a git repo and when
+</span>  <span class="cp"># a copyright and license is added to all source files
+</span>  <span class="n">set</span><span class="p">(</span><span class="n">ament_cmake_cpplint_FOUND</span> <span class="n">TRUE</span><span class="p">)</span>
+  <span class="n">ament_lint_auto_find_test_dependencies</span><span class="p">()</span>
+<span class="n">endif</span><span class="p">()</span>
+
+<span class="cp"># 6. ament工具的功能包整理
+</span><span class="n">ament_package</span><span class="p">()</span>
+
+</code></pre></div></div>
+
+<ol>
+  <li>利用 <code class="language-plaintext highlighter-rouge">colcon</code> 工具构建项目：在项目的工程目录下，输入<code class="language-plaintext highlighter-rouge">colcon build</code>进行构建</li>
+</ol>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pldz@pldz-pc:~/share/ROS2_DEMO/1_Chapter/code<span class="nv">$ </span>colcon build
+WARNING: Package name <span class="s2">"vscodeCppDemo"</span> does not follow the naming conventions. It should start with a lower <span class="k">case</span> letter and only contain lower <span class="k">case</span> letters, digits, underscores, and dashes.
+Starting <span class="o">&gt;&gt;&gt;</span> vscodeCppDemo
+<span class="nt">---</span> stderr: vscodeCppDemo                              
+WARNING: Package name <span class="s2">"vscodeCppDemo"</span> does not follow the naming conventions. It should start with a lower <span class="k">case</span> letter and only contain lower <span class="k">case</span> letters, digits, underscores, and dashes.
+<span class="nt">---</span>
+Finished <span class="o">&lt;&lt;&lt;</span> vscodeCppDemo <span class="o">[</span>8.27s]
+
+Summary: 1 package finished <span class="o">[</span>8.62s]
+  1 package had stderr output: vscodeCppDemo
+</code></pre></div></div>
+
+<ol>
+  <li>执行该项目节点文件：</li>
+</ol>
+
+<ul>
+  <li>
+    <ol>
+      <li>尝试手动执行，在项目目录下的 <code class="language-plaintext highlighter-rouge">build/&lt;ROS2项目名称&gt;</code> 下存放着项目节点 <code class="language-plaintext highlighter-rouge">ROS2项目节点</code>，直接运行该文件：如下所示</li>
+    </ol>
+  </li>
+</ul>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pldz@pldz-pc:~/share/ROS2_DEMO/1_Chapter/code<span class="nv">$ </span>./build/vscodeCppDemo/vscodeCppDemoNode 
+<span class="o">[</span>INFO] <span class="o">[</span>1682264164.879460585] <span class="o">[</span>helloworld_node]: hello world!
+pldz@pldz-pc:~/share/ROS2_DEMO/1_Chapter/code<span class="nv">$ </span>file ./build/vscodeCppDemo/vscodeCppDemoNode 
+./build/vscodeCppDemo/vscodeCppDemoNode: ELF 64-bit LSB pie executable, x86-64, version 1 <span class="o">(</span>GNU/Linux<span class="o">)</span>, dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]<span class="o">=</span>53b5061fab0864a3b53f587b0cbc8a6be1d342f1, <span class="k">for </span>GNU/Linux 3.2.0, not stripped
+</code></pre></div></div>
+
+<ul>
+  <li>
+    <ol>
+      <li>通过ROS2运行节点：首先需要添加项目的install环境，即 <code class="language-plaintext highlighter-rouge">source &lt;项目目录&gt;/install/setup.bash</code>，然后可以通过<code class="language-plaintext highlighter-rouge">ros2 run &lt;项目名称&gt; &lt;节点名称&gt;</code> 运行节点</li>
+    </ol>
+  </li>
+</ul>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pldz@pldz-pc:~/share/ROS2_DEMO/1_Chapter/code<span class="nv">$ </span><span class="nb">source</span> ./install/setup.bash 
+pldz@pldz-pc:~/share/ROS2_DEMO/1_Chapter/code<span class="nv">$ </span>ros2 run vscodeCppDemo vscodeCppDemoNode 
+<span class="o">[</span>INFO] <span class="o">[</span>1682264459.635230302] <span class="o">[</span>helloworld_node]: hello world!
+</code></pre></div></div>
+
+<ol>
+  <li>ROS2的C/C++项目的目录结构：在项目目录下输入<code class="language-plaintext highlighter-rouge">tree -L 3</code> 查看最多三级文件结构，其中：</li>
+</ol>
+
+<ul>
+  <li>
+    <ol>
+      <li><code class="language-plaintext highlighter-rouge">build</code>文件夹：存储编译的文件和可执行的ROS2节点</li>
+    </ol>
+  </li>
+  <li>
+    <ol>
+      <li><code class="language-plaintext highlighter-rouge">install</code>文件夹：直接反应叫安装目录，包括能够通过 <code class="language-plaintext highlighter-rouge">ros2 run ...</code> 指令运行ROS2节点的环境</li>
+    </ol>
+  </li>
+  <li>
+    <ol>
+      <li><code class="language-plaintext highlighter-rouge">log</code>文件夹：存储日志文件</li>
+    </ol>
+  </li>
+  <li>
+    <ol>
+      <li><code class="language-plaintext highlighter-rouge">&lt;项目名的文件夹&gt;</code>：存放ROS2项目的源码，其中的 <code class="language-plaintext highlighter-rouge">package.xml</code>配置包信息（包名、版本、作者、依赖项）；<code class="language-plaintext highlighter-rouge">CMakeLists.txt</code> 用于配置编译规则（源文件位置，编译所要连接的依赖项等等）；</li>
+    </ol>
+  </li>
+</ul>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pldz@pldz-pc:~/share/ROS2_DEMO/1_Chapter/code<span class="nv">$ </span>tree <span class="nt">-L</span> 3
+<span class="nb">.</span>
+├── build
+│   ├── COLCON_IGNORE
+│   └── vscodeCppDemo
+│       ├── ament_cmake_core
+│       ├── ament_cmake_environment_hooks
+│       ├── ... 这里手动省略
+│       ├── Makefile
+│       └── vscodeCppDemoNode
+├── <span class="nb">install</span>
+│   ├── COLCON_IGNORE
+│   ├── local_setup.bash
+│   ├── ... 这里手动省略
+│   ├── setup.bash
+│   └── vscodeCppDemo
+│       ├── lib
+│       └── share
+├── log
+│   ├── build_2023-04-23_23-31-44
+│   │   ├── events.log
+│   │   ├── logger_all.log
+│   │   └── vscodeCppDemo
+│   └── COLCON_IGNORE
+└── vscodeCppDemo
+    ├── CMakeLists.txt
+    ├── include
+    │   └── vscodeCppDemo
+    ├── package.xml
+    └── src
+        └── vscodeCppDemoNode.cpp
+
+23 directories, 30 files
+</code></pre></div></div>
+
+<h2 id="124-使用vscode创建ros2的python项目">1.2.4 使用VSCode创建ROS2的Python项目</h2>
+
+<ol>
+  <li>创建ROS2的Python项目：<code class="language-plaintext highlighter-rouge">ros2 pkg create vscodePythonDemo --build-type ament_python --dependencies rclpy std_msgs --node-name vscodePythonDemoNode</code>，其中依赖项与C/C++的节点不同是<code class="language-plaintext highlighter-rouge">rclpy</code>，此时在项目的同名目录下，已经有了<code class="language-plaintext highlighter-rouge">节点.py</code>文件</li>
+</ol>
+
+<blockquote>
+  <p>Tips：这里补充还是推荐才有下划线割开的功能包命名方法而不是大小写混合，否则会出错</p>
+
+  <p><img src="/assets/pics/ROS2_BASIC/1_node_name_build_warning.png" alt="命名的问题" /></p>
+</blockquote>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pldz@pldz-pc:~/share/ROS2_DEMO/1_Chapter/code<span class="nv">$ </span>ros2 pkg create vscodePythonDemo <span class="nt">--build-type</span> ament_python <span class="nt">--dependencies</span> rclpy std_msgs <span class="nt">--node-name</span> vscodePythonDemoNode
+going to create a new package
+package name: vscodePythonDemo
+destination directory: /mnt/hgfs/VMware/ROS2_DEMO/1_Chapter/code
+package format: 3
+version: 0.0.0
+description: TODO: Package description
+maintainer: <span class="o">[</span><span class="s1">'pldz &lt;pldz@R7000.com&gt;'</span><span class="o">]</span>
+licenses: <span class="o">[</span><span class="s1">'TODO: License declaration'</span><span class="o">]</span>
+build <span class="nb">type</span>: ament_python
+dependencies: <span class="o">[</span><span class="s1">'rclpy'</span>, <span class="s1">'std_msgs'</span><span class="o">]</span>
+node_name: vscodePythonDemoNode
+creating folder ./vscodePythonDemo
+creating ./vscodePythonDemo/package.xml
+creating <span class="nb">source </span>folder
+creating folder ./vscodePythonDemo/vscodePythonDemo
+creating ./vscodePythonDemo/setup.py
+creating ./vscodePythonDemo/setup.cfg
+creating folder ./vscodePythonDemo/resource
+creating ./vscodePythonDemo/resource/vscodePythonDemo
+creating ./vscodePythonDemo/vscodePythonDemo/__init__.py
+creating folder ./vscodePythonDemo/test
+creating ./vscodePythonDemo/test/test_copyright.py
+creating ./vscodePythonDemo/test/test_flake8.py
+creating ./vscodePythonDemo/test/test_pep257.py
+creating ./vscodePythonDemo/vscodePythonDemo/vscodePythonDemoNode.py
+
+<span class="o">[</span>WARNING]: Unknown license <span class="s1">'TODO: License declaration'</span><span class="nb">.</span>  This has been <span class="nb">set </span><span class="k">in </span>the package.xml, but no LICENSE file has been created.
+It is recommended to use one of the ament license identitifers:
+Apache-2.0
+BSL-1.0
+BSD-2.0
+BSD-2-Clause
+BSD-3-Clause
+GPL-3.0-only
+LGPL-3.0-only
+MIT
+MIT-0
+pldz@pldz-pc:~/share/ROS2_DEMO/1_Chapter/code<span class="nv">$ </span><span class="nb">cd </span>vscodePythonDemo/
+pldz@pldz-pc:~/share/ROS2_DEMO/1_Chapter/code/vscodePythonDemo<span class="nv">$ </span>tree <span class="nb">.</span>
+<span class="nb">.</span>
+├── package.xml
+├── resource
+│   └── vscodePythonDemo
+├── setup.cfg
+├── setup.py
+├── <span class="nb">test</span>
+│   ├── test_copyright.py
+│   ├── test_flake8.py
+│   └── test_pep257.py
+└── vscodePythonDemo
+    ├── __init__.py
+    └── vscodePythonDemoNode.py
+
+3 directories, 9 files
+</code></pre></div></div>
+
+<ol>
+  <li>创建一个简单的ROS2的Python节点：代码如下，基本内容见注释</li>
+</ol>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">rclpy</span>
+<span class="kn">from</span> <span class="n">rclpy.node</span> <span class="kn">import</span> <span class="n">Node</span>
+
+<span class="c1"># 继承Node类，定义VSCodePythonDemo类
+</span><span class="k">class</span> <span class="nc">VSCodePythonDemo</span><span class="p">(</span><span class="n">Node</span><span class="p">):</span>
+    <span class="c1"># 初始化Python构造函数
+</span>    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">nodeName</span><span class="p">:</span><span class="nb">str</span><span class="p">):</span>
+        <span class="nf">super</span><span class="p">().</span><span class="nf">__init__</span><span class="p">(</span><span class="n">nodeName</span><span class="p">)</span>
+    
+    <span class="k">def</span> <span class="nf">printHello</span><span class="p">(</span><span class="n">self</span><span class="p">):</span>
+        <span class="n">self</span><span class="p">.</span><span class="nf">get_logger</span><span class="p">().</span><span class="nf">info</span><span class="p">(</span><span class="sh">"</span><span class="s">hello world!</span><span class="sh">"</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+    <span class="n">rclpy</span><span class="p">.</span><span class="nf">init</span><span class="p">()</span>
+    <span class="c1"># 创建VSCodePythonDemo对象
+</span>    <span class="n">node</span> <span class="o">=</span> <span class="nc">VSCodePythonDemo</span><span class="p">(</span><span class="sh">"</span><span class="s">vscodePythonDemo</span><span class="sh">"</span><span class="p">)</span>
+    <span class="c1"># 调用成员函数
+</span>    <span class="n">node</span><span class="p">.</span><span class="nf">printHello</span><span class="p">()</span>
+    <span class="n">rclpy</span><span class="p">.</span><span class="nf">shutdown</span><span class="p">()</span>
+</code></pre></div></div>
+
+<ol>
+  <li>Python的VSCode环境配置：默认情况下VSCode的Python解析器，能够定位到<code class="language-plaintext highlighter-rouge">rclpy.py</code>的位置在<code class="language-plaintext highlighter-rouge">/opt/ros/humble/local/lib/python3.10/dist-packages/</code>下，如果无法找到，可以手动配置<code class="language-plaintext highlighter-rouge">.vscode</code> 文件夹下的 <code class="language-plaintext highlighter-rouge">settings.json</code>文件，加入<code class="language-plaintext highlighter-rouge">"python.analysis.extraPaths": ["/opt/ros/humble/local/lib/python3.10/dist-packages/"],</code>，这样的配置同样能够将自己安装的的Python依赖项加入到vscode的开发环境中</li>
+</ol>
+
+<p><img src="/assets/pics/ROS2_BASIC/1_config_python_vscode_env.png" alt="Python项目的VSCode配置" /></p>
+
+<ol>
+  <li>ROS2的Python项目的简单配置：与C/C++项目不同，Python项目主要配置<code class="language-plaintext highlighter-rouge">packages.xml</code>文件来管理依赖项和Python包，<code class="language-plaintext highlighter-rouge">setup.py</code>主要给Python项目进行打包配置</li>
+</ol>
+
+<ul>
+  <li>
+    <ol>
+      <li><code class="language-plaintext highlighter-rouge">packages.xml</code>文件的简单注释：</li>
+    </ol>
+  </li>
+</ul>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0"?&gt;</span>
+<span class="cp">&lt;?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?&gt;</span>
+<span class="nt">&lt;package</span> <span class="na">format=</span><span class="s">"3"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;name&gt;</span>vscodePythonDemo<span class="nt">&lt;/name&gt;</span>
+  <span class="nt">&lt;version&gt;</span>0.0.0<span class="nt">&lt;/version&gt;</span>
+  <span class="c">&lt;!-- 包的作者信息,主要来自Git的配置 --&gt;</span>
+  <span class="nt">&lt;description&gt;</span>TODO: Package description<span class="nt">&lt;/description&gt;</span>
+  <span class="nt">&lt;maintainer</span> <span class="na">email=</span><span class="s">"pldz@R7000.com"</span><span class="nt">&gt;</span>pldz<span class="nt">&lt;/maintainer&gt;</span>
+  <span class="nt">&lt;license&gt;</span>TODO: License declaration<span class="nt">&lt;/license&gt;</span>
+  
+  <span class="c">&lt;!-- 编译需要的依赖项,可以手动添加 --&gt;</span>
+  <span class="nt">&lt;depend&gt;</span>rclpy<span class="nt">&lt;/depend&gt;</span>
+  <span class="nt">&lt;depend&gt;</span>std_msgs<span class="nt">&lt;/depend&gt;</span>
+
+  <span class="nt">&lt;test_depend&gt;</span>ament_copyright<span class="nt">&lt;/test_depend&gt;</span>
+  <span class="nt">&lt;test_depend&gt;</span>ament_flake8<span class="nt">&lt;/test_depend&gt;</span>
+  <span class="nt">&lt;test_depend&gt;</span>ament_pep257<span class="nt">&lt;/test_depend&gt;</span>
+  <span class="nt">&lt;test_depend&gt;</span>python3-pytest<span class="nt">&lt;/test_depend&gt;</span>
+
+  <span class="nt">&lt;export&gt;</span>
+    <span class="nt">&lt;build_type&gt;</span>ament_python<span class="nt">&lt;/build_type&gt;</span>
+  <span class="nt">&lt;/export&gt;</span>
+<span class="nt">&lt;/package&gt;</span>
+</code></pre></div></div>
+
+<ul>
+  <li>
+    <ol>
+      <li><code class="language-plaintext highlighter-rouge">setup.py</code>文件的简单注释：</li>
+    </ol>
+  </li>
+</ul>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="n">setuptools</span> <span class="kn">import</span> <span class="n">setup</span>
+
+<span class="c1"># 项目包名
+</span><span class="n">package_name</span> <span class="o">=</span> <span class="sh">'</span><span class="s">vscodePythonDemo</span><span class="sh">'</span>
+
+<span class="nf">setup</span><span class="p">(</span>
+    <span class="n">name</span><span class="o">=</span><span class="n">package_name</span><span class="p">,</span>
+    <span class="n">version</span><span class="o">=</span><span class="sh">'</span><span class="s">0.0.0</span><span class="sh">'</span><span class="p">,</span>
+    <span class="n">packages</span><span class="o">=</span><span class="p">[</span><span class="n">package_name</span><span class="p">],</span>
+    <span class="n">data_files</span><span class="o">=</span><span class="p">[</span>
+        <span class="p">(</span><span class="sh">'</span><span class="s">share/ament_index/resource_index/packages</span><span class="sh">'</span><span class="p">,</span>
+            <span class="p">[</span><span class="sh">'</span><span class="s">resource/</span><span class="sh">'</span> <span class="o">+</span> <span class="n">package_name</span><span class="p">]),</span>
+        <span class="p">(</span><span class="sh">'</span><span class="s">share/</span><span class="sh">'</span> <span class="o">+</span> <span class="n">package_name</span><span class="p">,</span> <span class="p">[</span><span class="sh">'</span><span class="s">package.xml</span><span class="sh">'</span><span class="p">]),</span>
+    <span class="p">],</span>
+    <span class="c1"># 依赖的打包工具
+</span>    <span class="n">install_requires</span><span class="o">=</span><span class="p">[</span><span class="sh">'</span><span class="s">setuptools</span><span class="sh">'</span><span class="p">],</span>
+    <span class="n">zip_safe</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span>
+    <span class="c1"># 项目用户信息
+</span>    <span class="n">maintainer</span><span class="o">=</span><span class="sh">'</span><span class="s">pldz</span><span class="sh">'</span><span class="p">,</span>
+    <span class="n">maintainer_email</span><span class="o">=</span><span class="sh">'</span><span class="s">pldz@R7000.com</span><span class="sh">'</span><span class="p">,</span>
+    <span class="n">description</span><span class="o">=</span><span class="sh">'</span><span class="s">TODO: Package description</span><span class="sh">'</span><span class="p">,</span>
+    <span class="n">license</span><span class="o">=</span><span class="sh">'</span><span class="s">TODO: License declaration</span><span class="sh">'</span><span class="p">,</span>
+    <span class="n">tests_require</span><span class="o">=</span><span class="p">[</span><span class="sh">'</span><span class="s">pytest</span><span class="sh">'</span><span class="p">],</span>
+    <span class="n">entry_points</span><span class="o">=</span><span class="p">{</span>
+        <span class="sh">'</span><span class="s">console_scripts</span><span class="sh">'</span><span class="p">:</span> <span class="p">[</span>
+            <span class="c1"># 可执行文件的入口
+</span>            <span class="sh">'</span><span class="s">vscodePythonDemoNode = vscodePythonDemo.vscodePythonDemoNode:main</span><span class="sh">'</span>
+        <span class="p">],</span>
+    <span class="p">},</span>
+<span class="p">)</span>
+
+</code></pre></div></div>
+
+<ol>
+  <li>编译ROS2的Python项目：在项目目录下，输入：<code class="language-plaintext highlighter-rouge">colcon build</code>，利用<code class="language-plaintext highlighter-rouge">ament_python</code>工具构建Python项目</li>
+</ol>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pldz@pldz-pc:~/share/ROS2_DEMO/1_Chapter/code<span class="nv">$ </span>colcon build
+WARNING: Package name <span class="s2">"vscodeCppDemo"</span> does not follow the naming conventions. It should start with a lower <span class="k">case</span> letter and only contain lower <span class="k">case</span> letters, digits, underscores, and dashes.
+WARNING: Package name <span class="s2">"vscodePythonDemo"</span> does not follow the naming conventions. It should start with a lower <span class="k">case</span> letter and only contain lower <span class="k">case</span> letters, digits, underscores, and dashes.
+Starting <span class="o">&gt;&gt;&gt;</span> vscodeCppDemo
+Starting <span class="o">&gt;&gt;&gt;</span> vscodePythonDemo
+<span class="nt">---</span> stderr: vscodePythonDemo                                                            
+/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py <span class="nb">install </span>is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn<span class="o">(</span>
+<span class="nt">---</span>
+Finished <span class="o">&lt;&lt;&lt;</span> vscodePythonDemo <span class="o">[</span>1.41s]
+Finished <span class="o">&lt;&lt;&lt;</span> vscodeCppDemo <span class="o">[</span>1.79s]                     
+
+Summary: 2 packages finished <span class="o">[</span>2.10s]
+  1 package had stderr output: vscodePythonDemo
+</code></pre></div></div>
+
+<blockquote>
+  <p>注意此时出现的<code class="language-plaintext highlighter-rouge">SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.</code>主要是因为<code class="language-plaintext highlighter-rouge">setuptools</code>的版本和ROS2所需要的版本不一致，但是不会影响编译</p>
+</blockquote>
+
+<ol>
+  <li>运行ROS2的Python项目：<code class="language-plaintext highlighter-rouge">.py</code>文件本身就是一个可执行的脚本，如果Python解析器的环境依赖都能够被找到的话，可以直接输入<code class="language-plaintext highlighter-rouge">python3 xx.py</code>运行文件，同样通过激活<code class="language-plaintext highlighter-rouge">./install/setup.bash</code>文件，利用ROS2运行Python节点</li>
+</ol>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pldz@pldz-pc:~/share/ROS2_DEMO/1_Chapter/code<span class="nv">$ </span>python3 ./build/vscodePythonDemo/build/lib/vscodePythonDemo/vscodePythonDemoNode.py 
+<span class="o">[</span>INFO] <span class="o">[</span>1682341866.812861345] <span class="o">[</span>helloworld_py_node]: hello world!
+pldz@pldz-pc:~/share/ROS2_DEMO/1_Chapter/code<span class="nv">$ </span>python3 ./vscodePythonDemo/vscodePythonDemo/vscodePythonDemoNode.py 
+<span class="o">[</span>INFO] <span class="o">[</span>1682341890.895240693] <span class="o">[</span>helloworld_py_node]: hello world!
+pldz@pldz-pc:~/share/ROS2_DEMO/1_Chapter/code<span class="nv">$ </span>ros2 run vscodePythonDemo/ <span class="nt">--prefix</span> 
+build/             <span class="nb">install</span>/           log/               .vscode/           vscodeCppDemo/     vscodePythonDemo/
+pldz@pldz-pc:~/share/ROS2_DEMO/1_Chapter/code<span class="nv">$ </span><span class="nb">source</span> ./install/setup.bash 
+pldz@pldz-pc:~/share/ROS2_DEMO/1_Chapter/code<span class="nv">$ </span>ros2 run vscodePythonDemo 
+<span class="nt">--prefix</span>              vscodePythonDemoNode  
+pldz@pldz-pc:~/share/ROS2_DEMO/1_Chapter/code<span class="nv">$ </span>ros2 run vscodePythonDemo vscodePythonDemoNode 
+<span class="o">[</span>INFO] <span class="o">[</span>1682341946.345360821] <span class="o">[</span>helloworld_py_node]: hello world!
+pldz@pldz-pc:~/share/ROS2_DEMO/1_Chapter/code<span class="nv">$ </span>
+</code></pre></div></div>
+
+<ol>
+  <li>ROS2的Python项目的简单文件结构：在项目文件夹下输入<code class="language-plaintext highlighter-rouge">tree -L 3</code>查看项目三级目录；其中的<code class="language-plaintext highlighter-rouge">setup.cfg是功能包基本配置文件</code>，它的作用会影响项目<code class="language-plaintext highlighter-rouge">.build</code>文件夹下对Python项目的配置。</li>
+</ol>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pldz@pldz-pc:~/share/ROS2_DEMO/1_Chapter/code<span class="nv">$ </span>tree <span class="nt">-L</span> 3
+<span class="nb">.</span>
+├── build
+│   ├── COLCON_IGNORE
+│   ├── vscodeCppDemo
+| ... 手动删除了C/C++项目的内容
+└── vscodePythonDemo
+    ├── package.xml
+    ├── resource
+    │   └── vscodePythonDemo
+    ├── setup.cfg
+    ├── setup.py
+    ├── <span class="nb">test</span>
+    │   ├── test_copyright.py
+    │   ├── test_flake8.py
+    │   └── test_pep257.py
+    └── vscodePythonDemo
+        ├── __init__.py
+        └── vscodePythonDemoNode.py
+</code></pre></div></div>
+
+<h1 id="13-ros2的基本体系">1.3 ROS2的基本体系</h1>
+
+<h2 id="131-ros2架构">1.3.1 ROS2架构</h2>
+
+<p>ROS2的介绍中，有这么一张图，习惯划分说ROS2分为三层<a href="https://www.bilibili.com/video/BV1HD4y1q7UH/">来源于B站UP</a>：</p>
+
+<p><img src="/assets/pics/ROS2_BASIC/1_ros2_structure.png" alt="ROS2架构" /></p>
+
+<ol>
+  <li>
+    <p>操作系统层（OS Layer）：如前所述，ROS虽然称之为机器人操作系统，但实质只是构建机器人应用程序的软件开发工具包，ROS必须依赖于传统意义的操作系统，目前ROS2可以运行在Linux、Windows、Mac或RTOS上。</p>
+  </li>
+  <li>
+    <p>中间层（Middleware Layer）：主要由数据分发服务DDS与ROS2封装的关于机器人开发的中间件组成。DDS是一种去中心化的数据通讯方式，ROS2还引入了服务质量管理 （Quality of Service）机制，借助该机制可以保证在某些较差网络环境下也可以具备良好的通讯效果。ROS2中间件则主要由客户端库、DDS抽象层与进程内通讯API构成。</p>
+  </li>
+  <li>
+    <p>应用层（Application Layer）：是指开发者构建的应用程序，在应用程序中是以功能包为核心的，在功能包中可以包含源码、数据定义、接口等内容。</p>
+  </li>
+</ol>
+
+<h2 id="132-ros2和ros1的区别">1.3.2 ROS2和ROS1的区别</h2>
+
+<p>老生常谈的一个话题了，总结来说：</p>
+
+<ol>
+  <li>
+    <p>协议不一样：ROS1用的是TCP和UDP协议，而ROS2用DDS协议；DDS是ROS2的一个很重要的概念，DDS是专用总线协议，速度更快更可靠；</p>
+  </li>
+  <li>
+    <p>架构不一样，ROS1通过ROS Master管理节点，而ROS2是分布式通讯架构，不需要ROS Master</p>
+  </li>
+  <li>
+    <p>ROS2支持的平台更多，能够支撑嵌入式开发板，实时操作系统RTOS等平台</p>
+  </li>
+</ol>
+
+<h2 id="133-ros2应用方向">1.3.3 ROS2应用方向</h2>
+
+<ol>
+  <li>
+    <p>Nav2项目：Nav2项目继承自ROS Navigation Stack。该项目旨在可以让移动机器人从A点安全的移动到B点。它也可以应用于涉及机器人导航的其他应用，例如跟随动态点。Nav2将用于实现路径规划、运动控制、动态避障和恢复行为等一系列功能</p>
+  </li>
+  <li>
+    <p>microROS：在基于ROS的机器人应用中，micro-ROS正在弥合性能有限的微控制器和一般处理器之间的差距。micro-ROS在各种嵌入式硬件上运行，使ROS能直接应用于机器人硬件</p>
+  </li>
+</ol>
+
+<h1 id="14-总结和参考内容">1.4 总结和参考内容</h1>
+
+<h2 id="141-总结">1.4.1 总结</h2>
+
+<ol>
+  <li>创建ROS2项目的流程：</li>
+</ol>
+
+<blockquote>
+  <ul>
+    <li>
+      <ol>
+        <li>创建功能包: <code class="language-plaintext highlighter-rouge">ros2 pkg create &lt;项目名&gt; --build-type &lt;cmake/ament_camke/ament_python&gt; --node-name &lt;节点名&gt; --dependencies &lt;rclpy/rclcpp ...&gt;</code></li>
+      </ol>
+    </li>
+    <li>
+      <ol>
+        <li>编辑源文件：采用继承<code class="language-plaintext highlighter-rouge">rcl</code>节点发方式，创建ROS2节点</li>
+      </ol>
+    </li>
+    <li>
+      <ol>
+        <li>编辑配置文件： C/C++ 配置<code class="language-plaintext highlighter-rouge">packages.xml</code>和<code class="language-plaintext highlighter-rouge">CMakeLists.txt</code>分别进行依赖项管理和编译配置，Python项目配置<code class="language-plaintext highlighter-rouge">packages.xml</code>和<code class="language-plaintext highlighter-rouge">setup.py</code>分别进行依赖项和编译安装配置</li>
+      </ol>
+    </li>
+    <li>
+      <ol>
+        <li>编译：安装<code class="language-plaintext highlighter-rouge">colcon</code>工具，<code class="language-plaintext highlighter-rouge">sudo apt install python3-colcon-common-extensions</code>，<strong>并且在项目目录下</strong>，进行<code class="language-plaintext highlighter-rouge">colcon build</code></li>
+      </ol>
+    </li>
+    <li>
+      <ol>
+        <li>执行：激活项目环境<code class="language-plaintext highlighter-rouge">source &lt;项目&gt;/install/setup.bash</code>，然后输入<code class="language-plaintext highlighter-rouge">ros2 run &lt;package&gt; &lt;node&gt;</code></li>
+      </ol>
+    </li>
+  </ul>
+</blockquote>
+
+<h2 id="142-参考内容">1.4.2 参考内容</h2>
+
+<ul>
+  <li>
+    <ol>
+      <li><a href="https://blog.csdn.net/gongdiwudu/article/details/126192244">【ROS2原理3】：构建系统“ament_cmake”和构建工具“ament_tools”</a></li>
+    </ol>
+  </li>
+  <li>
+    <ol>
+      <li><a href="https://blog.csdn.net/aibingjin/article/details/123899829">ROS2学习笔记（五）– ROS2命令行操作常用指令总结（一）</a></li>
+    </ol>
+  </li>
+  <li>
+    <ol>
+      <li><a href="https://docs.ros.org/en/foxy/How-To-Guides/Developing-a-ROS-2-Package.html">Developing a ROS 2 package</a></li>
+    </ol>
+  </li>
+  <li>
+    <ol>
+      <li><a href="https://zhuanlan.zhihu.com/p/106920426">C++日志（三十一）类继承时的构造函数</a></li>
+    </ol>
+  </li>
+  <li>
+    <ol>
+      <li><a href="https://docs.ros2.org/latest/api/">ROS2 API</a></li>
+    </ol>
+  </li>
+  <li>
+    <ol>
+      <li><a href="http://dev.ros2.fishros.com/">ROS2中文网</a></li>
+    </ol>
+  </li>
+  <li>
+    <ol>
+      <li><a href="https://blog.csdn.net/xmy306538517/article/details/78770788">ROS2.0整体架构说明</a></li>
+    </ol>
+  </li>
+  <li>
+    <ol>
+      <li><a href="https://design.ros2.org/">ROS 2 Design</a></li>
+    </ol>
+  </li>
+</ul>
+</section>
+            </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div></div>
+    </div>
+</div>
+
+<!-- introduce mathjax support -->
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [ ['$', '$'], ['\\(', '\\)'] ]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script
+  type="text/javascript" id="MathJax-script" async
+  src="/assets/js/tex-chtml.js">
+</script>
+
+
+<!-- introduce per-page mermaid support -->
+
+
+<!-- introduce mathjax support -->
+<script>
+    function fixes_chrome_anchors() {
+        let chrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+        if (window.location.hash && chrome) {
+            setTimeout(function () {
+                var hash = window.location.hash;
+                window.location.hash = "";
+                window.location.hash = hash;
+            }, 300);
+        }
+    }
+
+    if (document.readyState === "loading") {
+        // Loading hasn't finished yet
+        document.addEventListener("DOMContentLoaded", fixes_chrome_anchors);
+    } else {
+        // `DOMContentLoaded` has already fired
+        fixes_chrome_anchors();
+    }
+</script>
+
+
+                        <a href="/ros2_car/2023-01-03-ABOUT.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: ABOUT">
+                            <i class="fa fa-angle-left"></i>
+                        </a>
+                    
+
+                    
+                        <a href="/ros2_basic/2023-02-02-2_1_ROS2%E8%AF%9D%E9%A2%98%E9%80%9A%E8%AE%AF%E5%9F%BA%E7%A1%80.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 2 ROS2话题通讯 - 话题通讯基础">
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                    
+                </div>
+            </div>
+
+            <script>
+            var gitbook = gitbook || [];
+            gitbook.push(function() {
+                gitbook.page.hasChanged({
+    "page": {
+        "title": "Introduction",
+        "level": "1.1",
+        "depth": 1,
+        
+        "next": {
+            "title": "2 ROS2话题通讯 - 话题通讯基础",
+            "level": "1.2",
+            "depth": 1,
+            "path": "_posts/ROS2_BASIC/2023-02-02-2_1_ROS2话题通讯基础.md",
+            "ref": "_posts/ROS2_BASIC/2023-02-02-2_1_ROS2话题通讯基础.md",
+            "articles": []
+        },
+        
+        "dir": "ltr"
+    },    "config": {
+        "plugins": ["fontsettings", "highlight", "livereload", "lunr", "search", "sharing", "theme-default", "livereload"],
+        "styles": {
+            "ebook": "styles/ebook.css",
+            "epub": "styles/epub.css",
+            "mobi": "styles/mobi.css",
+            "pdf": "styles/pdf.css",
+            "print": "styles/print.css",
+            "website": "styles/website.css"
+        },
+        "pluginsConfig": {
+            "expandable-chapter-small2": {
+                "articlesExpand": true,
+            },
+            "fontsettings": {
+                "family": "sans",
+                "size": 2,
+                "theme": "white"
+            },
+            "highlight": {},
+            "livereload": {},
+            "lunr": {
+                "ignoreSpecialCharacters": false,
+                "maxIndexSize": 1000000
+            },
+            "search": {},            "sharing": {},
+"theme-default": {
+                "showLevel": false,
+                "styles": {
+                    "ebook": "styles/ebook.css",
+                    "epub": "styles/epub.css",
+                    "mobi": "styles/mobi.css",
+                    "pdf": "styles/pdf.css",
+                    "print": "styles/print.css",
+                    "website": "styles/website.css"
+                }
+            },
+        },
+        "theme": "default",
+        "author": "Tao He",
+        "pdf": {
+            "pageNumbers": true,
+            "fontSize": 12,
+            "fontFamily": "Arial",
+            "paperSize": "a4",
+            "chapterMark": "pagebreak",
+            "pageBreaksBefore": "/",
+            "margin": {
+                "right": 62,
+                "left": 62,
+                "top": 56,
+                "bottom": 56
+            }
+        },
+        "structure": {
+            "langs": "LANGS.md",
+            "readme": "README.md",
+        },
+        "variables": {},
+        "title": "Blogs",
+        "language": "en",
+        "gitbook": "*"
+    },
+    "file": {
+        "path": "_posts/ROS2_BASIC/2023-02-01-1_1_Ubuntu配置与ROS2快速体验.md",
+        "mtime": "2023-02-01 00:00:00 +0800",
+        "type": "markdown"
+    },
+    "gitbook": {
+        "version": "3.2.3",
+        "time": "2024-11-23 17:20:01 +0800"
+    },
+    "basePath": "",
+    "book": {
+        "language": ""
+    }
+});
+            });
+            </script>
+        </div><script src="/assets/gitbook/gitbook.js"></script>
+<script src="/assets/gitbook/theme.js"></script>
+
+<script src="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-search-pro/search.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-sharing/buttons.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-splitter/splitter.js"></script>
+
+<!--
+<script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+<script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+<script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+<script src="../gitbook/gitbook-plugin-search/search.js"></script>
+-->
+
+<script src="/assets/gitbook/custom.js"></script>
+<script src="/assets/gitbook/custom-local.js"></script>
+
+</body>
+</html>

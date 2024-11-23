@@ -1,0 +1,546 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head><meta charset="UTF-8">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>1 Docker 搭建 ROS2 嵌入式运行环境 · Blogs</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="description" content="Build Jekyll site with the GitBook style.
+"><meta name="generator" content="Jekyll (using style of GitBook 3.2.3)"><meta name="author" content="pldz9"><link rel="stylesheet" href="/assets/gitbook/style.css">
+<link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+<link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
+<link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-fontsettings/website.css">
+<link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-search-pro/search.css">
+<link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-splitter/splitter.css">
+
+<link rel="stylesheet" href="/assets/gitbook/rouge/thankful_eyes.css">
+
+<link rel="stylesheet" href="/assets/gitbook/custom.css">
+<link rel="stylesheet" href="/assets/gitbook/custom-local.css">
+
+<meta name="HandheldFriendly" content="true"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/gitbook/images/apple-touch-icon-precomposed-152.png">
+<link rel="shortcut icon" href="/assets/gitbook/images/favicon.ico" type="image/x-icon">
+
+
+
+
+            <link rel="prev" href="/ros2_micro/2023-04-04-4_1_MicroROS%E5%88%9D%E6%AD%A5%E4%BD%93%E9%AA%8C.html" />
+        
+
+        
+            <link rel="next" href="/ros2_car/2023-06-02-2_1_%E9%80%9A%E8%BF%87Turtlebot3%E6%A1%88%E4%BE%8B%E4%BA%86%E8%A7%A3NAVI2.html" />
+        
+    </head>
+    <body>
+        <div class="book"><div class="book-summary">
+    <script type="text/javascript">
+        // Fixes the page links scroll problem on both desktop and mobile browsers
+        function pageScrollToTop(element) {
+            // both mobile and non-mobile
+            $('div.body-inner').animate({scrollTop: 0});
+            $(element).parent().find('li>ul>li').removeClass('active');
+            return true;
+        }
+
+    </script>
+
+    <nav role="navigation" style="height: 100%;">
+        <!-- Search Input -->
+        <div id="book-search-input" role="search">
+            <input type="text" placeholder="Type to search" />
+        </div>
+        <div id="book-search-input-link" role="search">
+            <a href="/assets/search.html">Click to Search</a>
+        </div>
+
+        <div class="book-base-title" data-path="">
+            <a href="/" onclick="pageScrollToTop(this)">
+                爬楼的猪 Blogs
+            </a>
+        </div>
+
+        <!-- Book Summary Navigation -->
+        <ul class="summary" id="book-summary-core" data-scroll-top="0">
+            <!-- Loop through collections and posts by category -->
+            
+            
+            <li class="chapter category-header" id="category-header-ROS2_CAR">
+                <a href="javascript:void(0)">
+                    ROS2_CAR
+                </a>
+                <ul class="category-list" id="category-list-ROS2_CAR">
+                    
+                    
+                    <li class="chapter "
+                        data-path="/ros2_car/2023-01-03-ABOUT.html">
+                        <a href="/ros2_car/2023-01-03-ABOUT.html" onclick="pageScrollToTop(this)">
+                            ABOUT
+                        </a>
+                    </li>
+                    
+                    <li class="chapter active"
+                        data-path="/ros2_car/2023-06-01-1_1_docker%E5%91%BD%E4%BB%A4%E7%86%9F%E6%82%89.html">
+                        <a href="/ros2_car/2023-06-01-1_1_docker%E5%91%BD%E4%BB%A4%E7%86%9F%E6%82%89.html" onclick="pageScrollToTop(this)">
+                            1 Docker 搭建 ROS2 嵌入式运行环境
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/ros2_car/2023-06-02-2_1_%E9%80%9A%E8%BF%87Turtlebot3%E6%A1%88%E4%BE%8B%E4%BA%86%E8%A7%A3NAVI2.html">
+                        <a href="/ros2_car/2023-06-02-2_1_%E9%80%9A%E8%BF%87Turtlebot3%E6%A1%88%E4%BE%8B%E4%BA%86%E8%A7%A3NAVI2.html" onclick="pageScrollToTop(this)">
+                            2 通过 Turtlebot3 案例了解 NAVI2
+                        </a>
+                    </li>
+                    
+                </ul>
+            </li>
+            
+            <li class="chapter category-header" id="category-header-ROS2_MICRO">
+                <a href="javascript:void(0)">
+                    ROS2_MICRO
+                </a>
+                <ul class="category-list" id="category-list-ROS2_MICRO">
+                    
+                    
+                    <li class="chapter "
+                        data-path="/ros2_micro/2023-01-02-ABOUT.html">
+                        <a href="/ros2_micro/2023-01-02-ABOUT.html" onclick="pageScrollToTop(this)">
+                            ABOUT
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/ros2_micro/2023-04-01-1_1_ROS2_Arduino.html">
+                        <a href="/ros2_micro/2023-04-01-1_1_ROS2_Arduino.html" onclick="pageScrollToTop(this)">
+                            1 ROS2 和 Arduino 通讯
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/ros2_micro/2023-04-02-2_1_Arduino%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95.html">
+                        <a href="/ros2_micro/2023-04-02-2_1_Arduino%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95.html" onclick="pageScrollToTop(this)">
+                            2 Arduino 的基本语法
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/ros2_micro/2023-04-03-3_1_ROS2_Arduino_demo.html">
+                        <a href="/ros2_micro/2023-04-03-3_1_ROS2_Arduino_demo.html" onclick="pageScrollToTop(this)">
+                            3 ROS2 和 arduino 通讯
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/ros2_micro/2023-04-04-4_1_MicroROS%E5%88%9D%E6%AD%A5%E4%BD%93%E9%AA%8C.html">
+                        <a href="/ros2_micro/2023-04-04-4_1_MicroROS%E5%88%9D%E6%AD%A5%E4%BD%93%E9%AA%8C.html" onclick="pageScrollToTop(this)">
+                            4 MircoROS 初步体验
+                        </a>
+                    </li>
+                    
+                </ul>
+            </li>
+            
+            <li class="chapter category-header" id="category-header-ROS2_BASIC">
+                <a href="javascript:void(0)">
+                    ROS2_BASIC
+                </a>
+                <ul class="category-list" id="category-list-ROS2_BASIC">
+                    
+                    
+                    <li class="chapter "
+                        data-path="/ros2_basic/2023-01-01-ABOUT.html">
+                        <a href="/ros2_basic/2023-01-01-ABOUT.html" onclick="pageScrollToTop(this)">
+                            ABOUT
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/ros2_basic/2023-02-01-1_1_Ubuntu%E9%85%8D%E7%BD%AE%E4%B8%8EROS2%E5%BF%AB%E9%80%9F%E4%BD%93%E9%AA%8C.html">
+                        <a href="/ros2_basic/2023-02-01-1_1_Ubuntu%E9%85%8D%E7%BD%AE%E4%B8%8EROS2%E5%BF%AB%E9%80%9F%E4%BD%93%E9%AA%8C.html" onclick="pageScrollToTop(this)">
+                            1 Ubuntu配置与ROS2快速体验
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/ros2_basic/2023-02-02-2_1_ROS2%E8%AF%9D%E9%A2%98%E9%80%9A%E8%AE%AF%E5%9F%BA%E7%A1%80.html">
+                        <a href="/ros2_basic/2023-02-02-2_1_ROS2%E8%AF%9D%E9%A2%98%E9%80%9A%E8%AE%AF%E5%9F%BA%E7%A1%80.html" onclick="pageScrollToTop(this)">
+                            2 ROS2话题通讯 - 话题通讯基础
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/ros2_basic/2023-02-03-2_2_ROS2%E8%AF%9D%E9%A2%98%E9%80%9A%E8%AE%AF%E6%8F%90%E5%8D%87.html">
+                        <a href="/ros2_basic/2023-02-03-2_2_ROS2%E8%AF%9D%E9%A2%98%E9%80%9A%E8%AE%AF%E6%8F%90%E5%8D%87.html" onclick="pageScrollToTop(this)">
+                            2 ROS2话题通讯 - 话题通讯进阶
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/ros2_basic/2023-02-04-3_1_ROS2%E6%9C%8D%E5%8A%A1%E9%80%9A%E8%AE%AF.html">
+                        <a href="/ros2_basic/2023-02-04-3_1_ROS2%E6%9C%8D%E5%8A%A1%E9%80%9A%E8%AE%AF.html" onclick="pageScrollToTop(this)">
+                            3 ROS2服务通讯基础
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/ros2_basic/2023-02-05-4_1_ROS2%E5%8F%82%E6%95%B0%E6%9C%8D%E5%8A%A1%E5%99%A8.html">
+                        <a href="/ros2_basic/2023-02-05-4_1_ROS2%E5%8F%82%E6%95%B0%E6%9C%8D%E5%8A%A1%E5%99%A8.html" onclick="pageScrollToTop(this)">
+                            4 ROS2节点参数基础
+                        </a>
+                    </li>
+                    
+                </ul>
+            </li>
+            
+            <li class="chapter category-header" id="category-header-Others">
+                <a href="javascript:void(0)">
+                    Others
+                </a>
+                <ul class="category-list" id="category-list-Others">
+                    
+                    
+                    <li class="chapter "
+                        data-path="/others/2022-01-01-ABOUT.html">
+                        <a href="/others/2022-01-01-ABOUT.html" onclick="pageScrollToTop(this)">
+                            ABOUT
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/others/2022-01-02-VSCode%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE.html">
+                        <a href="/others/2022-01-02-VSCode%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE.html" onclick="pageScrollToTop(this)">
+                            VSCode相关配置
+                        </a>
+                    </li>
+                    
+                </ul>
+            </li>
+            
+        </ul>
+
+
+        <!-- Page Content and TOC -->
+        <div class="page-content-category">
+            <div class="page-content-title">Navigation of <span>1 Docker 搭建 ROS2 嵌入式运行环境</span></div>
+            <ul class="page-content">
+                
+                <ul><li><a href="#11-安装-docker" onclick="mobilePageScrollToAnchor(this)" >1.1 安装 docker</a></li><li><a href="#12-docker-安装并配置-ubuntu20" onclick="mobilePageScrollToAnchor(this)" >1.2 docker 安装并配置 ubuntu20</a></li><li><a href="#13-docker-内-ubuntu2004-安装-ros2-foxy" onclick="mobilePageScrollToAnchor(this)" >1.3 docker 内 Ubuntu20.04 安装 ros2-foxy</a></li></ul>
+
+                
+            </ul>
+        </div> 
+    </nav>
+</div><div class="book-body">
+                <div class="book-header" role="navigation">
+                    <!-- Title -->
+                    <h1>
+                      1 Docker 搭建 ROS2 嵌入式运行环境
+                    </h1>
+                </div>
+
+                <div class="body-inner"><div class="page-wrapper" tabindex="-1" role="main">
+    
+
+    <div class="page-inner">
+        <div id="book-search-results">
+            <div class="search-noresults">
+                <section class="normal markdown-section">
+                    
+                        <h1 id="/ros2_car/1_1_docker命令熟悉">1 Docker 搭建 ROS2 嵌入式运行环境</h1>
+                    
+
+                    <h1 id="11-安装-docker">1.1 安装 docker</h1>
+
+<h1 id="12-docker-安装并配置-ubuntu20">1.2 docker 安装并配置 ubuntu20</h1>
+
+<ol>
+  <li>
+    <p>拉取 docker 镜像：<code class="language-plaintext highlighter-rouge">sudo docker pull ubuntu:20.04</code></p>
+  </li>
+  <li>
+    <p>启动镜像： <code class="language-plaintext highlighter-rouge">docker run --rm -it --network=host ubuntu:20.04</code></p>
+  </li>
+</ol>
+
+<blockquote>
+  <ul>
+    <li><code class="language-plaintext highlighter-rouge">docker run</code> 是用于运行容器的 Docker 命令。</li>
+    <li><code class="language-plaintext highlighter-rouge">--rm</code> 标志用于在容器停止后自动删除容器。这可以确保每次运行容器时都会清理掉容器，以避免产生无用的容器。</li>
+    <li><code class="language-plaintext highlighter-rouge">-it</code> 是两个标志的结合。<code class="language-plaintext highlighter-rouge">-i</code> 标志表示保持标准输入(stdin)打开，使得你可以与容器进行交互。<code class="language-plaintext highlighter-rouge">-t</code> 标志表示为容器分配一个伪终端(pseudo-TTY)，以便你可以在命令行中与容器进行交互。</li>
+    <li><code class="language-plaintext highlighter-rouge">--network=host</code> 标志用于将容器与主机共享网络命名空间。这意味着容器将与主机共享网络接口，可以访问主机上的网络资源。</li>
+    <li><code class="language-plaintext highlighter-rouge">ubuntu:20.04</code> 是指定要运行的容器镜像。在这个例子中，使用的是基于 Ubuntu 20.04 的镜像</li>
+  </ul>
+</blockquote>
+
+<ol>
+  <li>docker 内更新这样才能使用 apt-get 安装软件:<code class="language-plaintext highlighter-rouge">apt-get update</code></li>
+</ol>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jeston@jeston-desktop:~<span class="nv">$ </span><span class="nb">sudo </span>docker run <span class="nt">--rm</span> <span class="nt">-it</span> <span class="nt">--network</span><span class="o">=</span>host ubuntu:20.04
+root@jeston-desktop:/# <span class="nb">uname</span> <span class="nt">-a</span>
+Linux jeston-desktop 4.9.253-tegra <span class="c">#1 SMP PREEMPT Sat Feb 19 08:59:22 PST 2022 aarch64 aarch64 aarch64 GNU/Linux</span>
+root@jeston-desktop:/# apt-get update
+</code></pre></div></div>
+
+<ol>
+  <li>
+    <p>安装基本软件：<code class="language-plaintext highlighter-rouge">apt-get install vim net-tools iputils-ping lsof</code></p>
+  </li>
+  <li>
+    <p>学会保存 docker 的状态：<a href="https://www.docker.org.cn/book/docker/docer-save-changes-10.html">保存对容器的修改</a></p>
+  </li>
+</ol>
+
+<ul>
+  <li>新开一个终端获取 docker 的 id:</li>
+</ul>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>docker ps <span class="nt">-l</span>
+</code></pre></div></div>
+
+<p><img src="/assets/pics/ROS2_CAR/1_get_docker_container_id.png" alt="1_查看docker容器的id" /></p>
+
+<ul>
+  <li>根据 id 进行 commit, 如果 commit 的内容和原来的 docker 的 tag 一致，那么会替换掉之前 docker 的内容，达到保存的效果</li>
+</ul>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>docker commit &lt;commit <span class="nb">id</span><span class="o">&gt;</span> &lt;tag&gt;
+</code></pre></div></div>
+
+<p><img src="/assets/pics/ROS2_CAR/1_save_docker_image.png" alt="1_保存docker镜像" /></p>
+
+<h1 id="13-docker-内-ubuntu2004-安装-ros2-foxy">1.3 docker 内 Ubuntu20.04 安装 ros2-foxy</h1>
+
+<ol>
+  <li>启动 docker 内的 Ubuntu20.04:</li>
+</ol>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run <span class="nt">--rm</span> <span class="nt">-it</span> <span class="nt">--network</span><span class="o">=</span>host ubuntu:20.04
+</code></pre></div></div>
+
+<ol>
+  <li>输入 locale 查看是否支持 utf-8, 如果不支持要安装:</li>
+</ol>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt update <span class="o">&amp;&amp;</span> apt <span class="nb">install </span>locales <span class="o">&amp;&amp;</span> locale-gen en_US en_US.UTF-8 <span class="o">&amp;&amp;</span> update-locale <span class="nv">LC_ALL</span><span class="o">=</span>en_US.UTF-8 <span class="nv">LANG</span><span class="o">=</span>en_US.UTF-8 <span class="o">&amp;&amp;</span> <span class="nb">export </span><span class="nv">LANG</span><span class="o">=</span>en_US.UTF-8
+</code></pre></div></div>
+
+<ol>
+  <li>添加 ROS2 GPG 密钥：如果出现 403 问题 查看<a href="https://blog.csdn.net/qq_42727752/article/details/130277029">1 ROS2 介绍安装与快速体验</a></li>
+</ol>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt update <span class="o">&amp;&amp;</span> apt <span class="nb">install </span>curl <span class="nt">-y</span> <span class="o">&amp;&amp;</span> curl <span class="nt">-sSL</span> https://raw.githubusercontent.com/ros/rosdistro/master/ros.key <span class="nt">-o</span> /usr/share/keyrings/ros-archive-keyring.gpg
+</code></pre></div></div>
+
+<ol>
+  <li>添加 ros 源：</li>
+</ol>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">echo</span> <span class="s2">"deb [arch=</span><span class="si">$(</span>dpkg <span class="nt">--print-architecture</span><span class="si">)</span><span class="s2"> signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu </span><span class="si">$(</span><span class="nb">.</span> /etc/os-release <span class="o">&amp;&amp;</span> <span class="nb">echo</span> <span class="nv">$UBUNTU_CODENAME</span><span class="si">)</span><span class="s2"> main"</span> | <span class="nb">tee</span> /etc/apt/sources.list.d/ros2.list <span class="o">&gt;</span> /dev/null
+</code></pre></div></div>
+
+<ol>
+  <li>开始安装 ros2-foxy:</li>
+</ol>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt-get update <span class="o">&amp;&amp;</span> apt-get upgrade <span class="o">&amp;&amp;</span> apt-get <span class="nb">install </span>ros-foxy-desktop
+</code></pre></div></div>
+
+<ol>
+  <li>安装完成之后, 新建一个终端，找到当前 docker 的 id 之后，保存 docker 镜像状态</li>
+</ol>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+</code></pre></div></div>
+</section>
+            </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div></div>
+    </div>
+</div>
+
+<!-- introduce mathjax support -->
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [ ['$', '$'], ['\\(', '\\)'] ]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script
+  type="text/javascript" id="MathJax-script" async
+  src="/assets/js/tex-chtml.js">
+</script>
+
+
+<!-- introduce per-page mermaid support -->
+
+
+<!-- introduce mathjax support -->
+<script>
+    function fixes_chrome_anchors() {
+        let chrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+        if (window.location.hash && chrome) {
+            setTimeout(function () {
+                var hash = window.location.hash;
+                window.location.hash = "";
+                window.location.hash = hash;
+            }, 300);
+        }
+    }
+
+    if (document.readyState === "loading") {
+        // Loading hasn't finished yet
+        document.addEventListener("DOMContentLoaded", fixes_chrome_anchors);
+    } else {
+        // `DOMContentLoaded` has already fired
+        fixes_chrome_anchors();
+    }
+</script>
+
+
+                        <a href="/ros2_micro/2023-04-04-4_1_MicroROS%E5%88%9D%E6%AD%A5%E4%BD%93%E9%AA%8C.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 4 MircoROS 初步体验">
+                            <i class="fa fa-angle-left"></i>
+                        </a>
+                    
+
+                    
+                        <a href="/ros2_car/2023-06-02-2_1_%E9%80%9A%E8%BF%87Turtlebot3%E6%A1%88%E4%BE%8B%E4%BA%86%E8%A7%A3NAVI2.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 2 通过 Turtlebot3 案例了解 NAVI2">
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                    
+                </div>
+            </div>
+
+            <script>
+            var gitbook = gitbook || [];
+            gitbook.push(function() {
+                gitbook.page.hasChanged({
+    "page": {
+        "title": "Introduction",
+        "level": "1.1",
+        "depth": 1,
+        
+        "next": {
+            "title": "2 通过 Turtlebot3 案例了解 NAVI2",
+            "level": "1.2",
+            "depth": 1,
+            "path": "_posts/ROS2_CAR/2023-06-02-2_1_通过Turtlebot3案例了解NAVI2.md",
+            "ref": "_posts/ROS2_CAR/2023-06-02-2_1_通过Turtlebot3案例了解NAVI2.md",
+            "articles": []
+        },
+        
+        "dir": "ltr"
+    },    "config": {
+        "plugins": ["fontsettings", "highlight", "livereload", "lunr", "search", "sharing", "theme-default", "livereload"],
+        "styles": {
+            "ebook": "styles/ebook.css",
+            "epub": "styles/epub.css",
+            "mobi": "styles/mobi.css",
+            "pdf": "styles/pdf.css",
+            "print": "styles/print.css",
+            "website": "styles/website.css"
+        },
+        "pluginsConfig": {
+            "expandable-chapter-small2": {
+                "articlesExpand": true,
+            },
+            "fontsettings": {
+                "family": "sans",
+                "size": 2,
+                "theme": "white"
+            },
+            "highlight": {},
+            "livereload": {},
+            "lunr": {
+                "ignoreSpecialCharacters": false,
+                "maxIndexSize": 1000000
+            },
+            "search": {},            "sharing": {},
+"theme-default": {
+                "showLevel": false,
+                "styles": {
+                    "ebook": "styles/ebook.css",
+                    "epub": "styles/epub.css",
+                    "mobi": "styles/mobi.css",
+                    "pdf": "styles/pdf.css",
+                    "print": "styles/print.css",
+                    "website": "styles/website.css"
+                }
+            },
+        },
+        "theme": "default",
+        "author": "Tao He",
+        "pdf": {
+            "pageNumbers": true,
+            "fontSize": 12,
+            "fontFamily": "Arial",
+            "paperSize": "a4",
+            "chapterMark": "pagebreak",
+            "pageBreaksBefore": "/",
+            "margin": {
+                "right": 62,
+                "left": 62,
+                "top": 56,
+                "bottom": 56
+            }
+        },
+        "structure": {
+            "langs": "LANGS.md",
+            "readme": "README.md",
+        },
+        "variables": {},
+        "title": "Blogs",
+        "language": "en",
+        "gitbook": "*"
+    },
+    "file": {
+        "path": "_posts/ROS2_CAR/2023-06-01-1_1_docker命令熟悉.md",
+        "mtime": "2023-06-01 00:00:00 +0800",
+        "type": "markdown"
+    },
+    "gitbook": {
+        "version": "3.2.3",
+        "time": "2024-11-23 17:20:01 +0800"
+    },
+    "basePath": "",
+    "book": {
+        "language": ""
+    }
+});
+            });
+            </script>
+        </div><script src="/assets/gitbook/gitbook.js"></script>
+<script src="/assets/gitbook/theme.js"></script>
+
+<script src="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-search-pro/search.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-sharing/buttons.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-splitter/splitter.js"></script>
+
+<!--
+<script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+<script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+<script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+<script src="../gitbook/gitbook-plugin-search/search.js"></script>
+-->
+
+<script src="/assets/gitbook/custom.js"></script>
+<script src="/assets/gitbook/custom-local.js"></script>
+
+</body>
+</html>

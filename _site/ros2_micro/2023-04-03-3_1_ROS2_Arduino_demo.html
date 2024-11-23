@@ -1,0 +1,720 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head><meta charset="UTF-8">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>3 ROS2 和 arduino 通讯 · Blogs</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="description" content="Build Jekyll site with the GitBook style.
+"><meta name="generator" content="Jekyll (using style of GitBook 3.2.3)"><meta name="author" content="pldz9"><link rel="stylesheet" href="/assets/gitbook/style.css">
+<link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+<link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
+<link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-fontsettings/website.css">
+<link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-search-pro/search.css">
+<link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-splitter/splitter.css">
+
+<link rel="stylesheet" href="/assets/gitbook/rouge/thankful_eyes.css">
+
+<link rel="stylesheet" href="/assets/gitbook/custom.css">
+<link rel="stylesheet" href="/assets/gitbook/custom-local.css">
+
+<meta name="HandheldFriendly" content="true"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/gitbook/images/apple-touch-icon-precomposed-152.png">
+<link rel="shortcut icon" href="/assets/gitbook/images/favicon.ico" type="image/x-icon">
+
+
+
+
+            <link rel="prev" href="/ros2_micro/2023-04-02-2_1_Arduino%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95.html" />
+        
+
+        
+            <link rel="next" href="/ros2_micro/2023-04-04-4_1_MicroROS%E5%88%9D%E6%AD%A5%E4%BD%93%E9%AA%8C.html" />
+        
+    </head>
+    <body>
+        <div class="book"><div class="book-summary">
+    <script type="text/javascript">
+        // Fixes the page links scroll problem on both desktop and mobile browsers
+        function pageScrollToTop(element) {
+            // both mobile and non-mobile
+            $('div.body-inner').animate({scrollTop: 0});
+            $(element).parent().find('li>ul>li').removeClass('active');
+            return true;
+        }
+
+    </script>
+
+    <nav role="navigation" style="height: 100%;">
+        <!-- Search Input -->
+        <div id="book-search-input" role="search">
+            <input type="text" placeholder="Type to search" />
+        </div>
+        <div id="book-search-input-link" role="search">
+            <a href="/assets/search.html">Click to Search</a>
+        </div>
+
+        <div class="book-base-title" data-path="">
+            <a href="/" onclick="pageScrollToTop(this)">
+                爬楼的猪 Blogs
+            </a>
+        </div>
+
+        <!-- Book Summary Navigation -->
+        <ul class="summary" id="book-summary-core" data-scroll-top="0">
+            <!-- Loop through collections and posts by category -->
+            
+            
+            <li class="chapter category-header" id="category-header-ROS2_CAR">
+                <a href="javascript:void(0)">
+                    ROS2_CAR
+                </a>
+                <ul class="category-list" id="category-list-ROS2_CAR">
+                    
+                    
+                    <li class="chapter "
+                        data-path="/ros2_car/2023-01-03-ABOUT.html">
+                        <a href="/ros2_car/2023-01-03-ABOUT.html" onclick="pageScrollToTop(this)">
+                            ABOUT
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/ros2_car/2023-06-01-1_1_docker%E5%91%BD%E4%BB%A4%E7%86%9F%E6%82%89.html">
+                        <a href="/ros2_car/2023-06-01-1_1_docker%E5%91%BD%E4%BB%A4%E7%86%9F%E6%82%89.html" onclick="pageScrollToTop(this)">
+                            1 Docker 搭建 ROS2 嵌入式运行环境
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/ros2_car/2023-06-02-2_1_%E9%80%9A%E8%BF%87Turtlebot3%E6%A1%88%E4%BE%8B%E4%BA%86%E8%A7%A3NAVI2.html">
+                        <a href="/ros2_car/2023-06-02-2_1_%E9%80%9A%E8%BF%87Turtlebot3%E6%A1%88%E4%BE%8B%E4%BA%86%E8%A7%A3NAVI2.html" onclick="pageScrollToTop(this)">
+                            2 通过 Turtlebot3 案例了解 NAVI2
+                        </a>
+                    </li>
+                    
+                </ul>
+            </li>
+            
+            <li class="chapter category-header" id="category-header-ROS2_MICRO">
+                <a href="javascript:void(0)">
+                    ROS2_MICRO
+                </a>
+                <ul class="category-list" id="category-list-ROS2_MICRO">
+                    
+                    
+                    <li class="chapter "
+                        data-path="/ros2_micro/2023-01-02-ABOUT.html">
+                        <a href="/ros2_micro/2023-01-02-ABOUT.html" onclick="pageScrollToTop(this)">
+                            ABOUT
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/ros2_micro/2023-04-01-1_1_ROS2_Arduino.html">
+                        <a href="/ros2_micro/2023-04-01-1_1_ROS2_Arduino.html" onclick="pageScrollToTop(this)">
+                            1 ROS2 和 Arduino 通讯
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/ros2_micro/2023-04-02-2_1_Arduino%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95.html">
+                        <a href="/ros2_micro/2023-04-02-2_1_Arduino%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95.html" onclick="pageScrollToTop(this)">
+                            2 Arduino 的基本语法
+                        </a>
+                    </li>
+                    
+                    <li class="chapter active"
+                        data-path="/ros2_micro/2023-04-03-3_1_ROS2_Arduino_demo.html">
+                        <a href="/ros2_micro/2023-04-03-3_1_ROS2_Arduino_demo.html" onclick="pageScrollToTop(this)">
+                            3 ROS2 和 arduino 通讯
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/ros2_micro/2023-04-04-4_1_MicroROS%E5%88%9D%E6%AD%A5%E4%BD%93%E9%AA%8C.html">
+                        <a href="/ros2_micro/2023-04-04-4_1_MicroROS%E5%88%9D%E6%AD%A5%E4%BD%93%E9%AA%8C.html" onclick="pageScrollToTop(this)">
+                            4 MircoROS 初步体验
+                        </a>
+                    </li>
+                    
+                </ul>
+            </li>
+            
+            <li class="chapter category-header" id="category-header-ROS2_BASIC">
+                <a href="javascript:void(0)">
+                    ROS2_BASIC
+                </a>
+                <ul class="category-list" id="category-list-ROS2_BASIC">
+                    
+                    
+                    <li class="chapter "
+                        data-path="/ros2_basic/2023-01-01-ABOUT.html">
+                        <a href="/ros2_basic/2023-01-01-ABOUT.html" onclick="pageScrollToTop(this)">
+                            ABOUT
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/ros2_basic/2023-02-01-1_1_Ubuntu%E9%85%8D%E7%BD%AE%E4%B8%8EROS2%E5%BF%AB%E9%80%9F%E4%BD%93%E9%AA%8C.html">
+                        <a href="/ros2_basic/2023-02-01-1_1_Ubuntu%E9%85%8D%E7%BD%AE%E4%B8%8EROS2%E5%BF%AB%E9%80%9F%E4%BD%93%E9%AA%8C.html" onclick="pageScrollToTop(this)">
+                            1 Ubuntu配置与ROS2快速体验
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/ros2_basic/2023-02-02-2_1_ROS2%E8%AF%9D%E9%A2%98%E9%80%9A%E8%AE%AF%E5%9F%BA%E7%A1%80.html">
+                        <a href="/ros2_basic/2023-02-02-2_1_ROS2%E8%AF%9D%E9%A2%98%E9%80%9A%E8%AE%AF%E5%9F%BA%E7%A1%80.html" onclick="pageScrollToTop(this)">
+                            2 ROS2话题通讯 - 话题通讯基础
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/ros2_basic/2023-02-03-2_2_ROS2%E8%AF%9D%E9%A2%98%E9%80%9A%E8%AE%AF%E6%8F%90%E5%8D%87.html">
+                        <a href="/ros2_basic/2023-02-03-2_2_ROS2%E8%AF%9D%E9%A2%98%E9%80%9A%E8%AE%AF%E6%8F%90%E5%8D%87.html" onclick="pageScrollToTop(this)">
+                            2 ROS2话题通讯 - 话题通讯进阶
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/ros2_basic/2023-02-04-3_1_ROS2%E6%9C%8D%E5%8A%A1%E9%80%9A%E8%AE%AF.html">
+                        <a href="/ros2_basic/2023-02-04-3_1_ROS2%E6%9C%8D%E5%8A%A1%E9%80%9A%E8%AE%AF.html" onclick="pageScrollToTop(this)">
+                            3 ROS2服务通讯基础
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/ros2_basic/2023-02-05-4_1_ROS2%E5%8F%82%E6%95%B0%E6%9C%8D%E5%8A%A1%E5%99%A8.html">
+                        <a href="/ros2_basic/2023-02-05-4_1_ROS2%E5%8F%82%E6%95%B0%E6%9C%8D%E5%8A%A1%E5%99%A8.html" onclick="pageScrollToTop(this)">
+                            4 ROS2节点参数基础
+                        </a>
+                    </li>
+                    
+                </ul>
+            </li>
+            
+            <li class="chapter category-header" id="category-header-Others">
+                <a href="javascript:void(0)">
+                    Others
+                </a>
+                <ul class="category-list" id="category-list-Others">
+                    
+                    
+                    <li class="chapter "
+                        data-path="/others/2022-01-01-ABOUT.html">
+                        <a href="/others/2022-01-01-ABOUT.html" onclick="pageScrollToTop(this)">
+                            ABOUT
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/others/2022-01-02-VSCode%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE.html">
+                        <a href="/others/2022-01-02-VSCode%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE.html" onclick="pageScrollToTop(this)">
+                            VSCode相关配置
+                        </a>
+                    </li>
+                    
+                </ul>
+            </li>
+            
+        </ul>
+
+
+        <!-- Page Content and TOC -->
+        <div class="page-content-category">
+            <div class="page-content-title">Navigation of <span>3 ROS2 和 arduino 通讯</span></div>
+            <ul class="page-content">
+                
+                <ul><li><a href="#31-基本介绍" onclick="mobilePageScrollToAnchor(this)" >3.1 基本介绍</a></li><li><a href="#32-实现的效果" onclick="mobilePageScrollToAnchor(this)" >3.2 实现的效果</a></li><li><a href="#33-处理串口消息的模块-read_serialpy" onclick="mobilePageScrollToAnchor(this)" >3.3 处理串口消息的模块 read_serial.py</a></li><li><a href="#34-发送-ros2-cmd_vel-运动指令的模块-move_instructionpy" onclick="mobilePageScrollToAnchor(this)" >3.4 发送 ROS2 cmd_vel 运动指令的模块 move_instruction.py</a></li><li><a href="#35-ros2-节点-mainpy" onclick="mobilePageScrollToAnchor(this)" >3.5 ROS2 节点 main.py</a></li><li><a href="#36-总结" onclick="mobilePageScrollToAnchor(this)" >3.6 总结</a></li></ul>
+
+                
+            </ul>
+        </div> 
+    </nav>
+</div><div class="book-body">
+                <div class="book-header" role="navigation">
+                    <!-- Title -->
+                    <h1>
+                      3 ROS2 和 arduino 通讯
+                    </h1>
+                </div>
+
+                <div class="body-inner"><div class="page-wrapper" tabindex="-1" role="main">
+    
+
+    <div class="page-inner">
+        <div id="book-search-results">
+            <div class="search-noresults">
+                <section class="normal markdown-section">
+                    
+                        <h1 id="/ros2_micro/3_1_ROS2_Arduino_demo">3 ROS2 和 arduino 通讯</h1>
+                    
+
+                    <h1 id="31-基本介绍">3.1 基本介绍</h1>
+
+<p>在完成了上面两个简单的 arduino 的例子之后 也能用 python 从串口拿到消息，然后做 ROS2 消息的转发</p>
+
+<p><img src="/assets/pics/ROS2_MICRO/3_main_concept.png" alt="main_concept" /></p>
+
+<p>接下来我们就可以对拿到的消息做处理</p>
+
+<p>处理主要:</p>
+
+<ul>
+  <li>Python 从串口中读取消息的功能模块</li>
+  <li>Python 发送消息给到 ROS2 的节点的格式(Twist)</li>
+  <li>有了上面两个辅助的模块，就可以创建一个 ROS2 的节点，在不断的从串口获取数据，然后解析数据转成控制 ROS2 turtlesim 的消息</li>
+</ul>
+
+<p><img src="/assets/pics/ROS2_MICRO/3_ros2_arduino_concept.png" alt="ros2_arduino_concept" /></p>
+
+<p>那么 我们的文件夹结构就是这样的</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ros2_arduino_demo/
+|-- main.py                 // 主要的控制逻辑和ROS2节点
+|-- move_instruction.py     // 辅助生成控制消息的模块，简单的模拟管理机器人是不是要急停
+<span class="sb">`</span><span class="nt">--</span> read_serial.py          // 连接串口和读取串口信息
+
+1 directory, 3 files
+
+</code></pre></div></div>
+
+<h1 id="32-实现的效果">3.2 实现的效果</h1>
+
+<p>遥控器控制机器人移动</p>
+
+<p>距离传感器报警之后机器人急停，解除之后恢复</p>
+
+<p><img src="/assets/pics/ROS2_MICRO/3_demo.jpg" alt="demo" /></p>
+
+<h1 id="33-处理串口消息的模块-read_serialpy">3.3 处理串口消息的模块 read_serial.py</h1>
+
+<p>废话不多说 直接看代码 这个比较简单</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="sh">'''</span><span class="s">
+利用pyserial从串口中获得消息,转成指令
+</span><span class="sh">'''</span>
+
+<span class="kn">import</span> <span class="n">serial</span>
+
+
+<span class="k">class</span> <span class="nc">ReadSerial</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="n">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="bp">None</span><span class="p">:</span>
+        <span class="c1"># 串口的句柄
+</span>        <span class="n">self</span><span class="p">.</span><span class="n">ser</span> <span class="o">=</span> <span class="n">serial</span><span class="p">.</span><span class="nc">Serial</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="nf">open_serial</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">port</span><span class="p">,</span> <span class="n">baudrate</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+        <span class="sh">'''</span><span class="s">连接打开串口</span><span class="sh">'''</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="c1"># 打开串口
+</span>            <span class="n">self</span><span class="p">.</span><span class="n">ser</span> <span class="o">=</span> <span class="n">serial</span><span class="p">.</span><span class="nc">Serial</span><span class="p">(</span><span class="n">port</span><span class="p">,</span> <span class="n">baudrate</span><span class="p">,</span> <span class="n">timeout</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+            <span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">"</span><span class="s">Connected to </span><span class="si">{</span><span class="n">port</span><span class="si">}</span><span class="s"> at </span><span class="si">{</span><span class="n">baudrate</span><span class="si">}</span><span class="s"> baud.</span><span class="sh">"</span><span class="p">)</span>
+            <span class="k">return</span> <span class="bp">True</span>
+        <span class="k">except</span> <span class="n">serial</span><span class="p">.</span><span class="n">SerialException</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">"</span><span class="s">Error: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="sh">"</span><span class="p">)</span>
+            <span class="k">return</span> <span class="bp">False</span>
+
+    <span class="k">def</span> <span class="nf">read_from_serial</span><span class="p">(</span><span class="n">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+        <span class="sh">'''</span><span class="s">读取串口的消息</span><span class="sh">'''</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">line</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="n">ser</span><span class="p">.</span><span class="nf">readline</span><span class="p">().</span><span class="nf">decode</span><span class="p">(</span><span class="sh">'</span><span class="s">utf-8</span><span class="sh">'</span><span class="p">).</span><span class="nf">strip</span><span class="p">()</span>
+            <span class="k">if</span> <span class="n">line</span> <span class="o">!=</span> <span class="bp">None</span><span class="p">:</span>
+                <span class="c1"># 处理数据
+</span>                <span class="k">return</span> <span class="n">line</span>
+        <span class="k">except</span> <span class="nb">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">"</span><span class="s">Read data from serial error </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="sh">"</span><span class="p">)</span>
+            <span class="k">return</span> <span class="sh">''</span>
+
+</code></pre></div></div>
+
+<h1 id="34-发送-ros2-cmd_vel-运动指令的模块-move_instructionpy">3.4 发送 ROS2 cmd_vel 运动指令的模块 move_instruction.py</h1>
+
+<p>这个也比较简单 直接看代码</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="sh">'''</span><span class="s">
+接收指令控制机器人移动,也就是根据某个字符发送对应的运动指令
+</span><span class="sh">'''</span>
+
+<span class="kn">from</span> <span class="n">geometry_msgs.msg</span> <span class="kn">import</span> <span class="n">Twist</span>
+
+
+<span class="k">class</span> <span class="nc">MoveInstruction</span><span class="p">():</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="n">self</span><span class="p">):</span>
+        <span class="c1"># 急停的标志
+</span>        <span class="n">self</span><span class="p">.</span><span class="n">is_estop</span> <span class="o">=</span> <span class="bp">False</span>
+        <span class="c1"># 收到消息要发送的行为
+</span>        <span class="n">self</span><span class="p">.</span><span class="n">twist</span> <span class="o">=</span> <span class="nc">Twist</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="nf">move_msg</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">key</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Twist</span><span class="p">:</span>
+        <span class="c1"># 急停不做任何操作
+</span>        <span class="k">if</span> <span class="n">self</span><span class="p">.</span><span class="n">is_estop</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">self</span><span class="p">.</span><span class="nf">e_stop</span><span class="p">()</span>
+
+        <span class="k">if</span> <span class="n">key</span> <span class="o">==</span> <span class="sh">'</span><span class="s">w</span><span class="sh">'</span> <span class="ow">or</span> <span class="n">key</span> <span class="o">==</span> <span class="sh">'</span><span class="s">2</span><span class="sh">'</span><span class="p">:</span>  <span class="c1"># 向前移动
+</span>            <span class="n">self</span><span class="p">.</span><span class="n">twist</span><span class="p">.</span><span class="n">linear</span><span class="p">.</span><span class="n">x</span> <span class="o">=</span> <span class="mf">2.0</span>
+            <span class="n">self</span><span class="p">.</span><span class="n">twist</span><span class="p">.</span><span class="n">angular</span><span class="p">.</span><span class="n">z</span> <span class="o">=</span> <span class="mf">0.0</span>
+        <span class="k">elif</span> <span class="n">key</span> <span class="o">==</span> <span class="sh">'</span><span class="s">x</span><span class="sh">'</span> <span class="ow">or</span> <span class="n">key</span> <span class="o">==</span> <span class="sh">'</span><span class="s">8</span><span class="sh">'</span><span class="p">:</span>  <span class="c1"># 向后移动
+</span>            <span class="n">self</span><span class="p">.</span><span class="n">twist</span><span class="p">.</span><span class="n">linear</span><span class="p">.</span><span class="n">x</span> <span class="o">=</span> <span class="o">-</span><span class="mf">2.0</span>
+            <span class="n">self</span><span class="p">.</span><span class="n">twist</span><span class="p">.</span><span class="n">angular</span><span class="p">.</span><span class="n">z</span> <span class="o">=</span> <span class="mf">0.0</span>
+        <span class="k">elif</span> <span class="n">key</span> <span class="o">==</span> <span class="sh">'</span><span class="s">d</span><span class="sh">'</span> <span class="ow">or</span> <span class="n">key</span> <span class="o">==</span> <span class="sh">'</span><span class="s">6</span><span class="sh">'</span><span class="p">:</span>  <span class="c1"># 向右转
+</span>            <span class="n">self</span><span class="p">.</span><span class="n">twist</span><span class="p">.</span><span class="n">linear</span><span class="p">.</span><span class="n">x</span> <span class="o">=</span> <span class="mf">0.0</span>
+            <span class="n">self</span><span class="p">.</span><span class="n">twist</span><span class="p">.</span><span class="n">angular</span><span class="p">.</span><span class="n">z</span> <span class="o">=</span> <span class="o">-</span><span class="mf">2.0</span>
+        <span class="k">elif</span> <span class="n">key</span> <span class="o">==</span> <span class="sh">'</span><span class="s">a</span><span class="sh">'</span> <span class="ow">or</span> <span class="n">key</span> <span class="o">==</span> <span class="sh">'</span><span class="s">4</span><span class="sh">'</span><span class="p">:</span>  <span class="c1"># 向左转
+</span>            <span class="n">self</span><span class="p">.</span><span class="n">twist</span><span class="p">.</span><span class="n">linear</span><span class="p">.</span><span class="n">x</span> <span class="o">=</span> <span class="mf">0.0</span>
+            <span class="n">self</span><span class="p">.</span><span class="n">twist</span><span class="p">.</span><span class="n">angular</span><span class="p">.</span><span class="n">z</span> <span class="o">=</span> <span class="mf">2.0</span>
+        <span class="k">elif</span> <span class="n">key</span> <span class="o">==</span> <span class="sh">'</span><span class="s">q</span><span class="sh">'</span> <span class="ow">or</span> <span class="n">key</span> <span class="o">==</span> <span class="sh">'</span><span class="s">1</span><span class="sh">'</span><span class="p">:</span>  <span class="c1"># 左上旋转
+</span>            <span class="n">self</span><span class="p">.</span><span class="n">twist</span><span class="p">.</span><span class="n">linear</span><span class="p">.</span><span class="n">x</span> <span class="o">=</span> <span class="mf">2.0</span>
+            <span class="n">self</span><span class="p">.</span><span class="n">twist</span><span class="p">.</span><span class="n">angular</span><span class="p">.</span><span class="n">z</span> <span class="o">=</span> <span class="mf">2.0</span>
+        <span class="k">elif</span> <span class="n">key</span> <span class="o">==</span> <span class="sh">'</span><span class="s">e</span><span class="sh">'</span> <span class="ow">or</span> <span class="n">key</span> <span class="o">==</span> <span class="sh">'</span><span class="s">3</span><span class="sh">'</span><span class="p">:</span>  <span class="c1"># 右上旋转
+</span>            <span class="n">self</span><span class="p">.</span><span class="n">twist</span><span class="p">.</span><span class="n">linear</span><span class="p">.</span><span class="n">x</span> <span class="o">=</span> <span class="mf">2.0</span>
+            <span class="n">self</span><span class="p">.</span><span class="n">twist</span><span class="p">.</span><span class="n">angular</span><span class="p">.</span><span class="n">z</span> <span class="o">=</span> <span class="o">-</span><span class="mf">2.0</span>
+        <span class="k">elif</span> <span class="n">key</span> <span class="o">==</span> <span class="sh">'</span><span class="s">z</span><span class="sh">'</span> <span class="ow">or</span> <span class="n">key</span> <span class="o">==</span> <span class="sh">'</span><span class="s">7</span><span class="sh">'</span><span class="p">:</span>  <span class="c1"># 左下旋转
+</span>            <span class="n">self</span><span class="p">.</span><span class="n">twist</span><span class="p">.</span><span class="n">linear</span><span class="p">.</span><span class="n">x</span> <span class="o">=</span> <span class="o">-</span><span class="mf">2.0</span>
+            <span class="n">self</span><span class="p">.</span><span class="n">twist</span><span class="p">.</span><span class="n">angular</span><span class="p">.</span><span class="n">z</span> <span class="o">=</span> <span class="mf">2.0</span>
+        <span class="k">elif</span> <span class="n">key</span> <span class="o">==</span> <span class="sh">'</span><span class="s">c</span><span class="sh">'</span> <span class="ow">or</span> <span class="n">key</span> <span class="o">==</span> <span class="sh">'</span><span class="s">9</span><span class="sh">'</span><span class="p">:</span>  <span class="c1"># 右下旋转
+</span>            <span class="n">self</span><span class="p">.</span><span class="n">twist</span><span class="p">.</span><span class="n">linear</span><span class="p">.</span><span class="n">x</span> <span class="o">=</span> <span class="o">-</span><span class="mf">2.0</span>
+            <span class="n">self</span><span class="p">.</span><span class="n">twist</span><span class="p">.</span><span class="n">angular</span><span class="p">.</span><span class="n">z</span> <span class="o">=</span> <span class="o">-</span><span class="mf">2.0</span>
+        <span class="k">elif</span> <span class="n">key</span> <span class="o">==</span> <span class="sh">'</span><span class="s">s</span><span class="sh">'</span> <span class="ow">or</span> <span class="n">key</span> <span class="o">==</span> <span class="sh">'</span><span class="s">5</span><span class="sh">'</span><span class="p">:</span>    <span class="c1"># 停止
+</span>            <span class="n">self</span><span class="p">.</span><span class="n">twist</span><span class="p">.</span><span class="n">linear</span><span class="p">.</span><span class="n">x</span> <span class="o">=</span> <span class="mf">0.0</span>
+            <span class="n">self</span><span class="p">.</span><span class="n">twist</span><span class="p">.</span><span class="n">angular</span><span class="p">.</span><span class="n">z</span> <span class="o">=</span> <span class="mf">0.0</span>
+        <span class="k">else</span><span class="p">:</span>               <span class="c1"># 无效指令也停止
+</span>            <span class="n">self</span><span class="p">.</span><span class="n">twist</span><span class="p">.</span><span class="n">linear</span><span class="p">.</span><span class="n">x</span> <span class="o">=</span> <span class="mf">0.0</span>
+            <span class="n">self</span><span class="p">.</span><span class="n">twist</span><span class="p">.</span><span class="n">angular</span><span class="p">.</span><span class="n">z</span> <span class="o">=</span> <span class="mf">0.0</span>
+
+        <span class="k">return</span> <span class="n">self</span><span class="p">.</span><span class="n">twist</span>
+
+    <span class="k">def</span> <span class="nf">e_stop</span><span class="p">(</span><span class="n">self</span><span class="p">):</span>
+        <span class="sh">'''</span><span class="s">急停状态全置0, 设置flag</span><span class="sh">'''</span>
+        <span class="n">self</span><span class="p">.</span><span class="n">is_estop</span> <span class="o">=</span> <span class="bp">True</span>
+
+        <span class="n">self</span><span class="p">.</span><span class="n">twist</span><span class="p">.</span><span class="n">linear</span><span class="p">.</span><span class="n">x</span> <span class="o">=</span> <span class="mf">0.0</span>
+        <span class="n">self</span><span class="p">.</span><span class="n">twist</span><span class="p">.</span><span class="n">linear</span><span class="p">.</span><span class="n">y</span> <span class="o">=</span> <span class="mf">0.0</span>
+        <span class="n">self</span><span class="p">.</span><span class="n">twist</span><span class="p">.</span><span class="n">linear</span><span class="p">.</span><span class="n">z</span> <span class="o">=</span> <span class="mf">0.0</span>
+        <span class="n">self</span><span class="p">.</span><span class="n">twist</span><span class="p">.</span><span class="n">angular</span><span class="p">.</span><span class="n">x</span> <span class="o">=</span> <span class="mf">0.0</span>
+        <span class="n">self</span><span class="p">.</span><span class="n">twist</span><span class="p">.</span><span class="n">angular</span><span class="p">.</span><span class="n">y</span> <span class="o">=</span> <span class="mf">0.0</span>
+        <span class="n">self</span><span class="p">.</span><span class="n">twist</span><span class="p">.</span><span class="n">angular</span><span class="p">.</span><span class="n">z</span> <span class="o">=</span> <span class="mf">0.0</span>
+
+        <span class="k">return</span> <span class="n">self</span><span class="p">.</span><span class="n">twist</span>
+
+    <span class="k">def</span> <span class="nf">resume</span><span class="p">(</span><span class="n">self</span><span class="p">):</span>
+        <span class="sh">'''</span><span class="s">退出estop状态</span><span class="sh">'''</span>
+        <span class="k">if</span> <span class="n">self</span><span class="p">.</span><span class="n">is_estop</span><span class="p">:</span>
+            <span class="n">self</span><span class="p">.</span><span class="n">is_estop</span> <span class="o">=</span> <span class="bp">False</span>
+
+</code></pre></div></div>
+
+<p>唯一值得一提的就是 geometry_msgs.msg.Twist 消息是 ROS 中用于表示速度的消息类型，它包含两个主要部分：线速度（linear）和角速度（angular）。这两个部分都是 geometry_msgs.Vector3 类型。Twist 消息包含以下参数：</p>
+
+<ul>
+  <li>linear：线速度（geometry_msgs.Vector3 类型）
+    <ul>
+      <li>x：沿 x 轴的线速度</li>
+      <li>y：沿 y 轴的线速度</li>
+      <li>z：沿 z 轴的线速度</li>
+    </ul>
+  </li>
+  <li>angular：角速度（geometry_msgs.Vector3 类型）
+    <ul>
+      <li>x：绕 x 轴的角速度</li>
+      <li>y：绕 y 轴的角速度</li>
+      <li>z：绕 z 轴的角速度</li>
+    </ul>
+  </li>
+</ul>
+
+<p>在 TurtleSim 通常只会用到 linear.x 和 angular.z，因为乌龟只在 2D 平面上移动。</p>
+
+<h1 id="35-ros2-节点-mainpy">3.5 ROS2 节点 main.py</h1>
+
+<p>这个才是重中之重, 主要的实现也就如下所示</p>
+
+<p><img src="/assets/pics/ROS2_MICRO/3_ros2_arduino_core_graph.png" alt="ros2_arduino_core_graph" /></p>
+
+<p>那么这时候看代码就清楚了</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="sh">'''</span><span class="s">
+处理串口消息，增加各种逻辑，创建控制机器人运动的节点
+</span><span class="sh">'''</span>
+<span class="kn">import</span> <span class="n">time</span>
+<span class="kn">import</span> <span class="n">rclpy</span>
+<span class="kn">from</span> <span class="n">rclpy.node</span> <span class="kn">import</span> <span class="n">Node</span>
+<span class="kn">from</span> <span class="n">geometry_msgs.msg</span> <span class="kn">import</span> <span class="n">Twist</span>
+<span class="kn">from</span> <span class="n">move_instruction</span> <span class="kn">import</span> <span class="n">MoveInstruction</span>
+<span class="kn">from</span> <span class="n">read_serial</span> <span class="kn">import</span> <span class="n">ReadSerial</span>
+
+<span class="c1"># 定义几个常量
+</span><span class="n">NODE_NAME</span> <span class="o">=</span> <span class="sh">'</span><span class="s">ros2_arduino_demo</span><span class="sh">'</span>
+<span class="n">PUB_TOPIC</span> <span class="o">=</span> <span class="sh">'</span><span class="s">/turtle1/cmd_vel</span><span class="sh">'</span>
+<span class="n">SER_PORT_NAME</span> <span class="o">=</span> <span class="sh">'</span><span class="s">/dev/ttyUSB0</span><span class="sh">'</span>
+<span class="n">SER_BAUD_RATE</span> <span class="o">=</span> <span class="mi">57600</span>
+
+<span class="c1"># 约定的串口消息的分隔符
+</span><span class="n">SPLIT_SYMBOL</span> <span class="o">=</span> <span class="sh">'</span><span class="s">=</span><span class="sh">'</span>
+<span class="c1"># 红外传感器串口消息的关键字
+</span><span class="n">IRREMOTE_KEY</span> <span class="o">=</span> <span class="sh">'</span><span class="s">MOVE</span><span class="sh">'</span>
+<span class="c1"># 声波传感器的关键字
+</span><span class="n">ESTOP_KEY</span> <span class="o">=</span> <span class="sh">'</span><span class="s">ESTOP</span><span class="sh">'</span>
+
+
+<span class="k">class</span> <span class="nc">ROS2ArduinoDemo</span><span class="p">(</span><span class="n">Node</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="n">self</span><span class="p">):</span>
+        <span class="c1"># ROS2的基本节点信息
+</span>        <span class="nf">super</span><span class="p">().</span><span class="nf">__init__</span><span class="p">(</span><span class="n">NODE_NAME</span><span class="p">)</span>
+        <span class="n">self</span><span class="p">.</span><span class="n">publisher_</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="nf">create_publisher</span><span class="p">(</span><span class="n">Twist</span><span class="p">,</span> <span class="n">PUB_TOPIC</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+
+        <span class="c1"># 读取传感器和发送消息的句柄
+</span>        <span class="n">self</span><span class="p">.</span><span class="n">ins_handler</span> <span class="o">=</span> <span class="nc">MoveInstruction</span><span class="p">()</span>
+        <span class="n">self</span><span class="p">.</span><span class="n">ser_handler</span> <span class="o">=</span> <span class="nc">ReadSerial</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="nf">run</span><span class="p">(</span><span class="n">self</span><span class="p">):</span>
+        <span class="sh">'''</span><span class="s">开始执行ROS2节点</span><span class="sh">'''</span>
+        <span class="c1"># 连接串口
+</span>        <span class="n">flag</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="n">ser_handler</span><span class="p">.</span><span class="nf">open_serial</span><span class="p">(</span><span class="n">SER_PORT_NAME</span><span class="p">,</span> <span class="n">SER_BAUD_RATE</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">flag</span><span class="p">:</span>
+            <span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">exit ... ...</span><span class="sh">"</span><span class="p">)</span>
+            <span class="nf">exit</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+
+        <span class="c1"># 要发送的控制消息
+</span>        <span class="n">twist</span> <span class="o">=</span> <span class="nc">Twist</span><span class="p">()</span>
+
+        <span class="c1"># 开始循环接收串口消息，用串口的消息来控制机器人
+</span>        <span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+            <span class="n">ser_data_str</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="n">ser_handler</span><span class="p">.</span><span class="nf">read_from_serial</span><span class="p">()</span>
+
+            <span class="c1"># 无效信息
+</span>            <span class="k">if</span> <span class="n">ser_data_str</span> <span class="o">==</span> <span class="sh">''</span><span class="p">:</span>
+                <span class="k">continue</span>
+
+            <span class="c1"># 字符串处理
+</span>            <span class="n">ser_data_arr</span> <span class="o">=</span> <span class="n">ser_data_str</span><span class="p">.</span><span class="nf">split</span><span class="p">(</span><span class="n">SPLIT_SYMBOL</span><span class="p">)</span>
+
+            <span class="c1"># 数组长度不为2 也是无效信息
+</span>            <span class="k">if</span> <span class="nf">len</span><span class="p">(</span><span class="n">ser_data_arr</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">2</span><span class="p">:</span>
+                <span class="k">continue</span>
+
+            <span class="k">if</span> <span class="n">ser_data_arr</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="n">ESTOP_KEY</span><span class="p">:</span>
+                <span class="c1"># 急停
+</span>                <span class="k">if</span> <span class="n">ser_data_arr</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="sh">'</span><span class="s">1</span><span class="sh">'</span><span class="p">:</span>
+                    <span class="n">twist</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="n">ins_handler</span><span class="p">.</span><span class="nf">e_stop</span><span class="p">()</span>
+                    <span class="n">self</span><span class="p">.</span><span class="n">publisher_</span><span class="p">.</span><span class="nf">publish</span><span class="p">(</span><span class="n">twist</span><span class="p">)</span>
+                    <span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">stop!</span><span class="sh">"</span><span class="p">)</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="c1"># 退出急停
+</span>                    <span class="n">self</span><span class="p">.</span><span class="n">ins_handler</span><span class="p">.</span><span class="nf">resume</span><span class="p">()</span>
+            <span class="c1"># 处理红外的信号控制运行
+</span>            <span class="k">elif</span> <span class="n">ser_data_arr</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="n">IRREMOTE_KEY</span><span class="p">:</span>
+                <span class="n">twist</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="n">ins_handler</span><span class="p">.</span><span class="nf">move_msg</span><span class="p">(</span><span class="n">ser_data_arr</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+                <span class="n">self</span><span class="p">.</span><span class="n">publisher_</span><span class="p">.</span><span class="nf">publish</span><span class="p">(</span><span class="n">twist</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="c1"># 其他消息无操作
+</span>                <span class="k">pass</span>
+
+
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="sh">'</span><span class="s">__main__</span><span class="sh">'</span><span class="p">:</span>
+    <span class="n">rclpy</span><span class="p">.</span><span class="nf">init</span><span class="p">(</span><span class="n">args</span><span class="o">=</span><span class="bp">None</span><span class="p">)</span>
+    <span class="n">node</span> <span class="o">=</span> <span class="nc">ROS2ArduinoDemo</span><span class="p">()</span>
+    <span class="n">node</span><span class="p">.</span><span class="nf">run</span><span class="p">()</span>
+    <span class="n">node</span><span class="p">.</span><span class="nf">destroy_node</span><span class="p">()</span>
+    <span class="n">rclpy</span><span class="p">.</span><span class="nf">shutdown</span><span class="p">()</span>
+
+</code></pre></div></div>
+
+<h1 id="36-总结">3.6 总结</h1>
+
+<p>用串口的方式处理 arduino 和 ROS2 的通讯，这种模式可以适用到其他的单片机上</p>
+
+<p>控制机器人的运动在考虑急停时候也就是考虑不让 <code class="language-plaintext highlighter-rouge">cmd_vel</code> 发送有效速度信息即可</p>
+
+<p>后面有更复杂的在导航过程的通讯，可以用 <code class="language-plaintext highlighter-rouge">action</code> 来做, 这里不介绍了，用到再看</p>
+</section>
+            </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div></div>
+    </div>
+</div>
+
+<!-- introduce mathjax support -->
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [ ['$', '$'], ['\\(', '\\)'] ]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script
+  type="text/javascript" id="MathJax-script" async
+  src="/assets/js/tex-chtml.js">
+</script>
+
+
+<!-- introduce per-page mermaid support -->
+
+
+<!-- introduce mathjax support -->
+<script>
+    function fixes_chrome_anchors() {
+        let chrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+        if (window.location.hash && chrome) {
+            setTimeout(function () {
+                var hash = window.location.hash;
+                window.location.hash = "";
+                window.location.hash = hash;
+            }, 300);
+        }
+    }
+
+    if (document.readyState === "loading") {
+        // Loading hasn't finished yet
+        document.addEventListener("DOMContentLoaded", fixes_chrome_anchors);
+    } else {
+        // `DOMContentLoaded` has already fired
+        fixes_chrome_anchors();
+    }
+</script>
+
+
+                        <a href="/ros2_micro/2023-04-02-2_1_Arduino%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 2 Arduino 的基本语法">
+                            <i class="fa fa-angle-left"></i>
+                        </a>
+                    
+
+                    
+                        <a href="/ros2_micro/2023-04-04-4_1_MicroROS%E5%88%9D%E6%AD%A5%E4%BD%93%E9%AA%8C.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 4 MircoROS 初步体验">
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                    
+                </div>
+            </div>
+
+            <script>
+            var gitbook = gitbook || [];
+            gitbook.push(function() {
+                gitbook.page.hasChanged({
+    "page": {
+        "title": "Introduction",
+        "level": "1.1",
+        "depth": 1,
+        
+        "next": {
+            "title": "4 MircoROS 初步体验",
+            "level": "1.2",
+            "depth": 1,
+            "path": "_posts/ROS2_MICRO/2023-04-04-4_1_MicroROS初步体验.md",
+            "ref": "_posts/ROS2_MICRO/2023-04-04-4_1_MicroROS初步体验.md",
+            "articles": []
+        },
+        
+        "dir": "ltr"
+    },    "config": {
+        "plugins": ["fontsettings", "highlight", "livereload", "lunr", "search", "sharing", "theme-default", "livereload"],
+        "styles": {
+            "ebook": "styles/ebook.css",
+            "epub": "styles/epub.css",
+            "mobi": "styles/mobi.css",
+            "pdf": "styles/pdf.css",
+            "print": "styles/print.css",
+            "website": "styles/website.css"
+        },
+        "pluginsConfig": {
+            "expandable-chapter-small2": {
+                "articlesExpand": true,
+            },
+            "fontsettings": {
+                "family": "sans",
+                "size": 2,
+                "theme": "white"
+            },
+            "highlight": {},
+            "livereload": {},
+            "lunr": {
+                "ignoreSpecialCharacters": false,
+                "maxIndexSize": 1000000
+            },
+            "search": {},            "sharing": {},
+"theme-default": {
+                "showLevel": false,
+                "styles": {
+                    "ebook": "styles/ebook.css",
+                    "epub": "styles/epub.css",
+                    "mobi": "styles/mobi.css",
+                    "pdf": "styles/pdf.css",
+                    "print": "styles/print.css",
+                    "website": "styles/website.css"
+                }
+            },
+        },
+        "theme": "default",
+        "author": "Tao He",
+        "pdf": {
+            "pageNumbers": true,
+            "fontSize": 12,
+            "fontFamily": "Arial",
+            "paperSize": "a4",
+            "chapterMark": "pagebreak",
+            "pageBreaksBefore": "/",
+            "margin": {
+                "right": 62,
+                "left": 62,
+                "top": 56,
+                "bottom": 56
+            }
+        },
+        "structure": {
+            "langs": "LANGS.md",
+            "readme": "README.md",
+        },
+        "variables": {},
+        "title": "Blogs",
+        "language": "en",
+        "gitbook": "*"
+    },
+    "file": {
+        "path": "_posts/ROS2_MICRO/2023-04-03-3_1_ROS2_Arduino_demo.md",
+        "mtime": "2023-04-03 00:00:00 +0800",
+        "type": "markdown"
+    },
+    "gitbook": {
+        "version": "3.2.3",
+        "time": "2024-11-23 17:20:01 +0800"
+    },
+    "basePath": "",
+    "book": {
+        "language": ""
+    }
+});
+            });
+            </script>
+        </div><script src="/assets/gitbook/gitbook.js"></script>
+<script src="/assets/gitbook/theme.js"></script>
+
+<script src="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-search-pro/search.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-sharing/buttons.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-splitter/splitter.js"></script>
+
+<!--
+<script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+<script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+<script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+<script src="../gitbook/gitbook-plugin-search/search.js"></script>
+-->
+
+<script src="/assets/gitbook/custom.js"></script>
+<script src="/assets/gitbook/custom-local.js"></script>
+
+</body>
+</html>

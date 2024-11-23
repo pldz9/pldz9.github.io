@@ -1,0 +1,928 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head><meta charset="UTF-8">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>4 ROS2节点参数基础 · Blogs</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="description" content="Build Jekyll site with the GitBook style.
+"><meta name="generator" content="Jekyll (using style of GitBook 3.2.3)"><meta name="author" content="pldz9"><link rel="stylesheet" href="/assets/gitbook/style.css">
+<link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+<link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
+<link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-fontsettings/website.css">
+<link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-search-pro/search.css">
+<link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-splitter/splitter.css">
+
+<link rel="stylesheet" href="/assets/gitbook/rouge/thankful_eyes.css">
+
+<link rel="stylesheet" href="/assets/gitbook/custom.css">
+<link rel="stylesheet" href="/assets/gitbook/custom-local.css">
+
+<meta name="HandheldFriendly" content="true"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/gitbook/images/apple-touch-icon-precomposed-152.png">
+<link rel="shortcut icon" href="/assets/gitbook/images/favicon.ico" type="image/x-icon">
+
+
+
+
+            <link rel="prev" href="/ros2_basic/2023-02-04-3_1_ROS2%E6%9C%8D%E5%8A%A1%E9%80%9A%E8%AE%AF.html" />
+        
+
+        
+            <link rel="next" href="/ros2_micro/2023-04-01-1_1_ROS2_Arduino.html" />
+        
+    </head>
+    <body>
+        <div class="book"><div class="book-summary">
+    <script type="text/javascript">
+        // Fixes the page links scroll problem on both desktop and mobile browsers
+        function pageScrollToTop(element) {
+            // both mobile and non-mobile
+            $('div.body-inner').animate({scrollTop: 0});
+            $(element).parent().find('li>ul>li').removeClass('active');
+            return true;
+        }
+
+    </script>
+
+    <nav role="navigation" style="height: 100%;">
+        <!-- Search Input -->
+        <div id="book-search-input" role="search">
+            <input type="text" placeholder="Type to search" />
+        </div>
+        <div id="book-search-input-link" role="search">
+            <a href="/assets/search.html">Click to Search</a>
+        </div>
+
+        <div class="book-base-title" data-path="">
+            <a href="/" onclick="pageScrollToTop(this)">
+                爬楼的猪 Blogs
+            </a>
+        </div>
+
+        <!-- Book Summary Navigation -->
+        <ul class="summary" id="book-summary-core" data-scroll-top="0">
+            <!-- Loop through collections and posts by category -->
+            
+            
+            <li class="chapter category-header" id="category-header-ROS2_CAR">
+                <a href="javascript:void(0)">
+                    ROS2_CAR
+                </a>
+                <ul class="category-list" id="category-list-ROS2_CAR">
+                    
+                    
+                    <li class="chapter "
+                        data-path="/ros2_car/2023-01-03-ABOUT.html">
+                        <a href="/ros2_car/2023-01-03-ABOUT.html" onclick="pageScrollToTop(this)">
+                            ABOUT
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/ros2_car/2023-06-01-1_1_docker%E5%91%BD%E4%BB%A4%E7%86%9F%E6%82%89.html">
+                        <a href="/ros2_car/2023-06-01-1_1_docker%E5%91%BD%E4%BB%A4%E7%86%9F%E6%82%89.html" onclick="pageScrollToTop(this)">
+                            1 Docker 搭建 ROS2 嵌入式运行环境
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/ros2_car/2023-06-02-2_1_%E9%80%9A%E8%BF%87Turtlebot3%E6%A1%88%E4%BE%8B%E4%BA%86%E8%A7%A3NAVI2.html">
+                        <a href="/ros2_car/2023-06-02-2_1_%E9%80%9A%E8%BF%87Turtlebot3%E6%A1%88%E4%BE%8B%E4%BA%86%E8%A7%A3NAVI2.html" onclick="pageScrollToTop(this)">
+                            2 通过 Turtlebot3 案例了解 NAVI2
+                        </a>
+                    </li>
+                    
+                </ul>
+            </li>
+            
+            <li class="chapter category-header" id="category-header-ROS2_MICRO">
+                <a href="javascript:void(0)">
+                    ROS2_MICRO
+                </a>
+                <ul class="category-list" id="category-list-ROS2_MICRO">
+                    
+                    
+                    <li class="chapter "
+                        data-path="/ros2_micro/2023-01-02-ABOUT.html">
+                        <a href="/ros2_micro/2023-01-02-ABOUT.html" onclick="pageScrollToTop(this)">
+                            ABOUT
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/ros2_micro/2023-04-01-1_1_ROS2_Arduino.html">
+                        <a href="/ros2_micro/2023-04-01-1_1_ROS2_Arduino.html" onclick="pageScrollToTop(this)">
+                            1 ROS2 和 Arduino 通讯
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/ros2_micro/2023-04-02-2_1_Arduino%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95.html">
+                        <a href="/ros2_micro/2023-04-02-2_1_Arduino%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95.html" onclick="pageScrollToTop(this)">
+                            2 Arduino 的基本语法
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/ros2_micro/2023-04-03-3_1_ROS2_Arduino_demo.html">
+                        <a href="/ros2_micro/2023-04-03-3_1_ROS2_Arduino_demo.html" onclick="pageScrollToTop(this)">
+                            3 ROS2 和 arduino 通讯
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/ros2_micro/2023-04-04-4_1_MicroROS%E5%88%9D%E6%AD%A5%E4%BD%93%E9%AA%8C.html">
+                        <a href="/ros2_micro/2023-04-04-4_1_MicroROS%E5%88%9D%E6%AD%A5%E4%BD%93%E9%AA%8C.html" onclick="pageScrollToTop(this)">
+                            4 MircoROS 初步体验
+                        </a>
+                    </li>
+                    
+                </ul>
+            </li>
+            
+            <li class="chapter category-header" id="category-header-ROS2_BASIC">
+                <a href="javascript:void(0)">
+                    ROS2_BASIC
+                </a>
+                <ul class="category-list" id="category-list-ROS2_BASIC">
+                    
+                    
+                    <li class="chapter "
+                        data-path="/ros2_basic/2023-01-01-ABOUT.html">
+                        <a href="/ros2_basic/2023-01-01-ABOUT.html" onclick="pageScrollToTop(this)">
+                            ABOUT
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/ros2_basic/2023-02-01-1_1_Ubuntu%E9%85%8D%E7%BD%AE%E4%B8%8EROS2%E5%BF%AB%E9%80%9F%E4%BD%93%E9%AA%8C.html">
+                        <a href="/ros2_basic/2023-02-01-1_1_Ubuntu%E9%85%8D%E7%BD%AE%E4%B8%8EROS2%E5%BF%AB%E9%80%9F%E4%BD%93%E9%AA%8C.html" onclick="pageScrollToTop(this)">
+                            1 Ubuntu配置与ROS2快速体验
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/ros2_basic/2023-02-02-2_1_ROS2%E8%AF%9D%E9%A2%98%E9%80%9A%E8%AE%AF%E5%9F%BA%E7%A1%80.html">
+                        <a href="/ros2_basic/2023-02-02-2_1_ROS2%E8%AF%9D%E9%A2%98%E9%80%9A%E8%AE%AF%E5%9F%BA%E7%A1%80.html" onclick="pageScrollToTop(this)">
+                            2 ROS2话题通讯 - 话题通讯基础
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/ros2_basic/2023-02-03-2_2_ROS2%E8%AF%9D%E9%A2%98%E9%80%9A%E8%AE%AF%E6%8F%90%E5%8D%87.html">
+                        <a href="/ros2_basic/2023-02-03-2_2_ROS2%E8%AF%9D%E9%A2%98%E9%80%9A%E8%AE%AF%E6%8F%90%E5%8D%87.html" onclick="pageScrollToTop(this)">
+                            2 ROS2话题通讯 - 话题通讯进阶
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/ros2_basic/2023-02-04-3_1_ROS2%E6%9C%8D%E5%8A%A1%E9%80%9A%E8%AE%AF.html">
+                        <a href="/ros2_basic/2023-02-04-3_1_ROS2%E6%9C%8D%E5%8A%A1%E9%80%9A%E8%AE%AF.html" onclick="pageScrollToTop(this)">
+                            3 ROS2服务通讯基础
+                        </a>
+                    </li>
+                    
+                    <li class="chapter active"
+                        data-path="/ros2_basic/2023-02-05-4_1_ROS2%E5%8F%82%E6%95%B0%E6%9C%8D%E5%8A%A1%E5%99%A8.html">
+                        <a href="/ros2_basic/2023-02-05-4_1_ROS2%E5%8F%82%E6%95%B0%E6%9C%8D%E5%8A%A1%E5%99%A8.html" onclick="pageScrollToTop(this)">
+                            4 ROS2节点参数基础
+                        </a>
+                    </li>
+                    
+                </ul>
+            </li>
+            
+            <li class="chapter category-header" id="category-header-Others">
+                <a href="javascript:void(0)">
+                    Others
+                </a>
+                <ul class="category-list" id="category-list-Others">
+                    
+                    
+                    <li class="chapter "
+                        data-path="/others/2022-01-01-ABOUT.html">
+                        <a href="/others/2022-01-01-ABOUT.html" onclick="pageScrollToTop(this)">
+                            ABOUT
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/others/2022-01-02-VSCode%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE.html">
+                        <a href="/others/2022-01-02-VSCode%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE.html" onclick="pageScrollToTop(this)">
+                            VSCode相关配置
+                        </a>
+                    </li>
+                    
+                </ul>
+            </li>
+            
+        </ul>
+
+
+        <!-- Page Content and TOC -->
+        <div class="page-content-category">
+            <div class="page-content-title">Navigation of <span>4 ROS2节点参数基础</span></div>
+            <ul class="page-content">
+                
+                <ul><li><a href="#41-ros2节点参数介绍" onclick="mobilePageScrollToAnchor(this)" >4.1 ROS2节点参数介绍</a></li><li><a href="#42-使用cc实现对节点参数的增删改查" onclick="mobilePageScrollToAnchor(this)" >4.2 使用C/C++实现对节点参数的增删改查</a><ul><li><a href="#421-创建cc节点参数的服务端" onclick="mobilePageScrollToAnchor(this)" >4.2.1 创建C/C++节点参数的服务端</a></li><li><a href="#422-创建cc节点参数客户端" onclick="mobilePageScrollToAnchor(this)" >4.2.2 创建C/C++节点参数客户端</a></li><li><a href="#43-使用python实现对节点参数的增删改查" onclick="mobilePageScrollToAnchor(this)" >4.3 使用Python实现对节点参数的增删改查</a></li><li><a href="#431-创建python节点参数的服务端" onclick="mobilePageScrollToAnchor(this)" >4.3.1 创建Python节点参数的服务端</a></li><li><a href="#432-创建python节点参数客户端" onclick="mobilePageScrollToAnchor(this)" >4.3.2 创建Python节点参数客户端</a></li><li><a href="#44-ros2节点参数小结" onclick="mobilePageScrollToAnchor(this)" >4.4 ROS2节点参数小结</a></li></ul></li></ul>
+
+                
+            </ul>
+        </div> 
+    </nav>
+</div><div class="book-body">
+                <div class="book-header" role="navigation">
+                    <!-- Title -->
+                    <h1>
+                      4 ROS2节点参数基础
+                    </h1>
+                </div>
+
+                <div class="body-inner"><div class="page-wrapper" tabindex="-1" role="main">
+    
+
+    <div class="page-inner">
+        <div id="book-search-results">
+            <div class="search-noresults">
+                <section class="normal markdown-section">
+                    
+                        <h1 id="/ros2_basic/4_1_ROS2参数服务器">4 ROS2节点参数基础</h1>
+                    
+
+                    <h1 id="41-ros2节点参数介绍">4.1 ROS2节点参数介绍</h1>
+
+<blockquote>
+  <p>参考内容</p>
+
+  <p><a href="https://docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools/Understanding-ROS2-Parameters/Understanding-ROS2-Parameters.html#load-parameter-file-on-node-startup">Understanding parameters</a></p>
+</blockquote>
+
+<p>在ROS2的通讯过程中，有一种信息记录某个节点的特征，例如turtlesim仿真时候的乌龟类型，背景的颜色等等，这一类节点设置的数据，通常采用节点参数(<code class="language-plaintext highlighter-rouge">parameters</code>)进行设置和操作，可以把节点参数认为是对节点的设置，可以对参数进行增删改查的操作</p>
+
+<h1 id="42-使用cc实现对节点参数的增删改查">4.2 使用C/C++实现对节点参数的增删改查</h1>
+
+<blockquote>
+  <p>示例创建一个节点参数的服务端，和一个节点参数的客户端，服务端用于实现后续客户端对它的参数进行增删改查操作</p>
+</blockquote>
+
+<blockquote>
+  <p>参考内容</p>
+
+  <p><a href="https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Using-Parameters-In-A-Class-CPP.html">Using parameters in a class (C++)</a></p>
+
+  <p><a href="https://www.bilibili.com/video/BV1Me411j7hK">2.5.3_参数服务_C++实现_03客户端_01代码框架</a></p>
+</blockquote>
+
+<h2 id="421-创建cc节点参数的服务端">4.2.1 创建C/C++节点参数的服务端</h2>
+
+<ol>
+  <li>
+    <p>创建功能包，包名为<code class="language-plaintext highlighter-rouge">cpp_para_ser</code>，节点名为<code class="language-plaintext highlighter-rouge">cppParaSerNode</code>，依赖<code class="language-plaintext highlighter-rouge">rclcpp</code>：<code class="language-plaintext highlighter-rouge">ros2 pkg create cpp_para_server --build-type ament_cmake --node-name cppParaSerNode --dependencies rclcpp</code></p>
+  </li>
+  <li>
+    <p>配置Vscode环境，在工作空间创建<code class="language-plaintext highlighter-rouge">.vscode</code>文件夹，并加入<code class="language-plaintext highlighter-rouge">settings.json</code>文件，添加<code class="language-plaintext highlighter-rouge">ROS2</code>的<code class="language-plaintext highlighter-rouge">include</code>环境：</p>
+  </li>
+</ol>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"C_Cpp.default.includePath"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="s2">"/opt/ros/humble/include/**"</span><span class="p">,</span><span class="w">
+    </span><span class="p">],</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<ol>
+  <li>创建节点参数服务：注意删除节点的参数，只能删除未被声明的内容：</li>
+</ol>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// 1. 生成节点的头文件</span>
+<span class="cp">#include</span> <span class="cpf">"rclcpp/rclcpp.hpp"</span><span class="cp">
+</span>
+<span class="c1">// 2. 定义节点参数服务端</span>
+<span class="k">class</span> <span class="nc">CppParamServer</span> <span class="o">:</span> <span class="k">public</span> <span class="n">rclcpp</span><span class="o">::</span><span class="n">Node</span>
+<span class="p">{</span>
+<span class="nl">public:</span>
+  <span class="c1">// 2.1 构造函数，设置节点名，以及允许被删除的内容</span>
+  <span class="n">CppParamServer</span><span class="p">()</span> <span class="o">:</span> <span class="n">Node</span><span class="p">(</span><span class="s">"cppParamSerNode"</span><span class="p">,</span><span class="n">rclcpp</span><span class="o">::</span><span class="n">NodeOptions</span><span class="p">().</span><span class="n">allow_undeclared_parameters</span><span class="p">(</span><span class="nb">true</span><span class="p">))</span> <span class="p">{}</span>
+
+  <span class="c1">// 2.2 创建默认的参数表</span>
+  <span class="kt">void</span> <span class="nf">declare_param</span><span class="p">()</span>
+  <span class="p">{</span>
+    <span class="c1">// 2.2.1 声明参数并设置默认值</span>
+    <span class="k">this</span><span class="o">-&gt;</span><span class="n">declare_parameter</span><span class="p">(</span><span class="s">"name"</span><span class="p">,</span> <span class="s">"zhangsan"</span><span class="p">);</span>
+    <span class="k">this</span><span class="o">-&gt;</span><span class="n">declare_parameter</span><span class="p">(</span><span class="s">"height"</span><span class="p">,</span> <span class="s">"1.8"</span><span class="p">);</span>
+
+    <span class="c1">// 2.2.2 未声明的参数，该参数可以被删除</span>
+    <span class="k">this</span><span class="o">-&gt;</span><span class="n">set_parameter</span><span class="p">(</span><span class="n">rclcpp</span><span class="o">::</span><span class="n">Parameter</span><span class="p">(</span><span class="s">"age"</span><span class="p">,</span> <span class="s">"20"</span><span class="p">));</span>
+  <span class="p">}</span>
+
+  <span class="c1">// 3 获取到现在的所有参数</span>
+  <span class="kt">void</span> <span class="nf">get_AllValue</span><span class="p">()</span>
+  <span class="p">{</span>
+    <span class="n">RCLCPP_INFO</span><span class="p">(</span><span class="k">this</span><span class="o">-&gt;</span><span class="n">get_logger</span><span class="p">(),</span> <span class="s">"------------------ Get the params ----------------"</span><span class="p">);</span>
+    <span class="k">auto</span> <span class="n">params</span> <span class="o">=</span> <span class="k">this</span><span class="o">-&gt;</span><span class="n">get_parameters</span><span class="p">({</span><span class="s">"name"</span><span class="p">,</span> <span class="s">"height"</span><span class="p">,</span> <span class="s">"age"</span><span class="p">});</span>
+    <span class="k">for</span> <span class="p">(</span><span class="k">auto</span> <span class="o">&amp;</span><span class="n">param</span> <span class="o">:</span> <span class="n">params</span><span class="p">)</span>
+    <span class="p">{</span>
+      <span class="c1">// 3.1 get_name函数获取参数名，value_to_string获取到参数的字符串值</span>
+      <span class="n">RCLCPP_INFO</span><span class="p">(</span><span class="k">this</span><span class="o">-&gt;</span><span class="n">get_logger</span><span class="p">(),</span> <span class="s">"parameter is %s,  the value is %s"</span><span class="p">,</span> <span class="n">param</span><span class="p">.</span><span class="n">get_name</span><span class="p">().</span><span class="n">c_str</span><span class="p">(),</span> <span class="n">param</span><span class="p">.</span><span class="n">value_to_string</span><span class="p">().</span><span class="n">c_str</span><span class="p">());</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+
+  <span class="c1">// 4 修改参数</span>
+  <span class="kt">void</span> <span class="nf">update_param</span><span class="p">()</span>
+  <span class="p">{</span>
+    <span class="n">RCLCPP_INFO</span><span class="p">(</span><span class="k">this</span><span class="o">-&gt;</span><span class="n">get_logger</span><span class="p">(),</span> <span class="s">"------------------ Change the value  ----------------"</span><span class="p">);</span>
+    <span class="k">this</span><span class="o">-&gt;</span><span class="n">set_parameter</span><span class="p">(</span><span class="n">rclcpp</span><span class="o">::</span><span class="n">Parameter</span><span class="p">(</span><span class="s">"name"</span><span class="p">,</span> <span class="s">"lisi"</span><span class="p">));</span>
+    <span class="k">this</span><span class="o">-&gt;</span><span class="n">get_AllValue</span><span class="p">();</span>
+  <span class="p">}</span>
+
+  <span class="c1">// 5. 删除参数</span>
+  <span class="kt">void</span> <span class="nf">del_param</span><span class="p">()</span>
+  <span class="p">{</span>
+    <span class="n">RCLCPP_INFO</span><span class="p">(</span><span class="k">this</span><span class="o">-&gt;</span><span class="n">get_logger</span><span class="p">(),</span> <span class="s">"------------------ Delete ----------------"</span><span class="p">);</span>
+    <span class="c1">// 5.1 删除只能删除未声明的参数，不能删除声明过的参数</span>
+    <span class="k">this</span><span class="o">-&gt;</span><span class="n">undeclare_parameter</span><span class="p">(</span><span class="s">"age"</span><span class="p">);</span>
+    <span class="k">auto</span> <span class="n">params</span> <span class="o">=</span> <span class="k">this</span><span class="o">-&gt;</span><span class="n">get_parameters</span><span class="p">({</span><span class="s">"name"</span><span class="p">,</span> <span class="s">"height"</span><span class="p">});</span>
+    <span class="k">for</span> <span class="p">(</span><span class="k">auto</span> <span class="o">&amp;</span><span class="n">param</span> <span class="o">:</span> <span class="n">params</span><span class="p">)</span>
+    <span class="p">{</span>
+      <span class="c1">// 5.1 get_name函数获取参数名，value_to_string获取到参数的字符串值</span>
+      <span class="n">RCLCPP_INFO</span><span class="p">(</span><span class="k">this</span><span class="o">-&gt;</span><span class="n">get_logger</span><span class="p">(),</span> <span class="s">"parameter is %s,  the value is %s"</span><span class="p">,</span> <span class="n">param</span><span class="p">.</span><span class="n">get_name</span><span class="p">().</span><span class="n">c_str</span><span class="p">(),</span> <span class="n">param</span><span class="p">.</span><span class="n">value_to_string</span><span class="p">().</span><span class="n">c_str</span><span class="p">());</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">};</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="o">**</span><span class="n">argv</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="n">rclcpp</span><span class="o">::</span><span class="n">init</span><span class="p">(</span><span class="n">argc</span><span class="p">,</span> <span class="n">argv</span><span class="p">);</span>
+  <span class="k">auto</span> <span class="n">paramServer</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">make_shared</span><span class="o">&lt;</span><span class="n">CppParamServer</span><span class="o">&gt;</span><span class="p">();</span>
+  <span class="c1">// 执行对应的函数</span>
+  <span class="n">paramServer</span><span class="o">-&gt;</span><span class="n">declare_param</span><span class="p">();</span>
+  <span class="n">paramServer</span><span class="o">-&gt;</span><span class="n">get_AllValue</span><span class="p">();</span>
+  <span class="n">paramServer</span><span class="o">-&gt;</span><span class="n">update_param</span><span class="p">();</span>
+  <span class="n">paramServer</span><span class="o">-&gt;</span><span class="n">del_param</span><span class="p">();</span>
+
+  <span class="n">rclcpp</span><span class="o">::</span><span class="n">spin</span><span class="p">(</span><span class="n">paramServer</span><span class="p">);</span>
+  <span class="n">rclcpp</span><span class="o">::</span><span class="n">shutdown</span><span class="p">();</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<ol>
+  <li>
+    <p>由于在创建包的过程中已经指明了所有依赖项，不需要进行额外的配置，直接编译运行即可：<code class="language-plaintext highlighter-rouge">colcon build --packages-select cpp_para_server</code></p>
+  </li>
+  <li>
+    <p>激活环境并运行节点：<code class="language-plaintext highlighter-rouge">. install/setup.bash</code>和<code class="language-plaintext highlighter-rouge">ros2 run cpp_para_server cppParaSerNode</code></p>
+  </li>
+</ol>
+
+<p><img src="/assets/pics/ROS2_BASIC/4_cpp_params_server_result.png" alt="C/C++实现参数服务" /></p>
+
+<h2 id="422-创建cc节点参数客户端">4.2.2 创建C/C++节点参数客户端</h2>
+
+<ol>
+  <li>
+    <p>创建功能包，包名为<code class="language-plaintext highlighter-rouge">cpp_para_client</code>，节点名为<code class="language-plaintext highlighter-rouge">cppParaCliNode</code>，依赖<code class="language-plaintext highlighter-rouge">rclcpp</code>：<code class="language-plaintext highlighter-rouge">ros2 pkg create cpp_para_client --build-type ament_cmake --node-name cppParaCliNode --dependencies rclcpp</code></p>
+  </li>
+  <li>
+    <p>配置Vscode环境，在工作空间创建<code class="language-plaintext highlighter-rouge">.vscode</code>文件夹，并加入<code class="language-plaintext highlighter-rouge">settings.json</code>文件，添加<code class="language-plaintext highlighter-rouge">ROS2</code>的<code class="language-plaintext highlighter-rouge">include</code>环境：</p>
+  </li>
+</ol>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"C_Cpp.default.includePath"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="s2">"/opt/ros/humble/include/**"</span><span class="p">,</span><span class="w">
+    </span><span class="p">],</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<ol>
+  <li>创建节点参数客户端，值得注意的是需要连接到服务端节点，然后进行参数的增删改查操作：</li>
+</ol>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// 1.包含头文件；</span>
+<span class="cp">#include</span> <span class="cpf">"rclcpp/rclcpp.hpp"</span><span class="cp">
+</span>
+<span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="o">::</span><span class="n">chrono_literals</span><span class="p">;</span>
+
+<span class="c1">// 2.定义节点类；</span>
+<span class="k">class</span> <span class="nc">CppParaClient</span> <span class="o">:</span> <span class="k">public</span> <span class="n">rclcpp</span><span class="o">::</span><span class="n">Node</span>
+<span class="p">{</span>
+<span class="nl">public:</span>
+  <span class="n">CppParaClient</span><span class="p">()</span> <span class="o">:</span> <span class="n">Node</span><span class="p">(</span><span class="s">"cppParaCliNode"</span><span class="p">)</span>
+  <span class="p">{</span>
+    <span class="c1">// 2.1 连接到节点参数的服务节点,注意此时的第二个参数是连接的服务端节点名</span>
+    <span class="n">paramClient</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">make_shared</span><span class="o">&lt;</span><span class="n">rclcpp</span><span class="o">::</span><span class="n">SyncParametersClient</span><span class="o">&gt;</span><span class="p">(</span><span class="k">this</span><span class="p">,</span> <span class="s">"cppParamSerNode"</span><span class="p">);</span>
+  <span class="p">}</span>
+
+  <span class="c1">// 3. 连接服务函数</span>
+  <span class="kt">bool</span> <span class="nf">connect_server</span><span class="p">()</span>
+  <span class="p">{</span>
+    <span class="c1">// 3.1 等待服务连接</span>
+    <span class="k">while</span> <span class="p">(</span><span class="o">!</span><span class="n">paramClient</span><span class="o">-&gt;</span><span class="n">wait_for_service</span><span class="p">(</span><span class="mx">1s</span><span class="p">))</span>
+    <span class="p">{</span>
+      <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">rclcpp</span><span class="o">::</span><span class="n">ok</span><span class="p">())</span>
+      <span class="p">{</span>
+        <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+      <span class="p">}</span>
+      <span class="n">RCLCPP_INFO</span><span class="p">(</span><span class="k">this</span><span class="o">-&gt;</span><span class="n">get_logger</span><span class="p">(),</span> <span class="s">"The server connect failed! "</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="c1">// 4. 查询参数</span>
+  <span class="kt">void</span> <span class="nf">get_values</span><span class="p">()</span>
+  <span class="p">{</span>
+    <span class="n">RCLCPP_INFO</span><span class="p">(</span><span class="k">this</span><span class="o">-&gt;</span><span class="n">get_logger</span><span class="p">(),</span> <span class="s">"----------- Get the values -----------"</span><span class="p">);</span>
+    <span class="k">auto</span> <span class="n">params</span> <span class="o">=</span> <span class="n">paramClient</span><span class="o">-&gt;</span><span class="n">get_parameters</span><span class="p">({</span><span class="s">"name"</span><span class="p">,</span> <span class="s">"height"</span><span class="p">});</span>
+    <span class="k">for</span> <span class="p">(</span><span class="k">auto</span> <span class="o">&amp;</span><span class="n">param</span> <span class="o">:</span> <span class="n">params</span><span class="p">)</span>
+    <span class="p">{</span>
+      <span class="n">RCLCPP_INFO</span><span class="p">(</span><span class="k">this</span><span class="o">-&gt;</span><span class="n">get_logger</span><span class="p">(),</span> <span class="s">"%s = %s"</span><span class="p">,</span> <span class="n">param</span><span class="p">.</span><span class="n">get_name</span><span class="p">().</span><span class="n">c_str</span><span class="p">(),</span> <span class="n">param</span><span class="p">.</span><span class="n">value_to_string</span><span class="p">().</span><span class="n">c_str</span><span class="p">());</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+
+  <span class="c1">// 5. 修改参数</span>
+  <span class="kt">void</span> <span class="nf">update_param</span><span class="p">()</span>
+  <span class="p">{</span>
+    <span class="n">RCLCPP_INFO</span><span class="p">(</span><span class="k">this</span><span class="o">-&gt;</span><span class="n">get_logger</span><span class="p">(),</span> <span class="s">"----------- Change the values -----------"</span><span class="p">);</span>
+    <span class="n">paramClient</span><span class="o">-&gt;</span><span class="n">set_parameters</span><span class="p">({</span><span class="n">rclcpp</span><span class="o">::</span><span class="n">Parameter</span><span class="p">(</span><span class="s">"name"</span><span class="p">,</span> <span class="s">"lisi"</span><span class="p">),</span>
+                                 <span class="c1">// 这是服务端不存在的参数，只有服务端设置了rclcpp::NodeOptions().allow_undeclared_parameters(true)时，</span>
+                                 <span class="c1">//  这个参数才会被成功设置。</span>
+                                 <span class="n">rclcpp</span><span class="o">::</span><span class="n">Parameter</span><span class="p">(</span><span class="s">"sex"</span><span class="p">,</span> <span class="s">"man"</span><span class="p">)});</span>
+  <span class="p">}</span>
+
+<span class="k">private</span><span class="o">:</span>
+  <span class="n">rclcpp</span><span class="o">::</span><span class="n">SyncParametersClient</span><span class="o">::</span><span class="n">SharedPtr</span> <span class="n">paramClient</span><span class="p">;</span>
+<span class="p">};</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="k">const</span> <span class="o">*</span><span class="n">argv</span><span class="p">[])</span>
+<span class="p">{</span>
+  <span class="n">rclcpp</span><span class="o">::</span><span class="n">init</span><span class="p">(</span><span class="n">argc</span><span class="p">,</span> <span class="n">argv</span><span class="p">);</span>
+
+  <span class="c1">// 4.创建节点对象指针，调用参数操作函数；</span>
+  <span class="k">auto</span> <span class="n">paramClient</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">make_shared</span><span class="o">&lt;</span><span class="n">CppParaClient</span><span class="o">&gt;</span><span class="p">();</span>
+  <span class="kt">bool</span> <span class="n">flag</span> <span class="o">=</span> <span class="n">paramClient</span><span class="o">-&gt;</span><span class="n">connect_server</span><span class="p">();</span>
+  <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">flag</span><span class="p">)</span>
+  <span class="p">{</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="n">paramClient</span><span class="o">-&gt;</span><span class="n">get_values</span><span class="p">();</span>
+  <span class="n">paramClient</span><span class="o">-&gt;</span><span class="n">update_param</span><span class="p">();</span>
+  <span class="n">paramClient</span><span class="o">-&gt;</span><span class="n">get_values</span><span class="p">();</span>
+
+  <span class="c1">// 5.释放资源。</span>
+  <span class="n">rclcpp</span><span class="o">::</span><span class="n">shutdown</span><span class="p">();</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<ol>
+  <li>
+    <p>由于在创建包的过程中已经指明了所有依赖项，不需要进行额外的配置，直接编译运行即可：<code class="language-plaintext highlighter-rouge">colcon build --packages-select cpp_para_client</code></p>
+  </li>
+  <li>
+    <p>激活环境并运行节点：<code class="language-plaintext highlighter-rouge">. install/setup.bash</code>，先运行服务端节点<code class="language-plaintext highlighter-rouge">ros2 run cpp_para_server cppParaSerNode</code>，然后运行客户端节点<code class="language-plaintext highlighter-rouge">ros2 run cpp_para_client cppParaCliNode</code></p>
+  </li>
+</ol>
+
+<p><img src="/assets/pics/ROS2_BASIC/4_cpp_params_client_result.png" alt="C/C++实现参数客户端" /></p>
+
+<h2 id="43-使用python实现对节点参数的增删改查">4.3 使用Python实现对节点参数的增删改查</h2>
+
+<blockquote>
+  <p>参考内容</p>
+
+  <p><a href="https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Using-Parameters-In-A-Class-Python.html">Using parameters in a class (Python)</a></p>
+
+  <p><a href="https://www.bilibili.com/video/BV1LG411E7qT">2.5.4_参数服务_Python实现_01框架搭建</a></p>
+</blockquote>
+
+<h2 id="431-创建python节点参数的服务端">4.3.1 创建Python节点参数的服务端</h2>
+
+<ol>
+  <li>
+    <p>创建功能包，包名为<code class="language-plaintext highlighter-rouge">python_para_ser</code>，节点名为<code class="language-plaintext highlighter-rouge">pythonParaSerNode</code>，依赖<code class="language-plaintext highlighter-rouge">rclpy</code>：<code class="language-plaintext highlighter-rouge">ros2 pkg create python_para_ser --build-type ament_python --node-name pythonParaSerNode --dependencies rclpy</code></p>
+  </li>
+  <li>
+    <p>配置Vscode环境，在工作空间创建<code class="language-plaintext highlighter-rouge">.vscode</code>文件夹，并加入<code class="language-plaintext highlighter-rouge">settings.json</code>文件，添加<code class="language-plaintext highlighter-rouge">ROS2</code>的<code class="language-plaintext highlighter-rouge">include</code>环境：</p>
+  </li>
+</ol>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"C_Cpp.default.includePath"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="s2">"/opt/ros/humble/include/**"</span><span class="w">
+    </span><span class="p">],</span><span class="w">
+    </span><span class="nl">"python.analysis.include"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="s2">"/opt/ros/humble/local/lib/python3.10/dist-packages/**"</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<ol>
+  <li>创建节点参数服务：注意删除节点的参数，只能删除未被声明的内容：</li>
+</ol>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># 1. 导入包
+</span><span class="kn">import</span> <span class="n">rclpy</span>
+<span class="kn">from</span> <span class="n">rclpy.node</span> <span class="kn">import</span> <span class="n">Node</span>
+
+<span class="c1"># 2. 创建节点参数服务节点
+</span><span class="k">class</span> <span class="nc">PythonParaServer</span><span class="p">(</span><span class="n">Node</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="n">self</span><span class="p">):</span>
+        <span class="c1"># 2.1 构造函数
+</span>        <span class="nf">super</span><span class="p">().</span><span class="nf">__init__</span><span class="p">(</span><span class="sh">"</span><span class="s">pythonParaSerNode</span><span class="sh">"</span><span class="p">,</span><span class="n">allow_undeclared_parameters</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+
+    <span class="c1"># 3 声明节点参数
+</span>    <span class="k">def</span> <span class="nf">declare_param</span><span class="p">(</span><span class="n">self</span><span class="p">):</span>
+        <span class="n">self</span><span class="p">.</span><span class="nf">declare_parameter</span><span class="p">(</span><span class="sh">"</span><span class="s">name</span><span class="sh">"</span><span class="p">,</span><span class="sh">"</span><span class="s">zhangsan</span><span class="sh">"</span><span class="p">)</span>
+        <span class="n">self</span><span class="p">.</span><span class="nf">declare_parameter</span><span class="p">(</span><span class="sh">"</span><span class="s">height</span><span class="sh">"</span><span class="p">,</span><span class="mf">1.88</span><span class="p">)</span>
+        <span class="c1"># 3.1 声明未声明的参数，可以被删除
+</span>        <span class="n">self</span><span class="p">.</span><span class="n">age</span> <span class="o">=</span> <span class="n">rclpy</span><span class="p">.</span><span class="nc">Parameter</span><span class="p">(</span><span class="sh">"</span><span class="s">age</span><span class="sh">"</span><span class="p">,</span><span class="n">value</span> <span class="o">=</span> <span class="sh">"</span><span class="s">20</span><span class="sh">"</span><span class="p">)</span>
+        <span class="n">self</span><span class="p">.</span><span class="nf">set_parameters</span><span class="p">([</span><span class="n">self</span><span class="p">.</span><span class="n">age</span><span class="p">])</span>
+
+    <span class="c1"># 4 查询参数
+</span>    <span class="k">def</span> <span class="nf">get_param</span><span class="p">(</span><span class="n">self</span><span class="p">):</span>
+        <span class="n">self</span><span class="p">.</span><span class="nf">get_logger</span><span class="p">().</span><span class="nf">info</span><span class="p">(</span><span class="sh">"</span><span class="s">---- Get ----</span><span class="sh">"</span><span class="p">)</span>
+        <span class="n">params</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="nf">get_parameters</span><span class="p">([</span><span class="sh">"</span><span class="s">name</span><span class="sh">"</span><span class="p">,</span><span class="sh">"</span><span class="s">height</span><span class="sh">"</span><span class="p">,</span><span class="sh">"</span><span class="s">age</span><span class="sh">"</span><span class="p">])</span>
+        <span class="k">for</span> <span class="n">param</span> <span class="ow">in</span> <span class="n">params</span><span class="p">:</span>
+            <span class="n">self</span><span class="p">.</span><span class="nf">get_logger</span><span class="p">().</span><span class="nf">info</span><span class="p">(</span><span class="sh">"</span><span class="s">%s ---&gt; %s</span><span class="sh">"</span> <span class="o">%</span> <span class="p">(</span><span class="n">param</span><span class="p">.</span><span class="n">name</span><span class="p">,</span> <span class="n">param</span><span class="p">.</span><span class="n">value</span><span class="p">))</span>
+
+    <span class="c1"># 5 修改参数
+</span>    <span class="k">def</span> <span class="nf">update_param</span><span class="p">(</span><span class="n">self</span><span class="p">):</span>
+        <span class="n">self</span><span class="p">.</span><span class="nf">get_logger</span><span class="p">().</span><span class="nf">info</span><span class="p">(</span><span class="sh">"</span><span class="s">---- Change ---</span><span class="sh">"</span><span class="p">)</span>
+        <span class="n">self</span><span class="p">.</span><span class="nf">set_parameters</span><span class="p">([</span><span class="n">rclpy</span><span class="p">.</span><span class="nc">Parameter</span><span class="p">(</span><span class="sh">"</span><span class="s">name</span><span class="sh">"</span><span class="p">,</span><span class="n">value</span> <span class="o">=</span> <span class="sh">"</span><span class="s">lisi</span><span class="sh">"</span><span class="p">)])</span>
+        <span class="n">self</span><span class="p">.</span><span class="nf">get_param</span><span class="p">()</span>
+
+    <span class="c1"># 6 删除参数
+</span>    <span class="k">def</span> <span class="nf">del_param</span><span class="p">(</span><span class="n">self</span><span class="p">):</span>
+        <span class="n">self</span><span class="p">.</span><span class="nf">get_logger</span><span class="p">().</span><span class="nf">info</span><span class="p">(</span><span class="sh">"</span><span class="s">---- Delete ---</span><span class="sh">"</span><span class="p">)</span>
+        <span class="n">self</span><span class="p">.</span><span class="nf">undeclare_parameter</span><span class="p">(</span><span class="sh">"</span><span class="s">age</span><span class="sh">"</span><span class="p">)</span>
+        <span class="n">params</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="nf">get_parameters</span><span class="p">([</span><span class="sh">"</span><span class="s">name</span><span class="sh">"</span><span class="p">,</span><span class="sh">"</span><span class="s">height</span><span class="sh">"</span><span class="p">])</span>
+        <span class="k">for</span> <span class="n">param</span> <span class="ow">in</span> <span class="n">params</span><span class="p">:</span>
+            <span class="n">self</span><span class="p">.</span><span class="nf">get_logger</span><span class="p">().</span><span class="nf">info</span><span class="p">(</span><span class="sh">"</span><span class="s">%s ---&gt; %s</span><span class="sh">"</span> <span class="o">%</span> <span class="p">(</span><span class="n">param</span><span class="p">.</span><span class="n">name</span><span class="p">,</span> <span class="n">param</span><span class="p">.</span><span class="n">value</span><span class="p">))</span>
+
+
+<span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+    <span class="n">rclpy</span><span class="p">.</span><span class="nf">init</span><span class="p">()</span>
+    <span class="n">param_server</span> <span class="o">=</span> <span class="nc">PythonParaServer</span><span class="p">()</span>
+
+    <span class="n">param_server</span><span class="p">.</span><span class="nf">declare_param</span><span class="p">()</span>
+    <span class="n">param_server</span><span class="p">.</span><span class="nf">get_param</span><span class="p">()</span>
+    <span class="n">param_server</span><span class="p">.</span><span class="nf">update_param</span><span class="p">()</span>
+    <span class="n">param_server</span><span class="p">.</span><span class="nf">del_param</span><span class="p">()</span>
+
+    <span class="n">rclpy</span><span class="p">.</span><span class="nf">spin</span><span class="p">(</span><span class="n">param_server</span><span class="p">)</span>
+    <span class="n">rclpy</span><span class="p">.</span><span class="nf">shutdown</span><span class="p">()</span>
+
+
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="sh">"</span><span class="s">__main__</span><span class="sh">"</span><span class="p">:</span>
+    <span class="nf">main</span><span class="p">()</span>
+</code></pre></div></div>
+
+<ol>
+  <li>
+    <p>编译：<code class="language-plaintext highlighter-rouge">colcon build --packages-select python_para_ser</code></p>
+  </li>
+  <li>
+    <p>激活环境：<code class="language-plaintext highlighter-rouge">. install/setup.bash</code></p>
+  </li>
+  <li>
+    <p>运行节点：<code class="language-plaintext highlighter-rouge">ros2 run python_para_ser pythonParaSerNode</code></p>
+  </li>
+</ol>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pldz@pldz-pc:/mnt/hgfs/VMware/ROS2_DEMO/4_Chapter/code<span class="nv">$ </span>ros2 run python_para_ser pythonParaSerNode 
+<span class="o">[</span>INFO] <span class="o">[</span>1683212289.084496335] <span class="o">[</span>pythonParaSerNode]: <span class="nt">----</span> Get <span class="nt">----</span>
+<span class="o">[</span>INFO] <span class="o">[</span>1683212289.084918579] <span class="o">[</span>pythonParaSerNode]: name <span class="nt">---</span><span class="o">&gt;</span> zhangsan
+<span class="o">[</span>INFO] <span class="o">[</span>1683212289.085258809] <span class="o">[</span>pythonParaSerNode]: height <span class="nt">---</span><span class="o">&gt;</span> 1.88
+<span class="o">[</span>INFO] <span class="o">[</span>1683212289.085559614] <span class="o">[</span>pythonParaSerNode]: age <span class="nt">---</span><span class="o">&gt;</span> 20
+<span class="o">[</span>INFO] <span class="o">[</span>1683212289.085874466] <span class="o">[</span>pythonParaSerNode]: <span class="nt">----</span> Change <span class="nt">---</span>
+<span class="o">[</span>INFO] <span class="o">[</span>1683212289.086474845] <span class="o">[</span>pythonParaSerNode]: <span class="nt">----</span> Get <span class="nt">----</span>
+<span class="o">[</span>INFO] <span class="o">[</span>1683212289.086867362] <span class="o">[</span>pythonParaSerNode]: name <span class="nt">---</span><span class="o">&gt;</span> lisi
+<span class="o">[</span>INFO] <span class="o">[</span>1683212289.087193515] <span class="o">[</span>pythonParaSerNode]: height <span class="nt">---</span><span class="o">&gt;</span> 1.88
+<span class="o">[</span>INFO] <span class="o">[</span>1683212289.087519418] <span class="o">[</span>pythonParaSerNode]: age <span class="nt">---</span><span class="o">&gt;</span> 20
+<span class="o">[</span>INFO] <span class="o">[</span>1683212289.087884144] <span class="o">[</span>pythonParaSerNode]: <span class="nt">----</span> Delete <span class="nt">---</span>
+<span class="o">[</span>INFO] <span class="o">[</span>1683212289.088266933] <span class="o">[</span>pythonParaSerNode]: name <span class="nt">---</span><span class="o">&gt;</span> lisi
+<span class="o">[</span>INFO] <span class="o">[</span>1683212289.088594118] <span class="o">[</span>pythonParaSerNode]: height <span class="nt">---</span><span class="o">&gt;</span> 1.88
+</code></pre></div></div>
+
+<h2 id="432-创建python节点参数客户端">4.3.2 创建Python节点参数客户端</h2>
+
+<ol>
+  <li>
+    <p>创建功能包，包名为<code class="language-plaintext highlighter-rouge">python_para_cli</code>，节点名为<code class="language-plaintext highlighter-rouge">pythonParaCliNode</code>，依赖<code class="language-plaintext highlighter-rouge">rclpy</code>：<code class="language-plaintext highlighter-rouge">ros2 pkg create python_para_cli --build-type ament_python --node-name pythonParaCliNode --dependencies rclpy</code></p>
+  </li>
+  <li>
+    <p>创建节点参数客户端，值得注意的是需要连接到服务端节点，然后进行参数的增删改查操作，值得注意的是节点参数的客户端在Python中没有被明确封装，但是节点参数底层是通过服务和话题实现的，因此调用原始的服务和话题实现(原来教程连接：https://www.bilibili.com/video/BV1LG411E7qT)：</p>
+  </li>
+</ol>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># 1. 导入包
+</span><span class="kn">import</span> <span class="n">rclpy</span>
+<span class="kn">from</span> <span class="n">rclpy.node</span> <span class="kn">import</span> <span class="n">Node</span>
+<span class="kn">from</span> <span class="n">rcl_interfaces.srv</span> <span class="kn">import</span> <span class="n">ListParameters</span>
+<span class="kn">from</span> <span class="n">rcl_interfaces.srv</span> <span class="kn">import</span> <span class="n">GetParameters</span>
+<span class="kn">from</span> <span class="n">rcl_interfaces.srv</span> <span class="kn">import</span> <span class="n">SetParameters</span>
+<span class="kn">from</span> <span class="n">rcl_interfaces.msg</span> <span class="kn">import</span> <span class="n">ParameterType</span>
+<span class="kn">from</span> <span class="n">rcl_interfaces.msg</span> <span class="kn">import</span> <span class="n">Parameter</span>
+<span class="kn">from</span> <span class="n">rcl_interfaces.msg</span> <span class="kn">import</span> <span class="n">ParameterValue</span>
+<span class="kn">from</span> <span class="n">ros2param.api</span> <span class="kn">import</span> <span class="n">get_parameter_value</span>
+
+<span class="c1"># 2 创建客户节点
+</span><span class="k">class</span> <span class="nc">PythonParaClient</span><span class="p">(</span><span class="n">Node</span><span class="p">):</span>
+    <span class="c1"># 2.1 构造函数
+</span>    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="n">self</span><span class="p">):</span>
+        <span class="nf">super</span><span class="p">().</span><span class="nf">__init__</span><span class="p">(</span><span class="sh">'</span><span class="s">pythonParaCliNode</span><span class="sh">'</span><span class="p">)</span>
+
+    <span class="c1"># 3 连接服务节点
+</span>    <span class="k">def</span> <span class="nf">list_params</span><span class="p">(</span><span class="n">self</span><span class="p">):</span>
+        <span class="c1"># 3.1 创建客户端；
+</span>        <span class="n">cli_list</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="nf">create_client</span><span class="p">(</span><span class="n">ListParameters</span><span class="p">,</span> <span class="sh">'</span><span class="s">/pythonParaSerNode/list_parameters</span><span class="sh">'</span><span class="p">)</span>
+        <span class="c1"># 3.2 等待服务连接；
+</span>        <span class="k">while</span> <span class="ow">not</span> <span class="n">cli_list</span><span class="p">.</span><span class="nf">wait_for_service</span><span class="p">(</span><span class="n">timeout_sec</span><span class="o">=</span><span class="mf">1.0</span><span class="p">):</span>
+            <span class="n">self</span><span class="p">.</span><span class="nf">get_logger</span><span class="p">().</span><span class="nf">info</span><span class="p">(</span><span class="sh">'</span><span class="s">Waiting for connect ...</span><span class="sh">'</span><span class="p">)</span>
+        <span class="n">req</span> <span class="o">=</span> <span class="n">ListParameters</span><span class="p">.</span><span class="nc">Request</span><span class="p">()</span>
+        <span class="n">future</span> <span class="o">=</span> <span class="n">cli_list</span><span class="p">.</span><span class="nf">call_async</span><span class="p">(</span><span class="n">req</span><span class="p">)</span>
+        <span class="n">rclpy</span><span class="p">.</span><span class="nf">spin_until_future_complete</span><span class="p">(</span><span class="n">self</span><span class="p">,</span><span class="n">future</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">future</span><span class="p">.</span><span class="nf">result</span><span class="p">()</span>
+
+    <span class="c1"># 4 获得所有参数
+</span>    <span class="k">def</span> <span class="nf">get_params</span><span class="p">(</span><span class="n">self</span><span class="p">,</span><span class="n">names</span><span class="p">):</span>
+        <span class="c1"># 4.1 创建客户端
+</span>        <span class="n">cli_get</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="nf">create_client</span><span class="p">(</span><span class="n">GetParameters</span><span class="p">,</span> <span class="sh">'</span><span class="s">/pythonParaSerNode/get_parameters</span><span class="sh">'</span><span class="p">)</span>
+        <span class="c1"># 4.2 等待服务连接
+</span>        <span class="k">while</span> <span class="ow">not</span> <span class="n">cli_get</span><span class="p">.</span><span class="nf">wait_for_service</span><span class="p">(</span><span class="n">timeout_sec</span><span class="o">=</span><span class="mf">1.0</span><span class="p">):</span>
+            <span class="n">self</span><span class="p">.</span><span class="nf">get_logger</span><span class="p">().</span><span class="nf">info</span><span class="p">(</span><span class="sh">'</span><span class="s">Waiting for connect ...</span><span class="sh">'</span><span class="p">)</span>
+        <span class="n">req</span> <span class="o">=</span> <span class="n">GetParameters</span><span class="p">.</span><span class="nc">Request</span><span class="p">()</span>
+        <span class="n">req</span><span class="p">.</span><span class="n">names</span> <span class="o">=</span> <span class="n">names</span>
+        <span class="n">future</span> <span class="o">=</span> <span class="n">cli_get</span><span class="p">.</span><span class="nf">call_async</span><span class="p">(</span><span class="n">req</span><span class="p">)</span>
+        <span class="n">rclpy</span><span class="p">.</span><span class="nf">spin_until_future_complete</span><span class="p">(</span><span class="n">self</span><span class="p">,</span><span class="n">future</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">future</span><span class="p">.</span><span class="nf">result</span><span class="p">()</span>
+
+    <span class="c1"># 5 更新参数服务值
+</span>    <span class="k">def</span> <span class="nf">set_params</span><span class="p">(</span><span class="n">self</span><span class="p">):</span>
+        <span class="c1"># 5.1 创建客户端
+</span>        <span class="n">cli_set</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="nf">create_client</span><span class="p">(</span><span class="n">SetParameters</span><span class="p">,</span> <span class="sh">'</span><span class="s">/pythonParaSerNode/set_parameters</span><span class="sh">'</span><span class="p">)</span>
+        <span class="c1"># 5.2 等待服务连接
+</span>        <span class="k">while</span> <span class="ow">not</span> <span class="n">cli_set</span><span class="p">.</span><span class="nf">wait_for_service</span><span class="p">(</span><span class="n">timeout_sec</span><span class="o">=</span><span class="mf">1.0</span><span class="p">):</span>
+            <span class="n">self</span><span class="p">.</span><span class="nf">get_logger</span><span class="p">().</span><span class="nf">info</span><span class="p">(</span><span class="sh">'</span><span class="s">Waiting for connect ...</span><span class="sh">'</span><span class="p">)</span>
+
+        <span class="n">req</span> <span class="o">=</span> <span class="n">SetParameters</span><span class="p">.</span><span class="nc">Request</span><span class="p">()</span>
+
+        <span class="n">p1</span> <span class="o">=</span> <span class="nc">Parameter</span><span class="p">()</span>
+        <span class="n">p1</span><span class="p">.</span><span class="n">name</span> <span class="o">=</span> <span class="sh">"</span><span class="s">name</span><span class="sh">"</span>
+        <span class="n">p1</span><span class="p">.</span><span class="n">value</span> <span class="o">=</span> <span class="nf">get_parameter_value</span><span class="p">(</span><span class="n">string_value</span><span class="o">=</span><span class="sh">"</span><span class="s">zhangsan</span><span class="sh">"</span><span class="p">)</span>
+
+        <span class="n">req</span><span class="p">.</span><span class="n">parameters</span> <span class="o">=</span> <span class="p">[</span><span class="n">p1</span><span class="p">]</span>
+        <span class="n">future</span> <span class="o">=</span> <span class="n">cli_set</span><span class="p">.</span><span class="nf">call_async</span><span class="p">(</span><span class="n">req</span><span class="p">)</span>
+        <span class="n">rclpy</span><span class="p">.</span><span class="nf">spin_until_future_complete</span><span class="p">(</span><span class="n">self</span><span class="p">,</span><span class="n">future</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">future</span><span class="p">.</span><span class="nf">result</span><span class="p">()</span>
+
+<span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+    <span class="n">rclpy</span><span class="p">.</span><span class="nf">init</span><span class="p">()</span>
+    <span class="n">client</span> <span class="o">=</span> <span class="nc">PythonParaClient</span><span class="p">()</span>
+
+    <span class="c1"># 获取参数列表
+</span>    <span class="n">client</span><span class="p">.</span><span class="nf">get_logger</span><span class="p">().</span><span class="nf">info</span><span class="p">(</span><span class="sh">"</span><span class="s">--------- List all parameters node ---------</span><span class="sh">"</span><span class="p">)</span>
+    <span class="n">response</span> <span class="o">=</span> <span class="n">client</span><span class="p">.</span><span class="nf">list_params</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">response</span><span class="p">.</span><span class="n">result</span><span class="p">.</span><span class="n">names</span><span class="p">:</span>
+        <span class="n">client</span><span class="p">.</span><span class="nf">get_logger</span><span class="p">().</span><span class="nf">info</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+
+    <span class="n">client</span><span class="p">.</span><span class="nf">get_logger</span><span class="p">().</span><span class="nf">info</span><span class="p">(</span><span class="sh">"</span><span class="s">--------- Get ---------</span><span class="sh">"</span><span class="p">)</span>
+    <span class="n">names</span> <span class="o">=</span> <span class="p">[</span><span class="sh">"</span><span class="s">name</span><span class="sh">"</span><span class="p">,</span><span class="sh">"</span><span class="s">height</span><span class="sh">"</span><span class="p">]</span>
+    <span class="n">response</span> <span class="o">=</span> <span class="n">client</span><span class="p">.</span><span class="nf">get_params</span><span class="p">(</span><span class="n">names</span><span class="p">)</span>
+    <span class="nf">print</span><span class="p">(</span><span class="n">response</span><span class="p">.</span><span class="n">values</span><span class="p">)</span>
+
+    <span class="n">client</span><span class="p">.</span><span class="nf">get_logger</span><span class="p">().</span><span class="nf">info</span><span class="p">(</span><span class="sh">"</span><span class="s">--------- Set ---------</span><span class="sh">"</span><span class="p">)</span>
+    <span class="n">response</span> <span class="o">=</span> <span class="n">client</span><span class="p">.</span><span class="nf">set_params</span><span class="p">()</span>
+    <span class="n">results</span> <span class="o">=</span> <span class="n">response</span><span class="p">.</span><span class="n">results</span>
+    <span class="n">response</span> <span class="o">=</span> <span class="n">client</span><span class="p">.</span><span class="nf">get_params</span><span class="p">(</span><span class="n">names</span><span class="p">)</span>
+    <span class="nf">print</span><span class="p">(</span><span class="n">response</span><span class="p">.</span><span class="n">values</span><span class="p">)</span>
+    <span class="n">rclpy</span><span class="p">.</span><span class="nf">shutdown</span><span class="p">()</span>
+
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="sh">"</span><span class="s">__main__</span><span class="sh">"</span><span class="p">:</span>
+    <span class="nf">main</span><span class="p">()</span>
+</code></pre></div></div>
+
+<ol>
+  <li>
+    <p>编译：<code class="language-plaintext highlighter-rouge">colcon build --packages-select python_para_cli</code></p>
+  </li>
+  <li>
+    <p>激活环境：<code class="language-plaintext highlighter-rouge">. install/setup.bash</code></p>
+  </li>
+  <li>
+    <p>先运行服务端节点<code class="language-plaintext highlighter-rouge">ros2 run python_para_ser pythonParaSerNode</code>，然后运行客户端节点<code class="language-plaintext highlighter-rouge">ros2 run python_para_cli pythonParaCliNode</code></p>
+  </li>
+</ol>
+
+<p><img src="/assets/pics/ROS2_BASIC/4_py_params_result.png" alt="Python运行节点参数" /></p>
+
+<h2 id="44-ros2节点参数小结">4.4 ROS2节点参数小结</h2>
+
+<ul>
+  <li>
+    <ol>
+      <li>节点参数可删除的内容必须是未被声明的</li>
+    </ol>
+  </li>
+  <li>
+    <ol>
+      <li>客户端节点想修改服务节点的需要进行连接，连接成功之后才能进行增删改查</li>
+    </ol>
+  </li>
+</ul>
+
+</section>
+            </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div></div>
+    </div>
+</div>
+
+<!-- introduce mathjax support -->
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [ ['$', '$'], ['\\(', '\\)'] ]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script
+  type="text/javascript" id="MathJax-script" async
+  src="/assets/js/tex-chtml.js">
+</script>
+
+
+<!-- introduce per-page mermaid support -->
+
+
+<!-- introduce mathjax support -->
+<script>
+    function fixes_chrome_anchors() {
+        let chrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+        if (window.location.hash && chrome) {
+            setTimeout(function () {
+                var hash = window.location.hash;
+                window.location.hash = "";
+                window.location.hash = hash;
+            }, 300);
+        }
+    }
+
+    if (document.readyState === "loading") {
+        // Loading hasn't finished yet
+        document.addEventListener("DOMContentLoaded", fixes_chrome_anchors);
+    } else {
+        // `DOMContentLoaded` has already fired
+        fixes_chrome_anchors();
+    }
+</script>
+
+
+                        <a href="/ros2_basic/2023-02-04-3_1_ROS2%E6%9C%8D%E5%8A%A1%E9%80%9A%E8%AE%AF.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 3 ROS2服务通讯基础">
+                            <i class="fa fa-angle-left"></i>
+                        </a>
+                    
+
+                    
+                        <a href="/ros2_micro/2023-04-01-1_1_ROS2_Arduino.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 1 ROS2 和 Arduino 通讯">
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                    
+                </div>
+            </div>
+
+            <script>
+            var gitbook = gitbook || [];
+            gitbook.push(function() {
+                gitbook.page.hasChanged({
+    "page": {
+        "title": "Introduction",
+        "level": "1.1",
+        "depth": 1,
+        
+        "next": {
+            "title": "1 ROS2 和 Arduino 通讯",
+            "level": "1.2",
+            "depth": 1,
+            "path": "_posts/ROS2_MICRO/2023-04-01-1_1_ROS2_Arduino.md",
+            "ref": "_posts/ROS2_MICRO/2023-04-01-1_1_ROS2_Arduino.md",
+            "articles": []
+        },
+        
+        "dir": "ltr"
+    },    "config": {
+        "plugins": ["fontsettings", "highlight", "livereload", "lunr", "search", "sharing", "theme-default", "livereload"],
+        "styles": {
+            "ebook": "styles/ebook.css",
+            "epub": "styles/epub.css",
+            "mobi": "styles/mobi.css",
+            "pdf": "styles/pdf.css",
+            "print": "styles/print.css",
+            "website": "styles/website.css"
+        },
+        "pluginsConfig": {
+            "expandable-chapter-small2": {
+                "articlesExpand": true,
+            },
+            "fontsettings": {
+                "family": "sans",
+                "size": 2,
+                "theme": "white"
+            },
+            "highlight": {},
+            "livereload": {},
+            "lunr": {
+                "ignoreSpecialCharacters": false,
+                "maxIndexSize": 1000000
+            },
+            "search": {},            "sharing": {},
+"theme-default": {
+                "showLevel": false,
+                "styles": {
+                    "ebook": "styles/ebook.css",
+                    "epub": "styles/epub.css",
+                    "mobi": "styles/mobi.css",
+                    "pdf": "styles/pdf.css",
+                    "print": "styles/print.css",
+                    "website": "styles/website.css"
+                }
+            },
+        },
+        "theme": "default",
+        "author": "Tao He",
+        "pdf": {
+            "pageNumbers": true,
+            "fontSize": 12,
+            "fontFamily": "Arial",
+            "paperSize": "a4",
+            "chapterMark": "pagebreak",
+            "pageBreaksBefore": "/",
+            "margin": {
+                "right": 62,
+                "left": 62,
+                "top": 56,
+                "bottom": 56
+            }
+        },
+        "structure": {
+            "langs": "LANGS.md",
+            "readme": "README.md",
+        },
+        "variables": {},
+        "title": "Blogs",
+        "language": "en",
+        "gitbook": "*"
+    },
+    "file": {
+        "path": "_posts/ROS2_BASIC/2023-02-05-4_1_ROS2参数服务器.md",
+        "mtime": "2023-02-05 00:00:00 +0800",
+        "type": "markdown"
+    },
+    "gitbook": {
+        "version": "3.2.3",
+        "time": "2024-11-23 17:20:01 +0800"
+    },
+    "basePath": "",
+    "book": {
+        "language": ""
+    }
+});
+            });
+            </script>
+        </div><script src="/assets/gitbook/gitbook.js"></script>
+<script src="/assets/gitbook/theme.js"></script>
+
+<script src="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-search-pro/search.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-sharing/buttons.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-splitter/splitter.js"></script>
+
+<!--
+<script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+<script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+<script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+<script src="../gitbook/gitbook-plugin-search/search.js"></script>
+-->
+
+<script src="/assets/gitbook/custom.js"></script>
+<script src="/assets/gitbook/custom-local.js"></script>
+
+</body>
+</html>

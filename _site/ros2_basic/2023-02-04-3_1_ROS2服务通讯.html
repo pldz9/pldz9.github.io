@@ -1,0 +1,1251 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head><meta charset="UTF-8">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>3 ROS2服务通讯基础 · Blogs</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="description" content="Build Jekyll site with the GitBook style.
+"><meta name="generator" content="Jekyll (using style of GitBook 3.2.3)"><meta name="author" content="pldz9"><link rel="stylesheet" href="/assets/gitbook/style.css">
+<link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+<link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
+<link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-fontsettings/website.css">
+<link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-search-pro/search.css">
+<link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-splitter/splitter.css">
+
+<link rel="stylesheet" href="/assets/gitbook/rouge/thankful_eyes.css">
+
+<link rel="stylesheet" href="/assets/gitbook/custom.css">
+<link rel="stylesheet" href="/assets/gitbook/custom-local.css">
+
+<meta name="HandheldFriendly" content="true"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/gitbook/images/apple-touch-icon-precomposed-152.png">
+<link rel="shortcut icon" href="/assets/gitbook/images/favicon.ico" type="image/x-icon">
+
+
+
+
+            <link rel="prev" href="/ros2_basic/2023-02-03-2_2_ROS2%E8%AF%9D%E9%A2%98%E9%80%9A%E8%AE%AF%E6%8F%90%E5%8D%87.html" />
+        
+
+        
+            <link rel="next" href="/ros2_basic/2023-02-05-4_1_ROS2%E5%8F%82%E6%95%B0%E6%9C%8D%E5%8A%A1%E5%99%A8.html" />
+        
+    </head>
+    <body>
+        <div class="book"><div class="book-summary">
+    <script type="text/javascript">
+        // Fixes the page links scroll problem on both desktop and mobile browsers
+        function pageScrollToTop(element) {
+            // both mobile and non-mobile
+            $('div.body-inner').animate({scrollTop: 0});
+            $(element).parent().find('li>ul>li').removeClass('active');
+            return true;
+        }
+
+    </script>
+
+    <nav role="navigation" style="height: 100%;">
+        <!-- Search Input -->
+        <div id="book-search-input" role="search">
+            <input type="text" placeholder="Type to search" />
+        </div>
+        <div id="book-search-input-link" role="search">
+            <a href="/assets/search.html">Click to Search</a>
+        </div>
+
+        <div class="book-base-title" data-path="">
+            <a href="/" onclick="pageScrollToTop(this)">
+                爬楼的猪 Blogs
+            </a>
+        </div>
+
+        <!-- Book Summary Navigation -->
+        <ul class="summary" id="book-summary-core" data-scroll-top="0">
+            <!-- Loop through collections and posts by category -->
+            
+            
+            <li class="chapter category-header" id="category-header-ROS2_CAR">
+                <a href="javascript:void(0)">
+                    ROS2_CAR
+                </a>
+                <ul class="category-list" id="category-list-ROS2_CAR">
+                    
+                    
+                    <li class="chapter "
+                        data-path="/ros2_car/2023-01-03-ABOUT.html">
+                        <a href="/ros2_car/2023-01-03-ABOUT.html" onclick="pageScrollToTop(this)">
+                            ABOUT
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/ros2_car/2023-06-01-1_1_docker%E5%91%BD%E4%BB%A4%E7%86%9F%E6%82%89.html">
+                        <a href="/ros2_car/2023-06-01-1_1_docker%E5%91%BD%E4%BB%A4%E7%86%9F%E6%82%89.html" onclick="pageScrollToTop(this)">
+                            1 Docker 搭建 ROS2 嵌入式运行环境
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/ros2_car/2023-06-02-2_1_%E9%80%9A%E8%BF%87Turtlebot3%E6%A1%88%E4%BE%8B%E4%BA%86%E8%A7%A3NAVI2.html">
+                        <a href="/ros2_car/2023-06-02-2_1_%E9%80%9A%E8%BF%87Turtlebot3%E6%A1%88%E4%BE%8B%E4%BA%86%E8%A7%A3NAVI2.html" onclick="pageScrollToTop(this)">
+                            2 通过 Turtlebot3 案例了解 NAVI2
+                        </a>
+                    </li>
+                    
+                </ul>
+            </li>
+            
+            <li class="chapter category-header" id="category-header-ROS2_MICRO">
+                <a href="javascript:void(0)">
+                    ROS2_MICRO
+                </a>
+                <ul class="category-list" id="category-list-ROS2_MICRO">
+                    
+                    
+                    <li class="chapter "
+                        data-path="/ros2_micro/2023-01-02-ABOUT.html">
+                        <a href="/ros2_micro/2023-01-02-ABOUT.html" onclick="pageScrollToTop(this)">
+                            ABOUT
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/ros2_micro/2023-04-01-1_1_ROS2_Arduino.html">
+                        <a href="/ros2_micro/2023-04-01-1_1_ROS2_Arduino.html" onclick="pageScrollToTop(this)">
+                            1 ROS2 和 Arduino 通讯
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/ros2_micro/2023-04-02-2_1_Arduino%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95.html">
+                        <a href="/ros2_micro/2023-04-02-2_1_Arduino%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95.html" onclick="pageScrollToTop(this)">
+                            2 Arduino 的基本语法
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/ros2_micro/2023-04-03-3_1_ROS2_Arduino_demo.html">
+                        <a href="/ros2_micro/2023-04-03-3_1_ROS2_Arduino_demo.html" onclick="pageScrollToTop(this)">
+                            3 ROS2 和 arduino 通讯
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/ros2_micro/2023-04-04-4_1_MicroROS%E5%88%9D%E6%AD%A5%E4%BD%93%E9%AA%8C.html">
+                        <a href="/ros2_micro/2023-04-04-4_1_MicroROS%E5%88%9D%E6%AD%A5%E4%BD%93%E9%AA%8C.html" onclick="pageScrollToTop(this)">
+                            4 MircoROS 初步体验
+                        </a>
+                    </li>
+                    
+                </ul>
+            </li>
+            
+            <li class="chapter category-header" id="category-header-ROS2_BASIC">
+                <a href="javascript:void(0)">
+                    ROS2_BASIC
+                </a>
+                <ul class="category-list" id="category-list-ROS2_BASIC">
+                    
+                    
+                    <li class="chapter "
+                        data-path="/ros2_basic/2023-01-01-ABOUT.html">
+                        <a href="/ros2_basic/2023-01-01-ABOUT.html" onclick="pageScrollToTop(this)">
+                            ABOUT
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/ros2_basic/2023-02-01-1_1_Ubuntu%E9%85%8D%E7%BD%AE%E4%B8%8EROS2%E5%BF%AB%E9%80%9F%E4%BD%93%E9%AA%8C.html">
+                        <a href="/ros2_basic/2023-02-01-1_1_Ubuntu%E9%85%8D%E7%BD%AE%E4%B8%8EROS2%E5%BF%AB%E9%80%9F%E4%BD%93%E9%AA%8C.html" onclick="pageScrollToTop(this)">
+                            1 Ubuntu配置与ROS2快速体验
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/ros2_basic/2023-02-02-2_1_ROS2%E8%AF%9D%E9%A2%98%E9%80%9A%E8%AE%AF%E5%9F%BA%E7%A1%80.html">
+                        <a href="/ros2_basic/2023-02-02-2_1_ROS2%E8%AF%9D%E9%A2%98%E9%80%9A%E8%AE%AF%E5%9F%BA%E7%A1%80.html" onclick="pageScrollToTop(this)">
+                            2 ROS2话题通讯 - 话题通讯基础
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/ros2_basic/2023-02-03-2_2_ROS2%E8%AF%9D%E9%A2%98%E9%80%9A%E8%AE%AF%E6%8F%90%E5%8D%87.html">
+                        <a href="/ros2_basic/2023-02-03-2_2_ROS2%E8%AF%9D%E9%A2%98%E9%80%9A%E8%AE%AF%E6%8F%90%E5%8D%87.html" onclick="pageScrollToTop(this)">
+                            2 ROS2话题通讯 - 话题通讯进阶
+                        </a>
+                    </li>
+                    
+                    <li class="chapter active"
+                        data-path="/ros2_basic/2023-02-04-3_1_ROS2%E6%9C%8D%E5%8A%A1%E9%80%9A%E8%AE%AF.html">
+                        <a href="/ros2_basic/2023-02-04-3_1_ROS2%E6%9C%8D%E5%8A%A1%E9%80%9A%E8%AE%AF.html" onclick="pageScrollToTop(this)">
+                            3 ROS2服务通讯基础
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/ros2_basic/2023-02-05-4_1_ROS2%E5%8F%82%E6%95%B0%E6%9C%8D%E5%8A%A1%E5%99%A8.html">
+                        <a href="/ros2_basic/2023-02-05-4_1_ROS2%E5%8F%82%E6%95%B0%E6%9C%8D%E5%8A%A1%E5%99%A8.html" onclick="pageScrollToTop(this)">
+                            4 ROS2节点参数基础
+                        </a>
+                    </li>
+                    
+                </ul>
+            </li>
+            
+            <li class="chapter category-header" id="category-header-Others">
+                <a href="javascript:void(0)">
+                    Others
+                </a>
+                <ul class="category-list" id="category-list-Others">
+                    
+                    
+                    <li class="chapter "
+                        data-path="/others/2022-01-01-ABOUT.html">
+                        <a href="/others/2022-01-01-ABOUT.html" onclick="pageScrollToTop(this)">
+                            ABOUT
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/others/2022-01-02-VSCode%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE.html">
+                        <a href="/others/2022-01-02-VSCode%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE.html" onclick="pageScrollToTop(this)">
+                            VSCode相关配置
+                        </a>
+                    </li>
+                    
+                </ul>
+            </li>
+            
+        </ul>
+
+
+        <!-- Page Content and TOC -->
+        <div class="page-content-category">
+            <div class="page-content-title">Navigation of <span>3 ROS2服务通讯基础</span></div>
+            <ul class="page-content">
+                
+                <ul><li><a href="#31-服务通讯介绍" onclick="mobilePageScrollToAnchor(this)" >3.1 服务通讯介绍</a></li><li><a href="#32-ros2服务通讯的基本流程" onclick="mobilePageScrollToAnchor(this)" >3.2 ROS2服务通讯的基本流程</a><ul><li><a href="#321-创建ros2服务通讯功能包的基本流程" onclick="mobilePageScrollToAnchor(this)" >3.2.1 创建ROS2服务通讯功能包的基本流程</a></li><li><a href="#322-创建ros2服务通讯功能包示例" onclick="mobilePageScrollToAnchor(this)" >3.2.2 创建ROS2服务通讯功能包示例</a></li></ul></li><li><a href="#33-使用cc实现ros2服务通讯" onclick="mobilePageScrollToAnchor(this)" >3.3 使用C/C++实现ROS2服务通讯</a><ul><li><a href="#331-创建cc服务通讯服务端功能包并编写节点文件" onclick="mobilePageScrollToAnchor(this)" >3.3.1 创建C/C++服务通讯服务端功能包并编写节点文件</a></li><li><a href="#332-配置cc服务通讯服务端功能包" onclick="mobilePageScrollToAnchor(this)" >3.3.2 配置C/C++服务通讯服务端功能包</a></li><li><a href="#333-编译并运行cc服务通讯服务端" onclick="mobilePageScrollToAnchor(this)" >3.3.3 编译并运行C/C++服务通讯服务端</a></li><li><a href="#334-创建cc服务通讯客户端功能包并编写节点文件" onclick="mobilePageScrollToAnchor(this)" >3.3.4 创建C/C++服务通讯客户端功能包并编写节点文件</a></li><li><a href="#335-编译并运行cc服务通讯客户端节点" onclick="mobilePageScrollToAnchor(this)" >3.3.5 编译并运行C/C++服务通讯客户端节点</a></li></ul></li><li><a href="#34-使用python实现ros2服务通讯" onclick="mobilePageScrollToAnchor(this)" >3.4 使用Python实现ROS2服务通讯</a><ul><li><a href="#341-创建python服务通讯服务端功能包并编写节点文件" onclick="mobilePageScrollToAnchor(this)" >3.4.1 创建Python服务通讯服务端功能包并编写节点文件</a></li><li><a href="#342-配置python服务通讯服务端功能包" onclick="mobilePageScrollToAnchor(this)" >3.4.2 配置Python服务通讯服务端功能包</a></li><li><a href="#343-编译并运行python服务通讯服务端功能包" onclick="mobilePageScrollToAnchor(this)" >3.4.3 编译并运行Python服务通讯服务端功能包</a></li><li><a href="#334-创建python服务通讯客户端功能包并编写节点文件" onclick="mobilePageScrollToAnchor(this)" >3.3.4 创建Python服务通讯客户端功能包并编写节点文件</a></li><li><a href="#345-编译并运行python服务通讯客户端节点" onclick="mobilePageScrollToAnchor(this)" >3.4.5 编译并运行Python服务通讯客户端节点</a></li></ul></li><li><a href="#35-服务通讯小结" onclick="mobilePageScrollToAnchor(this)" >3.5 服务通讯小结</a></li></ul>
+
+                
+            </ul>
+        </div> 
+    </nav>
+</div><div class="book-body">
+                <div class="book-header" role="navigation">
+                    <!-- Title -->
+                    <h1>
+                      3 ROS2服务通讯基础
+                    </h1>
+                </div>
+
+                <div class="body-inner"><div class="page-wrapper" tabindex="-1" role="main">
+    
+
+    <div class="page-inner">
+        <div id="book-search-results">
+            <div class="search-noresults">
+                <section class="normal markdown-section">
+                    
+                        <h1 id="/ros2_basic/3_1_ROS2服务通讯">3 ROS2服务通讯基础</h1>
+                    
+
+                    <h1 id="31-服务通讯介绍">3.1 服务通讯介绍</h1>
+
+<blockquote>
+  <p>参考内容</p>
+
+  <p><a href="https://docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools/Understanding-ROS2-Services/Understanding-ROS2-Services.html">Understanding services</a></p>
+</blockquote>
+
+<p>服务通讯是ROS2的一种基于请求响应式的通讯方式，与之前的话题通讯不同的是服务通讯不是连续的数据流式的通讯，而是需要特定的触发才能收到回复的模式。</p>
+
+<p>服务通讯可以是单个服务端和和单个客户端直接的通讯，一对一的模式</p>
+
+<p><img src="/assets/pics/ROS2_BASIC/3_Service-SingleServiceClient.gif" alt="一对一的服务通讯" /></p>
+
+<p>服务通讯也可以是单个服务端和多个客户端通讯，一对多的模式</p>
+
+<p><img src="/assets/pics/ROS2_BASIC/3_Service-MultipleServiceClient.gif" alt="一对多的服务通讯" /></p>
+
+<h1 id="32-ros2服务通讯的基本流程">3.2 ROS2服务通讯的基本流程</h1>
+
+<p>事实上，服务通讯和自定义的话题通讯的操作过程很类似，即将所需要利用到服务模块利用<code class="language-plaintext highlighter-rouge">ament_camke</code>工具编译成<code class="language-plaintext highlighter-rouge">.c</code>和<code class="language-plaintext highlighter-rouge">.py</code>的ROS2功能包，然后新建的功能包依赖这个服务功能包完成通讯。</p>
+
+<h2 id="321-创建ros2服务通讯功能包的基本流程">3.2.1 创建ROS2服务通讯功能包的基本流程</h2>
+
+<ul>
+  <li>
+    <ol>
+      <li>创建ROS2功能包，功能包可以只用来作为存放自定义的<code class="language-plaintext highlighter-rouge">msg/srv/action</code>，不需要节点node的功能包，<strong>且<code class="language-plaintext highlighter-rouge">--build-type</code>必须是<code class="language-plaintext highlighter-rouge">ament_camke</code></strong> ，因为目前来看，Python的自定义的消息或者服务也需要通过cmake编译出来再调用，<strong>功能包必须是下划线的推荐命名方法，而不是大小写的驼峰，否则会报错</strong>，如下所示：</li>
+    </ol>
+  </li>
+</ul>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  rosidl_adapter.parser.InvalidResourceName: <span class="s1">'xxxxx'</span> is an invalid
+  package name.  It should have the pattern
+  <span class="s1">'^(?!.*__)(?!.*_$)[a-z][a-z0-9_]*$'</span>
+</code></pre></div></div>
+
+<ul>
+  <li>
+    <ol>
+      <li>在ROS2功能包内创建<code class="language-plaintext highlighter-rouge">srv</code>文件夹，里面存放自定义的<code class="language-plaintext highlighter-rouge">.srv</code>消息文件，并且 <strong><code class="language-plaintext highlighter-rouge">.srv</code>文件必须是大写开头的符合类的命名规则</strong></li>
+    </ol>
+  </li>
+  <li>
+    <ol>
+      <li>配置<code class="language-plaintext highlighter-rouge">packages.xml</code>文件，都需要配置下面的内容(下面的配置项与<code class="language-plaintext highlighter-rouge">.srv</code>文件无关，是默认的固定配置)</li>
+    </ol>
+  </li>
+</ul>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- 这一项是针对在srv文件中可能用到的其他依赖项，例如geomtry_msgs等等，如过没有用到就不添加 --&gt;</span>
+<span class="nt">&lt;depend&gt;</span>其他的depend<span class="nt">&lt;/depend&gt;</span>
+
+<span class="c">&lt;!-- 下面三项是必须的 --&gt;</span>
+<span class="nt">&lt;build_depend&gt;</span>rosidl_default_generators<span class="nt">&lt;/build_depend&gt;</span>
+<span class="nt">&lt;exec_depend&gt;</span>rosidl_default_runtime<span class="nt">&lt;/exec_depend&gt;</span>
+<span class="nt">&lt;member_of_group&gt;</span>rosidl_interface_packages<span class="nt">&lt;/member_of_group&gt;</span>
+</code></pre></div></div>
+
+<ul>
+  <li>
+    <ol>
+      <li>配置<code class="language-plaintext highlighter-rouge">CMakeLists.txt</code>文件,<code class="language-plaintext highlighter-rouge">find_package</code>和<code class="language-plaintext highlighter-rouge">rosidl_generate_interfaces</code></li>
+    </ol>
+  </li>
+</ul>
+
+<div class="language-cmake highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># 0. 是针对在srv文件中可能用到的其他依赖项，例如geomtry_msgs等等，则需要添加</span>
+<span class="c1"># find_package(geometry_msgs REQUIRED)</span>
+
+<span class="c1"># 1. rosidl_default_generators是必须添加的内容</span>
+<span class="nb">find_package</span><span class="p">(</span>rosidl_default_generators REQUIRED<span class="p">)</span>
+
+<span class="c1"># 2. rosidl_generate_interfaces必须配置，里面添加srv文件位置</span>
+<span class="nf">rosidl_generate_interfaces</span><span class="p">(</span><span class="si">${</span><span class="nv">PROJECT_NAME</span><span class="si">}</span>
+<span class="c1"># 2.1 添加自定义的srv位置，例如存放在功能包的srv文件夹下的xxx.srv</span>
+  <span class="s2">"srv/xxx.srv"</span>
+<span class="c1"># 2.2 可选，如果xxx.srv依赖了其他的内容,例如依赖了geometry_msgs</span>
+  DEPENDENCIES geometry_msgs
+<span class="p">)</span>
+</code></pre></div></div>
+
+<ul>
+  <li>
+    <ol>
+      <li>编译功能包:<code class="language-plaintext highlighter-rouge">colcon build --packages-select &lt;功能包名&gt;</code></li>
+    </ol>
+  </li>
+  <li>
+    <ol>
+      <li>此时激活<code class="language-plaintext highlighter-rouge">install</code>目录下的<code class="language-plaintext highlighter-rouge">setup.bash</code>如<code class="language-plaintext highlighter-rouge">. install/setup.bash</code>，可以通过<code class="language-plaintext highlighter-rouge">ros2 interface show &lt;功能包名称&gt;/srv/xxx.srv</code>查看到<code class="language-plaintext highlighter-rouge">xxx.srv</code>内容，此时编译好的<code class="language-plaintext highlighter-rouge">srv</code>的<code class="language-plaintext highlighter-rouge">.c</code>文件存放在<code class="language-plaintext highlighter-rouge">install/&lt;功能包名&gt;/include</code>下，<code class="language-plaintext highlighter-rouge">.py</code>文件则存放在<code class="language-plaintext highlighter-rouge">install/&lt;功能包名&gt;/local/</code></li>
+    </ol>
+  </li>
+</ul>
+
+<h2 id="322-创建ros2服务通讯功能包示例">3.2.2 创建ROS2服务通讯功能包示例</h2>
+
+<ol>
+  <li>
+    <p>创建自定义消息功能包<code class="language-plaintext highlighter-rouge">srv_demo</code>，采用<code class="language-plaintext highlighter-rouge">ament_cmake</code>方式：<code class="language-plaintext highlighter-rouge">ros2 pkg create srv_demo --build-type ament_cmake</code></p>
+  </li>
+  <li>
+    <p>在功能包内创建<code class="language-plaintext highlighter-rouge">srv</code>文件夹，其中存放<code class="language-plaintext highlighter-rouge">AddInt.srv</code>文件，<strong>需要利用到<code class="language-plaintext highlighter-rouge">---</code>符号作为分割，文件在<code class="language-plaintext highlighter-rouge">---</code>上面的内容作为请求体的参数，在<code class="language-plaintext highlighter-rouge">---</code>下面的内容作为响应体的参数</strong>，文件内容如下：</p>
+  </li>
+</ol>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">int32</span> <span class="n">num1</span>
+<span class="n">int32</span> <span class="n">num2</span>
+<span class="o">---</span>
+<span class="n">int32</span> <span class="n">sum</span>
+</code></pre></div></div>
+
+<ol>
+  <li>此时的功能包内部的目录结构如下：<code class="language-plaintext highlighter-rouge">tree -a</code></li>
+</ol>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pldz@pldz-pc:~/share/ROS2_DEMO/3_Chapter/code/srv_demo<span class="nv">$ </span>tree <span class="nt">-a</span>
+<span class="nb">.</span>
+├── CMakeLists.txt
+├── include
+│   └── srv_demo
+├── package.xml
+├── src
+└── srv
+    └── AddInt.srv
+</code></pre></div></div>
+
+<ol>
+  <li>配置<code class="language-plaintext highlighter-rouge">packages.xml</code>添加依赖项，由于<code class="language-plaintext highlighter-rouge">AddInt.srv</code>没有依赖任何的东西因此不需要添加其他的<code class="language-plaintext highlighter-rouge">depend</code>:</li>
+</ol>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0"?&gt;</span>
+<span class="cp">&lt;?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?&gt;</span>
+<span class="nt">&lt;package</span> <span class="na">format=</span><span class="s">"3"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;name&gt;</span>msg_demo<span class="nt">&lt;/name&gt;</span>
+  <span class="nt">&lt;version&gt;</span>0.0.0<span class="nt">&lt;/version&gt;</span>
+  <span class="nt">&lt;description&gt;</span>TODO: Package description<span class="nt">&lt;/description&gt;</span>
+  <span class="nt">&lt;maintainer</span> <span class="na">email=</span><span class="s">"pldz@R7000.com"</span><span class="nt">&gt;</span>pldz<span class="nt">&lt;/maintainer&gt;</span>
+  <span class="nt">&lt;license&gt;</span>TODO: License declaration<span class="nt">&lt;/license&gt;</span>
+
+  <span class="nt">&lt;buildtool_depend&gt;</span>ament_cmake<span class="nt">&lt;/buildtool_depend&gt;</span>
+
+  <span class="c">&lt;!-- 构建自定义功能包的的必须依赖项 --&gt;</span>
+  <span class="nt">&lt;buildtool_depend&gt;</span>rosidl_default_generators<span class="nt">&lt;/buildtool_depend&gt;</span>
+  <span class="nt">&lt;exec_depend&gt;</span>rosidl_default_runtime<span class="nt">&lt;/exec_depend&gt;</span>
+  <span class="nt">&lt;member_of_group&gt;</span>rosidl_interface_packages<span class="nt">&lt;/member_of_group&gt;</span>
+
+  <span class="nt">&lt;test_depend&gt;</span>ament_lint_auto<span class="nt">&lt;/test_depend&gt;</span>
+  <span class="nt">&lt;test_depend&gt;</span>ament_lint_common<span class="nt">&lt;/test_depend&gt;</span>
+
+  <span class="nt">&lt;export&gt;</span>
+    <span class="nt">&lt;build_type&gt;</span>ament_cmake<span class="nt">&lt;/build_type&gt;</span>
+  <span class="nt">&lt;/export&gt;</span>
+<span class="nt">&lt;/package&gt;</span>
+
+</code></pre></div></div>
+
+<ol>
+  <li>配置<code class="language-plaintext highlighter-rouge">CMakeLists.txt</code>文件，添加构建自定义<code class="language-plaintext highlighter-rouge">AddInt.srv</code>的依赖：</li>
+</ol>
+
+<div class="language-cmake highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cmake_minimum_required</span><span class="p">(</span>VERSION 3.8<span class="p">)</span>
+<span class="nb">project</span><span class="p">(</span>srv_demo<span class="p">)</span>
+
+<span class="nb">if</span><span class="p">(</span>CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES <span class="s2">"Clang"</span><span class="p">)</span>
+  <span class="nb">add_compile_options</span><span class="p">(</span>-Wall -Wextra -Wpedantic<span class="p">)</span>
+<span class="nb">endif</span><span class="p">()</span>
+
+<span class="c1"># find dependencies</span>
+<span class="nb">find_package</span><span class="p">(</span>ament_cmake REQUIRED<span class="p">)</span>
+<span class="c1"># uncomment the following section in order to fill in</span>
+<span class="c1"># further dependencies manually.</span>
+<span class="c1"># find_package(&lt;dependency&gt; REQUIRED)</span>
+
+<span class="c1"># 1. 构建自定义功能包必须的依赖</span>
+<span class="nb">find_package</span><span class="p">(</span>rosidl_default_generators REQUIRED<span class="p">)</span>
+
+<span class="c1"># 2. 配置自定义的srv的位置</span>
+<span class="nf">rosidl_generate_interfaces</span><span class="p">(</span><span class="si">${</span><span class="nv">PROJECT_NAME</span><span class="si">}</span>
+  <span class="s2">"srv/AddInt.srv"</span>
+<span class="p">)</span>
+
+<span class="nb">if</span><span class="p">(</span>BUILD_TESTING<span class="p">)</span>
+  <span class="nb">find_package</span><span class="p">(</span>ament_lint_auto REQUIRED<span class="p">)</span>
+  <span class="c1"># the following line skips the linter which checks for copyrights</span>
+  <span class="c1"># comment the line when a copyright and license is added to all source files</span>
+  <span class="nb">set</span><span class="p">(</span>ament_cmake_copyright_FOUND TRUE<span class="p">)</span>
+  <span class="c1"># the following line skips cpplint (only works in a git repo)</span>
+  <span class="c1"># comment the line when this package is in a git repo and when</span>
+  <span class="c1"># a copyright and license is added to all source files</span>
+  <span class="nb">set</span><span class="p">(</span>ament_cmake_cpplint_FOUND TRUE<span class="p">)</span>
+  <span class="nf">ament_lint_auto_find_test_dependencies</span><span class="p">()</span>
+<span class="nb">endif</span><span class="p">()</span>
+
+<span class="nf">ament_package</span><span class="p">()</span>
+
+
+</code></pre></div></div>
+
+<ol>
+  <li>
+    <p>构建功能包：<code class="language-plaintext highlighter-rouge">colcon build --packages-select srv_demo</code></p>
+  </li>
+  <li>
+    <p>查看自定义的消息：激活环境：<code class="language-plaintext highlighter-rouge">. install/setup.bash </code>，查看自定义消息<code class="language-plaintext highlighter-rouge">ros2 interface show srv_demo/srv/AddInt</code></p>
+  </li>
+</ol>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pldz@pldz-pc:~/share/ROS2_DEMO/3_Chapter/code<span class="nv">$ </span>colcon build <span class="nt">--packages-select</span> srv_demo
+Starting <span class="o">&gt;&gt;&gt;</span> srv_demo
+Finished <span class="o">&lt;&lt;&lt;</span> srv_demo <span class="o">[</span>12.2s]                     
+
+Summary: 1 package finished <span class="o">[</span>12.5s]
+pldz@pldz-pc:~/share/ROS2_DEMO/3_Chapter/code<span class="nv">$ </span><span class="nb">.</span> <span class="nb">install</span>/setup.bash 
+pldz@pldz-pc:~/share/ROS2_DEMO/3_Chapter/code<span class="nv">$ </span>ros2 interface show srv_demo/srv/AddInt 
+int32 num1
+int32 num2
+<span class="nt">---</span>
+int32 <span class="nb">sum</span>
+</code></pre></div></div>
+
+<ol>
+  <li>查看<code class="language-plaintext highlighter-rouge">instll</code>下面的文件：其中<code class="language-plaintext highlighter-rouge">.c</code>的class文件在<code class="language-plaintext highlighter-rouge">install/&lt;功能包名&gt;/include/&lt;功能包名&gt;/&lt;功能包名&gt;/msg/**</code>，<code class="language-plaintext highlighter-rouge">.py</code>在<code class="language-plaintext highlighter-rouge">install/&lt;功能包名&gt;/local/lib/python3.10/dist-packages/&lt;功能包名&gt;/msg/**</code>，后续Vscode可以通过配置<code class="language-plaintext highlighter-rouge">settings.json</code>添加提示</li>
+</ol>
+
+<p><img src="/assets/pics/ROS2_BASIC/3_custom_srv_package_path.png" alt="自定义话题通讯的功能包位置" /></p>
+
+<h1 id="33-使用cc实现ros2服务通讯">3.3 使用C/C++实现ROS2服务通讯</h1>
+
+<p>这里直接使用3.2.2创建的srv_demo服务功能包进行ROS2 C/C++的服务通讯的实现</p>
+
+<blockquote>
+  <p>参考内容：</p>
+
+  <p><a href="https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Writing-A-Simple-Cpp-Service-And-Client.html">Writing a simple service and client (C++)</a></p>
+
+  <p><a href="https://www.bilibili.com/video/BV1Td4y1z7oi">2.3.3_服务通信_C++实现_01框架搭建</a></p>
+
+  <p><a href="https://blog.csdn.net/qq_16893195/article/details/113571858">ROS2探索（三）service</a></p>
+</blockquote>
+
+<h2 id="331-创建cc服务通讯服务端功能包并编写节点文件">3.3.1 创建C/C++服务通讯服务端功能包并编写节点文件</h2>
+
+<ol>
+  <li>
+    <p>创建功能包，其中功能包名称为<code class="language-plaintext highlighter-rouge">cpp_srv_server</code>，节点名为<code class="language-plaintext highlighter-rouge">cppSrvServerNode</code>：<code class="language-plaintext highlighter-rouge">ros2 pkg create cpp_srv_server --build-type ament_cmake --node-name cppSrvServerNode</code></p>
+  </li>
+  <li>
+    <p>配置Vscode环境，在工作空间创建<code class="language-plaintext highlighter-rouge">.vscode</code>文件夹，并加入<code class="language-plaintext highlighter-rouge">settings.json</code>文件，添加<code class="language-plaintext highlighter-rouge">ROS2</code>的<code class="language-plaintext highlighter-rouge">include</code>环境和当前工作空间的<code class="language-plaintext highlighter-rouge">install</code>文件夹下的<code class="language-plaintext highlighter-rouge">srv_demo</code>功能包的<code class="language-plaintext highlighter-rouge">include</code>路径：</p>
+  </li>
+</ol>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"C_Cpp.default.includePath"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="s2">"/opt/ros/humble/include/**"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"./install/srv_demo/include/**"</span><span class="w">
+    </span><span class="p">],</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p><img src="/assets/pics/ROS2_BASIC/3_srv_cpp_vscode_config.png" alt="vscode的C/C++环境配置" /></p>
+
+<ol>
+  <li>编写服务端节点文件，主要包括导入包，创建服务节点，实现回调函数：</li>
+</ol>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// 1. 调用自定义的服务文件</span>
+<span class="c1">// 1.1 rclcpp和srv_demo两个功能包的头文件</span>
+<span class="c1">// 如果有vscode的下划线提示，说明是settings.json没有配置好</span>
+<span class="cp">#include</span> <span class="cpf">"rclcpp/rclcpp.hpp"</span><span class="cp">
+#include</span> <span class="cpf">"srv_demo/srv/add_int.hpp"</span><span class="cp">
+</span>
+<span class="c1">// 1.2. 调用功能包下的自定义的服务，其中自定义的服务名已经变成了一个类名</span>
+<span class="k">using</span> <span class="n">srv_demo</span><span class="o">::</span><span class="n">srv</span><span class="o">::</span><span class="n">AddInt</span><span class="p">;</span>
+
+<span class="c1">// std_bind的占位符</span>
+<span class="k">using</span> <span class="n">std</span><span class="o">::</span><span class="n">placeholders</span><span class="o">::</span><span class="n">_1</span><span class="p">;</span>
+<span class="k">using</span> <span class="n">std</span><span class="o">::</span><span class="n">placeholders</span><span class="o">::</span><span class="n">_2</span><span class="p">;</span>
+
+<span class="c1">// 2.定义节点类；</span>
+<span class="k">class</span> <span class="nc">CppSrvServer</span><span class="o">:</span> <span class="k">public</span> <span class="n">rclcpp</span><span class="o">::</span><span class="n">Node</span><span class="p">{</span>
+  <span class="nl">public:</span>
+  <span class="c1">// 2.1 构造函数，其中节点名直接赋予cppSrvServerNode</span>
+    <span class="n">CppSrvServer</span><span class="p">()</span><span class="o">:</span><span class="n">Node</span><span class="p">(</span><span class="s">"cppSrvServerNode"</span><span class="p">){</span>
+      <span class="c1">// 2.2 创建服务端</span>
+      <span class="n">server_</span> <span class="o">=</span> <span class="k">this</span><span class="o">-&gt;</span><span class="n">create_service</span><span class="o">&lt;</span><span class="n">AddInt</span><span class="o">&gt;</span><span class="p">(</span><span class="s">"mySrvName"</span><span class="p">,</span><span class="n">std</span><span class="o">::</span><span class="n">bind</span><span class="p">(</span><span class="o">&amp;</span><span class="n">CppSrvServer</span><span class="o">::</span><span class="n">addIntFunc</span><span class="p">,</span> <span class="k">this</span><span class="p">,</span> <span class="n">_1</span><span class="p">,</span> <span class="n">_2</span><span class="p">));</span>
+      <span class="n">RCLCPP_INFO</span><span class="p">(</span><span class="k">this</span><span class="o">-&gt;</span><span class="n">get_logger</span><span class="p">(),</span><span class="s">"Server is starting ..."</span><span class="p">);</span>
+    <span class="p">}</span>
+  <span class="k">private</span><span class="o">:</span>
+    
+    <span class="c1">// 3. 服务端的回调函数实现，其中参数的写法区分主要在于类型，参数数量包括请求体req和响应体rsp</span>
+    <span class="kt">void</span> <span class="nf">addIntFunc</span><span class="p">(</span><span class="k">const</span> <span class="n">AddInt</span><span class="o">::</span><span class="n">Request</span><span class="o">::</span><span class="n">SharedPtr</span> <span class="n">req</span><span class="p">,</span> <span class="k">const</span> <span class="n">AddInt</span><span class="o">::</span><span class="n">Response</span><span class="o">::</span><span class="n">SharedPtr</span> <span class="n">rsp</span><span class="p">)</span>
+    <span class="p">{</span>
+      <span class="n">rsp</span><span class="o">-&gt;</span><span class="n">sum</span> <span class="o">=</span> <span class="n">req</span><span class="o">-&gt;</span><span class="n">num1</span> <span class="o">+</span> <span class="n">req</span><span class="o">-&gt;</span><span class="n">num2</span><span class="p">;</span>
+      <span class="n">RCLCPP_INFO</span><span class="p">(</span><span class="k">this</span><span class="o">-&gt;</span><span class="n">get_logger</span><span class="p">(),</span><span class="s">"request body :(%d,%d), response is :%d"</span><span class="p">,</span> <span class="n">req</span><span class="o">-&gt;</span><span class="n">num1</span><span class="p">,</span> <span class="n">req</span><span class="o">-&gt;</span><span class="n">num2</span><span class="p">,</span> <span class="n">rsp</span><span class="o">-&gt;</span><span class="n">sum</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="c1">// 4 服务的声明</span>
+    <span class="n">rclcpp</span><span class="o">::</span><span class="n">Service</span><span class="o">&lt;</span><span class="n">AddInt</span><span class="o">&gt;::</span><span class="n">SharedPtr</span> <span class="n">server_</span><span class="p">;</span>
+<span class="p">};</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="k">const</span> <span class="o">*</span><span class="n">argv</span><span class="p">[])</span>
+<span class="p">{</span>
+  <span class="n">rclcpp</span><span class="o">::</span><span class="n">init</span><span class="p">(</span><span class="n">argc</span><span class="p">,</span><span class="n">argv</span><span class="p">);</span>
+  <span class="k">auto</span> <span class="n">server_</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">make_shared</span><span class="o">&lt;</span><span class="n">CppSrvServer</span><span class="o">&gt;</span><span class="p">();</span>
+  <span class="n">rclcpp</span><span class="o">::</span><span class="n">spin</span><span class="p">(</span><span class="n">server_</span><span class="p">);</span>
+  <span class="n">rclcpp</span><span class="o">::</span><span class="n">shutdown</span><span class="p">();</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+
+</code></pre></div></div>
+
+<h2 id="332-配置cc服务通讯服务端功能包">3.3.2 配置C/C++服务通讯服务端功能包</h2>
+
+<ol>
+  <li>配置<code class="language-plaintext highlighter-rouge">packages.xml</code>文件，添加依赖项有<code class="language-plaintext highlighter-rouge">rclcpp</code>用于构建节点，和<code class="language-plaintext highlighter-rouge">srv_demo</code>用于构建<code class="language-plaintext highlighter-rouge">AddInt</code>：</li>
+</ol>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0"?&gt;</span>
+<span class="cp">&lt;?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?&gt;</span>
+<span class="nt">&lt;package</span> <span class="na">format=</span><span class="s">"3"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;name&gt;</span>cpp_srv_server<span class="nt">&lt;/name&gt;</span>
+  <span class="nt">&lt;version&gt;</span>0.0.0<span class="nt">&lt;/version&gt;</span>
+  <span class="nt">&lt;description&gt;</span>TODO: Package description<span class="nt">&lt;/description&gt;</span>
+  <span class="nt">&lt;maintainer</span> <span class="na">email=</span><span class="s">"pldz@R7000.com"</span><span class="nt">&gt;</span>pldz<span class="nt">&lt;/maintainer&gt;</span>
+  <span class="nt">&lt;license&gt;</span>TODO: License declaration<span class="nt">&lt;/license&gt;</span>
+
+  <span class="nt">&lt;buildtool_depend&gt;</span>ament_cmake<span class="nt">&lt;/buildtool_depend&gt;</span>
+
+  <span class="nt">&lt;test_depend&gt;</span>ament_lint_auto<span class="nt">&lt;/test_depend&gt;</span>
+  <span class="nt">&lt;test_depend&gt;</span>ament_lint_common<span class="nt">&lt;/test_depend&gt;</span>
+
+  <span class="c">&lt;!-- 依赖rclcpp创建节点和自定义的服务功能包 --&gt;</span>
+  <span class="nt">&lt;depend&gt;</span>rclcpp<span class="nt">&lt;/depend&gt;</span>
+  <span class="nt">&lt;depend&gt;</span>srv_demo<span class="nt">&lt;/depend&gt;</span>
+
+  <span class="nt">&lt;export&gt;</span>
+    <span class="nt">&lt;build_type&gt;</span>ament_cmake<span class="nt">&lt;/build_type&gt;</span>
+  <span class="nt">&lt;/export&gt;</span>
+<span class="nt">&lt;/package&gt;</span>
+
+</code></pre></div></div>
+
+<ol>
+  <li>配置<code class="language-plaintext highlighter-rouge">CMakeLists.txt</code>：</li>
+</ol>
+
+<div class="language-cmake highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cmake_minimum_required</span><span class="p">(</span>VERSION 3.8<span class="p">)</span>
+<span class="nb">project</span><span class="p">(</span>cpp_srv_server<span class="p">)</span>
+
+<span class="nb">if</span><span class="p">(</span>CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES <span class="s2">"Clang"</span><span class="p">)</span>
+  <span class="nb">add_compile_options</span><span class="p">(</span>-Wall -Wextra -Wpedantic<span class="p">)</span>
+<span class="nb">endif</span><span class="p">()</span>
+
+<span class="c1"># find dependencies</span>
+<span class="nb">find_package</span><span class="p">(</span>ament_cmake REQUIRED<span class="p">)</span>
+<span class="c1"># uncomment the following section in order to fill in</span>
+<span class="c1"># further dependencies manually.</span>
+<span class="c1"># find_package(&lt;dependency&gt; REQUIRED)</span>
+
+<span class="c1"># 1. 列出依赖项的包</span>
+<span class="nb">find_package</span><span class="p">(</span>rclcpp REQUIRED<span class="p">)</span>
+<span class="nb">find_package</span><span class="p">(</span>srv_demo REQUIRED<span class="p">)</span>
+
+<span class="c1"># 2. 默认是已经创建了构建节点的文件配置</span>
+<span class="nb">add_executable</span><span class="p">(</span>cppSrvServerNode src/cppSrvServerNode.cpp<span class="p">)</span>
+
+<span class="c1"># 3. 默认已经包括&lt;INSTALL_INTERFACE&gt;的路径也不用更改</span>
+<span class="nb">target_include_directories</span><span class="p">(</span>cppSrvServerNode PUBLIC
+  $&lt;BUILD_INTERFACE:<span class="si">${</span><span class="nv">CMAKE_CURRENT_SOURCE_DIR</span><span class="si">}</span>/include&gt;
+  $&lt;INSTALL_INTERFACE:include&gt;<span class="p">)</span>
+<span class="nb">target_compile_features</span><span class="p">(</span>cppSrvServerNode PUBLIC c_std_99 cxx_std_17<span class="p">)</span>  <span class="c1"># Require C99 and C++17</span>
+
+<span class="c1"># 4. ament工具构建节点的依赖配置</span>
+<span class="nf">ament_target_dependencies</span><span class="p">(</span>
+  cppSrvServerNode
+  rclcpp
+  srv_demo
+<span class="p">)</span>
+
+<span class="c1"># 5. Install配置，默认ros2 run &lt;包名&gt;的配置</span>
+<span class="nb">install</span><span class="p">(</span>TARGETS cppSrvServerNode
+  DESTINATION lib/<span class="si">${</span><span class="nv">PROJECT_NAME</span><span class="si">}</span><span class="p">)</span>
+
+<span class="nb">if</span><span class="p">(</span>BUILD_TESTING<span class="p">)</span>
+  <span class="nb">find_package</span><span class="p">(</span>ament_lint_auto REQUIRED<span class="p">)</span>
+  <span class="c1"># the following line skips the linter which checks for copyrights</span>
+  <span class="c1"># comment the line when a copyright and license is added to all source files</span>
+  <span class="nb">set</span><span class="p">(</span>ament_cmake_copyright_FOUND TRUE<span class="p">)</span>
+  <span class="c1"># the following line skips cpplint (only works in a git repo)</span>
+  <span class="c1"># comment the line when this package is in a git repo and when</span>
+  <span class="c1"># a copyright and license is added to all source files</span>
+  <span class="nb">set</span><span class="p">(</span>ament_cmake_cpplint_FOUND TRUE<span class="p">)</span>
+  <span class="nf">ament_lint_auto_find_test_dependencies</span><span class="p">()</span>
+<span class="nb">endif</span><span class="p">()</span>
+
+<span class="c1"># 6. 生成包的环境</span>
+<span class="nf">ament_package</span><span class="p">()</span>
+
+</code></pre></div></div>
+
+<h2 id="333-编译并运行cc服务通讯服务端">3.3.3 编译并运行C/C++服务通讯服务端</h2>
+
+<ol>
+  <li>
+    <p>编译： <code class="language-plaintext highlighter-rouge">colcon build --packages-select cpp_srv_server</code></p>
+  </li>
+  <li>
+    <p>激活环境：<code class="language-plaintext highlighter-rouge">. install/setup.bash</code></p>
+  </li>
+  <li>
+    <p>运行：<code class="language-plaintext highlighter-rouge">ros2 run cpp_srv_server cppSrvServerNode</code></p>
+  </li>
+</ol>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pldz@pldz-pc:~/share/ROS2_DEMO/3_Chapter/code<span class="nv">$ </span>colcon build <span class="nt">--packages-select</span> cpp_srv_server
+Starting <span class="o">&gt;&gt;&gt;</span> cpp_srv_server
+Finished <span class="o">&lt;&lt;&lt;</span> cpp_srv_server <span class="o">[</span>20.6s]                       
+                      
+Summary: 1 package finished <span class="o">[</span>21.0s]
+pldz@pldz-pc:~/share/ROS2_DEMO/3_Chapter/code<span class="nv">$ </span><span class="nb">.</span> <span class="nb">install</span>/setup.bash 
+pldz@pldz-pc:~/share/ROS2_DEMO/3_Chapter/code<span class="nv">$ </span>ros2 run cpp_srv_server cppSrvServerNode 
+<span class="o">[</span>INFO] <span class="o">[</span>1683125184.734934447] <span class="o">[</span>cppSrvServerNode]: Server is starting ...
+^C[INFO] <span class="o">[</span>1683125186.240946812] <span class="o">[</span>rclcpp]: signal_handler<span class="o">(</span><span class="nv">signum</span><span class="o">=</span>2<span class="o">)</span>
+</code></pre></div></div>
+
+<h2 id="334-创建cc服务通讯客户端功能包并编写节点文件">3.3.4 创建C/C++服务通讯客户端功能包并编写节点文件</h2>
+
+<ol>
+  <li>
+    <p>创建功能包，功能包名为<code class="language-plaintext highlighter-rouge">cpp_srv_client</code>，节点名称为<code class="language-plaintext highlighter-rouge">cppSrvClientNode</code>，依赖<code class="language-plaintext highlighter-rouge">rclcpp</code>和<code class="language-plaintext highlighter-rouge">srv_demo</code>：<code class="language-plaintext highlighter-rouge">ros2 pkg create cpp_srv_client --build-type ament_cmake --node-name cppSrvClientNode --dependencies rclcpp srv_demo</code></p>
+  </li>
+  <li>
+    <p>编写客户端节点，注意在此过程中需要和 <strong>服务端的连接进行判断，以及发送的请求是否能够收到返回值的用法的操作</strong>：</p>
+  </li>
+</ol>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// 1. 调用自定义的服务文件</span>
+<span class="c1">// 1.1 rclcpp和srv_demo两个功能包的头文件</span>
+<span class="cp">#include</span> <span class="cpf">"rclcpp/rclcpp.hpp"</span><span class="cp">
+#include</span> <span class="cpf">"srv_demo/srv/add_int.hpp"</span><span class="cp">
+</span>
+<span class="c1">// 1.2. 调用功能包下的自定义的服务，其中自定义的服务名已经变成了一个类名</span>
+<span class="k">using</span> <span class="n">srv_demo</span><span class="o">::</span><span class="n">srv</span><span class="o">::</span><span class="n">AddInt</span><span class="p">;</span>
+
+<span class="c1">// 时间函数用于持续访问服务端</span>
+<span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="o">::</span><span class="n">chrono_literals</span><span class="p">;</span>
+
+<span class="c1">// 2.定义节点类；</span>
+<span class="k">class</span> <span class="nc">CppSrvClient</span><span class="o">:</span> <span class="k">public</span> <span class="n">rclcpp</span><span class="o">::</span><span class="n">Node</span><span class="p">{</span>
+  <span class="nl">public:</span>
+    <span class="n">CppSrvClient</span><span class="p">()</span><span class="o">:</span><span class="n">Node</span><span class="p">(</span><span class="s">"cppSrvClientNode"</span><span class="p">)</span>
+    <span class="p">{</span>
+      <span class="c1">// 2.1 创建客户端,并绑定服务通讯名称为mySrvName</span>
+      <span class="n">client_</span> <span class="o">=</span> <span class="k">this</span><span class="o">-&gt;</span><span class="n">create_client</span><span class="o">&lt;</span><span class="n">AddInt</span><span class="o">&gt;</span><span class="p">(</span><span class="s">"mySrvName"</span><span class="p">);</span>
+      <span class="n">RCLCPP_INFO</span><span class="p">(</span><span class="k">this</span><span class="o">-&gt;</span><span class="n">get_logger</span><span class="p">(),</span><span class="s">"Client is starting  ..."</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="c1">// 2.2 等待与服务的连接</span>
+    <span class="kt">bool</span> <span class="nf">connect_server</span><span class="p">(){</span>
+      <span class="k">while</span> <span class="p">(</span><span class="o">!</span><span class="n">client_</span><span class="o">-&gt;</span><span class="n">wait_for_service</span><span class="p">(</span><span class="mx">1s</span><span class="p">))</span>
+      <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">rclcpp</span><span class="o">::</span><span class="n">ok</span><span class="p">())</span>
+        <span class="p">{</span>
+          <span class="n">RCLCPP_INFO</span><span class="p">(</span><span class="n">rclcpp</span><span class="o">::</span><span class="n">get_logger</span><span class="p">(</span><span class="s">"rclcpp"</span><span class="p">),</span><span class="s">"Interrupted while waiting for the service. Exiting."</span><span class="p">);</span>
+          <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+        <span class="p">}</span>
+
+        <span class="n">RCLCPP_INFO</span><span class="p">(</span><span class="k">this</span><span class="o">-&gt;</span><span class="n">get_logger</span><span class="p">(),</span><span class="s">"service not available, waiting again..."</span><span class="p">);</span>
+      <span class="p">}</span>
+      <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="c1">// 2.3 客户端发送请求；</span>
+    <span class="n">rclcpp</span><span class="o">::</span><span class="n">Client</span><span class="o">&lt;</span><span class="n">srv_demo</span><span class="o">::</span><span class="n">srv</span><span class="o">::</span><span class="n">AddInt</span><span class="o">&gt;::</span><span class="n">FutureAndRequestId</span> <span class="nf">send_request</span><span class="p">(</span><span class="kt">int32_t</span> <span class="n">num1</span><span class="p">,</span> <span class="kt">int32_t</span> <span class="n">num2</span><span class="p">)</span>
+    <span class="p">{</span>
+      <span class="k">auto</span> <span class="n">request</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">make_shared</span><span class="o">&lt;</span><span class="n">AddInt</span><span class="o">::</span><span class="n">Request</span><span class="o">&gt;</span><span class="p">();</span>
+      <span class="n">request</span><span class="o">-&gt;</span><span class="n">num1</span> <span class="o">=</span> <span class="n">num1</span><span class="p">;</span>
+      <span class="n">request</span><span class="o">-&gt;</span><span class="n">num2</span> <span class="o">=</span> <span class="n">num2</span><span class="p">;</span>
+      <span class="c1">// 2.3.1 发送请求</span>
+      <span class="k">auto</span> <span class="n">response</span> <span class="o">=</span> <span class="n">client_</span><span class="o">-&gt;</span><span class="n">async_send_request</span><span class="p">(</span><span class="n">request</span><span class="p">);</span>
+      <span class="k">return</span> <span class="n">response</span><span class="p">;</span>
+    <span class="p">}</span>
+
+  <span class="k">private</span><span class="o">:</span>
+    <span class="c1">// 2.4 服务通讯客户端的声明</span>
+    <span class="n">rclcpp</span><span class="o">::</span><span class="n">Client</span><span class="o">&lt;</span><span class="n">AddInt</span><span class="o">&gt;::</span><span class="n">SharedPtr</span> <span class="n">client_</span><span class="p">;</span>
+<span class="p">};</span>
+
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="o">**</span> <span class="n">argv</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="c1">// 3. 初始化ROS2客户端</span>
+  <span class="n">rclcpp</span><span class="o">::</span><span class="n">init</span><span class="p">(</span><span class="n">argc</span><span class="p">,</span><span class="n">argv</span><span class="p">);</span>
+
+  <span class="c1">// 3.1 创建对象指针并调用其功能；</span>
+  <span class="k">auto</span> <span class="n">cppSrvClientNode</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">make_shared</span><span class="o">&lt;</span><span class="n">CppSrvClient</span><span class="o">&gt;</span><span class="p">();</span>
+  <span class="c1">// 3.2 连接客户端</span>
+  <span class="kt">bool</span> <span class="n">flag</span> <span class="o">=</span> <span class="n">cppSrvClientNode</span><span class="o">-&gt;</span><span class="n">connect_server</span><span class="p">();</span>
+  <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">flag</span><span class="p">)</span>
+  <span class="p">{</span>
+    <span class="n">RCLCPP_INFO</span><span class="p">(</span><span class="n">rclcpp</span><span class="o">::</span><span class="n">get_logger</span><span class="p">(</span><span class="s">"rclcpp"</span><span class="p">),</span><span class="s">"Connect failed! "</span><span class="p">);</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="c1">// 3.3 发送请求并等待响应</span>
+  <span class="k">auto</span> <span class="n">response</span> <span class="o">=</span> <span class="n">cppSrvClientNode</span><span class="o">-&gt;</span><span class="n">send_request</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span><span class="mi">200</span><span class="p">);</span>
+
+   <span class="c1">// 3.4 节点处理响应</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">rclcpp</span><span class="o">::</span><span class="n">spin_until_future_complete</span><span class="p">(</span><span class="n">cppSrvClientNode</span><span class="p">,</span><span class="n">response</span><span class="p">)</span> <span class="o">==</span> <span class="n">rclcpp</span><span class="o">::</span><span class="n">FutureReturnCode</span><span class="o">::</span><span class="n">SUCCESS</span><span class="p">)</span>
+  <span class="p">{</span>
+    <span class="n">RCLCPP_INFO</span><span class="p">(</span><span class="n">cppSrvClientNode</span><span class="o">-&gt;</span><span class="n">get_logger</span><span class="p">(),</span><span class="s">"The response is :%d!"</span><span class="p">,</span> <span class="n">response</span><span class="p">.</span><span class="n">get</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">sum</span><span class="p">);</span>
+
+  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="n">RCLCPP_INFO</span><span class="p">(</span><span class="n">cppSrvClientNode</span><span class="o">-&gt;</span><span class="n">get_logger</span><span class="p">(),</span><span class="s">"Request error"</span><span class="p">);</span>
+  <span class="p">}</span>
+  <span class="n">rclcpp</span><span class="o">::</span><span class="n">shutdown</span><span class="p">();</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="335-编译并运行cc服务通讯客户端节点">3.3.5 编译并运行C/C++服务通讯客户端节点</h2>
+
+<ol>
+  <li>
+    <p>由于在创建包的过程中已经指明了所有依赖项，不需要进行额外的配置，直接编译运行即可：<code class="language-plaintext highlighter-rouge">colcon build --packages-select cpp_srv_client</code></p>
+  </li>
+  <li>
+    <p>激活环境并运行节点</p>
+  </li>
+</ol>
+
+<p><img src="/assets/pics/ROS2_BASIC/3_cpp_srv_result.png" alt="C/C++实现服务通讯" /></p>
+
+<h1 id="34-使用python实现ros2服务通讯">3.4 使用Python实现ROS2服务通讯</h1>
+
+<blockquote>
+  <p>参考内容</p>
+
+  <p><a href="https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Writing-A-Simple-Py-Service-And-Client.html">Writing a simple service and client (Python)</a></p>
+
+  <p><a href="https://www.bilibili.com/video/BV15V4y1T7JK">2.3.4_服务通信_Python实现_01框架搭建</a></p>
+</blockquote>
+
+<h2 id="341-创建python服务通讯服务端功能包并编写节点文件">3.4.1 创建Python服务通讯服务端功能包并编写节点文件</h2>
+
+<ol>
+  <li>
+    <p>创建功能包，包名为<code class="language-plaintext highlighter-rouge">python_srv_server</code>，节点名为<code class="language-plaintext highlighter-rouge">pythonSrvServerNode</code>：<code class="language-plaintext highlighter-rouge">ros2 pkg create python_srv_server --build-type ament_python --node-name pythonSrvServerNode</code></p>
+  </li>
+  <li>
+    <p>配置Vscode，主要添加功能包的提示环境，编辑<code class="language-plaintext highlighter-rouge">settings.json</code>：</p>
+  </li>
+</ol>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"C_Cpp.default.includePath"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="s2">"/opt/ros/humble/include/**"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"./install/srv_demo/include/**"</span><span class="w">
+    </span><span class="p">],</span><span class="w">
+    </span><span class="nl">"python.analysis.include"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="s2">"/opt/ros/humble/local/lib/python3.10/dist-packages/**"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"./install/srv_demo/local/lib/python3.10/dist-packages/**"</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p><img src="/assets/pics/ROS2_BASIC/3_srv_py_vscode_config.png" alt="配置vscode的Python环境" /></p>
+
+<ol>
+  <li>编写Python服务端节点文件：</li>
+</ol>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">rclpy</span>
+<span class="kn">from</span> <span class="n">rclpy.node</span> <span class="kn">import</span> <span class="n">Node</span>
+
+<span class="c1"># 1. 导入包，其中的类名等于服务文件名称
+</span><span class="kn">from</span> <span class="n">srv_demo.srv</span> <span class="kn">import</span> <span class="n">AddInt</span>
+
+<span class="c1"># 2. 定义服务端节点
+</span><span class="k">class</span> <span class="nc">PythonSrvServer</span><span class="p">(</span><span class="n">Node</span><span class="p">):</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="n">self</span><span class="p">):</span>
+        <span class="nf">super</span><span class="p">().</span><span class="nf">__init__</span><span class="p">(</span><span class="sh">'</span><span class="s">pythonSrvServerNode</span><span class="sh">'</span><span class="p">)</span>
+        <span class="c1"># 2.1 创建服务端
+</span>        <span class="n">self</span><span class="p">.</span><span class="n">srver_</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="nf">create_service</span><span class="p">(</span><span class="n">AddInt</span><span class="p">,</span> <span class="sh">'</span><span class="s">mySrvName</span><span class="sh">'</span><span class="p">,</span> <span class="n">self</span><span class="p">.</span><span class="n">addIntFunc</span><span class="p">)</span>
+        <span class="n">self</span><span class="p">.</span><span class="nf">get_logger</span><span class="p">().</span><span class="nf">info</span><span class="p">(</span><span class="sh">"</span><span class="s">Server is starting ...</span><span class="sh">"</span><span class="p">)</span>
+
+    <span class="c1"># 2.2 服务端的处理回调函数
+</span>    <span class="k">def</span> <span class="nf">addIntFunc</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">request</span><span class="p">:</span><span class="n">AddInt</span><span class="p">,</span> <span class="n">response</span><span class="p">:</span><span class="n">AddInt</span><span class="p">):</span>
+        <span class="n">response</span><span class="p">.</span><span class="nb">sum</span> <span class="o">=</span> <span class="n">request</span><span class="p">.</span><span class="n">num1</span> <span class="o">+</span> <span class="n">request</span><span class="p">.</span><span class="n">num2</span>
+        <span class="n">self</span><span class="p">.</span><span class="nf">get_logger</span><span class="p">().</span><span class="nf">info</span><span class="p">(</span><span class="sh">'</span><span class="s">The request is :{} {},Response is :{}</span><span class="sh">'</span><span class="p">.</span><span class="nf">format</span><span class="p">(</span><span class="n">request</span><span class="p">.</span><span class="n">num1</span><span class="p">,</span> <span class="n">request</span><span class="p">.</span><span class="n">num2</span><span class="p">,</span> <span class="n">response</span><span class="p">.</span><span class="nb">sum</span><span class="p">))</span>
+        <span class="k">return</span> <span class="n">response</span>
+
+
+<span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+    <span class="n">rclpy</span><span class="p">.</span><span class="nf">init</span><span class="p">()</span>
+    <span class="n">pythonSrvServerNode</span> <span class="o">=</span> <span class="nc">PythonSrvServer</span><span class="p">()</span>
+    <span class="n">rclpy</span><span class="p">.</span><span class="nf">spin</span><span class="p">(</span><span class="n">pythonSrvServerNode</span><span class="p">)</span>
+    <span class="n">rclpy</span><span class="p">.</span><span class="nf">shutdown</span><span class="p">()</span>
+
+
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="sh">'</span><span class="s">__main__</span><span class="sh">'</span><span class="p">:</span>
+    <span class="nf">main</span><span class="p">()</span>
+</code></pre></div></div>
+
+<h2 id="342-配置python服务通讯服务端功能包">3.4.2 配置Python服务通讯服务端功能包</h2>
+
+<ol>
+  <li>配置<code class="language-plaintext highlighter-rouge">packages.xml</code>增加<code class="language-plaintext highlighter-rouge">rclpy</code>和<code class="language-plaintext highlighter-rouge">srv_demo</code>两个依赖项，注意Python本身是可执行文件，因此它的为<code class="language-plaintext highlighter-rouge">&lt;exec_depend&gt;</code>与<code class="language-plaintext highlighter-rouge">C/C++</code>的<code class="language-plaintext highlighter-rouge">&lt;depend&gt;</code>关键字不同：</li>
+</ol>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0"?&gt;</span>
+<span class="cp">&lt;?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?&gt;</span>
+<span class="nt">&lt;package</span> <span class="na">format=</span><span class="s">"3"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;name&gt;</span>python_srv_server<span class="nt">&lt;/name&gt;</span>
+  <span class="nt">&lt;version&gt;</span>0.0.0<span class="nt">&lt;/version&gt;</span>
+  <span class="nt">&lt;description&gt;</span>TODO: Package description<span class="nt">&lt;/description&gt;</span>
+  <span class="nt">&lt;maintainer</span> <span class="na">email=</span><span class="s">"pldz@R7000.com"</span><span class="nt">&gt;</span>pldz<span class="nt">&lt;/maintainer&gt;</span>
+  <span class="nt">&lt;license&gt;</span>TODO: License declaration<span class="nt">&lt;/license&gt;</span>
+
+  <span class="c">&lt;!-- 添加依赖项的包，注意是exec_depend --&gt;</span>
+  <span class="nt">&lt;exec_depend&gt;</span>rclpy<span class="nt">&lt;/exec_depend&gt;</span>
+  <span class="nt">&lt;exec_depend&gt;</span>srv_demo<span class="nt">&lt;/exec_depend&gt;</span>
+
+  <span class="nt">&lt;test_depend&gt;</span>ament_copyright<span class="nt">&lt;/test_depend&gt;</span>
+  <span class="nt">&lt;test_depend&gt;</span>ament_flake8<span class="nt">&lt;/test_depend&gt;</span>
+  <span class="nt">&lt;test_depend&gt;</span>ament_pep257<span class="nt">&lt;/test_depend&gt;</span>
+  <span class="nt">&lt;test_depend&gt;</span>python3-pytest<span class="nt">&lt;/test_depend&gt;</span>
+
+  <span class="nt">&lt;export&gt;</span>
+    <span class="nt">&lt;build_type&gt;</span>ament_python<span class="nt">&lt;/build_type&gt;</span>
+  <span class="nt">&lt;/export&gt;</span>
+<span class="nt">&lt;/package&gt;</span>
+
+</code></pre></div></div>
+
+<ol>
+  <li>配置<code class="language-plaintext highlighter-rouge">setup.py</code>文件，事实上，我们已经创建包的时候已经指定了节点名，其实应该是不用配置生成节点的<code class="language-plaintext highlighter-rouge">main</code>入口的：</li>
+</ol>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="n">setuptools</span> <span class="kn">import</span> <span class="n">setup</span>
+
+<span class="n">package_name</span> <span class="o">=</span> <span class="sh">'</span><span class="s">python_srv_server</span><span class="sh">'</span>
+
+<span class="nf">setup</span><span class="p">(</span>
+    <span class="n">name</span><span class="o">=</span><span class="n">package_name</span><span class="p">,</span>
+    <span class="n">version</span><span class="o">=</span><span class="sh">'</span><span class="s">0.0.0</span><span class="sh">'</span><span class="p">,</span>
+    <span class="n">packages</span><span class="o">=</span><span class="p">[</span><span class="n">package_name</span><span class="p">],</span>
+    <span class="n">data_files</span><span class="o">=</span><span class="p">[</span>
+        <span class="p">(</span><span class="sh">'</span><span class="s">share/ament_index/resource_index/packages</span><span class="sh">'</span><span class="p">,</span>
+            <span class="p">[</span><span class="sh">'</span><span class="s">resource/</span><span class="sh">'</span> <span class="o">+</span> <span class="n">package_name</span><span class="p">]),</span>
+        <span class="p">(</span><span class="sh">'</span><span class="s">share/</span><span class="sh">'</span> <span class="o">+</span> <span class="n">package_name</span><span class="p">,</span> <span class="p">[</span><span class="sh">'</span><span class="s">package.xml</span><span class="sh">'</span><span class="p">]),</span>
+    <span class="p">],</span>
+    <span class="n">install_requires</span><span class="o">=</span><span class="p">[</span><span class="sh">'</span><span class="s">setuptools</span><span class="sh">'</span><span class="p">],</span>
+    <span class="n">zip_safe</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span>
+    <span class="n">maintainer</span><span class="o">=</span><span class="sh">'</span><span class="s">pldz</span><span class="sh">'</span><span class="p">,</span>
+    <span class="n">maintainer_email</span><span class="o">=</span><span class="sh">'</span><span class="s">pldz@R7000.com</span><span class="sh">'</span><span class="p">,</span>
+    <span class="n">description</span><span class="o">=</span><span class="sh">'</span><span class="s">TODO: Package description</span><span class="sh">'</span><span class="p">,</span>
+    <span class="n">license</span><span class="o">=</span><span class="sh">'</span><span class="s">TODO: License declaration</span><span class="sh">'</span><span class="p">,</span>
+    <span class="n">tests_require</span><span class="o">=</span><span class="p">[</span><span class="sh">'</span><span class="s">pytest</span><span class="sh">'</span><span class="p">],</span>
+    <span class="c1"># 配置节点main函数入口
+</span>    <span class="n">entry_points</span><span class="o">=</span><span class="p">{</span>
+        <span class="sh">'</span><span class="s">console_scripts</span><span class="sh">'</span><span class="p">:</span> <span class="p">[</span>
+            <span class="sh">'</span><span class="s">pythonSrvServerNode = python_srv_server.pythonSrvServerNode:main</span><span class="sh">'</span>
+        <span class="p">],</span>
+    <span class="p">},</span>
+<span class="p">)</span>
+
+</code></pre></div></div>
+
+<h2 id="343-编译并运行python服务通讯服务端功能包">3.4.3 编译并运行Python服务通讯服务端功能包</h2>
+
+<ol>
+  <li>
+    <p>编译：<code class="language-plaintext highlighter-rouge">colcon build --packages-select python_srv_server</code></p>
+  </li>
+  <li>
+    <p>激活环境：<code class="language-plaintext highlighter-rouge">. install/setup.bash</code></p>
+  </li>
+  <li>
+    <p>运行节点：<code class="language-plaintext highlighter-rouge">ros2 run python_srv_server pythonSrvServerNode</code></p>
+  </li>
+</ol>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pldz@pldz-pc:~/share/ROS2_DEMO/3_Chapter/code<span class="nv">$ </span>colcon build <span class="nt">--packages-select</span> python_srv_server
+Starting <span class="o">&gt;&gt;&gt;</span> python_srv_server
+<span class="nt">---</span> stderr: python_srv_server                   
+/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py <span class="nb">install </span>is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn<span class="o">(</span>
+<span class="nt">---</span>
+Finished <span class="o">&lt;&lt;&lt;</span> python_srv_server <span class="o">[</span>2.18s]
+
+Summary: 1 package finished <span class="o">[</span>2.71s]
+  1 package had stderr output: python_srv_server
+pldz@pldz-pc:~/share/ROS2_DEMO/3_Chapter/code<span class="nv">$ </span><span class="nb">.</span> <span class="nb">install</span>/setup.bash 
+pldz@pldz-pc:~/share/ROS2_DEMO/3_Chapter/code<span class="nv">$ </span>ros2 run python_srv_server pythonSrvServerNode 
+<span class="o">[</span>INFO] <span class="o">[</span>1683157866.794236460] <span class="o">[</span>pythonSrvServerNode]: Server is starting ...
+</code></pre></div></div>
+
+<h2 id="334-创建python服务通讯客户端功能包并编写节点文件">3.3.4 创建Python服务通讯客户端功能包并编写节点文件</h2>
+
+<ol>
+  <li>
+    <p>创建Python功能包时，包名为<code class="language-plaintext highlighter-rouge">python_srv_client</code>，节点名为<code class="language-plaintext highlighter-rouge">pythonSrvClientNode</code>，直接指定依赖项<code class="language-plaintext highlighter-rouge">rclpy</code>和<code class="language-plaintext highlighter-rouge">srv_demo</code>：<code class="language-plaintext highlighter-rouge">ros2 pkg create python_srv_client --build-type ament_python --node-name pythonSrvClientNode --dependencies rclpy srv_demo</code></p>
+  </li>
+  <li>
+    <p>编写节点：主要是统一节点的订阅话题，异步接收返回的结果</p>
+  </li>
+</ol>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">sys</span>
+<span class="kn">import</span> <span class="n">rclpy</span>
+<span class="kn">from</span> <span class="n">rclpy.node</span> <span class="kn">import</span> <span class="n">Node</span>
+<span class="c1"># 1. 导入包
+</span><span class="kn">from</span> <span class="n">srv_demo.srv</span> <span class="kn">import</span> <span class="n">AddInt</span>
+
+<span class="c1"># 2.定义客户端节点
+</span><span class="k">class</span> <span class="nc">pythonSrvClient</span><span class="p">(</span><span class="n">Node</span><span class="p">):</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="n">self</span><span class="p">):</span>
+        <span class="c1"># 2.1 继承node节点，节点名为pythonSrvClientNode
+</span>        <span class="nf">super</span><span class="p">().</span><span class="nf">__init__</span><span class="p">(</span><span class="sh">'</span><span class="s">pythonSrvClientNode</span><span class="sh">'</span><span class="p">)</span>
+        <span class="c1"># 2.2 创建客户端
+</span>        <span class="n">self</span><span class="p">.</span><span class="n">client_</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="nf">create_client</span><span class="p">(</span><span class="n">AddInt</span><span class="p">,</span> <span class="sh">'</span><span class="s">mySrvName</span><span class="sh">'</span><span class="p">)</span>
+        <span class="c1"># 2.3 等待连接
+</span>        <span class="n">self</span><span class="p">.</span><span class="nf">wait_for_connect</span><span class="p">()</span>
+
+
+    <span class="c1"># 3. 实现等待函数
+</span>    <span class="k">def</span> <span class="nf">wait_for_connect</span><span class="p">(</span><span class="n">self</span><span class="p">):</span>
+        <span class="k">while</span> <span class="ow">not</span> <span class="n">self</span><span class="p">.</span><span class="n">client_</span><span class="p">.</span><span class="nf">wait_for_service</span><span class="p">(</span><span class="n">timeout_sec</span><span class="o">=</span><span class="mf">1.0</span><span class="p">):</span>
+            <span class="n">self</span><span class="p">.</span><span class="nf">get_logger</span><span class="p">().</span><span class="nf">info</span><span class="p">(</span><span class="sh">'</span><span class="s">Waiting for connect ...</span><span class="sh">'</span><span class="p">)</span>
+
+    <span class="c1"># 4. 实现发送请求函数
+</span>    <span class="k">def</span> <span class="nf">send_request</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">num1</span><span class="p">,</span> <span class="n">num2</span><span class="p">):</span>
+        <span class="n">request</span> <span class="o">=</span> <span class="n">AddInt</span><span class="p">.</span><span class="nc">Request</span><span class="p">()</span>
+        <span class="n">request</span><span class="p">.</span><span class="n">num1</span> <span class="o">=</span> <span class="n">num1</span>
+        <span class="n">request</span><span class="p">.</span><span class="n">num2</span> <span class="o">=</span> <span class="n">num2</span>
+        <span class="n">self</span><span class="p">.</span><span class="n">future</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="n">client_</span><span class="p">.</span><span class="nf">call_async</span><span class="p">(</span><span class="n">request</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+    <span class="n">rclpy</span><span class="p">.</span><span class="nf">init</span><span class="p">()</span>
+    <span class="c1"># 5.创建客户端节点
+</span>    <span class="n">pythonSrvClientNode</span> <span class="o">=</span> <span class="nf">pythonSrvClient</span><span class="p">()</span>
+    <span class="n">pythonSrvClientNode</span><span class="p">.</span><span class="nf">send_request</span><span class="p">(</span><span class="mi">200</span><span class="p">,</span><span class="mi">300</span><span class="p">)</span>
+
+    <span class="c1"># 6. 等待响应
+</span>    <span class="n">rclpy</span><span class="p">.</span><span class="nf">spin_until_future_complete</span><span class="p">(</span><span class="n">pythonSrvClientNode</span><span class="p">,</span><span class="n">pythonSrvClientNode</span><span class="p">.</span><span class="n">future</span><span class="p">)</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">response</span> <span class="o">=</span> <span class="n">pythonSrvClientNode</span><span class="p">.</span><span class="n">future</span><span class="p">.</span><span class="nf">result</span><span class="p">()</span>
+    <span class="k">except</span> <span class="nb">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="n">pythonSrvClientNode</span><span class="p">.</span><span class="nf">get_logger</span><span class="p">().</span><span class="nf">info</span><span class="p">(</span><span class="sh">'</span><span class="s">Request error  {}</span><span class="sh">'</span><span class="p">.</span><span class="nf">format</span><span class="p">(</span><span class="n">e</span><span class="p">))</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">pythonSrvClientNode</span><span class="p">.</span><span class="nf">get_logger</span><span class="p">().</span><span class="nf">info</span><span class="p">(</span>
+            <span class="sh">'</span><span class="s">Response is {}</span><span class="sh">'</span><span class="p">.</span><span class="nf">format</span><span class="p">(</span><span class="n">response</span><span class="p">.</span><span class="nb">sum</span><span class="p">))</span>
+
+    <span class="n">rclpy</span><span class="p">.</span><span class="nf">shutdown</span><span class="p">()</span>
+
+
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="sh">'</span><span class="s">__main__</span><span class="sh">'</span><span class="p">:</span>
+    <span class="nf">main</span><span class="p">()</span>
+</code></pre></div></div>
+
+<h2 id="345-编译并运行python服务通讯客户端节点">3.4.5 编译并运行Python服务通讯客户端节点</h2>
+
+<ol>
+  <li>
+    <p>由于指定了依赖项，直接编译即可: <code class="language-plaintext highlighter-rouge">colcon build --packages-select python_srv_client</code></p>
+  </li>
+  <li>
+    <p>激活环境: <code class="language-plaintext highlighter-rouge">. install/setup.bash</code></p>
+  </li>
+  <li>
+    <p>运行所有节点：</p>
+  </li>
+</ol>
+
+<p><img src="/assets/pics/ROS2_BASIC/3_py_srv_result.png" alt="运行所有节点" /></p>
+
+<h1 id="35-服务通讯小结">3.5 服务通讯小结</h1>
+
+<ul>
+  <li>
+    <ol>
+      <li>创建功能包时，如果能够直接指定节点名和依赖项，可以省去很大部分的配置工作</li>
+    </ol>
+  </li>
+  <li>
+    <ol>
+      <li>C/C++手动配置功能包时，<code class="language-plaintext highlighter-rouge">packages.xml</code>配置依赖项，<code class="language-plaintext highlighter-rouge">CMakeLists.txt</code>配置编译的内容，包括<code class="language-plaintext highlighter-rouge">find_package</code>；<code class="language-plaintext highlighter-rouge">add_executable</code>；<code class="language-plaintext highlighter-rouge">target_include_directories</code>；<code class="language-plaintext highlighter-rouge">ament_target_dependencies</code>；<code class="language-plaintext highlighter-rouge">install</code>；<code class="language-plaintext highlighter-rouge">ament_package</code>这六个部分</li>
+    </ol>
+  </li>
+  <li>
+    <ol>
+      <li>Python手动配置功能包时，<code class="language-plaintext highlighter-rouge">packages.xml</code>配置可执行的依赖项<code class="language-plaintext highlighter-rouge">exec_depend</code>而不是<code class="language-plaintext highlighter-rouge">depend</code>,并且在<code class="language-plaintext highlighter-rouge">setup.py</code>中主要配置节点的<code class="language-plaintext highlighter-rouge">main</code>函数入口</li>
+    </ol>
+  </li>
+  <li>
+    <ol>
+      <li>服务通讯的导入本质是创建一个C/C++的功能包，将里面的自定义消息编译成可以使用的<code class="language-plaintext highlighter-rouge">.c</code>和<code class="language-plaintext highlighter-rouge">.py</code>文件，值得注意的是，生成好的中间文件是存放在 <strong>工作空间</strong>的<code class="language-plaintext highlighter-rouge">install</code>文件夹下，如果这个这个工作空间的<code class="language-plaintext highlighter-rouge">install</code>找不到或者不是一个，那是需要再进一步的手动配置的</li>
+    </ol>
+  </li>
+  <li>
+    <ol>
+      <li>服务通讯的请求响应是这里是异步实现的，即客户端需要等待服务端返回的结果，才能判断是否完成接收</li>
+    </ol>
+  </li>
+</ul>
+</section>
+            </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div></div>
+    </div>
+</div>
+
+<!-- introduce mathjax support -->
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [ ['$', '$'], ['\\(', '\\)'] ]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script
+  type="text/javascript" id="MathJax-script" async
+  src="/assets/js/tex-chtml.js">
+</script>
+
+
+<!-- introduce per-page mermaid support -->
+
+
+<!-- introduce mathjax support -->
+<script>
+    function fixes_chrome_anchors() {
+        let chrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+        if (window.location.hash && chrome) {
+            setTimeout(function () {
+                var hash = window.location.hash;
+                window.location.hash = "";
+                window.location.hash = hash;
+            }, 300);
+        }
+    }
+
+    if (document.readyState === "loading") {
+        // Loading hasn't finished yet
+        document.addEventListener("DOMContentLoaded", fixes_chrome_anchors);
+    } else {
+        // `DOMContentLoaded` has already fired
+        fixes_chrome_anchors();
+    }
+</script>
+
+
+                        <a href="/ros2_basic/2023-02-03-2_2_ROS2%E8%AF%9D%E9%A2%98%E9%80%9A%E8%AE%AF%E6%8F%90%E5%8D%87.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 2 ROS2话题通讯 - 话题通讯进阶">
+                            <i class="fa fa-angle-left"></i>
+                        </a>
+                    
+
+                    
+                        <a href="/ros2_basic/2023-02-05-4_1_ROS2%E5%8F%82%E6%95%B0%E6%9C%8D%E5%8A%A1%E5%99%A8.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 4 ROS2节点参数基础">
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                    
+                </div>
+            </div>
+
+            <script>
+            var gitbook = gitbook || [];
+            gitbook.push(function() {
+                gitbook.page.hasChanged({
+    "page": {
+        "title": "Introduction",
+        "level": "1.1",
+        "depth": 1,
+        
+        "next": {
+            "title": "4 ROS2节点参数基础",
+            "level": "1.2",
+            "depth": 1,
+            "path": "_posts/ROS2_BASIC/2023-02-05-4_1_ROS2参数服务器.md",
+            "ref": "_posts/ROS2_BASIC/2023-02-05-4_1_ROS2参数服务器.md",
+            "articles": []
+        },
+        
+        "dir": "ltr"
+    },    "config": {
+        "plugins": ["fontsettings", "highlight", "livereload", "lunr", "search", "sharing", "theme-default", "livereload"],
+        "styles": {
+            "ebook": "styles/ebook.css",
+            "epub": "styles/epub.css",
+            "mobi": "styles/mobi.css",
+            "pdf": "styles/pdf.css",
+            "print": "styles/print.css",
+            "website": "styles/website.css"
+        },
+        "pluginsConfig": {
+            "expandable-chapter-small2": {
+                "articlesExpand": true,
+            },
+            "fontsettings": {
+                "family": "sans",
+                "size": 2,
+                "theme": "white"
+            },
+            "highlight": {},
+            "livereload": {},
+            "lunr": {
+                "ignoreSpecialCharacters": false,
+                "maxIndexSize": 1000000
+            },
+            "search": {},            "sharing": {},
+"theme-default": {
+                "showLevel": false,
+                "styles": {
+                    "ebook": "styles/ebook.css",
+                    "epub": "styles/epub.css",
+                    "mobi": "styles/mobi.css",
+                    "pdf": "styles/pdf.css",
+                    "print": "styles/print.css",
+                    "website": "styles/website.css"
+                }
+            },
+        },
+        "theme": "default",
+        "author": "Tao He",
+        "pdf": {
+            "pageNumbers": true,
+            "fontSize": 12,
+            "fontFamily": "Arial",
+            "paperSize": "a4",
+            "chapterMark": "pagebreak",
+            "pageBreaksBefore": "/",
+            "margin": {
+                "right": 62,
+                "left": 62,
+                "top": 56,
+                "bottom": 56
+            }
+        },
+        "structure": {
+            "langs": "LANGS.md",
+            "readme": "README.md",
+        },
+        "variables": {},
+        "title": "Blogs",
+        "language": "en",
+        "gitbook": "*"
+    },
+    "file": {
+        "path": "_posts/ROS2_BASIC/2023-02-04-3_1_ROS2服务通讯.md",
+        "mtime": "2023-02-04 00:00:00 +0800",
+        "type": "markdown"
+    },
+    "gitbook": {
+        "version": "3.2.3",
+        "time": "2024-11-23 17:20:01 +0800"
+    },
+    "basePath": "",
+    "book": {
+        "language": ""
+    }
+});
+            });
+            </script>
+        </div><script src="/assets/gitbook/gitbook.js"></script>
+<script src="/assets/gitbook/theme.js"></script>
+
+<script src="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-search-pro/search.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-sharing/buttons.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-splitter/splitter.js"></script>
+
+<!--
+<script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+<script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+<script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+<script src="../gitbook/gitbook-plugin-search/search.js"></script>
+-->
+
+<script src="/assets/gitbook/custom.js"></script>
+<script src="/assets/gitbook/custom-local.js"></script>
+
+</body>
+</html>

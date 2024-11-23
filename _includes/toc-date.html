@@ -1,0 +1,63 @@
+<div class="book-summary">
+    <script type="text/javascript">
+        // Fixes the page links scroll problem on both desktop and mobile browsers
+        function pageScrollToTop(element) {
+            // both mobile and non-mobile
+            $('div.body-inner').animate({scrollTop: 0});
+            $(element).parent().find('li>ul>li').removeClass('active');
+            return true;
+        }
+
+    </script>
+
+    <nav role="navigation" style="height: 100%;">
+        <!-- Search Input -->
+        <div id="book-search-input" role="search">
+            <input type="text" placeholder="Type to search" />
+        </div>
+        <div id="book-search-input-link" role="search">
+            <a href="{{site.baseurl}}/assets/search.html">Click to Search</a>
+        </div>
+
+        <div class="book-base-title" data-path="{{site.baseurl}}">
+            <a href="{{site.baseurl}}/" onclick="pageScrollToTop(this)">
+                爬楼的猪 {{site.title | escape}}
+            </a>
+        </div>
+
+        <!-- Book Summary Navigation -->
+        <ul class="summary" id="book-summary-core" data-scroll-top="0">
+            <!-- Loop through collections and posts by category -->
+            {% assign categories = site.posts | map: "category" | uniq %}
+            {% for category in categories %}
+            <li class="chapter category-header" id="category-header-{{category}}">
+                <a href="javascript:void(0)">
+                    {{category}}
+                </a>
+                <ul class="category-list" id="category-list-{{category | escape}}">
+                    {% assign posts_in_category = site.posts | where: "category", category | sort: 'date' %}
+                    {% for post in posts_in_category %}
+                    <li class="chapter {% if page.url == post.url %}active{% endif %}"
+                        data-path="{{site.baseurl}}{{post.url}}">
+                        <a href="{{site.baseurl}}{{post.url}}" onclick="pageScrollToTop(this)">
+                            {{post.title | escape}}
+                        </a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </li>
+            {% endfor %}
+        </ul>
+
+
+        <!-- Page Content and TOC -->
+        <div class="page-content-category">
+            <div class="page-content-title">Navigation of <span>{{page.title}}</span></div>
+            <ul class="page-content">
+                {% if site.toc.enabled %}
+                {% include toc.html html=content h_min=site.toc.h_min h_max=site.toc.h_max %}
+                {% endif %}
+            </ul>
+        </div> 
+    </nav>
+</div>

@@ -1,0 +1,922 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head><meta charset="UTF-8">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>4 MircoROS 初步体验 · Blogs</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="description" content="Build Jekyll site with the GitBook style.
+"><meta name="generator" content="Jekyll (using style of GitBook 3.2.3)"><meta name="author" content="pldz9"><link rel="stylesheet" href="/assets/gitbook/style.css">
+<link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+<link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">
+<link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-fontsettings/website.css">
+<link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-search-pro/search.css">
+<link rel="stylesheet" href="/assets/gitbook/gitbook-plugin-splitter/splitter.css">
+
+<link rel="stylesheet" href="/assets/gitbook/rouge/thankful_eyes.css">
+
+<link rel="stylesheet" href="/assets/gitbook/custom.css">
+<link rel="stylesheet" href="/assets/gitbook/custom-local.css">
+
+<meta name="HandheldFriendly" content="true"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/gitbook/images/apple-touch-icon-precomposed-152.png">
+<link rel="shortcut icon" href="/assets/gitbook/images/favicon.ico" type="image/x-icon">
+
+
+
+
+            <link rel="prev" href="/ros2_micro/2023-04-03-3_1_ROS2_Arduino_demo.html" />
+        
+
+        
+            <link rel="next" href="/ros2_car/2023-06-01-1_1_docker%E5%91%BD%E4%BB%A4%E7%86%9F%E6%82%89.html" />
+        
+    </head>
+    <body>
+        <div class="book"><div class="book-summary">
+    <script type="text/javascript">
+        // Fixes the page links scroll problem on both desktop and mobile browsers
+        function pageScrollToTop(element) {
+            // both mobile and non-mobile
+            $('div.body-inner').animate({scrollTop: 0});
+            $(element).parent().find('li>ul>li').removeClass('active');
+            return true;
+        }
+
+    </script>
+
+    <nav role="navigation" style="height: 100%;">
+        <!-- Search Input -->
+        <div id="book-search-input" role="search">
+            <input type="text" placeholder="Type to search" />
+        </div>
+        <div id="book-search-input-link" role="search">
+            <a href="/assets/search.html">Click to Search</a>
+        </div>
+
+        <div class="book-base-title" data-path="">
+            <a href="/" onclick="pageScrollToTop(this)">
+                爬楼的猪 Blogs
+            </a>
+        </div>
+
+        <!-- Book Summary Navigation -->
+        <ul class="summary" id="book-summary-core" data-scroll-top="0">
+            <!-- Loop through collections and posts by category -->
+            
+            
+            <li class="chapter category-header" id="category-header-ROS2_CAR">
+                <a href="javascript:void(0)">
+                    ROS2_CAR
+                </a>
+                <ul class="category-list" id="category-list-ROS2_CAR">
+                    
+                    
+                    <li class="chapter "
+                        data-path="/ros2_car/2023-01-03-ABOUT.html">
+                        <a href="/ros2_car/2023-01-03-ABOUT.html" onclick="pageScrollToTop(this)">
+                            ABOUT
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/ros2_car/2023-06-01-1_1_docker%E5%91%BD%E4%BB%A4%E7%86%9F%E6%82%89.html">
+                        <a href="/ros2_car/2023-06-01-1_1_docker%E5%91%BD%E4%BB%A4%E7%86%9F%E6%82%89.html" onclick="pageScrollToTop(this)">
+                            1 Docker 搭建 ROS2 嵌入式运行环境
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/ros2_car/2023-06-02-2_1_%E9%80%9A%E8%BF%87Turtlebot3%E6%A1%88%E4%BE%8B%E4%BA%86%E8%A7%A3NAVI2.html">
+                        <a href="/ros2_car/2023-06-02-2_1_%E9%80%9A%E8%BF%87Turtlebot3%E6%A1%88%E4%BE%8B%E4%BA%86%E8%A7%A3NAVI2.html" onclick="pageScrollToTop(this)">
+                            2 通过 Turtlebot3 案例了解 NAVI2
+                        </a>
+                    </li>
+                    
+                </ul>
+            </li>
+            
+            <li class="chapter category-header" id="category-header-ROS2_MICRO">
+                <a href="javascript:void(0)">
+                    ROS2_MICRO
+                </a>
+                <ul class="category-list" id="category-list-ROS2_MICRO">
+                    
+                    
+                    <li class="chapter "
+                        data-path="/ros2_micro/2023-01-02-ABOUT.html">
+                        <a href="/ros2_micro/2023-01-02-ABOUT.html" onclick="pageScrollToTop(this)">
+                            ABOUT
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/ros2_micro/2023-04-01-1_1_ROS2_Arduino.html">
+                        <a href="/ros2_micro/2023-04-01-1_1_ROS2_Arduino.html" onclick="pageScrollToTop(this)">
+                            1 ROS2 和 Arduino 通讯
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/ros2_micro/2023-04-02-2_1_Arduino%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95.html">
+                        <a href="/ros2_micro/2023-04-02-2_1_Arduino%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95.html" onclick="pageScrollToTop(this)">
+                            2 Arduino 的基本语法
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/ros2_micro/2023-04-03-3_1_ROS2_Arduino_demo.html">
+                        <a href="/ros2_micro/2023-04-03-3_1_ROS2_Arduino_demo.html" onclick="pageScrollToTop(this)">
+                            3 ROS2 和 arduino 通讯
+                        </a>
+                    </li>
+                    
+                    <li class="chapter active"
+                        data-path="/ros2_micro/2023-04-04-4_1_MicroROS%E5%88%9D%E6%AD%A5%E4%BD%93%E9%AA%8C.html">
+                        <a href="/ros2_micro/2023-04-04-4_1_MicroROS%E5%88%9D%E6%AD%A5%E4%BD%93%E9%AA%8C.html" onclick="pageScrollToTop(this)">
+                            4 MircoROS 初步体验
+                        </a>
+                    </li>
+                    
+                </ul>
+            </li>
+            
+            <li class="chapter category-header" id="category-header-ROS2_BASIC">
+                <a href="javascript:void(0)">
+                    ROS2_BASIC
+                </a>
+                <ul class="category-list" id="category-list-ROS2_BASIC">
+                    
+                    
+                    <li class="chapter "
+                        data-path="/ros2_basic/2023-01-01-ABOUT.html">
+                        <a href="/ros2_basic/2023-01-01-ABOUT.html" onclick="pageScrollToTop(this)">
+                            ABOUT
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/ros2_basic/2023-02-01-1_1_Ubuntu%E9%85%8D%E7%BD%AE%E4%B8%8EROS2%E5%BF%AB%E9%80%9F%E4%BD%93%E9%AA%8C.html">
+                        <a href="/ros2_basic/2023-02-01-1_1_Ubuntu%E9%85%8D%E7%BD%AE%E4%B8%8EROS2%E5%BF%AB%E9%80%9F%E4%BD%93%E9%AA%8C.html" onclick="pageScrollToTop(this)">
+                            1 Ubuntu配置与ROS2快速体验
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/ros2_basic/2023-02-02-2_1_ROS2%E8%AF%9D%E9%A2%98%E9%80%9A%E8%AE%AF%E5%9F%BA%E7%A1%80.html">
+                        <a href="/ros2_basic/2023-02-02-2_1_ROS2%E8%AF%9D%E9%A2%98%E9%80%9A%E8%AE%AF%E5%9F%BA%E7%A1%80.html" onclick="pageScrollToTop(this)">
+                            2 ROS2话题通讯 - 话题通讯基础
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/ros2_basic/2023-02-03-2_2_ROS2%E8%AF%9D%E9%A2%98%E9%80%9A%E8%AE%AF%E6%8F%90%E5%8D%87.html">
+                        <a href="/ros2_basic/2023-02-03-2_2_ROS2%E8%AF%9D%E9%A2%98%E9%80%9A%E8%AE%AF%E6%8F%90%E5%8D%87.html" onclick="pageScrollToTop(this)">
+                            2 ROS2话题通讯 - 话题通讯进阶
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/ros2_basic/2023-02-04-3_1_ROS2%E6%9C%8D%E5%8A%A1%E9%80%9A%E8%AE%AF.html">
+                        <a href="/ros2_basic/2023-02-04-3_1_ROS2%E6%9C%8D%E5%8A%A1%E9%80%9A%E8%AE%AF.html" onclick="pageScrollToTop(this)">
+                            3 ROS2服务通讯基础
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/ros2_basic/2023-02-05-4_1_ROS2%E5%8F%82%E6%95%B0%E6%9C%8D%E5%8A%A1%E5%99%A8.html">
+                        <a href="/ros2_basic/2023-02-05-4_1_ROS2%E5%8F%82%E6%95%B0%E6%9C%8D%E5%8A%A1%E5%99%A8.html" onclick="pageScrollToTop(this)">
+                            4 ROS2节点参数基础
+                        </a>
+                    </li>
+                    
+                </ul>
+            </li>
+            
+            <li class="chapter category-header" id="category-header-Others">
+                <a href="javascript:void(0)">
+                    Others
+                </a>
+                <ul class="category-list" id="category-list-Others">
+                    
+                    
+                    <li class="chapter "
+                        data-path="/others/2022-01-01-ABOUT.html">
+                        <a href="/others/2022-01-01-ABOUT.html" onclick="pageScrollToTop(this)">
+                            ABOUT
+                        </a>
+                    </li>
+                    
+                    <li class="chapter "
+                        data-path="/others/2022-01-02-VSCode%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE.html">
+                        <a href="/others/2022-01-02-VSCode%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE.html" onclick="pageScrollToTop(this)">
+                            VSCode相关配置
+                        </a>
+                    </li>
+                    
+                </ul>
+            </li>
+            
+        </ul>
+
+
+        <!-- Page Content and TOC -->
+        <div class="page-content-category">
+            <div class="page-content-title">Navigation of <span>4 MircoROS 初步体验</span></div>
+            <ul class="page-content">
+                
+                <ul><li><a href="#41-在-linux-平台上快速体验-mircoros" onclick="mobilePageScrollToAnchor(this)" >4.1 在 Linux 平台上快速体验 MircoROS</a><ul><li><a href="#411-下载官网的代码" onclick="mobilePageScrollToAnchor(this)" >4.1.1 下载官网的代码</a></li><li><a href="#411-创建-mirco-ros-fireware-workspace" onclick="mobilePageScrollToAnchor(this)" >4.1.1 创建 mirco-ros fireware workspace</a></li><li><a href="#413-体验-microros-的发布和订阅" onclick="mobilePageScrollToAnchor(this)" >4.1.3 体验 MicroROS 的发布和订阅</a></li></ul></li><li><a href="#42-使用-esp32-发布话题-体验-mircoros-的通讯" onclick="mobilePageScrollToAnchor(this)" >4.2 使用 ESP32 发布话题 体验 MircoROS 的通讯</a></li></ul>
+
+                
+            </ul>
+        </div> 
+    </nav>
+</div><div class="book-body">
+                <div class="book-header" role="navigation">
+                    <!-- Title -->
+                    <h1>
+                      4 MircoROS 初步体验
+                    </h1>
+                </div>
+
+                <div class="body-inner"><div class="page-wrapper" tabindex="-1" role="main">
+    
+
+    <div class="page-inner">
+        <div id="book-search-results">
+            <div class="search-noresults">
+                <section class="normal markdown-section">
+                    
+                        <h1 id="/ros2_micro/4_1_MicroROS初步体验">4 MircoROS 初步体验</h1>
+                    
+
+                    <blockquote>
+  <p>这里还是强烈推荐使用 ros2 humble 也就是 Ubuntu22.04 的默认版本，如果大家是其他版本的，建议使用 docker 来模拟 micro ros 环境<code class="language-plaintext highlighter-rouge">sudo docker run -it --net=host -v /dev:/dev --privileged ros:humble</code></p>
+</blockquote>
+
+<blockquote>
+  <p>参考内容
+<a href="https://micro.ros.org/docs/tutorials/core/overview/">micro-ROS 官网教程</a></p>
+</blockquote>
+
+<p>从第一个例子来看，应该提前了解的一些基础概念</p>
+
+<p>microROS： microROS 是一个适配于微控制器的 ROS 2 版本，它实现了 ROS 2 的一些核心功能，但是专门为内存和存储资源非常有限的环境优化。它支持多种微控制器架构和 RTOS（实时操作系统），允许这些设备能够在更广泛的 ROS 2 生态系统中进行通信和协作。</p>
+
+<p>microROS Firmware： microROS Firmware 指的是安装在微控制器上的具体固件，这固件包含了 microROS 的客户端库以及为特定微控制器或硬件平台定制的配置。这个固件使得微控制器能够运行 microROS 应用程序，处理如传感器数据收集、执行器控制等任务，并通过 microROS Agent 与 ROS 2 网络中的其他节点进行交互。</p>
+
+<p>microROS Agent： microROS Agent 是一个桥接软件，它允许微控制器（运行 microROS）与运行标凈 ROS 2 的更大的计算系统进行通信。这种通信通常通过网络如串行端口、UDP 或其他通信协议实现。microROS Agent 在较大的系统上运行，作为一个节点接收和发送消息，充当微控制器和其他 ROS 2 实体之间的中介。</p>
+
+<h1 id="41-在-linux-平台上快速体验-mircoros">4.1 在 Linux 平台上快速体验 MircoROS</h1>
+
+<p>Tips: 如果你的 rosdep 是有效的话 这个例子是很好跑的, 科学上网很重要，或者采用国内大神的<code class="language-plaintext highlighter-rouge">rosdepc</code> <a href="https://www.guyuehome.com/35408">参考</a></p>
+
+<blockquote>
+  <p>参考内容
+<a href="https://micro.ros.org/docs/tutorials/core/first_application_linux/">First micro-ROS Application on Linux</a>&gt;</p>
+</blockquote>
+
+<h2 id="411-下载官网的代码">4.1.1 下载官网的代码</h2>
+
+<p>跟着官网一起来(截止 2024.04.18 这些步骤都是有效的)</p>
+
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Source the ROS 2 installation
+</span>
+<span class="n">source</span> <span class="o">/</span><span class="n">opt</span><span class="o">/</span><span class="n">ros</span><span class="o">/</span><span class="err">$</span><span class="n">ROS_DISTRO</span><span class="o">/</span><span class="n">setup</span><span class="p">.</span><span class="n">bash</span>
+
+<span class="c1"># Create a workspace and download the micro-ROS tools
+</span>
+<span class="n">mkdir</span> <span class="n">microros_ws</span>
+<span class="n">cd</span> <span class="n">microros_ws</span>
+<span class="n">git</span> <span class="n">clone</span> <span class="o">-</span><span class="n">b</span> <span class="err">$</span><span class="n">ROS_DISTRO</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">micro</span><span class="o">-</span><span class="n">ROS</span><span class="o">/</span><span class="n">micro_ros_setup</span><span class="p">.</span><span class="n">git</span> <span class="n">src</span><span class="o">/</span><span class="n">micro_ros_setup</span>
+
+
+
+<span class="c1"># Update dependencies using rosdep
+# 老版本的ros建议: rosdepc update --include-eol-distros
+</span><span class="n">sudo</span> <span class="n">apt</span> <span class="n">update</span> <span class="o">&amp;&amp;</span> <span class="n">rosdep</span> <span class="n">update</span> <span class="o">--</span><span class="n">include</span><span class="o">-</span><span class="n">eol</span><span class="o">-</span><span class="n">distros</span>
+<span class="n">rosdep</span> <span class="n">install</span> <span class="o">--</span><span class="k">from</span><span class="o">-</span><span class="n">paths</span> <span class="n">src</span> <span class="o">--</span><span class="n">ignore</span><span class="o">-</span><span class="n">src</span> <span class="o">-</span><span class="n">y</span>
+
+<span class="c1"># 如果说是跑官方例子的话是必须的 不然会出现报错
+</span><span class="sh">'''</span><span class="s">
+ERROR: your rosdep installation has not been initialized yet.  Please run:
+
+    sudo rosdep init
+    rosdep update
+</span><span class="sh">'''</span>
+
+<span class="c1"># Install pip
+# sudo apt-get install python3-pip
+</span>
+<span class="c1"># Build micro-ROS tools and source them
+</span><span class="n">colcon</span> <span class="n">build</span>
+<span class="n">source</span> <span class="n">install</span><span class="o">/</span><span class="n">local_setup</span><span class="p">.</span><span class="n">bash</span>
+</code></pre></div></div>
+
+<p><img src="/assets/pics/ROS2_MICRO/4_mirco_ros_project.png" alt="快速项目" /></p>
+
+<ul>
+  <li>如果出现下面的错误，就手动安装依赖性，例如下下面的<code class="language-plaintext highlighter-rouge">sudo apt-get install ros-$ROS_DISTRO-xxx</code></li>
+  <li>如果手动安装还是解决不了，很大可能你不是<code class="language-plaintext highlighter-rouge">ros-humble</code>造成的，因为在<code class="language-plaintext highlighter-rouge">rosdep update</code>时候可能被<code class="language-plaintext highlighter-rouge">Skip end-of-life distro "foxy"</code>或者是其他版本那么，需要<code class="language-plaintext highlighter-rouge">rosdepc update --include-eol-distros</code>了</li>
+</ul>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ERROR: the following packages/stacks could not have their rosdep keys resolved
+to system dependencies:
+rclc_lifecycle: Cannot locate rosdep definition <span class="k">for</span> <span class="o">[</span>osrf_testing_tools_cpp]
+test_msgs: Cannot locate rosdep definition <span class="k">for</span> <span class="o">[</span>test_interface_files]
+rclc_parameter: Cannot locate rosdep definition <span class="k">for</span> <span class="o">[</span>osrf_testing_tools_cpp]
+rclc: Cannot locate rosdep definition <span class="k">for</span> <span class="o">[</span>osrf_testing_tools_cpp]
+Continuing to <span class="nb">install </span>resolvable dependencies...
+</code></pre></div></div>
+
+<p><img src="/assets/pics/ROS2_MICRO/4_fix_rosdep_issue.jpg" alt="rosdep问题解决" /></p>
+
+<h2 id="411-创建-mirco-ros-fireware-workspace">4.1.1 创建 mirco-ros fireware workspace</h2>
+
+<ul>
+  <li>
+    <p>fireware workspace 是做什么的，我在这一步能不能跳过啊？ 问问万能的 GPT： firmware workspace 是一个特殊的目录结构和工作区，用于开发和构建特定于微控制器的固件。这个工作区包括了所有必要的组件来创建和配置微控制器固件，以便它能与 ROS 2 系统兼容和交互。</p>
+
+    <ul>
+      <li>
+        <p>在这个工作区中，Micro-ROS 的客户端库被配置和编译为固件。这包括生成必要的通信接口和适应层，使微控制器能够通过适当的通信协议（如 UART、TCP/IP 等）与 ROS 2 系统通信。</p>
+      </li>
+      <li>
+        <p>包含 Micro-ROS 客户端库：
+Micro-ROS 客户端库是一个适配层，它提供了与 ROS 2 兼容的 API，但优化了内存和处理能力的限制，适用于微控制器。</p>
+      </li>
+      <li>
+        <p>集成外部库和驱动程序：允许开发者集成硬件特定的驱动程序和中间件，例如用于传感器数据获取和执行器控制的库。</p>
+      </li>
+      <li>
+        <p>构建和部署工具：提供工具和脚本来构建和部署固件到目标硬件，这些工具通常与微控制器的编程环境（如 ARM Mbed、ESP-IDF 等）集成。</p>
+      </li>
+      <li>
+        <p>调试和测试：这个工作区也支持固件的调试和测试，这对于确保在资源受限的环境中运行正常至关重要。</p>
+      </li>
+      <li>
+        <p>这一步是不能够省略的</p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>动手就是干：</p>
+  </li>
+</ul>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">source install</span>/local_setup.bash <span class="o">&amp;&amp;</span> ros2 run micro_ros_setup create_firmware_ws.sh host
+</code></pre></div></div>
+
+<p>当命令执行完毕后，工作区中应该存在一个名为 firmware 的文件夹，并且 这个步骤的目的是下载一组 micro-ROS 应用程序，到 src/uros/micro-ROS-demos/rclc 路径下，这个 repo 再 GitHub 也是有的，如果你没有出现这两个文件夹 那说明 你这一步操作失败了，用<code class="language-plaintext highlighter-rouge">tree -L 2 -I 'install|log'</code>查看</p>
+
+<p><img src="/assets/pics/ROS2_MICRO/4_build_fireware_ws.png" alt="build_fireware_ws" /></p>
+
+<p>如果你已经有了上面这些文件夹的内容，那么可以开始构建这个 mirco-ros 的全部依赖项了</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">source install</span>/local_setup.bash <span class="o">&amp;&amp;</span> ros2 run micro_ros_setup build_firmware.sh
+</code></pre></div></div>
+
+<p>如果 build 成功后大概是有 38 个功能包安装好了的:</p>
+
+<p><img src="/assets/pics/ROS2_MICRO/4_build_fireware_deps.png" alt="build_fireware_deps" /></p>
+
+<blockquote>
+  <p>解释一下这个 micro-ROS-demos，里面的代码都包括两个文件：</p>
+
+  <ul>
+    <li>main.c：应用程序的逻辑。</li>
+    <li>CMakeLists.txt：编译应用程序的脚本。
+如果我们想创建自定义应用程序，就在这个文件夹下创建一个叫<my_app>的文件夹，其中包含上述两个文件。然后还需要跑到 `src/uros/micro-ROS-demos/rclc/CMakeLists.txt` 中注册，通过添加以下行：`export_executable(<my_app>)`这样注册进来，好了 废话不多说用到再看</my_app></my_app></li>
+  </ul>
+</blockquote>
+
+<h2 id="413-体验-microros-的发布和订阅">4.1.3 体验 MicroROS 的发布和订阅</h2>
+
+<p>做完上面两步，是时候来体验<code class="language-plaintext highlighter-rouge">mirco-ros</code>的发布和订阅了，其实也就是顺着官网的教程继续往下走,但是官网的<code class="language-plaintext highlighter-rouge">ping_pong</code>的例子太麻烦了，我们这之间上后续的发布和订阅的的例子，<strong>但是这个例子的条件是你已经走完了上面那一步，有了那些依赖项</strong></p>
+
+<blockquote>
+  <p>参考内容
+<a href="https://micro.ros.org/docs/tutorials/programming_rcl_rclc/pub_sub/">Publishers and subscribers</a></p>
+</blockquote>
+
+<ol>
+  <li>创建两个 demo 的源文件夹, 然后就朝着里面的文件进行填内容</li>
+</ol>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">mkdir mkdir </span>src/demo_pub <span class="o">&amp;&amp;</span> <span class="nb">touch </span>src/demo_pub/main.c <span class="o">&amp;&amp;</span> <span class="nb">touch </span>src/demo_pub/CMakeLists.txt <span class="o">&amp;&amp;</span> <span class="nb">mkdir </span>src/demo_sub <span class="o">&amp;&amp;</span> <span class="nb">touch </span>src/demo_sub/main.c <span class="o">&amp;&amp;</span> <span class="nb">touch </span>src/demo_sub/CMakeLists.txt
+</code></pre></div></div>
+
+<p><img src="/assets/pics/ROS2_MICRO/4_create_mirco_ros_linux_demo.png" alt="1_创建Linux发布订阅demo" /></p>
+
+<ol>
+  <li>直接上能跑的发布者代码，注释在代码里，了解基本的内容即可，不得不说现在的 GPT 太强了：</li>
+</ol>
+
+<ul>
+  <li>发布者的 main.c <a href="https://github.com/micro-ROS/micro-ROS-demos/blob/humble/rclc/int32_publisher/main.c">demo_pub/main.c</a></li>
+</ul>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;rcl/rcl.h&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;rcl/error_handling.h&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;rclc/rclc.h&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;rclc/executor.h&gt;</span><span class="cp">
+</span>
+<span class="cp">#include</span> <span class="cpf">&lt;std_msgs/msg/int32.h&gt;</span><span class="cp">
+</span>
+<span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;unistd.h&gt;</span><span class="cp">
+</span>
+<span class="c1">// 宏定义用于错误检查，如果发生错误则输出并退出或继续</span>
+<span class="cp">#define RCCHECK(fn) { rcl_ret_t temp_rc = fn; if((temp_rc != RCL_RET_OK)){printf("Failed status on line %d: %d. Aborting.\n",__LINE__,(int)temp_rc); return 1;}}
+#define RCSOFTCHECK(fn) { rcl_ret_t temp_rc = fn; if((temp_rc != RCL_RET_OK)){printf("Failed status on line %d: %d. Continuing.\n",__LINE__,(int)temp_rc);}}
+</span>
+<span class="n">rcl_publisher_t</span> <span class="n">publisher</span><span class="p">;</span> <span class="c1">// 全局发布者对象</span>
+<span class="n">std_msgs__msg__Int32</span> <span class="n">msg</span><span class="p">;</span> <span class="c1">// 整数类型的消息</span>
+
+<span class="c1">// 定时器回调函数，每次调用时发布一个消息，并增加计数</span>
+<span class="kt">void</span> <span class="nf">timer_callback</span><span class="p">(</span><span class="n">rcl_timer_t</span> <span class="o">*</span> <span class="n">timer</span><span class="p">,</span> <span class="kt">int64_t</span> <span class="n">last_call_time</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="p">(</span><span class="kt">void</span><span class="p">)</span> <span class="n">last_call_time</span><span class="p">;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">timer</span> <span class="o">!=</span> <span class="nb">NULL</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">RCSOFTCHECK</span><span class="p">(</span><span class="n">rcl_publish</span><span class="p">(</span><span class="o">&amp;</span><span class="n">publisher</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">msg</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">));</span>
+        <span class="n">printf</span><span class="p">(</span><span class="s">"Sent: %d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">msg</span><span class="p">.</span><span class="n">data</span><span class="p">);</span>
+        <span class="n">msg</span><span class="p">.</span><span class="n">data</span><span class="o">++</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="n">rcl_allocator_t</span> <span class="n">allocator</span> <span class="o">=</span> <span class="n">rcl_get_default_allocator</span><span class="p">();</span> <span class="c1">// 获取默认分配器</span>
+    <span class="n">rclc_support_t</span> <span class="n">support</span><span class="p">;</span>
+
+    <span class="c1">// 初始化支持结构</span>
+    <span class="n">RCCHECK</span><span class="p">(</span><span class="n">rclc_support_init</span><span class="p">(</span><span class="o">&amp;</span><span class="n">support</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">allocator</span><span class="p">));</span>
+
+    <span class="c1">// 创建节点</span>
+    <span class="n">rcl_node_t</span> <span class="n">node</span><span class="p">;</span>
+    <span class="n">RCCHECK</span><span class="p">(</span><span class="n">rclc_node_init_default</span><span class="p">(</span><span class="o">&amp;</span><span class="n">node</span><span class="p">,</span> <span class="s">"int32_publisher_rclc"</span><span class="p">,</span> <span class="s">""</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">support</span><span class="p">));</span>
+
+    <span class="c1">// 创建发布者</span>
+    <span class="n">RCCHECK</span><span class="p">(</span><span class="n">rclc_publisher_init_default</span><span class="p">(</span>
+        <span class="o">&amp;</span><span class="n">publisher</span><span class="p">,</span>
+        <span class="o">&amp;</span><span class="n">node</span><span class="p">,</span>
+        <span class="n">ROSIDL_GET_MSG_TYPE_SUPPORT</span><span class="p">(</span><span class="n">std_msgs</span><span class="p">,</span> <span class="n">msg</span><span class="p">,</span> <span class="n">Int32</span><span class="p">),</span>
+        <span class="s">"std_msgs_msg_Int32"</span><span class="p">));</span>
+
+    <span class="c1">// 创建定时器</span>
+    <span class="n">rcl_timer_t</span> <span class="n">timer</span><span class="p">;</span>
+    <span class="k">const</span> <span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">timer_timeout</span> <span class="o">=</span> <span class="mi">1000</span><span class="p">;</span> <span class="c1">// 定时器超时时间为1000毫秒</span>
+    <span class="n">RCCHECK</span><span class="p">(</span><span class="n">rclc_timer_init_default</span><span class="p">(</span>
+        <span class="o">&amp;</span><span class="n">timer</span><span class="p">,</span>
+        <span class="o">&amp;</span><span class="n">support</span><span class="p">,</span>
+        <span class="n">RCL_MS_TO_NS</span><span class="p">(</span><span class="n">timer_timeout</span><span class="p">),</span>
+        <span class="n">timer_callback</span><span class="p">));</span>
+
+    <span class="c1">// 创建执行器</span>
+    <span class="n">rclc_executor_t</span> <span class="n">executor</span> <span class="o">=</span> <span class="n">rclc_executor_get_zero_initialized_executor</span><span class="p">();</span>
+    <span class="n">RCCHECK</span><span class="p">(</span><span class="n">rclc_executor_init</span><span class="p">(</span><span class="o">&amp;</span><span class="n">executor</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">support</span><span class="p">.</span><span class="n">context</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">allocator</span><span class="p">));</span>
+    <span class="n">RCCHECK</span><span class="p">(</span><span class="n">rclc_executor_add_timer</span><span class="p">(</span><span class="o">&amp;</span><span class="n">executor</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">timer</span><span class="p">));</span>
+
+    <span class="n">msg</span><span class="p">.</span><span class="n">data</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="c1">// 初始化消息数据</span>
+
+    <span class="n">rclc_executor_spin</span><span class="p">(</span><span class="o">&amp;</span><span class="n">executor</span><span class="p">);</span> <span class="c1">// 执行器开始执行</span>
+
+    <span class="c1">// 清理资源</span>
+    <span class="n">RCCHECK</span><span class="p">(</span><span class="n">rcl_publisher_fini</span><span class="p">(</span><span class="o">&amp;</span><span class="n">publisher</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">node</span><span class="p">));</span>
+    <span class="n">RCCHECK</span><span class="p">(</span><span class="n">rcl_node_fini</span><span class="p">(</span><span class="o">&amp;</span><span class="n">node</span><span class="p">));</span>
+<span class="p">}</span>
+
+</code></pre></div></div>
+
+<ul>
+  <li>发布者的 CMakeLists.txt 文件内容：(demo_pub/CMakeLists.txt)[https://github.com/micro-ROS/micro-ROS-demos/blob/humble/rclc/int32_publisher/CMakeLists.txt]</li>
+</ul>
+
+<div class="language-cmake highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># 设置CMake的最低版本要求为3.5</span>
+<span class="nb">cmake_minimum_required</span><span class="p">(</span>VERSION 3.5<span class="p">)</span>
+
+<span class="c1"># 定义项目名称和使用的编程语言</span>
+<span class="nb">project</span><span class="p">(</span>demo_pub LANGUAGES C<span class="p">)</span>
+
+<span class="c1"># 寻找CMake的ament包管理工具，这是ROS 2中常用的包管理工具</span>
+<span class="nb">find_package</span><span class="p">(</span>ament_cmake REQUIRED<span class="p">)</span>
+
+<span class="c1"># 寻找必要的包，这些包提供ROS 2和microROS的功能</span>
+<span class="nb">find_package</span><span class="p">(</span>rcl REQUIRED<span class="p">)</span>          <span class="c1"># ROS 2 client library (rcl)</span>
+<span class="nb">find_package</span><span class="p">(</span>rclc REQUIRED<span class="p">)</span>         <span class="c1"># ROS 2 client library for the C language (rclc)</span>
+<span class="nb">find_package</span><span class="p">(</span>std_msgs REQUIRED<span class="p">)</span>     <span class="c1"># 标准消息定义，用于ROS 2通信</span>
+<span class="nb">find_package</span><span class="p">(</span>rmw_microxrcedds REQUIRED<span class="p">)</span>  <span class="c1"># 为microROS提供的中间件实现</span>
+
+<span class="c1"># 添加一个可执行文件目标，名为项目名称，源代码文件为 main.c</span>
+<span class="nb">add_executable</span><span class="p">(</span><span class="si">${</span><span class="nv">PROJECT_NAME</span><span class="si">}</span> main.c<span class="p">)</span>
+
+<span class="c1"># 将上述找到的包作为编译目标的依赖项</span>
+<span class="nf">ament_target_dependencies</span><span class="p">(</span><span class="si">${</span><span class="nv">PROJECT_NAME</span><span class="si">}</span>
+  rcl
+  rclc
+  std_msgs
+  rmw_microxrcedds
+<span class="p">)</span>
+
+<span class="c1"># 安装构建的可执行文件到安装目录下的项目名称文件夹中</span>
+<span class="nb">install</span><span class="p">(</span>TARGETS <span class="si">${</span><span class="nv">PROJECT_NAME</span><span class="si">}</span>
+  DESTINATION <span class="si">${</span><span class="nv">PROJECT_NAME</span><span class="si">}</span>
+<span class="p">)</span>
+</code></pre></div></div>
+
+<ol>
+  <li>直接上能跑的订阅者的代码，解释全部再注释内，了解过程即可</li>
+</ol>
+
+<ul>
+  <li>订阅者的 main.c <a href="https://github.com/micro-ROS/micro-ROS-demos/blob/humble/rclc/int32_publisher_subscriber/main.c">int32_publisher_subscriber/main.c</a></li>
+</ul>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;rcl/rcl.h&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;rcl/error_handling.h&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;rclc/rclc.h&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;rclc/executor.h&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;std_msgs/msg/int32.h&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span>
+<span class="c1">// 宏定义用于检查函数返回值，并在出现错误时输出错误信息</span>
+<span class="cp">#define RCCHECK(fn) { rcl_ret_t temp_rc = fn; if((temp_rc != RCL_RET_OK)){printf("Failed status on line %d: %d. Aborting.\n",__LINE__,(int)temp_rc); return 1;}}
+#define RCSOFTCHECK(fn) { rcl_ret_t temp_rc = fn; if((temp_rc != RCL_RET_OK)){printf("Failed status on line %d: %d. Continuing.\n",__LINE__,(int)temp_rc);}}
+</span>
+<span class="n">rcl_publisher_t</span> <span class="n">publisher</span><span class="p">;</span> <span class="c1">// 发布者对象</span>
+<span class="n">rcl_subscription_t</span> <span class="n">subscriber</span><span class="p">;</span> <span class="c1">// 订阅者对象</span>
+<span class="n">std_msgs__msg__Int32</span> <span class="n">send_msg</span><span class="p">;</span> <span class="c1">// 发送的消息</span>
+<span class="n">std_msgs__msg__Int32</span> <span class="n">recv_msg</span><span class="p">;</span> <span class="c1">// 接收的消息</span>
+
+<span class="c1">// 定时器回调函数，用于周期性发布消息</span>
+<span class="kt">void</span> <span class="nf">timer_callback</span><span class="p">(</span><span class="n">rcl_timer_t</span> <span class="o">*</span> <span class="n">timer</span><span class="p">,</span> <span class="kt">int64_t</span> <span class="n">last_call_time</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="p">(</span><span class="kt">void</span><span class="p">)</span> <span class="n">last_call_time</span><span class="p">;</span> <span class="c1">// 忽略未使用的参数</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">timer</span> <span class="o">!=</span> <span class="nb">NULL</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">RCSOFTCHECK</span><span class="p">(</span><span class="n">rcl_publish</span><span class="p">(</span><span class="o">&amp;</span><span class="n">publisher</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">send_msg</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">));</span>
+        <span class="n">printf</span><span class="p">(</span><span class="s">"Sent: %d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">send_msg</span><span class="p">.</span><span class="n">data</span><span class="p">);</span>
+        <span class="n">send_msg</span><span class="p">.</span><span class="n">data</span><span class="o">++</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c1">// 订阅者回调函数，当接收到新消息时被调用</span>
+<span class="kt">void</span> <span class="nf">subscription_callback</span><span class="p">(</span><span class="k">const</span> <span class="kt">void</span> <span class="o">*</span> <span class="n">msgin</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="k">const</span> <span class="n">std_msgs__msg__Int32</span> <span class="o">*</span> <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="k">const</span> <span class="n">std_msgs__msg__Int32</span> <span class="o">*</span><span class="p">)</span><span class="n">msgin</span><span class="p">;</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s">"Received: %d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">msg</span><span class="o">-&gt;</span><span class="n">data</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span> <span class="k">const</span> <span class="o">*</span> <span class="n">argv</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="n">rcl_allocator_t</span> <span class="n">allocator</span> <span class="o">=</span> <span class="n">rcl_get_default_allocator</span><span class="p">();</span> <span class="c1">// 获取默认分配器</span>
+    <span class="n">rclc_support_t</span> <span class="n">support</span><span class="p">;</span>
+
+    <span class="c1">// 初始化支持结构，用于配置ROS 2通信</span>
+    <span class="n">RCCHECK</span><span class="p">(</span><span class="n">rclc_support_init</span><span class="p">(</span><span class="o">&amp;</span><span class="n">support</span><span class="p">,</span> <span class="n">argc</span><span class="p">,</span> <span class="n">argv</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">allocator</span><span class="p">));</span>
+
+    <span class="c1">// 创建节点</span>
+    <span class="n">rcl_node_t</span> <span class="n">node</span><span class="p">;</span>
+    <span class="n">RCCHECK</span><span class="p">(</span><span class="n">rclc_node_init_default</span><span class="p">(</span><span class="o">&amp;</span><span class="n">node</span><span class="p">,</span> <span class="s">"int32_publisher_subscriber_rclc"</span><span class="p">,</span> <span class="s">""</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">support</span><span class="p">));</span>
+
+    <span class="c1">// 创建发布者</span>
+    <span class="n">RCCHECK</span><span class="p">(</span><span class="n">rclc_publisher_init_default</span><span class="p">(</span>
+        <span class="o">&amp;</span><span class="n">publisher</span><span class="p">,</span>
+        <span class="o">&amp;</span><span class="n">node</span><span class="p">,</span>
+        <span class="n">ROSIDL_GET_MSG_TYPE_SUPPORT</span><span class="p">(</span><span class="n">std_msgs</span><span class="p">,</span> <span class="n">msg</span><span class="p">,</span> <span class="n">Int32</span><span class="p">),</span>
+        <span class="s">"int32_publisher"</span><span class="p">));</span>
+
+    <span class="c1">// 创建订阅者</span>
+    <span class="n">RCCHECK</span><span class="p">(</span><span class="n">rclc_subscription_init_default</span><span class="p">(</span>
+        <span class="o">&amp;</span><span class="n">subscriber</span><span class="p">,</span>
+        <span class="o">&amp;</span><span class="n">node</span><span class="p">,</span>
+        <span class="n">ROSIDL_GET_MSG_TYPE_SUPPORT</span><span class="p">(</span><span class="n">std_msgs</span><span class="p">,</span> <span class="n">msg</span><span class="p">,</span> <span class="n">Int32</span><span class="p">),</span>
+        <span class="s">"int32_subscriber"</span><span class="p">));</span>
+
+    <span class="c1">// 创建定时器，设置超时时间为1000毫秒</span>
+    <span class="n">rcl_timer_t</span> <span class="n">timer</span><span class="p">;</span>
+    <span class="k">const</span> <span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">timer_timeout</span> <span class="o">=</span> <span class="mi">1000</span><span class="p">;</span>
+    <span class="n">RCCHECK</span><span class="p">(</span><span class="n">rclc_timer_init_default</span><span class="p">(</span>
+        <span class="o">&amp;</span><span class="n">timer</span><span class="p">,</span>
+        <span class="o">&amp;</span><span class="n">support</span><span class="p">,</span>
+        <span class="n">RCL_MS_TO_NS</span><span class="p">(</span><span class="n">timer_timeout</span><span class="p">),</span>
+        <span class="n">timer_callback</span><span class="p">));</span>
+
+    <span class="c1">// 创建执行器，并添加定时器和订阅者</span>
+    <span class="n">rclc_executor_t</span> <span class="n">executor</span> <span class="o">=</span> <span class="n">rclc_executor_get_zero_initialized_executor</span><span class="p">();</span>
+    <span class="n">RCCHECK</span><span class="p">(</span><span class="n">rclc_executor_init</span><span class="p">(</span><span class="o">&amp;</span><span class="n">executor</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">support</span><span class="p">.</span><span class="n">context</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">allocator</span><span class="p">));</span>
+    <span class="n">RCCHECK</span><span class="p">(</span><span class="n">rclc_executor_add_timer</span><span class="p">(</span><span class="o">&amp;</span><span class="n">executor</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">timer</span><span class="p">));</span>
+    <span class="n">RCCHECK</span><span class="p">(</span><span class="n">rclc_executor_add_subscription</span><span class="p">(</span><span class="o">&amp;</span><span class="n">executor</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">subscriber</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">recv_msg</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">subscription_callback</span><span class="p">,</span> <span class="n">ON_NEW_DATA</span><span class="p">));</span>
+
+    <span class="n">send_msg</span><span class="p">.</span><span class="n">data</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="c1">// 初始化发送消息的数据</span>
+
+    <span class="c1">// 运行执行器，开始处理事件</span>
+    <span class="n">rclc_executor_spin</span><span class="p">(</span><span class="o">&amp;</span><span class="n">executor</span><span class="p">);</span>
+
+    <span class="c1">// 清理资源，销毁发布者、订阅者和节点</span>
+    <span class="n">RCCHECK</span><span class="p">(</span><span class="n">rcl_subscription_fini</span><span class="p">(</span><span class="o">&amp;</span><span class="n">subscriber</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">node</span><span class="p">));</span>
+    <span class="n">RCCHECK</span><span class="p">(</span><span class="n">rcl_publisher_fini</span><span class="p">(</span><span class="o">&amp;</span><span class="n">publisher</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">node</span><span class="p">));</span>
+    <span class="n">RCCHECK</span><span class="p">(</span><span class="n">rcl_node_fini</span><span class="p">(</span><span class="o">&amp;</span><span class="n">node</span><span class="p">));</span>
+<span class="p">}</span>
+
+</code></pre></div></div>
+
+<ul>
+  <li>订阅者的 CMakeLists <a href="https://github.com/micro-ROS/micro-ROS-demos/blob/humble/rclc/int32_publisher_subscriber/CMakeLists.txt">int32_publisher_subscriber/CMakeLists.txt</a></li>
+</ul>
+
+<div class="language-cmake highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cmake_minimum_required</span><span class="p">(</span>VERSION 3.5<span class="p">)</span>
+
+<span class="nb">project</span><span class="p">(</span>demo_sub LANGUAGES C<span class="p">)</span>
+
+<span class="nb">find_package</span><span class="p">(</span>ament_cmake REQUIRED<span class="p">)</span>
+<span class="nb">find_package</span><span class="p">(</span>rcl REQUIRED<span class="p">)</span>
+<span class="nb">find_package</span><span class="p">(</span>rclc REQUIRED<span class="p">)</span>
+<span class="nb">find_package</span><span class="p">(</span>std_msgs REQUIRED<span class="p">)</span>
+<span class="nb">find_package</span><span class="p">(</span>rmw_microxrcedds REQUIRED<span class="p">)</span>
+
+<span class="nb">add_executable</span><span class="p">(</span><span class="si">${</span><span class="nv">PROJECT_NAME</span><span class="si">}</span> main.c<span class="p">)</span>
+
+<span class="nf">ament_target_dependencies</span><span class="p">(</span><span class="si">${</span><span class="nv">PROJECT_NAME</span><span class="si">}</span>
+  rcl
+  rclc
+  std_msgs
+  rmw_microxrcedds
+  <span class="p">)</span>
+
+<span class="nb">install</span><span class="p">(</span>TARGETS <span class="si">${</span><span class="nv">PROJECT_NAME</span><span class="si">}</span>
+  DESTINATION <span class="si">${</span><span class="nv">PROJECT_NAME</span><span class="si">}</span>
+  <span class="p">)</span>
+</code></pre></div></div>
+
+<ol>
+  <li>编译运行 查看效果</li>
+</ol>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>colcon build
+</code></pre></div></div>
+
+<h1 id="42-使用-esp32-发布话题-体验-mircoros-的通讯">4.2 使用 ESP32 发布话题 体验 MircoROS 的通讯</h1>
+
+<blockquote>
+  <p>Tips: 需要完成上面的<code class="language-plaintext highlighter-rouge">micro ros 的 fireware workspace</code>的构建</p>
+</blockquote>
+
+<blockquote>
+  <p>参考内容
+<a href="https://www.ncnynl.com/archives/202012/3988.html">ROS2 与 arduino 入门教程-安装 micro_ros_arduino</a><br />
+<a href="https://blog.csdn.net/houzima/article/details/126786365">Arduino 配置 micro-ros</a></p>
+</blockquote>
+
+<ol>
+  <li>
+    <p>安装 <code class="language-plaintext highlighter-rouge">arduino ide</code>并下载<code class="language-plaintext highlighter-rouge">esp32</code>的开发工具包， 网上搜索一大堆</p>
+  </li>
+  <li>
+    <p>添加 <code class="language-plaintext highlighter-rouge">mirco_ros_arduino</code>到库内</p>
+  </li>
+</ol>
+
+<ul>
+  <li>到 GitHub 仓库的 release 下，下载对应 ROS 版本的 zip 包：<a href="https://github.com/micro-ROS/micro_ros_arduino/releases">micro-ROS/micro_ros_arduino</a></li>
+</ul>
+
+<p><img src="/assets/pics/ROS2_MICRO/4_arduino_micrros_download.png" alt="1_arduino_micrros下载" /></p>
+
+<ul>
+  <li>添加 Zip 包到<code class="language-plaintext highlighter-rouge">arduino-ide</code>内:</li>
+</ul>
+
+<p><img src="/assets/pics/ROS2_MICRO/4_add_microros_package.png" alt="1_添加microros包" /></p>
+
+<ol>
+  <li>跑 demo 例子</li>
+</ol>
+
+<ul>
+  <li>
+    <p>接入 esp32 板卡</p>
+  </li>
+  <li>
+    <p>需要下载<code class="language-plaintext highlighter-rouge">pyserial</code>: <code class="language-plaintext highlighter-rouge">sudo pip install pyserial</code></p>
+  </li>
+  <li>
+    <p>给板卡端口赋权限<code class="language-plaintext highlighter-rouge">sudo chmod 777 /dev/ttyUSB0</code> 或者是 <code class="language-plaintext highlighter-rouge">sudo chmod 777 /dev/ttyACM0</code>等其他 就看你的开发板端口了</p>
+  </li>
+  <li>
+    <p>选择 <code class="language-plaintext highlighter-rouge">micro-ros-publish</code>例子烧录</p>
+  </li>
+</ul>
+
+<p><img src="/assets/pics/ROS2_MICRO/4_deploy_esp32_demo.png" alt="烧录esp32demo" /></p>
+
+<ul>
+  <li>查看你的板卡烧录情况</li>
+</ul>
+
+<p><img src="/assets/pics/ROS2_MICRO/4_esp32_deploy_success.png" alt="esp32烧录完成" /></p>
+
+<ol>
+  <li>主机测试连接情况</li>
+</ol>
+
+<ul>
+  <li>回到上述的<code class="language-plaintext highlighter-rouge">microros_ws</code>下， 构建<code class="language-plaintext highlighter-rouge">micro_ros_agent</code>:</li>
+</ul>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">source install</span>/local_setup.bash <span class="o">&amp;&amp;</span> ros2 run micro_ros_setup build_agent.sh
+</code></pre></div></div>
+
+<ul>
+  <li>构建完成之后测试</li>
+</ul>
+</section>
+            </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div></div>
+    </div>
+</div>
+
+<!-- introduce mathjax support -->
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [ ['$', '$'], ['\\(', '\\)'] ]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script
+  type="text/javascript" id="MathJax-script" async
+  src="/assets/js/tex-chtml.js">
+</script>
+
+
+<!-- introduce per-page mermaid support -->
+
+
+<!-- introduce mathjax support -->
+<script>
+    function fixes_chrome_anchors() {
+        let chrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+        if (window.location.hash && chrome) {
+            setTimeout(function () {
+                var hash = window.location.hash;
+                window.location.hash = "";
+                window.location.hash = hash;
+            }, 300);
+        }
+    }
+
+    if (document.readyState === "loading") {
+        // Loading hasn't finished yet
+        document.addEventListener("DOMContentLoaded", fixes_chrome_anchors);
+    } else {
+        // `DOMContentLoaded` has already fired
+        fixes_chrome_anchors();
+    }
+</script>
+
+
+                        <a href="/ros2_micro/2023-04-03-3_1_ROS2_Arduino_demo.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 3 ROS2 和 arduino 通讯">
+                            <i class="fa fa-angle-left"></i>
+                        </a>
+                    
+
+                    
+                        <a href="/ros2_car/2023-06-01-1_1_docker%E5%91%BD%E4%BB%A4%E7%86%9F%E6%82%89.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 1 Docker 搭建 ROS2 嵌入式运行环境">
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                    
+                </div>
+            </div>
+
+            <script>
+            var gitbook = gitbook || [];
+            gitbook.push(function() {
+                gitbook.page.hasChanged({
+    "page": {
+        "title": "Introduction",
+        "level": "1.1",
+        "depth": 1,
+        
+        "next": {
+            "title": "1 Docker 搭建 ROS2 嵌入式运行环境",
+            "level": "1.2",
+            "depth": 1,
+            "path": "_posts/ROS2_CAR/2023-06-01-1_1_docker命令熟悉.md",
+            "ref": "_posts/ROS2_CAR/2023-06-01-1_1_docker命令熟悉.md",
+            "articles": []
+        },
+        
+        "dir": "ltr"
+    },    "config": {
+        "plugins": ["fontsettings", "highlight", "livereload", "lunr", "search", "sharing", "theme-default", "livereload"],
+        "styles": {
+            "ebook": "styles/ebook.css",
+            "epub": "styles/epub.css",
+            "mobi": "styles/mobi.css",
+            "pdf": "styles/pdf.css",
+            "print": "styles/print.css",
+            "website": "styles/website.css"
+        },
+        "pluginsConfig": {
+            "expandable-chapter-small2": {
+                "articlesExpand": true,
+            },
+            "fontsettings": {
+                "family": "sans",
+                "size": 2,
+                "theme": "white"
+            },
+            "highlight": {},
+            "livereload": {},
+            "lunr": {
+                "ignoreSpecialCharacters": false,
+                "maxIndexSize": 1000000
+            },
+            "search": {},            "sharing": {},
+"theme-default": {
+                "showLevel": false,
+                "styles": {
+                    "ebook": "styles/ebook.css",
+                    "epub": "styles/epub.css",
+                    "mobi": "styles/mobi.css",
+                    "pdf": "styles/pdf.css",
+                    "print": "styles/print.css",
+                    "website": "styles/website.css"
+                }
+            },
+        },
+        "theme": "default",
+        "author": "Tao He",
+        "pdf": {
+            "pageNumbers": true,
+            "fontSize": 12,
+            "fontFamily": "Arial",
+            "paperSize": "a4",
+            "chapterMark": "pagebreak",
+            "pageBreaksBefore": "/",
+            "margin": {
+                "right": 62,
+                "left": 62,
+                "top": 56,
+                "bottom": 56
+            }
+        },
+        "structure": {
+            "langs": "LANGS.md",
+            "readme": "README.md",
+        },
+        "variables": {},
+        "title": "Blogs",
+        "language": "en",
+        "gitbook": "*"
+    },
+    "file": {
+        "path": "_posts/ROS2_MICRO/2023-04-04-4_1_MicroROS初步体验.md",
+        "mtime": "2023-04-04 00:00:00 +0800",
+        "type": "markdown"
+    },
+    "gitbook": {
+        "version": "3.2.3",
+        "time": "2024-11-23 17:20:01 +0800"
+    },
+    "basePath": "",
+    "book": {
+        "language": ""
+    }
+});
+            });
+            </script>
+        </div><script src="/assets/gitbook/gitbook.js"></script>
+<script src="/assets/gitbook/theme.js"></script>
+
+<script src="/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-search-pro/search.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-sharing/buttons.js"></script>
+<script src="/assets/gitbook/gitbook-plugin-splitter/splitter.js"></script>
+
+<!--
+<script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+<script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+<script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+<script src="../gitbook/gitbook-plugin-search/search.js"></script>
+-->
+
+<script src="/assets/gitbook/custom.js"></script>
+<script src="/assets/gitbook/custom-local.js"></script>
+
+</body>
+</html>
